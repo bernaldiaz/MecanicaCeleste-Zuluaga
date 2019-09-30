@@ -16,11 +16,7 @@ clean:
 	@-find . -name ".Icon*" -delete
 	@-find . -name '__pycache__' -type d | xargs rm -fr
 
-update:
-	@echo "Adding files..."
-	@-git add -Af
-
-commit:update
+commit:
 	@echo "Commiting..."
 	@-git commit -am "Commit"
 	@-git push origin master
