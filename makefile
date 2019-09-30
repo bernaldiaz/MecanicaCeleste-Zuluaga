@@ -20,7 +20,7 @@ update:
 	@echo "Adding files..."
 	@-git add -Af
 
-commit:update
+commit:clean update
 	@echo "Commiting..."
 	@-git commit -am "Commit"
 	@-git push origin master
