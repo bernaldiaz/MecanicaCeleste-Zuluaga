@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.00.00.00.ProblemaNCuerpos</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13071,217 +13071,30 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
+<h1 id="1.-El-Problema-de-los-N-cuerpos">1. El Problema de los N cuerpos<a class="anchor-link" href="#1.-El-Problema-de-los-N-cuerpos">&#182;</a></h1><p><a id='problema_ncuerpos'></a></p>
+
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><strong>Resumen:</strong> En este capítulo abordaremos el que podría considerarse el problema central de la mecánica celeste: predecir la evolución futura de un sistema de cuerpos que se atraen gravitacionalmente (los planetas del sistema solar, las estrellas de un cúmulo globular o las galaxias de un cúmulo galáctico). A este problema se lo conoce históricamente como el <em>problema de los N cuerpos</em>. Formularemos física y matemáticamente el problema general, estudiaremos a continuación su "solución" aproximada usando algoritmos numéricos y finalmente exploraremos algunas de sus propiedades matemáticas más generales. Para todo ello, nos valdremos de los principios y leyes de la mecánica newtoniana y de su aplicación usando fuerzas, cálculo vectorial y geometría (un enfoque que llamaremos en lo sucesico <em>formalismo vectorial</em> o <em>formalismo geométrico</em> de la mecánica celeste). Este capítulo sentará las bases numéricas y teóricas de los capítulos posteriores.</p>
 
 </div>
 </div>
 </div>
+    </div><div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<p><a href="index.html">Indice</a> | Siguiente: <a href="01.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">ProblemaNCuerpos.SolucionNumerica</a></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Prefacio.html#prefacio">Prefacio</a>. <b>{#prefacio}</b><ul>
-<li><a href="01.00.00.00.Prefacio.html#otro_libro">¿Otro libro de mecánica celeste?</a>. <b>{#otro_libro}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_analitica">Mecánica celeste y mecánica analítica</a>. <b>{#celeste_analitica}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Mecánica celeste en la era de la información</a>. <b>{#celeste_era_informacion}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_python">Mecánica celeste en Python</a>. <b>{#celeste_python}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_spice">Mecánica celeste con <code>SPICE</code></a>. <b>{#celeste_spice}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#libro_distinto">¿Qué hace distinto a este libro?: un decálogo</a>. <b>{#libro_distinto}</b></li>
-</ul>
-</li>
-<li><a href="02.00.00.00.Agradecimientos.html#agradecimientos">Agradecimientos</a>. <b>{#agradecimientos}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#introduccion">Introducción</a>. <b>{#introduccion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#organizacion_libro">¿Cómo se organiza este libro?</a>. <b>{#organizacion_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#como_usar_libro">¿Cómo usar este libro?</a>. <b>{#como_usar_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#celeste_libretas">Mecánica celeste en <em>libretas</em></a>. <b>{#celeste_libretas}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#instalacion_libretas">Instalación de las libretas</a>. <b>{#instalacion_libretas}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#estructura_libro">Estructura del libro</a>. <b>{#estructura_libro}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#cajas_texto">Cajas de texto</a>. <b>{#cajas_texto}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#algoritmos">Algorítmos</a>. <b>{#algoritmos}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#interactivas_animaciones">Figuras interactivas y animaciones</a>. <b>{#interactivas_animaciones}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_interactiva">Ejemplo de figura interactiva</a>. <b>{#ejemplo_interactiva}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_animada">Ejemplo de figura animada</a>. <b>{#ejemplo_animada}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="04.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mecanica_newtoniana">Mecánica Newtoniana</a>. <b>{#mecanica_newtoniana}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#propiedades_cinematicas">Propiedades cinemáticas</a>. <b>{#propiedades_cinematicas}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#ecuacion_movimiento">La ecuación de movimiento (e.d.m.)</a>. <b>{#ecuacion_movimiento}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Integración de la e.d.m.</a>. <b>{#integracion_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#integracion_numerica_edm">Integración numérica de la e.d.m.</a>. <b>{#integracion_numerica_edm}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="05.00.00.00.ProblemaNCuerpos.html#problema_ncuerpos">El Problema de los N cuerpos</a>. <b>{#problema_ncuerpos}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#ncuerpos_formulacion">Formulación del problema</a>. <b>{#ncuerpos_formulacion}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#ncuerpos_motivacion">Motivación</a>. <b>{#ncuerpos_motivacion}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#ncuerpos_enunciado">Enunciado físico y matemático</a>. <b>{#ncuerpos_enunciado}</b></li>
-</ul>
-</li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_solucion_numerica">Solución numérica</a>. <b>{#ncuerpos_solucion_numerica}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#unidades_canonicas">Unidades canónicas</a>. <b>{#unidades_canonicas}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_ecuaciones_primerorden">Las ecuaciones de movimiento de primer orden</a>. <b>{#ncuerpos_ecuaciones_primerorden}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_algoritmo_solucion">Algoritmo de solucion</a>. <b>{#ncuerpos_algoritmo_solucion}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_numerico_interactivas">Figuras interactivas</a>. <b>{#ncuerpos_numerico_interactivas}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_numerico_interactivos">El problema de los N cuerpos interactivo</a>. <b>{#ncuerpos_numerico_interactivos}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_numerico_animacion">Animación del problema de los N cuerpos</a>. <b>{#ncuerpos_numerico_animacion}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.00.00.00.Prefacio.html">01.00.00.00.Prefacio</a><ul>
-<li><a href="01.00.00.00.Prefacio.html#fig:utlima_thule">Figura 1.1</a>. Imagen procesada de Ultima Thule, el objeto transneptuniano sobrevolado por la sonda New Horizons en 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.). <b>{fig:utlima_thule}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#fig:kepler">Figura 3.3</a>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster. <b>{fig:kepler}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#fig:coordenadas">Figura 4.6</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html">05.01.00.00.ProblemaNCuerpos.Formulacion</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#fig:ncuerpos_formulacion">Figura 5.10</a>. El problema de los N cuerpos: dadas las condiciones iniciales de un conjunto de N partículas puntuales, predecir la posición y velocidad de las partículas en cualquier instante futuro.. <b>{fig:ncuerpos_formulacion}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#fig:henri_poincare">Figura 5.11</a>. Fotografía de Henri Poincaré hacia el año 1886, en el tiempo en el que trabajaba en el problema de los tres cuerpos (Foto: Eugène Pirou). <b>{fig:henri_poincare}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">05.01.00.00.ProblemaNCuerpos.SolucionNumerica</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#fig:ncuerpos_numerico_ejemplo">Figura 5.12</a>. Sistema de tres cuerpos de ejemplo (todas las cantidades están expresadas en unidades canónicas)::t. <b>{fig:ncuerpos_numerico_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (4.1)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (4.2)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_cilindricas">Ec. (4.3)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (4.4)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_esfericas">Ec. (4.5)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html">04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM</a><ul>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm">Ec. (4.6)</a>: edm. <b>{eq:edm}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden">Ec. (4.7)</a>: edm_primer_orden. <b>{eq:edm_primer_orden}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_escalar">Ec. (4.8)</a>: edm_escalar. <b>{eq:edm_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden_escalar">Ec. (4.9)</a>: edm_primer_orden_escalar. <b>{eq:edm_primer_orden_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_estado">Ec. (4.10)</a>: edm_estado. <b>{eq:edm_estado}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1">Ec. (4.11)</a>: edm_ejemplo1. <b>{eq:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1_cuadratura">Ec. (4.12)</a>: edm_ejemplo1_cuadratura. <b>{eq:edm_ejemplo1_cuadratura}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo1">Ec. (4.13)</a>: Ix_ejemplo1. <b>{eq:Ix_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo2">Ec. (4.14)</a>: Ix_ejemplo2. <b>{eq:Ix_ejemplo2}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqconstantes_ejemplo1">Ec. (4.15)</a>: constantes_ejemplo1. <b>{eq:constantes_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqsolucion_ejemplo1">Ec. (4.16)</a>: solucion_ejemplo1. <b>{eq:solucion_ejemplo1}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas">Ec. (4.17)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqvariables_auxiliares_edm">Ec. (4.18)</a>: variables_auxiliares_edm. <b>{eq:variables_auxiliares_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas_particula">Ec. (4.19)</a>: ecuaciones_reducidas_particula. <b>{eq:ecuaciones_reducidas_particula}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html">05.01.00.00.ProblemaNCuerpos.Formulacion</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#mjx-eqn-eqncuerpos_ecuaciones_generales">Ec. (5.20)</a>: ncuerpos_ecuaciones_generales. <b>{eq:ncuerpos_ecuaciones_generales}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#mjx-eqn-eqncuerpos_formulacion_ecuaciones">Ec. (5.21)</a>: ncuerpos_formulacion_ecuaciones. <b>{eq:ncuerpos_formulacion_ecuaciones}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">05.01.00.00.ProblemaNCuerpos.SolucionNumerica</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqdefinicion_unidades_canonicas">Ec. (5.22)</a>: definicion_unidades_canonicas. <b>{eq:definicion_unidades_canonicas}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqncuerpos_numerico_ecuaciones">Ec. (5.23)</a>: ncuerpos_numerico_ecuaciones. <b>{eq:ncuerpos_numerico_ecuaciones}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqnumerico_variables_auxiliares">Ec. (5.24)</a>: numerico_variables_auxiliares. <b>{eq:numerico_variables_auxiliares}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqncuerpos_definicion_rij">Ec. (5.25)</a>: ncuerpos_definicion_rij. <b>{eq:ncuerpos_definicion_rij}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqncuerpos_ecuaciones_reducidas">Ec. (5.26)</a>: ncuerpos_ecuaciones_reducidas. <b>{eq:ncuerpos_ecuaciones_reducidas}</b></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#code:rutina_discriminante">Código (3.1)</a>: rutina_discriminante. <b>{code:rutina_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:calcula_discriminante">Código (3.2)</a>: calcula_discriminante. <b>{code:calcula_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:plot_sin">Código (3.3)</a>: plot_sin. <b>{code:plot_sin}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:edm_ejemplo1">Código (4.4)</a>: edm_ejemplo1. <b>{code:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:ejemplo1_grafico_solucion">Código (4.5)</a>: ejemplo1_grafico_solucion. <b>{code:ejemplo1_grafico_solucion}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:compara_numerica_analitica">Código (4.6)</a>: compara_numerica_analitica. <b>{code:compara_numerica_analitica}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:solucion_numerica_ejemplo">Código (4.7)</a>: solucion_numerica_ejemplo. <b>{code:solucion_numerica_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
+    </div>
     </div>
   </div>
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>05.01.00.00.ProblemaNCuerpos.Formulacion</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="05.00.00.00.ProblemaNCuerpos.html">ProblemaNCuerpos</a> | Siguiente: <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">ProblemaNCuerpos.SolucionNumerica</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h2 id="5.1.-Formulaci&#243;n-del-problema">5.1. Formulaci&#243;n del problema<a class="anchor-link" href="#5.1.-Formulaci&#243;n-del-problema">&#182;</a></h2><p><a id='ncuerpos_formulacion'></a></p>
 
 </div>
 </div>
@@ -13106,74 +13089,79 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<h3 id="5.1.1.-Motivaci&#243;n">5.1.1. Motivaci&#243;n<a class="anchor-link" href="#5.1.1.-Motivaci&#243;n">&#182;</a></h3><p><a id='ncuerpos_motivacion'></a></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Prefacio.html#prefacio">Prefacio</a>. <b>{#prefacio}</b><ul>
-<li><a href="01.00.00.00.Prefacio.html#otro_libro">¿Otro libro de mecánica celeste?</a>. <b>{#otro_libro}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_analitica">Mecánica celeste y mecánica analítica</a>. <b>{#celeste_analitica}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Mecánica celeste en la era de la información</a>. <b>{#celeste_era_informacion}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_python">Mecánica celeste en Python</a>. <b>{#celeste_python}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_spice">Mecánica celeste con <code>SPICE</code></a>. <b>{#celeste_spice}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#libro_distinto">¿Qué hace distinto a este libro?: un decálogo</a>. <b>{#libro_distinto}</b></li>
-</ul>
+<p>El problema de los N cuerpos es uno de los más importantes problemas en la historia de la Física.  En cierta forma, podría considerarse el primer problema serio de física teórica que se formuló en la historia de la ciencia.</p>
+<p>Cuando Newton desarrollo su teoría mecánica con el propósito de describir el movimiento de los cuerpos del Sistema Solar, era claro que en el sistema existían cuerpos que dominaban el movimiento de otros, sin verse significativamente afectados por ellos.</p>
+<p>Así por ejemplo, el Sol <em>domina</em> el movimiento de la Tierra, Júpiter por su lado <em>domina</em> el movimiento de sus lunas, mientras que Saturno lo hace para el movimiento de las partículas que componen sus anillos.</p>
+<p>Cuando un cuerpo <em>domina</em> el movimiento de muchos otros cuerpos pequeños (o <em>ligeros</em> para ser más precisos), el problema de describir y predecir los movimientos de esos cuerpos, es relativamente sencillo.  La fuerza que ejercé el cuerpo <em>principal</em> sobre cada cuerpo pequeño es independiente de la posición o velocidad de todos los demás.</p>
+<p>De ese modo, la solución al problema se obtiene resolviendo, independientemente, la ecuación de movimiento de cada cuerpo pequeño (como veremos en el <a href="Not Found#problema_doscuerpos">El problema de los dos cuerpos</a> y en <a href="Not Found#problema_trescuerpos">El problema de los tres cuerpos</a>).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Al estudiar en algún detalle la dinámica de sistemas de muchos cuerpos en el Universo (el Sistema Solar por ejemplo), incluso de sistemas en los que hay un cuerpo que domina, se hace claro que la evolución de estos sistemas es más compleja que lo descrito en el párrafo anterior.</p>
+<p>Una prueba cercana de ello la ofrece la Luna.  Desde los primeros esfuerzos de Newton por describir su movimiento siguiendo un esquema simple como el esbozado en el párrafo anterior, en el que la Tierra (que es 81 veces más masiva) dominaba su dinámica, quedo claro que el movimiento de nuestro satélite escapaba a estas descripciones simplificadas.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Cuando se admite que en un sistema de muchas partículas, la posición y velocidad de todas ellas debe considerarse para obtener una descripción correcta de la dinámica del sistema, decimos que nos enfrentamos al <strong>problema de los N cuerpos</strong> <a href="#notaspie_1">$^1$</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.1.2.-Enunciado-f&#237;sico-y-matem&#225;tico">5.1.2. Enunciado f&#237;sico y matem&#225;tico<a class="anchor-link" href="#5.1.2.-Enunciado-f&#237;sico-y-matem&#225;tico">&#182;</a></h3><p><a id='ncuerpos_enunciado'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Históricamente, el problema de los N-cuerpos, puede formularse de la siguiente forma:</p>
+
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición 5.3. Problema de los N cuerpos</strong>. "Dado un sistema con un número arbitrario de partículas puntuales que se atráen mutuamente obedeciendo la leyes de Newton, encontrar, bajo la suposición de que ninguna de esas partículas colisiona, una representación de las coordenadas de cada partícula como una <strong>serie</strong> de una variable que sea una función conocida del tiempo, tal que para todos los valores de la variable, la serie <strong>converga uniformemente.</strong> " <a href="#notaspie_2">$^2$</a></p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esta formulación rigurosa (matemática) del problema, podríamos matizarla con algunos comentarios más físicos:</p>
+<ul>
+<li><p>Asumimos que en un momento dado del tiempo $t_o$, las posiciones y velocidades de todas las partículas son conocidas, es decir tenemos un conocimiento exhaustivo de las condiciones iniciales $\{{\vec r_i(t_o)},{\dot{\vec r}_i(t_o)}\}_{N}$ (ver Figura (<a href="#fig:ncuerpos_formulacion">ncuerpos_formulacion</a>)).</p>
 </li>
-<li><a href="02.00.00.00.Agradecimientos.html#agradecimientos">Agradecimientos</a>. <b>{#agradecimientos}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#introduccion">Introducción</a>. <b>{#introduccion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#organizacion_libro">¿Cómo se organiza este libro?</a>. <b>{#organizacion_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#como_usar_libro">¿Cómo usar este libro?</a>. <b>{#como_usar_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#celeste_libretas">Mecánica celeste en <em>libretas</em></a>. <b>{#celeste_libretas}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#instalacion_libretas">Instalación de las libretas</a>. <b>{#instalacion_libretas}</b></li>
-</ul>
+<li><p>El problema de los N cuerpos consiste entonces en encontrar las posiciones y velocidades de todas las partículas en un instante futuro de tiempo $t$, es decir $\{{\vec r_i(t)},{\dot{\vec r}_i(t)}\}_{N}$.</p>
 </li>
-<li><a href="03.00.00.00.Introduccion.html#estructura_libro">Estructura del libro</a>. <b>{#estructura_libro}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#cajas_texto">Cajas de texto</a>. <b>{#cajas_texto}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#algoritmos">Algorítmos</a>. <b>{#algoritmos}</b></li>
-</ul>
+<li><p>Al decir que la solución puede encontrarse como una serie, el enunciado admité que no es necesario que las posiciones y velocidades deban expresarse en la forma de funciones analíticas (p.e. polinomios, $\sin$, $\cos$, $\log$, etc.) <a href="#notaspie_3">$^3$</a></p>
 </li>
-<li><a href="03.00.00.00.Introduccion.html#interactivas_animaciones">Figuras interactivas y animaciones</a>. <b>{#interactivas_animaciones}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_interactiva">Ejemplo de figura interactiva</a>. <b>{#ejemplo_interactiva}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_animada">Ejemplo de figura animada</a>. <b>{#ejemplo_animada}</b></li>
-</ul>
+<li><p>Como lo admite implícitamente el enunciado, no se espera que sea posible predecir el estado del sistema en cualquier instante futuro. En el caso, por ejemplo, en el que las condiciones iniciales conduzcan a una colisión, al menos dos partículas en el sistema podrían situarse a una distancia nula una de otra (recordemos que asumimos que son puntuales) y se produciría una <em>situación singular</em> (fuerzas infinitas).  Aún en esta situación, sin embargo, se espera que sea posible predecir la evolución del sistema entre el tiempo inicial y el tiempo de la primera colisión.</p>
 </li>
-</ul>
-</li>
-<li><a href="04.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mecanica_newtoniana">Mecánica Newtoniana</a>. <b>{#mecanica_newtoniana}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#propiedades_cinematicas">Propiedades cinemáticas</a>. <b>{#propiedades_cinematicas}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#ecuacion_movimiento">La ecuación de movimiento (e.d.m.)</a>. <b>{#ecuacion_movimiento}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Integración de la e.d.m.</a>. <b>{#integracion_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#integracion_numerica_edm">Integración numérica de la e.d.m.</a>. <b>{#integracion_numerica_edm}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="05.00.00.00.ProblemaNCuerpos.html#problema_ncuerpos">El Problema de los N cuerpos</a>. <b>{#problema_ncuerpos}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#ncuerpos_formulacion">Formulación del problema</a>. <b>{#ncuerpos_formulacion}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#ncuerpos_motivacion">Motivación</a>. <b>{#ncuerpos_motivacion}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#ncuerpos_enunciado">Enunciado físico y matemático</a>. <b>{#ncuerpos_enunciado}</b></li>
-</ul>
-</li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_solucion_numerica">Solución numérica</a>. <b>{#ncuerpos_solucion_numerica}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#unidades_canonicas">Unidades canónicas</a>. <b>{#unidades_canonicas}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_ecuaciones_primerorden">Las ecuaciones de movimiento de primer orden</a>. <b>{#ncuerpos_ecuaciones_primerorden}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_algoritmo_solucion">Algoritmo de solucion</a>. <b>{#ncuerpos_algoritmo_solucion}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_numerico_interactivas">Figuras interactivas</a>. <b>{#ncuerpos_numerico_interactivas}</b><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_numerico_interactivos">El problema de los N cuerpos interactivo</a>. <b>{#ncuerpos_numerico_interactivos}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_numerico_animacion">Animación del problema de los N cuerpos</a>. <b>{#ncuerpos_numerico_animacion}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<li><p>La convergencia uniforme es una condición matemática rigurosa, aplicada a las sucesiones, que implica, palabras más, palabras menos, que las posiciones y velocidades predichas sean tan cercanas como se desee a las posiciones y velocidades reales, sin importar el tiempo en el que se calculen.</p>
 </li>
 </ul>
 
@@ -13183,29 +13171,19 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.00.00.00.Prefacio.html">01.00.00.00.Prefacio</a><ul>
-<li><a href="01.00.00.00.Prefacio.html#fig:utlima_thule">Figura 1.1</a>. Imagen procesada de Ultima Thule, el objeto transneptuniano sobrevolado por la sonda New Horizons en 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.). <b>{fig:utlima_thule}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#fig:kepler">Figura 3.3</a>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster. <b>{fig:kepler}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#fig:coordenadas">Figura 4.6</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html">05.01.00.00.ProblemaNCuerpos.Formulacion</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#fig:ncuerpos_formulacion">Figura 5.10</a>. El problema de los N cuerpos: dadas las condiciones iniciales de un conjunto de N partículas puntuales, predecir la posición y velocidad de las partículas en cualquier instante futuro.. <b>{fig:ncuerpos_formulacion}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#fig:henri_poincare">Figura 5.11</a>. Fotografía de Henri Poincaré hacia el año 1886, en el tiempo en el que trabajaba en el problema de los tres cuerpos (Foto: Eugène Pirou). <b>{fig:henri_poincare}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">05.01.00.00.ProblemaNCuerpos.SolucionNumerica</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#fig:ncuerpos_numerico_ejemplo">Figura 5.12</a>. Sistema de tres cuerpos de ejemplo (todas las cantidades están expresadas en unidades canónicas)::t. <b>{fig:ncuerpos_numerico_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
+<p><a id='fig:ncuerpos_formulacion'></a><img src="./figures/horizontal_ncuerpos_formulacion.png" alt="El problema de los N cuerpos: dadas las condiciones iniciales de un conjunto de N partículas puntuales, predecir la posición y velocidad de las partículas en cualquier instante futuro." width="100.0%"></p>
+<center><b>Figura 5.10</b>. El problema de los N cuerpos: dadas las condiciones iniciales de un conjunto de N partículas puntuales, predecir la posición y velocidad de las partículas en cualquier instante futuro.</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Matemáticamente, en el formalismo vectorial de la Mecánica, el problema de los N cuerpos es equivalente a encontrar la solución matemática al conjunto formado por de las ecuaciones (diferenciales) de movimiento de todos los cuerpos del sistema, a saber:</p>
+\begin{equation}
+\label{eq:ncuerpos_ecuaciones_generales}
+\left\{\ddot{\vec r}_i=\frac{1}{m_i}\sum_{j\neq i} \vec F_{ij}\right\}_{N},
+\end{equation}<p>donde $\vec F_{ij}$ es la fuerza ejercida <em>sobre</em> la partícula $i$ <em>por</em> la partícula $j$.  Se asume que no existen otras fuerzas (fricción con un medio, interacción con un campo externo, etc.) actuando sobre las partículas del sistema.</p>
 
 </div>
 </div>
@@ -13213,49 +13191,11 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (4.1)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (4.2)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_cilindricas">Ec. (4.3)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (4.4)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_esfericas">Ec. (4.5)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html">04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM</a><ul>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm">Ec. (4.6)</a>: edm. <b>{eq:edm}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden">Ec. (4.7)</a>: edm_primer_orden. <b>{eq:edm_primer_orden}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_escalar">Ec. (4.8)</a>: edm_escalar. <b>{eq:edm_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden_escalar">Ec. (4.9)</a>: edm_primer_orden_escalar. <b>{eq:edm_primer_orden_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_estado">Ec. (4.10)</a>: edm_estado. <b>{eq:edm_estado}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1">Ec. (4.11)</a>: edm_ejemplo1. <b>{eq:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1_cuadratura">Ec. (4.12)</a>: edm_ejemplo1_cuadratura. <b>{eq:edm_ejemplo1_cuadratura}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo1">Ec. (4.13)</a>: Ix_ejemplo1. <b>{eq:Ix_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo2">Ec. (4.14)</a>: Ix_ejemplo2. <b>{eq:Ix_ejemplo2}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqconstantes_ejemplo1">Ec. (4.15)</a>: constantes_ejemplo1. <b>{eq:constantes_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqsolucion_ejemplo1">Ec. (4.16)</a>: solucion_ejemplo1. <b>{eq:solucion_ejemplo1}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas">Ec. (4.17)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqvariables_auxiliares_edm">Ec. (4.18)</a>: variables_auxiliares_edm. <b>{eq:variables_auxiliares_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas_particula">Ec. (4.19)</a>: ecuaciones_reducidas_particula. <b>{eq:ecuaciones_reducidas_particula}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html">05.01.00.00.ProblemaNCuerpos.Formulacion</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#mjx-eqn-eqncuerpos_ecuaciones_generales">Ec. (5.20)</a>: ncuerpos_ecuaciones_generales. <b>{eq:ncuerpos_ecuaciones_generales}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.Formulacion.html#mjx-eqn-eqncuerpos_formulacion_ecuaciones">Ec. (5.21)</a>: ncuerpos_formulacion_ecuaciones. <b>{eq:ncuerpos_formulacion_ecuaciones}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">05.01.00.00.ProblemaNCuerpos.SolucionNumerica</a><ul>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqdefinicion_unidades_canonicas">Ec. (5.22)</a>: definicion_unidades_canonicas. <b>{eq:definicion_unidades_canonicas}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqncuerpos_numerico_ecuaciones">Ec. (5.23)</a>: ncuerpos_numerico_ecuaciones. <b>{eq:ncuerpos_numerico_ecuaciones}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqnumerico_variables_auxiliares">Ec. (5.24)</a>: numerico_variables_auxiliares. <b>{eq:numerico_variables_auxiliares}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqncuerpos_definicion_rij">Ec. (5.25)</a>: ncuerpos_definicion_rij. <b>{eq:ncuerpos_definicion_rij}</b></li>
-<li><a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html#mjx-eqn-eqncuerpos_ecuaciones_reducidas">Ec. (5.26)</a>: ncuerpos_ecuaciones_reducidas. <b>{eq:ncuerpos_ecuaciones_reducidas}</b></li>
-</ul>
-</li>
-</ul>
+<p>La dificultad matemática más relevante del problema de los N cuerpos, estriba en el hecho de que las fuerzas entre las partículas dependen de las posiciones (y posiblemente de las velocidades) de todas las demás partículas, es decir</p>
+$$
+\vec F_{ij}=\vec F_{ij}\left(\{\vec r_k\},\{\dot{\vec r}_k\}\right).
+$$<p></p>
+<p>De este modo, el conjunto de ecuaciones diferenciales que define el problema es altamente acoplado y en general <em>no lineal</em> (es decir, cada ecuación diferencial, depende de funciones no lineales de las posiciones o velocidades).</p>
 
 </div>
 </div>
@@ -13263,25 +13203,82 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#code:rutina_discriminante">Código (3.1)</a>: rutina_discriminante. <b>{code:rutina_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:calcula_discriminante">Código (3.2)</a>: calcula_discriminante. <b>{code:calcula_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:plot_sin">Código (3.3)</a>: plot_sin. <b>{code:plot_sin}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:edm_ejemplo1">Código (4.4)</a>: edm_ejemplo1. <b>{code:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:ejemplo1_grafico_solucion">Código (4.5)</a>: ejemplo1_grafico_solucion. <b>{code:ejemplo1_grafico_solucion}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:compara_numerica_analitica">Código (4.6)</a>: compara_numerica_analitica. <b>{code:compara_numerica_analitica}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:solucion_numerica_ejemplo">Código (4.7)</a>: solucion_numerica_ejemplo. <b>{code:solucion_numerica_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
+<p>De acuerdo a la formulación original del problema, asumimos que la única interacción entre las partículas es la interacción gravitacional newtoniana.  De este modo, podemos escribir (ver Ec. <a href="#mjx-eqn-eqfundamentos_mecanica_gravedad">fundamentos_mecanica_gravedad</a>):</p>
+$$
+\vec{F}_{ij} = -\frac{Gm_i m_j}{r_{ij}^3} \vec r_{ij} = -\frac{Gm_i m_j}{|\vec{r}_i - \vec{r}_j |^3} (\vec{r}_i - \vec{r}_j).
+$$<p>Es importante tener en cuenta aquí la dirección del vector relativo $\vec{r}_{ij}=\vec{r}_i - \vec{r}_j$ tal y como se usará en esta ecuación, apunta en la dirección que va de la partícula que produce la fuerza (partícula $j$-esima) hacia la partícula que la experimenta (partícula $i$-esima). Esta condición, produce el signo menos en la expresión para la fuerza.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos explícitos, el problema de los N cuerpos en mecánica celeste, consiste en resolver el conjunto de ecuaciones diferenciales:</p>
+\begin{equation}
+\label{eq:ncuerpos_formulacion_ecuaciones}
+\left\{\ddot{\vec r}_i= -\sum_{j\neq i} \frac{\mu_j}{r_{ij}^3} \vec{r}_{ij} \right\}_{N},
+\end{equation}<p>donde $\mu_j=G m_j$ se conoce como el <strong>parametro gravitacional</strong> del cuerpo $j$-esimo.</p>
+
+</div>
+</div>
+</div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Historias de la mecánica celeste: Henri Poincaré y el premio del Rey Oscar.</strong> Los protagonistas de nuestra primera historia son el polímata Francés Henri Poincaré (que se pronuncia, "<a href="https://es.forvo.com/search/Henri%20Poincare/">Honri Poancaré</a>") y el rey Oscar II de Suecia.</p>
+<p><img src="./figures/vertical_henri_poincare.png" alt="Fotografía de Henri Poincaré hacia el año 1886, en el tiempo en el que trabajaba en el problema de los tres cuerpos (Foto: Eugène Pirou)" width="30.0%">$$\mathrm{\mathbf{Figura\;5.11}.}$$</p>
+<p>En 1889, el matemático sueco Mittag-Leffer convenció al rey Oscar de Suecia de que, con motivo de la celebración de su cumpleaños número 60, el 21 de enero de ese año, presentará al mundo un nuevo concurso matemático. En este, se formularían un conjunto de problemas abiertos frente a los cuales los participantes deberían presentar artículos inéditos. De conseguir resolver el problema, los ganadores recibirían una suma sustancial por su descubrimiento.</p>
+<p>Entre los problemas formulados en el concurso del rey Oscar II, se encontraba, precisamente, el problema de los N cuerpos.  La formulación del problema presentada en este capítulo, es literalmente la que preparó el matemático alemán Karl Weierstrass (que se pronuncia "<a href="https://es.forvo.com/search/Weierstrass/de/">Vierstrass</a>"), inspirado originalmente por las ideas del matemático alemán Peter Gustav Dirichlet. Uno de los participantes del concurso, fue precisamente Poincaré, que contaba para la época con 35 años (ver Figura (<a href="#fig:henri_poincare">henri_poincare</a>)).</p>
+<p>Poincaré nació en Francia el 29 de abril de 1854.  Después de una infancia marcada por la enfermedad y una juventud en la que sus maestros reconocieron su precocidad matemática, se graduo como doctor en matemáticas en 1879 bajo la orientación de Charles Hermite (que se pronuncia "<a href="https://es.forvo.com/search/Charles%20Hermite/fr/">Charle ermit</a>").  Las mayores contribuciones de Poincaré, como matemático, se produjeron en la teoría de ecuaciones diferenciales. Sin embargo, por sus estudios posteriores de ingeniería, su posición como profesor de la Universidad de Paris (La Sorbona) en las áreas de Mecánica, Física Matemática, Teoría de la Probabilidad, Mecánica Celeste y Astronomía, además del reconocimiento público que lo llevo a ser miembro de la Oficina de Longitudes de Francia en 1897 y elegido presidente de la Academia Francesa de Ciencias en 1906, los conocimientos de Poincaré se extendieron a muchas otras disciplinas.  De allí que sea considerado un Polímata o un "hombre universal", alguien que domina muchas disciplinas intelectuales o artísticas (una etiqueta que comparte con personajes Aristóteles o Leonardo da Vinci).</p>
+<p>El artículo presentado por Poincaré en el concurso del Rey Oscar II, titulado "Sobre el problema de los tres cuerpos y las ecuaciones de la dinámica", fue declarado, sin lugar a dudas el ganador del concurso. Esto, a pesar de que el artículo no resolvía el problema original, sino que se restringía al caso particular de tres cuerpos. Aún así, y en palabras de los jurados, el trabajo de Poincaré "iniciaría una nueva era en la historia de la mecánica celeste".</p>
+<p>Hoy sabemos que el trabajo de Poincaré de 1889 contenía errores (que no fueron detectados por los evaluadores), pero aún así los métodos utilizados por él en la búsqueda de su solución influenciarían de forma importante los intentos posteriores y serían la base para el desarrollo de la teoría del caos.</p>
+<p>El problema de los tres cuerpos, formulado a la manera del concurso del rey Oscar II, fue finalmente resuelto en 1912 por el matemático Finlandés Karl Sundman &lt;cite data-cite="Sundman1913ThreeBody"</p>
+<p>&lt;a href="mybook.html#Sundman1913ThreeBody"</p>
+<p>Sundman, 1913&lt;/a</p>
+<p>&lt;/cite</p>
+<p>. En este trabajo Sundman probó la existencia de series que describían la posición de los tres cuerpos y que convergían para tiempos arbitrarios.  Una excelente síntesis histórica de la contribución (poco apreciada de Sundman) puede encontrarse en &lt;cite data-cite="Barrow2010Sundman"</p>
+<p>&lt;a href="mybook.html#Barrow2010Sundman"</p>
+<p>Barrow-Green, 2010&lt;/a</p>
+<p>&lt;/cite</p>
+<p>.</p>
+
+</div>
+</div>
+</div>
+    </div><div style="font-size:0.8em;border-top:solid black 1px">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTAS AL PIE:</strong></p>
+<p><a id='notaspie_1'></a></p>
+<ol start='1'>
+<li>En otras áreas de la física, a este problema se lo conoce también como el <strong>problema de muchos cuerpos</strong> y en general no se restringe únicamente a describir el movimiento del sistema (lo que es propio de la física clásica), sino también el estado cuántico de todo el sistema, por ejemplo, y su posible evolución en el tiempo.</li>
+</ol>
+<p><a id='notaspie_2'></a></p>
+<ol start='2'>
+<li>Tomado literalmente del prefacio del editor en <cite data-cite="Poincare1992NewMethods"><a href="mybook.html#Poincare1992NewMethods">Poincare, 1992</a></cite>, que a su vez reproduce el texto del concurso organizado por el rey Oscar II en 1889 (ver el recuadro <em>Historias de la Mecánica Celeste</em> en esta sección).</li>
+</ol>
+<p><a id='notaspie_3'></a></p>
+<ol start='3'>
+<li>La idea de usar series para resolver problemas como estos, fue precisamente del francés Henri Poincaré (ver Historias de la Mecánica Celeste)</li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="05.00.00.00.ProblemaNCuerpos.html">ProblemaNCuerpos</a> | Siguiente: <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">ProblemaNCuerpos.SolucionNumerica</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
