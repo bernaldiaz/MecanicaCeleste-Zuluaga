@@ -31,3 +31,19 @@ def calcula_discriminante(a,b,c):
     disc=b**2-4*a*c
     return disc
 
+
+# ########################################
+#  .//Fundamentos.ipynb
+# ########################################
+
+# ########################################
+#  .//Fundamentos.Mecanica.Cinematica.Cantidades.ipynb
+# ########################################
+
+# ########################################
+#  .//Fundamentos.Mecanica.Cinematica.SolucionEdM.ipynb
+# ########################################
+
+# ########################################
+#  .//Fundamentos.Mecanica.Cinematica.SolucionNumerica.ipynb
+# ########################################

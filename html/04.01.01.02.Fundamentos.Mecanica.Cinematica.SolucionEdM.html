@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">Fundamentos.Mecanica.Cinematica.Cantidades</a> | Siguiente: <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">Fundamentos.Mecanica.Cinematica.SolucionNumerica</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="4.1.3.-La-ecuaci&#243;n-de-movimiento-(e.d.m.)">4.1.3. La ecuaci&#243;n de movimiento (e.d.m.)<a class="anchor-link" href="#4.1.3.-La-ecuaci&#243;n-de-movimiento-(e.d.m.)">&#182;</a></h3><p><a id='ecuacion_movimiento'></a></p>
 
 </div>
 </div>
@@ -13106,57 +13089,30 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<p>Dada una partícula, una vez especificado el vector de estado inicial, es decir, la posición y velocidad en el tiempo $t_0$, $\vec r_0$ y $\vec v_0$, su estado futuro puede predecirse si se conoce la aceleración como función del tiempo o del estado de la partículo.  Así, la igualdad</p>
+\begin{equation}
+\label{eq:edm}
+\ddot{\vec r} = \vec a,
+\end{equation}<p>puede verse como una definición o como una ecuación diferencial que permite calcular el estado del sistema en un tiempo $t\neq t_0$.  A esta ecuación se la conoce en mecánica como la <strong>ecuación de movimiento</strong>.  Para referirnos a ella, en lo sucesivo, usaremos el acrónimo e.d.m. o el nombre <code>edm</code> en los algoritmos.</p>
+<p>La e.d.m. es una ecuación diferencial vectorial de segundo orden con condiciones iniciales $\vec{r}(t_0)=r_0$, $\dot{\vec r}(t=t_0)=\vec v_0$. En teoría de ecuaciones diferenciales, se dice que resolver la e.d.m. constituye un <em>problema de valor inicial</em> (en inglés <em>initial value problem</em> o IVP; en la siguiente sección volveremos sobre la importancia de esta clasificación.)</p>
+<p>La aceleración $\vec a$ en la Ec. (<a href="#mjx-eqn-eqedm">edm</a>) es en realidad una función puede depender de varias de las cantidades cinemáticas definicadas en la sección previa.  Para la mayoría de las situaciones consideradas en este texto, sin embargo, asumiremos, que en general la aceleración puede depender del tiempo o del estado de la partícula:</p>
+$$
+\vec a=\vec a(\vec r,\dot{\vec r},t).
+$$
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Prefacio.html#prefacio">Prefacio</a>. <b>{#prefacio}</b><ul>
-<li><a href="01.00.00.00.Prefacio.html#otro_libro">¿Otro libro de mecánica celeste?</a>. <b>{#otro_libro}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_analitica">Mecánica celeste y mecánica analítica</a>. <b>{#celeste_analitica}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Mecánica celeste en la era de la información</a>. <b>{#celeste_era_informacion}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_python">Mecánica celeste en Python</a>. <b>{#celeste_python}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_spice">Mecánica celeste con <code>SPICE</code></a>. <b>{#celeste_spice}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#libro_distinto">¿Qué hace distinto a este libro?: un decálogo</a>. <b>{#libro_distinto}</b></li>
-</ul>
-</li>
-<li><a href="02.00.00.00.Agradecimientos.html#agradecimientos">Agradecimientos</a>. <b>{#agradecimientos}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#introduccion">Introducción</a>. <b>{#introduccion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#organizacion_libro">¿Cómo se organiza este libro?</a>. <b>{#organizacion_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#como_usar_libro">¿Cómo usar este libro?</a>. <b>{#como_usar_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#celeste_libretas">Mecánica celeste en <em>libretas</em></a>. <b>{#celeste_libretas}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#instalacion_libretas">Instalación de las libretas</a>. <b>{#instalacion_libretas}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#estructura_libro">Estructura del libro</a>. <b>{#estructura_libro}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#cajas_texto">Cajas de texto</a>. <b>{#cajas_texto}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#algoritmos">Algorítmos</a>. <b>{#algoritmos}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#interactivas_animaciones">Figuras interactivas y animaciones</a>. <b>{#interactivas_animaciones}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_interactiva">Ejemplo de figura interactiva</a>. <b>{#ejemplo_interactiva}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_animada">Ejemplo de figura animada</a>. <b>{#ejemplo_animada}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="04.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mecanica_newtoniana">Mecánica Newtoniana</a>. <b>{#mecanica_newtoniana}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#propiedades_cinematicas">Propiedades cinemáticas</a>. <b>{#propiedades_cinematicas}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#ecuacion_movimiento">La ecuación de movimiento (e.d.m.)</a>. <b>{#ecuacion_movimiento}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Integración de la e.d.m.</a>. <b>{#integracion_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#integracion_numerica_edm">Integración numérica de la e.d.m.</a>. <b>{#integracion_numerica_edm}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>La e.d.m. puede expresarse también como dos ecuaciones diferenciales vectoriales de primer orden:</p>
+\begin{equation}
+\label{eq:edm_primer_orden}
+\begin{array}{ccl}
+\dot{\vec r} &amp; = &amp;\vec v\\
+\dot{\vec v} &amp; = &amp;\vec a(\vec r,\vec v,t)
+\end{array}
+\end{equation}<p>Donde se ha introducido como variable auxiliar la velocidad $\vec v\equiv\dot{\vec r}$.  En este sistema de ecuaciones diferenciales, las funciones incognitas, son ahora dos $\vec r(t)$ y $\vec v(t)$ en lugar de una.  El sistema ha gando variables pero el orden se ha reducido.  A esta manera de reescribir una ecuación diferencial se la conoce como <em>reducción de orden</em> y como veremos es una estrategia muy útil para su solución.</p>
 
 </div>
 </div>
@@ -13164,20 +13120,59 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.00.00.00.Prefacio.html">01.00.00.00.Prefacio</a><ul>
-<li><a href="01.00.00.00.Prefacio.html#fig:utlima_thule">Figura 1.1</a>. Imagen procesada de Ultima Thule, el objeto transneptuniano sobrevolado por la sonda New Horizons en 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.). <b>{fig:utlima_thule}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#fig:kepler">Figura 3.3</a>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster. <b>{fig:kepler}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#fig:coordenadas">Figura 4.6</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-</ul>
+<p>La e.d.m., tanto la de segundo orden (Ec. <a href="#mjx-eqn-eqedm">edm</a>) como la de primero (Ec. <a href="#mjx-eqn-eqedm_primer_orden">edm_primer_orden</a>) son ecuaciones diferenciales vectoriales.  Es, decir, ambas representan, en realidad, una forma compacta de escribir un sistema de ecuaciones diferenciales escalares.</p>
+<p>Así por ejemplo la e.d.m. de la Ec. (<a href="#mjx-eqn-eqedm">edm</a>), se puede escribir, en términos de las componentes cartesianas del vector posición, como:</p>
+\begin{equation}
+\label{eq:edm_escalar}
+\begin{array}{ccl}
+\ddot{x} &amp; = &amp;a_x\\
+\ddot{y} &amp; = &amp;a_y\\
+\ddot{z} &amp; = &amp;a_z\\
+\end{array}
+\end{equation}<p>Por su lado la e.d.m. de primer orden de de la Ec. (<a href="#mjx-eqn-eqedm_primer_orden">edm_primer_orden</a>), es en realidad un sistema de 6 ecuaciones diferenciales escalares de primer orden:</p>
+\begin{equation}
+\label{eq:edm_primer_orden_escalar}
+\begin{array}{ccl}
+\dot{x} &amp; = &amp;v_x\\
+\dot{y} &amp; = &amp;v_y\\
+\dot{z} &amp; = &amp;v_z\\
+\dot{v_x} &amp; = &amp;a_x(x,y,z,v_x,v_y,v_z,y)\\
+\dot{v_y} &amp; = &amp;a_y(x,y,z,v_x,v_y,v_z,y)\\
+\dot{v_z} &amp; = &amp;a_z(x,y,z,v_x,v_y,v_z,y)\\
+\end{array}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos del vector de estado $\vec X:(\vec r\;\vec v)^\mathrm{T}$, la e.d.m. de primer orden (Ec. <a href="#mjx-eqn-eqedm_primer_orden_escalar">edm_primer_orden_escalar</a>) se puede escribir como:</p>
+\begin{equation}
+\label{eq:edm_estado}
+\dot{X} = \left( 
+\begin{array}{c}
+\vec{v} \\ \vec{a}
+\end{array}
+\right)
+\end{equation}<p>Donde (abusando de la notación) $\vec v:(v_x\;v_y\;v_z)^\mathrm{T}$ y  $\vec a:(a_x\;a_y\;a_z)^\mathrm{T}$</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Ecuaciones de movimiento en otros sistemas de coordenadas.</strong> Ecuaciones análogas a la Ecs. (<a href="#mjx-eqn-eqedm_escalar">edm_escalar</a>,<a href="#mjx-eqn-eqedm_primer_orden_escalar">edm_primer_orden_escalar</a>) pueden escribirse en caso de que se conozca la función aceleración en coordenadas cilíndricas o esféricas.  Para ello deben usarse las definiciones de velocidad y aceleración, en el sistema de coordenadas respectivo, que vimos en la <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#propiedades_cinematicas">sección <em>Propiedades cinemáticas</em></a>.  La forma explícita de esas ecuaciones diferenciales, sin embargo, no será tan sencilla como la que escribimos en el caso de las coordenadas cartesianas. El lector podrá explorar estos casos a través de algunos de los problemas incluídos al final del capítulo.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.1.4.-Integraci&#243;n-de-la-e.d.m.">4.1.4. Integraci&#243;n de la e.d.m.<a class="anchor-link" href="#4.1.4.-Integraci&#243;n-de-la-e.d.m.">&#182;</a></h3><p><a id='integracion_edm'></a></p>
 
 </div>
 </div>
@@ -13185,36 +13180,12 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (4.1)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (4.2)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_cilindricas">Ec. (4.3)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (4.4)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_esfericas">Ec. (4.5)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html">04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM</a><ul>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm">Ec. (4.6)</a>: edm. <b>{eq:edm}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden">Ec. (4.7)</a>: edm_primer_orden. <b>{eq:edm_primer_orden}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_escalar">Ec. (4.8)</a>: edm_escalar. <b>{eq:edm_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden_escalar">Ec. (4.9)</a>: edm_primer_orden_escalar. <b>{eq:edm_primer_orden_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_estado">Ec. (4.10)</a>: edm_estado. <b>{eq:edm_estado}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1">Ec. (4.11)</a>: edm_ejemplo1. <b>{eq:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1_cuadratura">Ec. (4.12)</a>: edm_ejemplo1_cuadratura. <b>{eq:edm_ejemplo1_cuadratura}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo1">Ec. (4.13)</a>: Ix_ejemplo1. <b>{eq:Ix_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo2">Ec. (4.14)</a>: Ix_ejemplo2. <b>{eq:Ix_ejemplo2}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqconstantes_ejemplo1">Ec. (4.15)</a>: constantes_ejemplo1. <b>{eq:constantes_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqsolucion_ejemplo1">Ec. (4.16)</a>: solucion_ejemplo1. <b>{eq:solucion_ejemplo1}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas">Ec. (4.17)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqvariables_auxiliares_edm">Ec. (4.18)</a>: variables_auxiliares_edm. <b>{eq:variables_auxiliares_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas_particula">Ec. (4.19)</a>: ecuaciones_reducidas_particula. <b>{eq:ecuaciones_reducidas_particula}</b></li>
-</ul>
-</li>
-</ul>
+<p>La solución o <em>integración</em> de la e.d.m. constituye el problema matemático central de la cinemática y a la larga, el problema más importante de toda la mecánica incluyendo, naturalmente, la mecánica celeste.</p>
+<p>En los cursos de mecánica newtoniana básica el problema se resuelve normalmente para dos casos simples:</p>
+<ol>
+<li>$\vec a=\vec 0$ que se conoce también como movimiento rectilineo y uniforme o m.r.u.<a href="#notaspie_1">$^1$</a> </li>
+<li>$\vec a=\vec{a}_0$ que se conoce como movimiento rectilíneo uniformemente acelerado, m.r.u.a.</li>
+</ol>
 
 </div>
 </div>
@@ -13222,25 +13193,196 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#code:rutina_discriminante">Código (3.1)</a>: rutina_discriminante. <b>{code:rutina_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:calcula_discriminante">Código (3.2)</a>: calcula_discriminante. <b>{code:calcula_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:plot_sin">Código (3.3)</a>: plot_sin. <b>{code:plot_sin}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:edm_ejemplo1">Código (4.4)</a>: edm_ejemplo1. <b>{code:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:ejemplo1_grafico_solucion">Código (4.5)</a>: ejemplo1_grafico_solucion. <b>{code:ejemplo1_grafico_solucion}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:compara_numerica_analitica">Código (4.6)</a>: compara_numerica_analitica. <b>{code:compara_numerica_analitica}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:solucion_numerica_ejemplo">Código (4.7)</a>: solucion_numerica_ejemplo. <b>{code:solucion_numerica_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
+<p>Si bien estos dos casos son interesantes en un amplio rango de aplicaciones simples (p.e. el movimiento parabólico), en situaciones realistas y en particular en las que veremos en la mecánica celeste, la función $\vec a$ puede ser mucho más compleja.  En los próximos dos ejemplos consideramos dos situaciones hipotéticas en las que $\vec a$ depende del tiempo o del vector de estado.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Integraci&#243;n-por-cuadraturas">Integraci&#243;n por cuadraturas<a class="anchor-link" href="#Integraci&#243;n-por-cuadraturas">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Ejemplo-1:-movimiento-con-tir&#243;n-constante">Ejemplo 1: movimiento con tir&#243;n constante<a class="anchor-link" href="#Ejemplo-1:-movimiento-con-tir&#243;n-constante">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Considerese el caso simple de una partícula que esta sometida a un tirón $\vec{j}:(j_0,0,0)$ constante (ver la <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#propiedades_cinematicas">Sección <em>Propiedades cinemáticas</em></a> para recordar la definición de tirón.)  Suponga además que en $t=0$ la aceleración de la partícula es nula.</p>
+<p>En estas condiciones la función de aceleración, en cualquier tiempo, se puede escribir como:</p>
+$$
+\vec a(t):(j_0 t,0,0),
+$$<p>y la componente $x$ de la e.d.m. (Ec.<a href="#mjx-eqn-eqedm_escalar">edm_escalar</a>) será:</p>
+\begin{equation}
+\label{eq:edm_ejemplo1}
+\ddot{x} = j_0 t
+\end{equation}<p>Si bien una solución a esta ecuación diferencial puede encontrarse fácilmente por tanteo, pe. $x(t)\propto j_0 t^3$, un procedimiento cuidadoso de solución nos permite descubrir algunas propiedades interesantes del sistema dinámico. Además, para el caso que nos interesa aquí, nos permitirá identificar un método que será de gran utilidad para el estudio de sistemas dinámicos en los siguientes capítulos.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reescribamos la ecuación (<a href="#mjx-eqn-eqedm_ejemplo1">edm_ejemplo1</a>) en la forma:</p>
+\begin{equation}
+\label{eq:edm_ejemplo1_cuadratura}
+\frac{\mathrm{d}}{\mathrm{dt}}\dot{x} = \frac{\mathrm{d}}{\mathrm{dt}}\left(\frac{1}{2}ct^2\right).
+\end{equation}<p>Aquí hemos decidido combinar dos notaciones diferentes para la derivada de una función $f$: una notación similar a la de Newton, $\dot{f}$ (que usaremos de forma generalizada aquí) y la notación de Leibniz $\mathrm{d}f/\mathrm{dt}$.  Aunque el uso de dos notaciones no es conveniente, esta "inconsistencia" nos permitirá revelar mejor los pormenores de muchos de los procedimientos usados en el libro.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si reunimos los términos en un mismo lado de la ecuación, la e.d.m. nos queda:</p>
+$$
+\frac{\mathrm{d}}{\mathrm{dt}}\left(\dot{x}-\frac{1}{2}ct^2\right)= 0.
+$$<p>No hemos resuelto la ecuación todavía, pero está última manera de escribirla nos permite identificar una fórmula (la que aparece entre paréntesis) que combina la velocidad y el tiempo, y que, sin importar el estado de la partícula o el instanate de tiempo, siempre es constante (su derivada con respecto al tiempo es cero).</p>
+<p>Si llamamos $I_x$ al valor constante al que es igual esta fórmula, podemos escribir:</p>
+\begin{equation}
+\label{eq:Ix_ejemplo1}
+\dot{x}-\frac{1}{2}ct^2 = I_x
+\end{equation}<p>Decimos que $f(\dot x,t)=\dot{x}-ct^2/2$ es una <strong>integral del sistema</strong>, una <strong>cuadratura</strong> o una <strong>constante de movimiento</strong> del sistema.</p>
+<p>Es fácil verificar que otras constantes de movimiento del sistema son $\dot{y}=I_y$ y $\dot{z}=I_z$.</p>
+
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición 4.2. Constante de movimiento de un sistema dinámico.</strong> Si una función $f(\vec r,\vec v,t)$ que depende (o no) del tiempo y de una o todas las variables de estado de un sistema dinámico, es tal que:</p>
+$$f(\vec r,\vec v,t)=I$$<p>Donde $I$ es una cantidad que solo depende de las condiciones iniciales, decimos que $f(\vec r,\vec v,t)$ es una <strong>constante de movimiento</strong>.  Alternativamente la llamaremos una <strong>integral</strong> o <strong>cuadratura</strong> del sistema <a href="#notaspie_2">$^2$</a>.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Ejemplo-2:-movimiento-oscilatorio">Ejemplo 2: movimiento oscilatorio<a class="anchor-link" href="#Ejemplo-2:-movimiento-oscilatorio">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Considere ahora el caso en el que una partícula tiene una aceleración dada por:</p>
+$$
+\vec a(t):(-\omega x,0,0),
+$$<p>donde $\omega$ es una cantidad constante.  Vemos que al alejarse del origen la aceleración de la partícula apuntará nuevamente hacia allí.  Sabemos que este tipo de aceleración producirá a un movimiento oscilatorio.</p>
+<p>En este caso la e.d.m. para $x$ será:</p>
+$$
+\ddot{x} = -\omega x.
+$$<p>La integración de esta ecuación por tanteo ya no es tan trivial.  Tampoco lo es intentar exprear ambos lados de la ecuación como derivadas respecto al tiempo de otras funciones (como lo hicimos para encontrar la Ec. <a href="#mjx-eqn-eqedm_ejemplo1_cuadratura">edm_ejemplo1_cuadratura</a>). Sin embargo, si multiplicamos ambos lados de la ecuación por la función $\dot x$:</p>
+$$
+\dot{x}\ddot{x} = -\omega \dot{x}x.
+$$<p>la nueva ecuación puede escribirse, convenientemente, de esta forma:</p>
+$$
+\frac{\mathrm{d}}{\mathrm{dt}}\left(\frac{1}{2}\dot{x}^2\right) = \frac{\mathrm{d}}{\mathrm{dt}}\left(-\frac{1}{2}
+\omega x^2\right),
+$$<p>de donde identificamos la constante de movimiento:</p>
+\begin{equation}
+\label{eq:Ix_ejemplo2}
+\frac{1}{2}\dot{x}^2+\frac{1}{2}\omega x^2=I_x.
+\end{equation}<p>Dado que la multiplicación de la e.d.m. por la función $\dot{x}$, nos permitió encontrar una constante de movimiento o una integral de la ecuación, llamamos a $\dot{x}$, un <em>factor integrante.</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿De qué sirve entonces encontrar las constantes de movimientode un sistema si lo que queremos en realidad es encontrar formas explícitas (o representaciones en series) para las funciones $\vec r(t)$, $\vec v(t)$?</p>
+<p>Las constantes de movimiento pueden ofrecernos información de la dinámica del sistema, incluso en situaciones en las que no es posible obtener una solución.  Note, por ejemplo, cuan diferentes son las constantes de movimiento de los sistemas en los ejemplos 1 y 2.  Aunque no resolvimos ninguno de los dos problemas, sus cuadraturas nos dan pistas sobre como se relacionan la posición y velocidad de la partícula en cualquier instante del tiempo.  Más adelante mostraremos que es incluso posible dar una interpretación física a estas constantes (como la energía, el momentum lineal, el momentum angular, entre otras) y su relevancia para la comprensión del sistema, será aún mayor.</p>
+<p>Ahora bien, siendo las cuadraturas $f(\vec r,\vec v,t)$ funciones de las variables que deseamos encontrar, si se obtienen suficientes constantes de movimiento (tantas como variables), habremos, técnicamente, recabado sufiente información para obtener la solución.  En otras palabras, un número suficiente de cuadraturas o de constantes de movimiento permite convertir la solución de una ecuación diferencial, en la solución a un sistema algebraico de ecuaciones (aquel formado por las cuadraturas).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ilustrarlo volvamos a la e.d.m. del sistema en el ejemplo 1:</p>
+$$
+\begin{array}{ccl}
+\ddot{x} &amp; = &amp; j_0 t\\
+\ddot{y} &amp; = &amp; 0\\
+\ddot{z} &amp; = &amp; 0\\
+\end{array}
+$$<p>Es posible mostrar que este sistema tiene 6 constantes de movimiento (ya habíamos deducido tres de ellas, se deja al lector obtener las otras tres):</p>
+\begin{equation}
+\label{eq:constantes_ejemplo1}
+\begin{array}{rrl}
+\dot{x}-\frac{1}{2}j_0 t^2 &amp; = &amp; I_x \\
+\dot{y} &amp; = &amp; I_y \\
+\dot{z} &amp; = &amp; I_z\\
+x-\frac{1}{6}j_0 t^6-I_x t &amp; = &amp; S_x \\
+y-I_y t &amp; = &amp; S_y\\
+z-I_z t &amp; = &amp; S_z\\
+\end{array}
+\end{equation}<p>Donde el valor de las cantidades $I_x$, $I_y$, $I_z$, $S_x$, $S_y$, $S_z$ se puede obtener del valor de las condiciones iniciales en el lado izquierdo de estas ecuaciones. La solución simultánea a este sistema de ecuaciones algebraicas permite encontrar de forma explícita la solución buscada al problema:</p>
+\begin{equation}
+\label{eq:solucion_ejemplo1}
+\begin{array}{rcl}
+x(t) &amp; = &amp; \frac{1}{6}j_0 t^6+I_x t+S_x\\
+y(t) &amp; = &amp; I_y t+S_y\\
+z(t) &amp; = &amp; I_z t+S_z\\
+\dot{x}(t) &amp; = &amp; \frac{1}{2}j_0 t^2+I_x\\
+\dot{y}(t) &amp; = &amp; I_y \\
+\dot{z}(t) &amp; = &amp; I_z\\
+\end{array}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un procedimiento análogo puede usarse para encontrar la solución a la e.d.m. del sistema del ejemplo 2 (vea los problemas al final del capítulo.)</p>
+<p>Es posible que nadie escoja un procedimiento tan elaborado para hayar la solución a la e.d.m. original de estos dos sistema, especialmente porque existen procedimiento más simples.  Pero usarlo con sistemas conocidos, nos ha  permitido ilustrar el poder que tiene este "nuevo" método, que llamaremos en lo sucesivo el <em>método de las cuadraturas</em> y que usaremos sistemáticamente a lo largo del texto al estudiar sistemas dinámicos mucho más complejos en mecánica celeste.</p>
+
+</div>
+</div>
+</div><div style="font-size:0.8em;border-top:solid black 1px">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTAS AL PIE:</strong></p>
+<p><a id='notaspie_1'></a></p>
+<ol start='1'>
+<li>En lo sucesivo usaremos el símbolo $\vec 0$ para representar el vector nulo.</li>
+</ol>
+<p><a id='notaspie_2'></a></p>
+<ol start='2'>
+<li>En términos rigurosos la <em>constante de movimiento</em> es la función $f(\vec r,\vec v,t)$ no su valor numérico $I$ que por definición es un número real - o complejo - y por tanto constante.</li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">Fundamentos.Mecanica.Cinematica.Cantidades</a> | Siguiente: <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">Fundamentos.Mecanica.Cinematica.SolucionNumerica</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

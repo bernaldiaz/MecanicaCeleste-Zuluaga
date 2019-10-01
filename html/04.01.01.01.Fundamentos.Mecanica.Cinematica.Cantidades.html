@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13067,38 +13067,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="04.00.00.00.Fundamentos.html">Fundamentos</a> | Siguiente: <a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html">Fundamentos.Mecanica.Cinematica.SolucionEdM</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h2 id="4.1.-Mec&#225;nica-Newtoniana">4.1. Mec&#225;nica Newtoniana<a class="anchor-link" href="#4.1.-Mec&#225;nica-Newtoniana">&#182;</a></h2><p><a id='mecanica_newtoniana'></a></p>
 
 </div>
 </div>
@@ -13106,55 +13089,53 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<p>Conocemos con el nombre de <em>mecánica</em> al conjunto de definiciones, principios y leyes físicas que permiten describir el movimiento de los cuerpos materiales (cinemática) y la relación con los agentes que los producen y perturban (dinámica).</p>
+<p>El adjetivo newtoniano, que usaremos en esta sección, no significa que estas cantidades, principios y leyes hayan sido inventadas solo por Newton. Por un lado, además de sus ideas originales, Newton también compiló y sistematizo ideas que ya existían en su época; por el otro, mucha de sus ideas fueron también ampliadas después de la publicación de sus obras.</p>
+<p>Lo <em>newtoniano</em> se refiere aquí al hecho de que en la definición de las cantidades básicas y en la formulación de las leyes, asumiremos, como lo hizo Newton en los <em>Principia</em> y lo hicieron sus sucesores hasta principios de los 1900, que el espacio y el tiempo son entidades independientes y no son afectadas por la materia.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Prefacio.html#prefacio">Prefacio</a>. <b>{#prefacio}</b><ul>
-<li><a href="01.00.00.00.Prefacio.html#otro_libro">¿Otro libro de mecánica celeste?</a>. <b>{#otro_libro}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_analitica">Mecánica celeste y mecánica analítica</a>. <b>{#celeste_analitica}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Mecánica celeste en la era de la información</a>. <b>{#celeste_era_informacion}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_python">Mecánica celeste en Python</a>. <b>{#celeste_python}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_spice">Mecánica celeste con <code>SPICE</code></a>. <b>{#celeste_spice}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#libro_distinto">¿Qué hace distinto a este libro?: un decálogo</a>. <b>{#libro_distinto}</b></li>
-</ul>
-</li>
-<li><a href="02.00.00.00.Agradecimientos.html#agradecimientos">Agradecimientos</a>. <b>{#agradecimientos}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#introduccion">Introducción</a>. <b>{#introduccion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#organizacion_libro">¿Cómo se organiza este libro?</a>. <b>{#organizacion_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#como_usar_libro">¿Cómo usar este libro?</a>. <b>{#como_usar_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#celeste_libretas">Mecánica celeste en <em>libretas</em></a>. <b>{#celeste_libretas}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#instalacion_libretas">Instalación de las libretas</a>. <b>{#instalacion_libretas}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#estructura_libro">Estructura del libro</a>. <b>{#estructura_libro}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#cajas_texto">Cajas de texto</a>. <b>{#cajas_texto}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#algoritmos">Algorítmos</a>. <b>{#algoritmos}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#interactivas_animaciones">Figuras interactivas y animaciones</a>. <b>{#interactivas_animaciones}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_interactiva">Ejemplo de figura interactiva</a>. <b>{#ejemplo_interactiva}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_animada">Ejemplo de figura animada</a>. <b>{#ejemplo_animada}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="04.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mecanica_newtoniana">Mecánica Newtoniana</a>. <b>{#mecanica_newtoniana}</b><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#propiedades_cinematicas">Propiedades cinemáticas</a>. <b>{#propiedades_cinematicas}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#ecuacion_movimiento">La ecuación de movimiento (e.d.m.)</a>. <b>{#ecuacion_movimiento}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Integración de la e.d.m.</a>. <b>{#integracion_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#integracion_numerica_edm">Integración numérica de la e.d.m.</a>. <b>{#integracion_numerica_edm}</b></li>
+<h3 id="4.1.1.-Sistemas-de-coordenadas">4.1.1. Sistemas de coordenadas<a class="anchor-link" href="#4.1.1.-Sistemas-de-coordenadas">&#182;</a></h3><p><a id='sistemas_coordenadas'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:coordenadas'></a><img src="./figures/horizontal_sistemas_coordenadas.png" alt="Definción de los sistemas de coordenadas usadas en este texto" width="100.0%"></p>
+<center><b>Figura 4.6</b>. Definción de los sistemas de coordenadas usadas en este texto</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para describir el movimiento de un cuerpo, es necesario primero definir un sistema de coordenadas en el que se puedan expresar sus cantidades cinemáticas básicas.</p>
+<p>A lo largo de este libro, usaremos los tres sistemas de coordenadas ortogonales <em>clásicos</em> (cartesianas, cilíndricas y esféricas, ver Figura (<a href="#fig:coordenadas">coordenadas</a>)) con algunas convenciones más propias de la astronomía y la mecánica celeste que del cálculo.  A continuación, para clarificar nuestra notación, enumeramos detalladamente las propiedades de cada sistema.</p>
+<ul>
+<li><p><strong>Sistema de coordenadas cartesiano</strong>.</p>
+<ul>
+<li>Coordenadas: $x\in(-\infty,+\infty)$, $y\in(-\infty,+\infty)$, $z\in(-\infty,+\infty)$. </li>
+<li>Vectores unitarios: $\hat{e}_x$, $\hat{e}_y$, $\hat{e}_z$.</li>
+<li><p>Comentarios:</p>
+<ul>
+<li>En todos los casos la orientación de los ejes obedecerá la <em>regla de la mano derecha</em>, es decir, los sistemas cartesianos usados en el texto y cuyos ejes están definidos por el conjunto de vectores unitarios ($\hat{e}_x$, $\hat{e}_y$, $\hat{e}_z$) forman un <em>conjunto de mano derecha</em>, a saber: </li>
 </ul>
 </li>
 </ul>
+<p>\begin{equation}
+\label{eq:conjunto_mano_derecha}
+\begin{array}{ccl}
+\hat{e}_x\times\hat{e}_y &amp; = &amp; \hat{e}_z\\
+\hat{e}_y\times\hat{e}_z &amp; = &amp; \hat{e}_x\\
+\hat{e}_z\times\hat{e}_x &amp; = &amp; \hat{e}_y
+\end{array}
+\end{equation}</p>
 </li>
 </ul>
 
@@ -13164,54 +13145,40 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.00.00.00.Prefacio.html">01.00.00.00.Prefacio</a><ul>
-<li><a href="01.00.00.00.Prefacio.html#fig:utlima_thule">Figura 1.1</a>. Imagen procesada de Ultima Thule, el objeto transneptuniano sobrevolado por la sonda New Horizons en 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.). <b>{fig:utlima_thule}</b></li>
+<ul>
+<li><p><strong>Sistema de coordenadas cilíndrico</strong> (ver Figura (<a href="#fig:coordenadas_cilindricas">coordenadas_cilindricas</a>)).</p>
+<ul>
+<li><p>Coordenadas: $r\in[0,+\infty)$, $\theta\in[0,2\pi)$, $z\in(-\infty,+\infty)$.</p>
+</li>
+<li><p>Conversión al sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:cilindricas_a_cartesianas}
+  \begin{array}{ccl}
+  x &amp; = &amp; r\cos\theta\\
+  y &amp; = &amp; r\sin\theta\\
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Vectores unitarios expresados en el sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:unitarios_cilindricas}
+  \begin{array}{ccl}
+  \hat{e}_r &amp; = &amp; \cos\theta\;\hat{e}_x + \sin\theta\;\hat{e}_y\\
+  \hat{e}_\theta &amp; = &amp; -\sin\theta\;\hat{e}_x + \cos\theta\;\hat{e}_y\\
+  \hat{e}_z &amp; = &amp; \hat{e}_z
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Comentarios:</p>
+<ul>
+<li><p>El conjunto de vectores unitarios ($\hat{e}_r$, $\hat{e}_\theta$, $\hat{e}_z$) forman un conjunto de mano derecha tal y como se definió en las Ecs. (<a href="#mjx-eqn-eqconjunto_mano_derecha">conjunto_mano_derecha</a>).</p>
+</li>
+<li><p>Nótese que, a diferencia de la notación usada generalmente en los textos de cálculo, la coordenada cilíndrica $r$ usa la misma letra que la coordenada esférica $r$ y la magnitud del vector posición (ver siguiente sección).  La distinción entre las tres, dependerá del contexto.</p>
+</li>
+<li><p>Usaremos la letra griega $\theta$ para denotar el ángulo <em>acimutal</em>, a diferencia de la notación convencional que usa esta letra para la coordenada esférica polar (ángulo del vector posición respecto al eje z.)</p>
+</li>
 </ul>
 </li>
-<li>Figuras en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#fig:kepler">Figura 3.3</a>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster. <b>{fig:kepler}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#fig:coordenadas">Figura 4.6</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html">04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (4.1)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (4.2)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_cilindricas">Ec. (4.3)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (4.4)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="04.01.01.01.Fundamentos.Mecanica.Cinematica.Cantidades.html#mjx-eqn-equnitarios_esfericas">Ec. (4.5)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html">04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM</a><ul>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm">Ec. (4.6)</a>: edm. <b>{eq:edm}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden">Ec. (4.7)</a>: edm_primer_orden. <b>{eq:edm_primer_orden}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_escalar">Ec. (4.8)</a>: edm_escalar. <b>{eq:edm_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden_escalar">Ec. (4.9)</a>: edm_primer_orden_escalar. <b>{eq:edm_primer_orden_escalar}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_estado">Ec. (4.10)</a>: edm_estado. <b>{eq:edm_estado}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1">Ec. (4.11)</a>: edm_ejemplo1. <b>{eq:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1_cuadratura">Ec. (4.12)</a>: edm_ejemplo1_cuadratura. <b>{eq:edm_ejemplo1_cuadratura}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo1">Ec. (4.13)</a>: Ix_ejemplo1. <b>{eq:Ix_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo2">Ec. (4.14)</a>: Ix_ejemplo2. <b>{eq:Ix_ejemplo2}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqconstantes_ejemplo1">Ec. (4.15)</a>: constantes_ejemplo1. <b>{eq:constantes_ejemplo1}</b></li>
-<li><a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqsolucion_ejemplo1">Ec. (4.16)</a>: solucion_ejemplo1. <b>{eq:solucion_ejemplo1}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas">Ec. (4.17)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqvariables_auxiliares_edm">Ec. (4.18)</a>: variables_auxiliares_edm. <b>{eq:variables_auxiliares_edm}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqecuaciones_reducidas_particula">Ec. (4.19)</a>: ecuaciones_reducidas_particula. <b>{eq:ecuaciones_reducidas_particula}</b></li>
 </ul>
 </li>
 </ul>
@@ -13222,25 +13189,132 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#code:rutina_discriminante">Código (3.1)</a>: rutina_discriminante. <b>{code:rutina_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:calcula_discriminante">Código (3.2)</a>: calcula_discriminante. <b>{code:calcula_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:plot_sin">Código (3.3)</a>: plot_sin. <b>{code:plot_sin}</b></li>
+<ul>
+<li><p><strong>Sistema de coordenadas esférico</strong> (ver Figura (<a href="#fig:coordenadas_cilindricas">coordenadas_cilindricas</a>)).</p>
+<ul>
+<li><p>Coordenadas: $r\in[0,+\infty)$, $\theta\in[0,2\pi)$, $\phi\in[-\pi/2,+\pi/2]$.</p>
+</li>
+<li><p>Conversión al sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:esfericas_a_cartesianas}
+  \begin{array}{ccl}
+  x &amp; = &amp; r\cos\phi\cos\theta\\
+  y &amp; = &amp; r\cos\phi\sin\theta\\
+  z &amp; = &amp; r\sin\phi\\
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Vectores unitarios expresados en el sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:unitarios_esfericas}
+  \begin{array}{ccl}
+  \hat{e}_r &amp; = &amp; \cos\phi\cos\theta\;\hat{e}_x + \cos\phi\sin\theta\;\hat{e}_y + \sin\phi\;\hat{e}_z\\
+  \hat{e}_\theta &amp; = &amp; -\sin\theta\;\hat{e}_x + \cos\theta\;\hat{e}_y\\
+  \hat{e}_\phi &amp; = &amp; \cos\phi\cos\theta\;\hat{e}_x + \sin\phi\sin\theta\;\hat{e}_y - \sin\phi\;\hat{e}_z\\
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Comentarios:</p>
+<ul>
+<li><p>El conjunto de vectores unitarios ($\hat{e}_r$, $\hat{e}_\theta$, $\hat{e}_\phi$) forman un conjunto de mano derecha tal y como se definió en las Ecs. (<a href="#mjx-eqn-eqconjunto_mano_derecha">conjunto_mano_derecha</a>).</p>
+</li>
+<li><p>Nótese que, a diferencia de la notación usada generalmente en los textos de cálculo, la coordenada esférica $\phi$ se medirá respecto al plano $x-y$ (como una <em>latitud</em>) en lugar de hacerlo respecto al eje $z$ (como una <em>colatitud</em>).</p>
+</li>
 </ul>
 </li>
-<li>Código en <a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html">04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:edm_ejemplo1">Código (4.4)</a>: edm_ejemplo1. <b>{code:edm_ejemplo1}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:ejemplo1_grafico_solucion">Código (4.5)</a>: ejemplo1_grafico_solucion. <b>{code:ejemplo1_grafico_solucion}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:compara_numerica_analitica">Código (4.6)</a>: compara_numerica_analitica. <b>{code:compara_numerica_analitica}</b></li>
-<li><a href="04.01.01.03.Fundamentos.Mecanica.Cinematica.SolucionNumerica.html#code:solucion_numerica_ejemplo">Código (4.7)</a>: solucion_numerica_ejemplo. <b>{code:solucion_numerica_ejemplo}</b></li>
 </ul>
+</li>
+</ul>
+<p>Una interesante página interactiva que permite visualizar mejor la definición de los sistemas de coordenadas y la orientación de los vectores coordenadas puede encontrarse en los siguientes enlaces, tanto para el <a href="http://dynref.engr.illinois.edu/rvy.html">sistema de coordenadas cilíndrica</a> como para el <a href="http://dynref.engr.illinois.edu/rvy.html">sistema de coordenadas esféricas</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.1.2.-Propiedades-cinem&#225;ticas">4.1.2. Propiedades cinem&#225;ticas<a class="anchor-link" href="#4.1.2.-Propiedades-cinem&#225;ticas">&#182;</a></h3><p><a id='propiedades_cinematicas'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las propiedades cinemáticas son aquellas que se usan para describir el movimiento, tal y como ocurre, independiente de sus causas.</p>
+<ul>
+<li><p><strong>Tiempo</strong>,  $t$: Un número real que indica el <em>intervalo</em> transcurrido desde un <em>instante</em> de referencia.  Esta cantidad es <em>independiente y absoluta</em> (ver recuadro de <em>Notas</em> abajo.)</p>
+</li>
+<li><p><strong>Posición (o vector posición), $\vec r$</strong>:</p>
+<ul>
+<li>Coordenadas cartesianas: $\vec r= x\hat{e}_x+y\hat{e}_y+z\hat{e}_z$.</li>
+<li>Coordenadas cilíndricas: $\vec r= r\hat{e}_r+z\hat{e}_z$.</li>
+<li>Coordenadas esféricas: $\vec r= r\hat{e}_r$.   </li>
+</ul>
+</li>
+<li><p><strong>Velocidad $\vec v$</strong>:</p>
+<ul>
+<li>Definición general: $\vec v\equiv \mathrm{d}\vec r/\mathrm{d}t\equiv \dot{\vec r}$.</li>
+<li>Coordenadas cartesianas: $\vec v=\dot{x}\hat{e}_x+\dot{y}\hat{e}_y+\dot{z}\hat{e}_z$.</li>
+<li>Coordenadas cilíndricas: $\vec v=\dot{r}\hat{e}_r+r\dot{\theta}\hat{e}_\theta+\dot{z}\hat{e}_z$.</li>
+<li>Coordenadas esféricas: $\vec v=\dot{r} \hat{e}_r + r\dot\theta\cos\phi \hat{e}_\theta + r\dot\phi \hat{e}_\phi$</li>
+</ul>
+</li>
+<li><p><strong>Estado $\vec X$</strong>: En el contexto de la cinemática en mecánica celeste, llamamos vector de estado $\vec X$, al vector columna formado por la unión de las componentes cartesianas de los vectores posición y velocidad, $\vec{X}:(x\;y\;z\;\dot x\;\dot y\;\dot z)^\mathrm{T}$ o en otras palabras:</p>
+<p>\begin{equation}
+  \vec X:\left(
+  \begin{array}{c}
+  x \\ y \\ z \\ \dot x\\ \dot y\\ \dot z
+  \end{array}
+  \right)
+  \end{equation}</p>
+</li>
+<li><p><strong>Aceleración $\vec a$</strong>:</p>
+<ul>
+<li>Definición general: $\vec a \equiv \mathrm{d}\vec v/\mathrm{d}t\equiv\dot{\vec v}=\mathrm{d}^2\vec r/\mathrm{d}t^2\equiv\ddot r$.</li>
+<li>Coordenadas cartesianas: $\vec a=\ddot{x}\hat{e}_x+\ddot{y}\hat{e}_y+\ddot{z}\hat{e}_z$.</li>
+<li>Coordenadas cilíndricas: $\vec a=(\ddot r - r\dot\theta^2) \hat{e}_r + (r\ddot\theta+2\dot r\dot\theta) \hat
+a_\theta + \ddot z \hat{e}_z$.</li>
+<li>Coordenadas esféricas: $\vec a=(\ddot r - r\dot\theta^2 \cos^2\phi - r\dot\phi^2) \hat{e}_r + (2\dot r\dot \theta \cos\phi + r\ddot\theta \cos\phi-2 r\dot\theta\dot\phi \sin\phi) \hat{e}_\theta + (2\dot r\dot\phi + r \dot \phi^2 \sin\phi \cos\phi + r\ddot\phi) \hat{e}_\phi$</li>
+</ul>
+</li>
+<li><p><strong>Tirón y otras</strong>: Es posible definir propiedades que correspondan a derivadas superiores de la posición. Así por ejemplo, en algunos contextos es útil definir el <em>tirón</em> (<em>jerk</em> en inglés) o <em>sobreaceleración</em> $\vec j=\mathrm{d}\vec a/\mathrm{d}t\equiv\mathrm{d}^3\vec r/\mathrm{d}t^3$ o el <em>chasquido</em> o <em>rebote</em> (<em>jounce</em> en inglés), $\vec s\equiv\mathrm{d}\vec j/\mathrm{d}t\equiv\mathrm{d}^4\vec r/\mathrm{d}t^4$.</p>
+</li>
+</ul>
+<p>Las expesiones para $\vec v$ y para $\vec a$ en el sistema de coordenadas cilíndricas y esféricas, pueden obtenerse a partir de las derivadas de los vectores unitarios en cada sistema de coordenadas.  Dejamos al lector estas deducciones (ver problemas al final del capítulo.)</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Sobre las cantidades cinemáticas.</strong> Varias precisiones deben hacerse sobre la definición de las cantidades cinemáticas aquí:</p>
+<ul>
+<li><p><strong>Tiempo independiente y absoluto</strong>. En la mecánica newtoniana el valor del tiempo $t$ asociado a un evento, depende solo de las unidades y el origen escogido. Sin embargo, si dos sistemas de referencia, independiente de su estado de movimiento relativo, usan las mismas unidades y el mismo origen, obtendrán el mismo valor de $t$. Esta aproximación aunque útil es inexacta. Discutiremos esta idea más adelante en este capítulo (<a href="Not Found#fundamentos_relatividad">Sección <em>fundamentos de relatividad</em></a>.)</p>
+</li>
+<li><p><strong>Notación del vector posición en coordenadas cilíndricas</strong>. La notación del vector posición en coordenadas cilíndricas, $\vec r= r\hat a_r+z\hat a_z$ es inconsistente. En general, la magnitud de un vector se simboliza con su <em>letra asociada</em>, así $|\vec r|$ es $r=\sqrt{r^2+z^2}$ que es una expresión sin sentido (el $r$ del lado izquierdo - la magnitud del vector posición - no es el mismo $r$ que aparece al lado derecho - la coordenada radial cilíndrica). En lo que resta del libro, el significado de $r$ se precisara de acuerdo al contexto.</p>
+</li>
+<li><p><strong>Velocidad, rapidez y componente radial de la velocidad</strong>. Asegurese de entender la diferencia entre $\dot{\vec r}$ (vector velocidad), $v$ (magnitud de la velocidad o rapidez) y $\dot{r}$ (componente radial de la velocidad en el sistema de coordenadas cilíndricas o esféricas).</p>
+</li>
+<li><p><strong>Tirón y chasquido</strong>. Aunque el tirón y el chasquido pueden ser de utilidad en algunos contextos mecánicos (por ejemplo en aplicaciones tecnológicas) e incluso en algunos contextos de física teórica, en mecánica celeste ninguno de los dos tiene una función específica (aunque es natural que puedan aparecer derivadas superiores de la posición en los desarrollos.)  Por esta misma razón no profundizaremos en estas cantidades.  Los interesados pueden <a href="https://en.wikipedia.org/wiki/Jerk_(physics">encontrar en línea</a>) algunas <a href="http://math.ucr.edu/home/baez/physics/General/jerk.html">lecturas interesantes</a> al respecto.</p>
 </li>
 </ul>
 
 </div>
 </div>
 </div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="04.00.00.00.Fundamentos.html">Fundamentos</a> | Siguiente: <a href="04.01.01.02.Fundamentos.Mecanica.Cinematica.SolucionEdM.html">Fundamentos.Mecanica.Cinematica.SolucionEdM</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
