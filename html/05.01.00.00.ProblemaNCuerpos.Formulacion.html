@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="05.00.00.00.ProblemaNCuerpos.html">ProblemaNCuerpos</a> | Siguiente: <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">ProblemaNCuerpos.SolucionNumerica</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="05.00.00.00.ProblemaNCuerpos.html">ProblemaNCuerpos</a> | Siguiente: <a href="05.02.00.00.ProblemaNCuerpos.ConstantesMovimiento.html">ProblemaNCuerpos.ConstantesMovimiento</a></p>
 
 </div>
 </div>
@@ -13109,8 +13109,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Al estudiar en algún detalle la dinámica de sistemas de muchos cuerpos en el Universo (el Sistema Solar por ejemplo), incluso de sistemas en los que hay un cuerpo que domina, se hace claro que la evolución de estos sistemas es más compleja que lo descrito en el párrafo anterior.</p>
-<p>Una prueba cercana de ello la ofrece la Luna.  Desde los primeros esfuerzos de Newton por describir su movimiento siguiendo un esquema simple como el esbozado en el párrafo anterior, en el que la Tierra (que es 81 veces más masiva) dominaba su dinámica, quedo claro que el movimiento de nuestro satélite escapaba a estas descripciones simplificadas.</p>
+<p>Al estudiar en algún detalle la dinámica de sistemas de muchos cuerpos en el Universo (un cúmulo de estrellas, el sistema Tierra-Luna, el sistema de Plutón y sus satélites), sistemas en los que puede haber uno o varios cuerpos que domina, se hace claro, sin embargo, que su dinámica es más compleja que la descrito en los párrafos anteriores.</p>
+<p>Una prueba cercana de ello la ofrece el movimiento la Luna.  Desde los primeros esfuerzos de Newton por describir el movimiento de nuestro satélite siguiendo un esquema simple como el esbozado anteriormente y en el que se asume que la Tierra (que es 81 veces más masiva) domina la dinámica, quedo claro que la Luna escapaba a estas descripciones simplificadas.  La Tierra y la Luna no están aisladas y las fuerzas ejercidas por el Sol y otros planetas juegan un papel centra en su dinámica.</p>
 
 </div>
 </div>
@@ -13118,7 +13118,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Cuando se admite que en un sistema de muchas partículas, la posición y velocidad de todas ellas debe considerarse para obtener una descripción correcta de la dinámica del sistema, decimos que nos enfrentamos al <strong>problema de los N cuerpos</strong> <a href="#notaspie_1">$^1$</a></p>
+<p>Cuando se admite que en un sistema de muchas partículas, la posición y velocidad de todas ellas debe considerarse para obtener una descripción correcta de la dinámica del sistema, decimos que nos enfrentamos al <strong>problema de los N cuerpos</strong> <a href="05.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_1">$^1$</a></p>
 
 </div>
 </div>
@@ -13142,7 +13142,7 @@ div#notebook {
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición 5.3. Problema de los N cuerpos</strong>. "Dado un sistema con un número arbitrario de partículas puntuales que se atráen mutuamente obedeciendo la leyes de Newton, encontrar, bajo la suposición de que ninguna de esas partículas colisiona, una representación de las coordenadas de cada partícula como una <strong>serie</strong> de una variable que sea una función conocida del tiempo, tal que para todos los valores de la variable, la serie <strong>converga uniformemente.</strong> " <a href="#notaspie_2">$^2$</a></p>
+<p><strong>Definición 5.3. Problema de los N cuerpos</strong>. "Dado un sistema con un número arbitrario de partículas puntuales que se atráen mutuamente obedeciendo la leyes de Newton, encontrar, bajo la suposición de que ninguna de esas partículas colisiona, una representación de las coordenadas de cada partícula como una <strong>serie</strong> de una variable que sea una función conocida del tiempo, tal que para todos los valores de la variable, la serie <strong>converga uniformemente.</strong> " <a href="05.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_2">$^2$</a></p>
 
 </div>
 </div>
@@ -13151,17 +13151,17 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Esta formulación rigurosa (matemática) del problema, podríamos matizarla con algunos comentarios más físicos:</p>
+<p>Esta formulación rigurosa (matemática) del problema, puede matizirse con algunos comentarios más físicos:</p>
 <ul>
-<li><p>Asumimos que en un momento dado del tiempo $t_o$, las posiciones y velocidades de todas las partículas son conocidas, es decir tenemos un conocimiento exhaustivo de las condiciones iniciales $\{{\vec r_i(t_o)},{\dot{\vec r}_i(t_o)}\}_{N}$ (ver Figura (<a href="#fig:ncuerpos_formulacion">ncuerpos_formulacion</a>)).</p>
+<li><p>Asumimos que en un momento dado del tiempo $t_0$, las posiciones y velocidades de todas las partículas (condiciones iniciales) son conocidas $\{{\vec r_i(t_0)},{\dot{\vec r}_i(t_0)}\}_{N}$ (ver Figura (<a href="#fig:ncuerpos_formulacion">ncuerpos_formulacion</a>)).</p>
 </li>
 <li><p>El problema de los N cuerpos consiste entonces en encontrar las posiciones y velocidades de todas las partículas en un instante futuro de tiempo $t$, es decir $\{{\vec r_i(t)},{\dot{\vec r}_i(t)}\}_{N}$.</p>
 </li>
-<li><p>Al decir que la solución puede encontrarse como una serie, el enunciado admité que no es necesario que las posiciones y velocidades deban expresarse en la forma de funciones analíticas (p.e. polinomios, $\sin$, $\cos$, $\log$, etc.) <a href="#notaspie_3">$^3$</a></p>
+<li><p>Al decir que la solución puede encontrarse como una serie, el enunciado admité que no es necesario que las posiciones y velocidades deban expresarse en la forma de funciones analíticas (p.e. polinomios, funciones trigonométricas $\sin$, $\cos$, función logarítmos $\log$, etc.) <a href="05.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_3">$^3$</a></p>
 </li>
 <li><p>Como lo admite implícitamente el enunciado, no se espera que sea posible predecir el estado del sistema en cualquier instante futuro. En el caso, por ejemplo, en el que las condiciones iniciales conduzcan a una colisión, al menos dos partículas en el sistema podrían situarse a una distancia nula una de otra (recordemos que asumimos que son puntuales) y se produciría una <em>situación singular</em> (fuerzas infinitas).  Aún en esta situación, sin embargo, se espera que sea posible predecir la evolución del sistema entre el tiempo inicial y el tiempo de la primera colisión.</p>
 </li>
-<li><p>La convergencia uniforme es una condición matemática rigurosa, aplicada a las sucesiones, que implica, palabras más, palabras menos, que las posiciones y velocidades predichas sean tan cercanas como se desee a las posiciones y velocidades reales, sin importar el tiempo en el que se calculen.</p>
+<li><p>La convergencia uniforme es una condición matemática rigurosa, aplicada a las sucesiones y series, que implica, palabras más, palabras menos, que las posiciones y velocidades calculadas con una serie sean tan cercanas como se desee a las posiciones y velocidades reales, sin importar el tiempo en el que se calculen.</p>
 </li>
 </ul>
 
@@ -13179,11 +13179,11 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Matemáticamente, en el formalismo vectorial de la Mecánica, el problema de los N cuerpos es equivalente a encontrar la solución matemática al conjunto formado por de las ecuaciones (diferenciales) de movimiento de todos los cuerpos del sistema, a saber:</p>
+<p>Matemáticamente, en el formalismo vectorial de la Mecánica, el problema de los N cuerpos es equivalente a encontrar la solución matemática al conjunto formado por de las ecuaciones (diferenciales) de movimiento (e.d.m.) de todos los cuerpos del sistema, a saber:</p>
 \begin{equation}
 \label{eq:ncuerpos_ecuaciones_generales}
-\left\{\ddot{\vec r}_i=\frac{1}{m_i}\sum_{j\neq i} \vec F_{ij}\right\}_{N},
-\end{equation}<p>donde $\vec F_{ij}$ es la fuerza ejercida <em>sobre</em> la partícula $i$ <em>por</em> la partícula $j$.  Se asume que no existen otras fuerzas (fricción con un medio, interacción con un campo externo, etc.) actuando sobre las partículas del sistema.</p>
+\left\{\ddot{\vec r}_i=\frac{1}{m_i}\sum_{j\neq i} \vec F_{ij}\right\}_{N}.
+\end{equation}<p>Aquí $\vec F_{ij}$ es la fuerza ejercida <em>sobre</em> la partícula $i$ <em>por</em> la partícula $j$.  Se asume que no existen otras fuerzas (fricción con un medio, interacción con un campo externo, etc.) además de las interacciones entre ellas, actuando sobre las partículas del sistema.</p>
 
 </div>
 </div>
@@ -13195,7 +13195,7 @@ div#notebook {
 $$
 \vec F_{ij}=\vec F_{ij}\left(\{\vec r_k\},\{\dot{\vec r}_k\}\right).
 $$<p></p>
-<p>De este modo, el conjunto de ecuaciones diferenciales que define el problema es altamente acoplado y en general <em>no lineal</em> (es decir, cada ecuación diferencial, depende de funciones no lineales de las posiciones o velocidades).</p>
+<p>De este modo, el conjunto de ecuaciones diferenciales que define el problema es altamente acoplado y en general <em>no lineal</em> (es decir, cada ecuación diferencial, depende de funciones no lineales de las posiciones o velocidades.)</p>
 
 </div>
 </div>
@@ -13203,10 +13203,10 @@ $$<p></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>De acuerdo a la formulación original del problema, asumimos que la única interacción entre las partículas es la interacción gravitacional newtoniana.  De este modo, podemos escribir (ver Ec. <a href="#mjx-eqn-eqfundamentos_mecanica_gravedad">fundamentos_mecanica_gravedad</a>):</p>
+<p>De acuerdo a la formulación original del problema, asumimos que la única interacción entre las partículas es la interacción gravitacional newtoniana.  De este modo, podemos escribir (ver Ec. <a href="#mjx-eqn-eqley_gravedad">ley_gravedad</a>):</p>
 $$
 \vec{F}_{ij} = -\frac{Gm_i m_j}{r_{ij}^3} \vec r_{ij} = -\frac{Gm_i m_j}{|\vec{r}_i - \vec{r}_j |^3} (\vec{r}_i - \vec{r}_j).
-$$<p>Es importante tener en cuenta aquí la dirección del vector relativo $\vec{r}_{ij}=\vec{r}_i - \vec{r}_j$ tal y como se usará en esta ecuación, apunta en la dirección que va de la partícula que produce la fuerza (partícula $j$-esima) hacia la partícula que la experimenta (partícula $i$-esima). Esta condición, produce el signo menos en la expresión para la fuerza.</p>
+$$<p>Es importante tener en cuenta aquí la dirección del vector relativo $\vec{r}_{ij}=\vec{r}_i - \vec{r}_j$, que, tal y como se usará en esta ecuación, apunta en la dirección que va de la partícula que produce la fuerza (partícula $j$) hacia la partícula que la experimenta (partícula $i$). Esta condición, es responsable del signo menos en la expresión para la fuerza.</p>
 
 </div>
 </div>
@@ -13214,11 +13214,11 @@ $$<p>Es importante tener en cuenta aquí la dirección del vector relativo $\vec
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En términos explícitos, el problema de los N cuerpos en mecánica celeste, consiste en resolver el conjunto de ecuaciones diferenciales:</p>
+<p>En términos explícitos finalemente, el problema de los N cuerpos en mecánica celeste, consiste en resolver el conjunto de ecuaciones diferenciales:</p>
 \begin{equation}
 \label{eq:ncuerpos_formulacion_ecuaciones}
 \left\{\ddot{\vec r}_i= -\sum_{j\neq i} \frac{\mu_j}{r_{ij}^3} \vec{r}_{ij} \right\}_{N},
-\end{equation}<p>donde $\mu_j=G m_j$ se conoce como el <strong>parametro gravitacional</strong> del cuerpo $j$-esimo.</p>
+\end{equation}<p>donde hemos introducido $\mu_j\equiv G m_j$, que se conoce como el <strong>parametro gravitacional</strong> del cuerpo $j$ (volveremos sobre esta cantidad en la <a href="05.03.00.00.ProblemaNCuerpos.SolucionNumerica.html#ncuerpos_solucion_numerica">Sección *solución numérica del problema de los N cuerpos</a>.)</p>
 
 </div>
 </div>
@@ -13226,18 +13226,18 @@ $$<p>Es importante tener en cuenta aquí la dirección del vector relativo $\vec
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Historias de la mecánica celeste: Henri Poincaré y el premio del Rey Oscar.</strong> Los protagonistas de nuestra primera historia son el polímata Francés Henri Poincaré (que se pronuncia, "<a href="https://es.forvo.com/search/Henri%20Poincare/">Honri Poancaré</a>") y el rey Oscar II de Suecia.</p>
-<p><img src="./figures/vertical_henri_poincare.png" alt="Fotografía de Henri Poincaré hacia el año 1886, en el tiempo en el que trabajaba en el problema de los tres cuerpos (Foto: Eugène Pirou)" width="30.0%">$$\mathrm{\mathbf{Figura\;5.11}.}$$</p>
-<p>En 1889, el matemático sueco Mittag-Leffer convenció al rey Oscar de Suecia de que, con motivo de la celebración de su cumpleaños número 60, el 21 de enero de ese año, presentará al mundo un nuevo concurso matemático. En este, se formularían un conjunto de problemas abiertos frente a los cuales los participantes deberían presentar artículos inéditos. De conseguir resolver el problema, los ganadores recibirían una suma sustancial por su descubrimiento.</p>
-<p>Entre los problemas formulados en el concurso del rey Oscar II, se encontraba, precisamente, el problema de los N cuerpos.  La formulación del problema presentada en este capítulo, es literalmente la que preparó el matemático alemán Karl Weierstrass (que se pronuncia "<a href="https://es.forvo.com/search/Weierstrass/de/">Vierstrass</a>"), inspirado originalmente por las ideas del matemático alemán Peter Gustav Dirichlet. Uno de los participantes del concurso, fue precisamente Poincaré, que contaba para la época con 35 años (ver Figura (<a href="#fig:henri_poincare">henri_poincare</a>)).</p>
-<p>Poincaré nació en Francia el 29 de abril de 1854.  Después de una infancia marcada por la enfermedad y una juventud en la que sus maestros reconocieron su precocidad matemática, se graduo como doctor en matemáticas en 1879 bajo la orientación de Charles Hermite (que se pronuncia "<a href="https://es.forvo.com/search/Charles%20Hermite/fr/">Charle ermit</a>").  Las mayores contribuciones de Poincaré, como matemático, se produjeron en la teoría de ecuaciones diferenciales. Sin embargo, por sus estudios posteriores de ingeniería, su posición como profesor de la Universidad de Paris (La Sorbona) en las áreas de Mecánica, Física Matemática, Teoría de la Probabilidad, Mecánica Celeste y Astronomía, además del reconocimiento público que lo llevo a ser miembro de la Oficina de Longitudes de Francia en 1897 y elegido presidente de la Academia Francesa de Ciencias en 1906, los conocimientos de Poincaré se extendieron a muchas otras disciplinas.  De allí que sea considerado un Polímata o un "hombre universal", alguien que domina muchas disciplinas intelectuales o artísticas (una etiqueta que comparte con personajes Aristóteles o Leonardo da Vinci).</p>
-<p>El artículo presentado por Poincaré en el concurso del Rey Oscar II, titulado "Sobre el problema de los tres cuerpos y las ecuaciones de la dinámica", fue declarado, sin lugar a dudas el ganador del concurso. Esto, a pesar de que el artículo no resolvía el problema original, sino que se restringía al caso particular de tres cuerpos. Aún así, y en palabras de los jurados, el trabajo de Poincaré "iniciaría una nueva era en la historia de la mecánica celeste".</p>
-<p>Hoy sabemos que el trabajo de Poincaré de 1889 contenía errores (que no fueron detectados por los evaluadores), pero aún así los métodos utilizados por él en la búsqueda de su solución influenciarían de forma importante los intentos posteriores y serían la base para el desarrollo de la teoría del caos.</p>
+<p><strong>Historias de la mecánica celeste: Henri Poincaré y el premio del Rey Oscar.</strong> En 1889, el matemático sueco Mittag-Leffer convenció al rey Oscar II de Suecia de que, con motivo de la celebración de su cumpleaños número 60 ese mismo año, presentará al mundo un nuevo concurso matemático. En este, se formularían un conjunto de problemas abiertos frente a los cuales los participantes deberían presentar artículos inéditos. De conseguir resolver el problema, los ganadores recibirían una suma sustancial por su descubrimiento.</p>
+<p>Entre los problemas formulados en el concurso del rey Oscar II, se encontraba, precisamente, el problema de los N cuerpos.  La formulación del problema presentada en este capítulo, es literalmente la que preparó el matemático alemán Karl Weierstrass (que se pronuncia "<a href="https://es.forvo.com/search/Weierstrass/de/">Vierstrass</a>"), inspirado originalmente por las ideas del matemático alemán Peter Gustav Dirichlet.</p>
+<p>Uno de los participantes del concurso, fue el polímata Francés <strong>Henri Poincaré</strong> (que se pronuncia, "<a href="https://es.forvo.com/search/Henri%20Poincare/">Honri Poancaré</a>") , que contaba para la época con 35 años (ver Figura (<a href="#fig:henri_poincare">henri_poincare</a>)).</p>
+<p><img src="./figures/vertical_henri_poincare.png" alt="Fotografía de Henri Poincaré hacia el año 1886, unos años antes de realizar su trabajo histórico sobre el problema de los tres cuerpos (Foto: Eugène Pirou)" width="30.0%">$$\mathrm{\mathbf{Figura\;5.11}.}$$</p>
+<p>Poincaré nació en Francia el 29 de abril de 1854.  Después de una infancia marcada por la enfermedad y una juventud en la que sus maestros reconocieron su precocidad matemática, se graduo como doctor en matemáticas en 1879 bajo la orientación de Charles Hermite (que se pronuncia "<a href="https://es.forvo.com/search/Charles%20Hermite/fr/">Charle ermit</a>").  Las mayores contribuciones de Poincaré, como matemático, se produjeron en la teoría de ecuaciones diferenciales. Sin embargo, por sus estudios posteriores de ingeniería, su posición como profesor de la Universidad de Paris (La Sorbona) en las áreas de Mecánica, Física Matemática, Teoría de la Probabilidad, Mecánica Celeste y Astronomía, además del reconocimiento público que lo llevo a ser miembro de la Oficina de Longitudes de Francia en 1897 y elegido presidente de la Academia Francesa de Ciencias en 1906, los conocimientos de Poincaré se extendieron a muchas otras disciplinas.  De allí que sea considerado un Polímata o un "hombre universal", alguien que domina muchas disciplinas intelectuales o artísticas (una etiqueta que comparte con personajes como Aristóteles o Leonardo da Vinci).</p>
+<p>El artículo presentado por Poincaré en el concurso del Rey Oscar II, titulado "Sobre el problema de los tres cuerpos y las ecuaciones de la dinámica", fue declarado, sin lugar a dudas el ganador del concurso. Esto, a pesar de que no resolvía el problema original, sino que se restringía al caso particular de tres cuerpos. Aún así, y en palabras de los jurados, el trabajo de Poincaré "iniciaría una nueva era en la historia de la mecánica celeste".</p>
+<p>Hoy sabemos que el artículo de Poincaré de 1889 contenía errores (que no fueron detectados por los evaluadores), pero aún así los métodos utilizados por él en la búsqueda de su solución influenciarían de forma importante los intentos posteriores y serían la base para el desarrollo de la teoría del caos.</p>
 <p>El problema de los tres cuerpos, formulado a la manera del concurso del rey Oscar II, fue finalmente resuelto en 1912 por el matemático Finlandés Karl Sundman &lt;cite data-cite="Sundman1913ThreeBody"</p>
 <p>&lt;a href="mybook.html#Sundman1913ThreeBody"</p>
 <p>Sundman, 1913&lt;/a</p>
 <p>&lt;/cite</p>
-<p>. En este trabajo Sundman probó la existencia de series que describían la posición de los tres cuerpos y que convergían para tiempos arbitrarios.  Una excelente síntesis histórica de la contribución (poco apreciada de Sundman) puede encontrarse en &lt;cite data-cite="Barrow2010Sundman"</p>
+<p>. En este trabajo Sundman probó la existencia de series que describían la posición de los tres cuerpos y que convergían para tiempos arbitrarios.  Una excelente síntesis histórica de la contribución (poco apreciada) de Sundman puede encontrarse en &lt;cite data-cite="Barrow2010Sundman"</p>
 <p>&lt;a href="mybook.html#Barrow2010Sundman"</p>
 <p>Barrow-Green, 2010&lt;/a</p>
 <p>&lt;/cite</p>
@@ -13254,7 +13254,7 @@ $$<p>Es importante tener en cuenta aquí la dirección del vector relativo $\vec
 <p><strong>NOTAS AL PIE:</strong></p>
 <p><a id='notaspie_1'></a></p>
 <ol start='1'>
-<li>En otras áreas de la física, a este problema se lo conoce también como el <strong>problema de muchos cuerpos</strong> y en general no se restringe únicamente a describir el movimiento del sistema (lo que es propio de la física clásica), sino también el estado cuántico de todo el sistema, por ejemplo, y su posible evolución en el tiempo.</li>
+<li>En otras áreas de la física, a este problema se lo conoce también como el <strong>problema de muchos cuerpos</strong> y en general no se restringe únicamente a describir el movimiento del sistema (lo que es propio de la física clásica), sino también, por ejemplo, el estado cuántico de todo el sistema y su posible evolución en el tiempo.</li>
 </ol>
 <p><a id='notaspie_2'></a></p>
 <ol start='2'>
@@ -13273,7 +13273,7 @@ $$<p>Es importante tener en cuenta aquí la dirección del vector relativo $\vec
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="05.00.00.00.ProblemaNCuerpos.html">ProblemaNCuerpos</a> | Siguiente: <a href="05.01.00.00.ProblemaNCuerpos.SolucionNumerica.html">ProblemaNCuerpos.SolucionNumerica</a></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="05.00.00.00.ProblemaNCuerpos.html">ProblemaNCuerpos</a> | Siguiente: <a href="05.02.00.00.ProblemaNCuerpos.ConstantesMovimiento.html">ProblemaNCuerpos.ConstantesMovimiento</a></p>
 
 </div>
 </div>

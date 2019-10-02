@@ -57,6 +57,18 @@ def calcula_discriminante(a,b,c):
 # ########################################
 
 # ########################################
+#  .//ProblemaNCuerpos.ConstantesMovimiento.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.ConstantesMovimiento.Energia.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.TeoremaVirial.ipynb
+# ########################################
+
+# ########################################
 #  .//ProblemaNCuerpos.SolucionNumerica.ipynb
 # ########################################
 
