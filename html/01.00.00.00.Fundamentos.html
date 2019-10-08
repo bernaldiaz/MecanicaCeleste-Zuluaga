@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.00.00.00.Fundamentos</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13070,171 +13070,30 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
+<h1 id="1.-Fundamentos">1. Fundamentos<a class="anchor-link" href="#1.-Fundamentos">&#182;</a></h1><p><a id='fundamentos'></a></p>
+
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><strong>Resumen:</strong> En este capítulo haremos una síntesis práctica de los temas de matemáticas, física y astronomía que necesitaremos para desarrollar la mecánica celeste en el resto del libro. Repasaremos la geometría de las cónicas, (que son la base para describir la trayectorias de cuerpos celestes sometidos a la gavedad newtoniana), en el plano y en el espacio de tres dimensiones. Sintetizaremos, en un lenguaje moderno, los principios y leyes de la mecánica newtoniana, incluyendo la dinámica en sistemas de referencia rotantes.  Presentaremos brevemente los fundamentos de la teoría de la relatividad (especial y general), especialmente el concepto de métrica y sus implicaciones cinemáticas básicas. Finalmente repasaremos a algunas conceptos y definiciones de astronomía que serán de relevancia en el texto, la organización y nomenclatura del sistema solar, los sistemas de medida de tiempo y los sistemas de referencia usados para especificar la posición de cuerpos en el cielo y en el espacio interplanetario.</p>
 
 </div>
 </div>
 </div>
+    </div><div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<p><a href="index.html">Indice</a> | Siguiente: <a href="01.01.00.00.Fundamentos.Calculo.html">Fundamentos.Calculo</a></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="01.01.00.00.Fundamentos.Calculo.html#vectores_calculo">Vectores y cálculo</a>. <b>{#vectores_calculo}</b><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#conjuntos_tuplas_vectores">Conjunto, tuplas y vectores</a>. <b>{#conjuntos_tuplas_vectores}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones">Funciones</a>. <b>{#funciones}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">Derivadas</a>. <b>{#derivadas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones_homogeneas">Funciones homogéneas</a>. <b>{#funciones_homogeneas}</b><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_derivada">Algoritmos para la derivada</a>. <b>{#algoritmos_derivada}</b></li>
-</ul>
-</li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">Integrales</a>. <b>{#integrales}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales_vectoriales">Integrales vectoriales</a>. <b>{#integrales_vectoriales}</b><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_integral">Algoritmos para la integral</a>. <b>{#algoritmos_integral}</b></li>
-</ul>
-</li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Ecuaciones diferenciales</a>. <b>{#ecuaciones_diferenciales}</b><ul>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#algoritmos_ode">Algoritmos para la solución de ODE</a>. <b>{#algoritmos_ode}</b></li>
-</ul>
-</li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#funcionales_calculo_variaciones">Funcionales y cálculo de variaciones</a>. <b>{#funcionales_calculo_variaciones}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#graficos_interactivos_variacional">Gráficos interactivos</a>. <b>{#graficos_interactivos_variacional}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">01.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#fig:vectores">Figura 1.1</a>. Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $. <b>{fig:vectores}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#fig:coordenadas">Figura 1.2</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#fig:variacion_funcion">Figura 1.4</a>. El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $. <b>{fig:variacion_funcion}</b></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">01.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqsuma_tuplas">Ec. (1.1)</a>: suma_tuplas. <b>{eq:suma_tuplas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqk_tupla">Ec. (1.2)</a>: k_tupla. <b>{eq:k_tupla}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqvectores_en_base">Ec. (1.3)</a>: vectores_en_base. <b>{eq:vectores_en_base}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqdelta_kroenecker">Ec. (1.4)</a>: delta_kroenecker. <b>{eq:delta_kroenecker}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqbase_mano_derecha">Ec. (1.5)</a>: base_mano_derecha. <b>{eq:base_mano_derecha}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqlevi_civita">Ec. (1.6)</a>: levi_civita. <b>{eq:levi_civita}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz">Ec. (1.7)</a>: producto_cruz. <b>{eq:producto_cruz}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz_determinante">Ec. (1.8)</a>: producto_cruz_determinante. <b>{eq:producto_cruz_determinante}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_escalar">Ec. (1.9)</a>: triple_producto_escalar. <b>{eq:triple_producto_escalar}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_vectorial">Ec. (1.10)</a>: triple_producto_vectorial. <b>{eq:triple_producto_vectorial}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (1.11)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (1.12)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_cilindricas">Ec. (1.13)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (1.14)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_esfericas">Ec. (1.15)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqderivada_definicion">Ec. (1.16)</a>: derivada_definicion. <b>{eq:derivada_definicion}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_general">Ec. (1.17)</a>: regla_cadena_general. <b>{eq:regla_cadena_general}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cartesianas">Ec. (1.18)</a>: gradiente_cartesianas. <b>{eq:gradiente_cartesianas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cilindricas">Ec. (1.19)</a>: gradiente_cilindricas. <b>{eq:gradiente_cilindricas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_esfericas">Ec. (1.20)</a>: gradiente_esfericas. <b>{eq:gradiente_esfericas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_multivariables">Ec. (1.21)</a>: regla_cadena_multivariables. <b>{eq:regla_cadena_multivariables}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqteorema_fundamental_calculo">Ec. (1.22)</a>: teorema_fundamental_calculo. <b>{eq:teorema_fundamental_calculo}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales</a><ul>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_antiderivada">Ec. (1.23)</a>: ecuacion_diferencial_antiderivada. <b>{eq:ecuacion_diferencial_antiderivada}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple">Ec. (1.24)</a>: ecuacion_diferencial_simple. <b>{eq:ecuacion_diferencial_simple}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_reducida">Ec. (1.25)</a>: ecuacion_diferencial_simple_reducida. <b>{eq:ecuacion_diferencial_simple_reducida}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuaciones_reducidas">Ec. (1.26)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_identificacion">Ec. (1.27)</a>: ecuacion_diferencial_simple_identificacion. <b>{eq:ecuacion_diferencial_simple_identificacion}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqvariacion">Ec. (1.28)</a>: variacion. <b>{eq:variacion}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqlongitud_curva">Ec. (1.29)</a>: longitud_curva. <b>{eq:longitud_curva}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqfuncional_integral">Ec. (1.30)</a>: funcional_integral. <b>{eq:funcional_integral}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqdIdepsilon">Ec. (1.31)</a>: dIdepsilon. <b>{eq:dIdepsilon}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_integral_variaciones">Ec. (1.32)</a>: ecuacion_integral_variaciones. <b>{eq:ecuacion_integral_variaciones}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_euler_lagrange">Ec. (1.33)</a>: ecuacion_euler_lagrange. <b>{eq:ecuacion_euler_lagrange}</b></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:rutina_potencial">Código (1.1)</a>: rutina_potencial. <b>{code:rutina_potencial}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:funcion_lambda">Código (1.2)</a>: funcion_lambda. <b>{code:funcion_lambda}</b></li>
-</ul>
-</li>
-<li>Código en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#code:funcional_integral">Código (1.3)</a>: funcional_integral. <b>{code:funcional_integral}</b></li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
+    </div>
     </div>
   </div>
 </body>

@@ -1,6 +1,6 @@
 #Mecánica Celeste y Analítica
 
-## Teoría, problemas y algoritmos
+## Teoría, algoritmos y problemas
 
 ### Jorge I. Zuluaga, Profesor titular de Astronomía y Física, Instituto de Física, Universidad de Antioquia
 

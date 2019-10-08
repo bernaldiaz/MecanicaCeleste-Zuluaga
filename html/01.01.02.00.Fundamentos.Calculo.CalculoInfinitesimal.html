@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13066,38 +13066,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">Fundamentos.Calculo.Vectores</a> | Siguiente: <a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">Fundamentos.Calculo.EcuacionesDiferenciales</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="1.1.3.-Funciones">1.1.3. Funciones<a class="anchor-link" href="#1.1.3.-Funciones">&#182;</a></h3><p><a id='funciones'></a></p>
 
 </div>
 </div>
@@ -13105,42 +13088,42 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<p>Una función es, en términos informales, una regla de correspondencia que asocia los elementos de un conjunto de partida o <em>dominio</em> (p.e. el conjunto de los números reales ${\rm I\!R}$, el conjunto de puntos en un plano ${\rm I\!R}^2$ o de eventos en el espacio tiempo ${\rm I\!R}^4$) con los de otro conjunto, llamado rango, de modo a que cada elemento del dominio le corresponde <strong>uno y solo un elemento del rango</strong>.</p>
+<p>Entre los distintos tipos de funciones que reconoce el análisis matemático, en este libro nos concentraremos en:</p>
+<ul>
+<li><strong>Funciones de variable real</strong>: Dominio y rango ${\rm I\!R}$.  Ejemplo: $f(t)=t^2$.</li>
+<li><strong>Funciones de muchas variables</strong> o <strong>Campos escalares</strong>: Dominio ${\rm I\!R}^n$, rango ${\rm I\!R}$.  Ejemplos: $f(x,y)=x^2+y^2$, $H(\{q_i\}_N)=\sum_i q_i^2$ (para la notación del conjunto $\{q_i\}$ ver la <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#conjuntos_tuplas_vectores">Sección *Conjunto, tuplas y vectores</a>).</li>
+<li><strong>Funciones vectoriales</strong>: Dominio ${\rm I\!R}$, rango ${\rm I\!R}^n$.  Ejemplo: $\vec a(t)=kr^{-n} \hat{e}_r$.</li>
+<li><strong>Funciones vectoriales de muchas variables</strong> o <strong>Campos vectoriales</strong>: Dominio ${\rm I\!R}^n$, rango ${\rm I\!R}^3$. Ejemplo: $\vec{F}(r,\theta,z):-k(r\cos\theta,r\sin\theta,z)$.</li>
+</ul>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: $t$ como variable genérica de las funciones.</strong> En todos los textos de matemáticas (incluso en los de física) se acostumbra usar $x$ como el nombre preferido para representar, de forma genérica, la variable independiente de las funciones. En lo sucesivo cambiaremos esta convención al llamar $t$ a la variable independiente genérica.  La razón no puede ser más sencilla: en la mecánica $t$ es el nombre que damos a la variable independiente por excelencia, el tiempo, de modo que muchas de las fórmulas que desarrollaremos en este capítulo, se trasladaran simbólicamente casi sin modificación a la mecánica.</p>
+<blockquote><p>Es obvio que la elección de la letra con la que representamos la variable independiente, no modifica en nada las definiciones y teoremas que veremos en esta sección, de modo que esperamos esta elección no moleste a los más conservadores ni confunda a quienes han estudiado ampliamente estos temas en otros textos.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Algoritmos-para-funciones">Algoritmos para funciones<a class="anchor-link" href="#Algoritmos-para-funciones">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="01.01.00.00.Fundamentos.Calculo.html#vectores_calculo">Vectores y cálculo</a>. <b>{#vectores_calculo}</b><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#conjuntos_tuplas_vectores">Conjunto, tuplas y vectores</a>. <b>{#conjuntos_tuplas_vectores}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones">Funciones</a>. <b>{#funciones}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">Derivadas</a>. <b>{#derivadas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones_homogeneas">Funciones homogéneas</a>. <b>{#funciones_homogeneas}</b><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_derivada">Algoritmos para la derivada</a>. <b>{#algoritmos_derivada}</b></li>
-</ul>
-</li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">Integrales</a>. <b>{#integrales}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales_vectoriales">Integrales vectoriales</a>. <b>{#integrales_vectoriales}</b><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_integral">Algoritmos para la integral</a>. <b>{#algoritmos_integral}</b></li>
-</ul>
-</li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Ecuaciones diferenciales</a>. <b>{#ecuaciones_diferenciales}</b><ul>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#algoritmos_ode">Algoritmos para la solución de ODE</a>. <b>{#algoritmos_ode}</b></li>
-</ul>
-</li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#funcionales_calculo_variaciones">Funcionales y cálculo de variaciones</a>. <b>{#funcionales_calculo_variaciones}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#graficos_interactivos_variacional">Gráficos interactivos</a>. <b>{#graficos_interactivos_variacional}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Hay dos maneras de definir una función en <code>Python</code>: 1) como una rutina o 2) como una función <code>lambda</code>.</p>
+<p>Como una rutina, una función en <code>Python</code> puede recibir como "argumentos" de entrada no solo las variables de la función sino también argumentos opcionales.</p>
+<p>La siguiente función, por ejemplo, permite calcular el valor de la energía potencial de un sistema físico usando la función de varias variables $U(\vec r)=kr^{n}$ (siendo $\vec r:x,y,z$ el vector posición y $r$ su magnitud.)</p>
 
 </div>
 </div>
@@ -13148,17 +13131,80 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">01.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#fig:vectores">Figura 1.1</a>. Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $. <b>{fig:vectores}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#fig:coordenadas">Figura 1.2</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#fig:variacion_funcion">Figura 1.4</a>. El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $. <b>{fig:variacion_funcion}</b></li>
-</ul>
-</li>
-</ul>
+<p><a id='code:rutina_potencial'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">U</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">=-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">r</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+    <span class="k">return</span> <span class="n">k</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="n">n</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>U(1.0,2.0,0.0) con k = 1 y n = -1 (valores por defecto) = 0.4472135954999579
+U(1.0,2.0,0.0) con k = 6.67e-11 y n = -2 = 1.334e-11
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Argumentos obligatorios y argumentos opcionales.</strong> Toda rutina en <code>Python</code> puede tener unos argumentos obligatorios (que llamaremos variables) o unos opcionales.</p>
+<blockquote><p>Las variables son en estricto sentido una <code>tupla</code> de valores, por ejemplo <code>x,y,z</code> en la función $U$ en el Alg. (<a href="#code:rutina_potencial">rutina_potencial</a>).</p>
+<p>Los argumentos opcionales son, por otro lado, un <code>diccionario</code> de valores, que no es otra cosa que una lista de valores identificados con un nombre (también llamdo clave o <code>key</code>).  En la función $U$ en el Alg. (<a href="#code:rutina">rutina</a>) los argumentos opcionales son <code>k=1,n=-1</code>.</p>
+<p>En <code>Python</code> las variables y las opciones de una rutina pueden representarse usando los objetos especiales <code>*variables</code> y <code>**opciones</code>. El uso de estos objetos especiales no es muy común, pero en ciertas situaciones puede ser bastante útil.</p>
+<p>Una forma alternativa de la rutina para $U$ en el Alg. (<a href="#code:rutina">rutina</a>) es:</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">U</span><span class="p">(</span><span class="o">*</span><span class="n">variables</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="o">=*</span><span class="n">variables</span>
+    <span class="n">r</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+    <span class="k">return</span> <span class="n">opciones</span><span class="p">[</span><span class="s2">&quot;k&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="n">n</span>
+</pre></div>
+<blockquote><p>que se puede invocar usando:</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="n">var</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">2.0</span>
+  <span class="n">opc</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">=-</span><span class="mi">2</span><span class="p">)</span>
+  <span class="n">U</span><span class="p">(</span><span class="o">*</span><span class="n">var</span><span class="p">,</span><span class="o">**</span><span class="n">opc</span><span class="p">)</span>
+</pre></div>
+<blockquote><p>No parece muy práctico, pero como veremos puede ser muy útil en ciertas situaciones especiales.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las funciones <code>lambda</code> se usan para representar funciones muy abreviadas y no tienen argumentos distintos de las variables de las que dependen.</p>
+<p>Así, por ejemplo, el siguiente algoritmo define una función <code>lambda</code>, <code>U_x</code>, basada en la función $U$ del Alg. (<a href="#code:rutina">rutina</a>), que depende solo de la variable $x$ cuando y asumes constante los valores de $y$ y $z$ (<code>U_x</code> será util para calcular más abajo la derivadas parcial de $U$ respecto a $x$):</p>
 
 </div>
 </div>
@@ -13166,53 +13212,53 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">01.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqsuma_tuplas">Ec. (1.1)</a>: suma_tuplas. <b>{eq:suma_tuplas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqk_tupla">Ec. (1.2)</a>: k_tupla. <b>{eq:k_tupla}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqvectores_en_base">Ec. (1.3)</a>: vectores_en_base. <b>{eq:vectores_en_base}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqdelta_kroenecker">Ec. (1.4)</a>: delta_kroenecker. <b>{eq:delta_kroenecker}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqbase_mano_derecha">Ec. (1.5)</a>: base_mano_derecha. <b>{eq:base_mano_derecha}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqlevi_civita">Ec. (1.6)</a>: levi_civita. <b>{eq:levi_civita}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz">Ec. (1.7)</a>: producto_cruz. <b>{eq:producto_cruz}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz_determinante">Ec. (1.8)</a>: producto_cruz_determinante. <b>{eq:producto_cruz_determinante}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_escalar">Ec. (1.9)</a>: triple_producto_escalar. <b>{eq:triple_producto_escalar}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_vectorial">Ec. (1.10)</a>: triple_producto_vectorial. <b>{eq:triple_producto_vectorial}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (1.11)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (1.12)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_cilindricas">Ec. (1.13)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (1.14)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_esfericas">Ec. (1.15)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqderivada_definicion">Ec. (1.16)</a>: derivada_definicion. <b>{eq:derivada_definicion}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_general">Ec. (1.17)</a>: regla_cadena_general. <b>{eq:regla_cadena_general}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cartesianas">Ec. (1.18)</a>: gradiente_cartesianas. <b>{eq:gradiente_cartesianas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cilindricas">Ec. (1.19)</a>: gradiente_cilindricas. <b>{eq:gradiente_cilindricas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_esfericas">Ec. (1.20)</a>: gradiente_esfericas. <b>{eq:gradiente_esfericas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_multivariables">Ec. (1.21)</a>: regla_cadena_multivariables. <b>{eq:regla_cadena_multivariables}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqteorema_fundamental_calculo">Ec. (1.22)</a>: teorema_fundamental_calculo. <b>{eq:teorema_fundamental_calculo}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales</a><ul>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_antiderivada">Ec. (1.23)</a>: ecuacion_diferencial_antiderivada. <b>{eq:ecuacion_diferencial_antiderivada}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple">Ec. (1.24)</a>: ecuacion_diferencial_simple. <b>{eq:ecuacion_diferencial_simple}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_reducida">Ec. (1.25)</a>: ecuacion_diferencial_simple_reducida. <b>{eq:ecuacion_diferencial_simple_reducida}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuaciones_reducidas">Ec. (1.26)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_identificacion">Ec. (1.27)</a>: ecuacion_diferencial_simple_identificacion. <b>{eq:ecuacion_diferencial_simple_identificacion}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqvariacion">Ec. (1.28)</a>: variacion. <b>{eq:variacion}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqlongitud_curva">Ec. (1.29)</a>: longitud_curva. <b>{eq:longitud_curva}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqfuncional_integral">Ec. (1.30)</a>: funcional_integral. <b>{eq:funcional_integral}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqdIdepsilon">Ec. (1.31)</a>: dIdepsilon. <b>{eq:dIdepsilon}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_integral_variaciones">Ec. (1.32)</a>: ecuacion_integral_variaciones. <b>{eq:ecuacion_integral_variaciones}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_euler_lagrange">Ec. (1.33)</a>: ecuacion_euler_lagrange. <b>{eq:ecuacion_euler_lagrange}</b></li>
-</ul>
-</li>
-</ul>
+<p><a id='code:funcion_lambda'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="n">z</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="n">k</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">n</span><span class="o">=-</span><span class="mi">2</span>
+<span class="n">U_x</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">U</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ux(0.0) = 0.49999999999999994
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.4.-Derivadas">1.1.4. Derivadas<a class="anchor-link" href="#1.1.4.-Derivadas">&#182;</a></h3><p><a id='derivadas'></a></p>
 
 </div>
 </div>
@@ -13220,21 +13266,630 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:rutina_potencial">Código (1.1)</a>: rutina_potencial. <b>{code:rutina_potencial}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:funcion_lambda">Código (1.2)</a>: funcion_lambda. <b>{code:funcion_lambda}</b></li>
+<p>La derivada de una función de variable real es en sí misma una función definida por el límite:</p>
+\begin{equation}
+\label{eq:derivada_definicion}
+\frac{\mathrm{d}f}{\mathrm{d}t}\equiv\lim_{\Delta t\rightarrow 0}\frac{f(t)-f(t+\Delta t)}{\Delta t}
+\end{equation}<p>Si el límite no existe decimos que la función no es derivable en $t$.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Notación de la derivada.</strong> A lo largo de la historia la manera como se ha representado la función derivada ha cambiado.  Existen al menos tres notaciones comunes:</p>
+<blockquote><ul>
+<li>La <strong>notación de Leibniz</strong>, $\mathrm{d}f/\mathrm{dt}$, $\mathrm{d}^2f/\mathrm{d}t^2$.  En esta notación la derivada se representa como si fuera la razón entre dos cantidades, pero no es así ¡mucho cuidado! Usaremos la notación de Leibniz especialmente para representar la derivada de funciones que se escriben de forma explícita, así por ejemplo: </li>
 </ul>
+</blockquote>
+<p>$$ 
+  \frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{1}{2} t^2\right)
+  $$</p>
+<blockquote><ul>
+<li><p>La <strong>notación de Newton</strong>, $\dot f$, $\ddot f$.  Esta será la forma que usaremos para denotar a lo largo del libro las derivadas respecto del tiempo (o el tiempo propio en relatividad).</p>
 </li>
-<li>Código en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#code:funcional_integral">Código (1.3)</a>: funcional_integral. <b>{code:funcional_integral}</b></li>
-</ul>
+<li><p>La <strong>notación de Lagrange</strong>, $f'$, $f''$, que no usaremos en este libro pero que pueden encontrar en muchos textos clásicos de mecánica celeste o analítica.</p>
+</li>
+<li><p>La <strong>notación de Euler</strong>, $\mathrm{D}f$, $\mathrm{D}^2f$, es la notación menos común, pero puede aparecer en el contexto de la mecánica de fluídos.</p>
 </li>
 </ul>
+</blockquote>
 
 </div>
 </div>
 </div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La definición de derivada de las funciones de variable real como un límite, se extiende por analogía a campos escalares, funciones vectoriales o campos vectoriales. Para las funciones que dependen de varias variables, sin embargo, se usa una notación y un nombre diferente: <strong>derivada parcial</strong>. La derivada parcial de un campo escalar se define como:</p>
+$$
+\frac{\partial f}{\partial q_k}=
+\lim_{\Delta q_k\rightarrow 0}\frac{
+f(q_1,q_2,\ldots,q_k+\Delta q_k,\ldots,q_N)-
+f(q_1,q_2,\ldots,q_k,\ldots,q_N)
+}{\Delta q_k}
+$$<p>La derivada parcial se calcula de la misma manera que la derivada de una variable, con la salvedad de que al hacerlo se asume que todas las demás variables de la función son constantes.</p>
+<p>En muchas partes en este libro, y por economía usaremos la notación de Euler para las derivadas parciales, a saber:</p>
+$$
+\partial_x f\equiv\frac{\partial f}{\partial x}
+$$<p>En esta notación una derivada parcial múltiple se escribirá como:</p>
+$$
+\partial_{xyz}f(x,y,z)\equiv\frac{\partial^3 f}{\partial x\partial y\partial z}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A pesar de que la derivada parcial tiene una definición <em>numérica</em> análoga a la de la derivada total, existe una sútil diferencia entre ambas.</p>
+<p>Imagine que tenemos una <strong>variable independiente</strong> $t$ y definimos, a partir de ella, una nueva variable $u$ que es función de $t$ (variable dependiente).</p>
+<p>¿Cómo podemos calcular la derivada de una función de la nueva variable $f(u)$ respecto de la variable independiente $t$?</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Regla de la Cadena.</strong> Dada una función compuesta $f(u(t))$, la derivada de $f$ respecto a $t$ es:</p>
+$$
+\frac{\mathrm{d}f}{\mathrm{d}t}=\frac{\mathrm{d}f}{\mathrm{d}u}\frac{\mathrm{d}u}{\mathrm{d}t}
+$$
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Decimos que la función $f$ depende <em>implícitamente</em> de la variable independiente $t$.  En este sentido la regla de la cadena es una regla de <em>derivación implícita</em>.</p>
+<p>Usando la notación de Newton la expresión anterior se escribirá de forma abreviada:</p>
+$$
+\dot{f}(t)=\dot u\frac{\mathrm{d}f}{\mathrm{d}u}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Qué pasa en el caso en el que $f$ depende de varias variables dependientes, por ejemplo $f(q_1(t),q_2(t),\ldots, q_N(t))\equiv f(\{q_i(t)\}_N)$?</p>
+<p>En este caso la regla de la cadena se puede generalizar como:</p>
+$$
+\frac{\mathrm{d}f}{\mathrm{d}t}=
+\frac{\partial f}{\partial q_1}\frac{\mathrm{d}q_1}{\mathrm{d}t}+
+\frac{\partial f}{\partial q_2}\frac{\mathrm{d}q_2}{\mathrm{d}t}+
+\ldots
+\frac{\partial f}{\partial q_N}\frac{\mathrm{d}q_N}{\mathrm{d}t}=
+\sum_i \frac{\partial f}{\partial q_i}\frac{\mathrm{d}q_i}{\mathrm{d}t}=
+\sum_i \dot{q}_i\partial_{q_i} f 
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora bien: ¿existirá, en este caso, la derivada parcial de $f$ respecto de $t$?</p>
+<p>La respuesta a esta pregunta, ilustra, justamente, la diferencia sutil entre la derivada ordinaria o <em>derivada total</em> $\mathrm{d}/\mathrm{dt}$ y la derivada parcial $\partial/\partial t$.</p>
+<p>Hay dos situaciones posibles:</p>
+<ul>
+<li><p>Si la función $f$ <em>no depende</em> explícitamente de $t$, es decir si la variable $t$ no aparece en la fórmula de $f$, entonces $\partial f/\partial t=0$.  Este resultado es <em>independiente</em> de que $f$ dependa implícitamente de $t$ a través de otras variables dependientes.</p>
+<p><strong>Ejemplo</strong>: si $f(q,t)=q^2$, entonces: $\partial f/\partial t=0$ aunque, por regla de la cadena, $\mathrm{d}f/\mathrm{d}t=2 q\dot q$.</p>
+</li>
+<li><p>Si la fórmula de la función $f$ contiene la variable $t$, entonces su derivada parcial puede ser distinta de cero (dependiendo de la forma funcional de $f$).</p>
+<p><strong>Ejemplo</strong>: Si $f(q,t)=q^2+\sin t$, entonces: $\partial f/\partial t=\cos t$ y $\mathrm{d}f/\mathrm{d}t=2 q\dot q+\cos t$.</p>
+</li>
+</ul>
+<p>En este sentido la derivada parcial es como un "operador semántico", es decir un operador sobre las "letras" que aparecen en la fórmula de la función.</p>
+<p>Teniendo en cuenta esta propiedad, la forma más general de la regla de la cadena, para una función de varias variables (campo escalar o vectorial) será:</p>
+\begin{equation}
+\label{eq:regla_cadena_general}
+\frac{\mathrm{d}}{\mathrm{d}t}f(\{q_i\},t)=
+\sum_i \dot{q}_i\partial_{q_i} f + \frac{\partial f}{\partial t}
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.5.-Funciones-homog&#233;neas">1.1.5. Funciones homog&#233;neas<a class="anchor-link" href="#1.1.5.-Funciones-homog&#233;neas">&#182;</a></h3><p><a id='funciones_homogeneas'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Existe un interesante conjunto de funciones para las cuáles hay una relación no trivial entre su derivada y el valor de la función misma.  Se conocen como <strong>funciones homogéneas</strong>:</p>
+
+</div>
+</div>
+</div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Definición 1.1. Funciones homogéneas.</strong> Una función general $f(\{q_i\})$ se llama homogénea si frente a una operación de escalado de sus variables (multiplicación por un escalar), la función <em>escala</em> también. En términos matemáticos:</p>
+<p>$$
+  f(\{\lambda q_i\})=\lambda^k f(\{q_i\})
+  $$</p>
+<blockquote><p>donde $\lambda$ es un número real y $k$ se conoce como el <strong>orden</strong> de la función.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Las funciones homogéneas son, generalmente polinomios y funciones racionales.  Así por ejemplo $f(x,y)=x^2/a^2+y^2/b^2$, con $a$ y $b$ constantes, y que representa la ecuación algebraica de una elipse, es una función homogénea de grado $k=2$.  De otro lado $f(x)=x^3y^2+y^5$ es homogénea de grado $k=5$.</p>
+<p>Las funciones homogéneas más interesantes para nosotros en este libro son del tipo $f(\vec r)=k r^n$ que son homogéneas de grado $k=n$ (ver problemas al final del capítulo.)</p>
+<p>Como mencionamos desde el principio, las derivadas de las funciones homogéneas tienen una propiedad muy importante:</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Teorema de funciones homogeneas de de Euler.</strong> Si una función $f(\{q_i\}_N)$ es homogénea de grado $k$, entonces:</p>
+<p>$$
+  \sum_i q_i \frac{\partial f}{\partial q_i} = k f
+  $$</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para funciones homogéneas definidas en el espacio de tres dimensiones, el teorema de Euler se puede escribir como:</p>
+$$
+\vec r\cdot\vec{\nabla}f=kf
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Derivada-vectorial">Derivada vectorial<a class="anchor-link" href="#Derivada-vectorial">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para funciones de varias variables (especialmente aquellas con dominio en el espacio coordenado ${\rm I\!R}^3$) se definen generalizaciones vectoriales de la derivada que tienen motivaciones e interpretaciones geométricas específicas.</p>
+<p>El <em>operador diferencial vectorial</em> básico se conoce como el <strong>gradiente</strong>. Denotado comúnmente como $\vec{\nabla}$, en coordenadas cartesianas se define explícitamente como:</p>
+\begin{equation}
+\label{eq:gradiente_cartesianas}
+\vec{\nabla}f(x,y,z)=
+\frac{\partial f}{\partial x}\hat{e}_x+
+\frac{\partial f}{\partial y}\hat{e}_y+
+\frac{\partial f}{\partial z}\hat{e}_z
+\end{equation}<p>El operador gradiente en el sistema de coordenadas cilíndrico (con la notación definida anteriormente) esta dado por:</p>
+\begin{equation}
+\label{eq:gradiente_cilindricas}
+\vec{\nabla}f(r,\theta,z)=
+\frac{\partial f}{\partial r}\hat{e}_r+
+\frac{1}{r}\frac{\partial f}{\partial \theta}\hat{e}_\theta+
+\frac{\partial f}{\partial z}\hat{e}_z
+\end{equation}<p>Donde el factor $1/h_\theta\equiv1/r$ se conoce como <em>factor de escala</em>.</p>
+<p>Por su parte en coordenadas esféricas (con la notación definida anteriormente):</p>
+\begin{equation}
+\label{eq:gradiente_esfericas}
+\vec{\nabla}f(r,\theta,\phi)=
+\frac{\partial f}{\partial r}\hat{e}_r+
+\frac{1}{r}\frac{\partial f}{\partial \theta}\hat{e}_\theta+
+\frac{1}{r\cos\phi}\frac{\partial f}{\partial \phi}\hat{e}_\phi
+\end{equation}<p>En este caso se ha introducido un nuevo factor de escala: $h_\phi\equiv r\cos\phi$.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Una notación para el gradiente.</strong> Como lo hicimos con la derivada parcial, a lo largo de este libro, abreviaremos el gradiente usando la notación especial:</p>
+<p>$$
+  \partial_{\vec{r}} f\equiv\frac{\partial f}{\partial \vec r}\equiv\vec{\nabla}f
+  $$</p>
+<blockquote><p>Aunque no es una notación muy rigurosa, permite abreviar expresiones que de otra manera serían muy elaboradas.  Así por ejemplo, la regla de la cadena (Ec. <a href="#mjx-eqn-eqregla_cadena_general">regla_cadena_general</a>) para funciones definidas en el espacio coordenado, se puede escribir de forma compacta como:</p>
+</blockquote>
+<p>\begin{equation}
+  \label{eq:regla_cadena_multivariables}
+  \dot{f}(x,y,z,t)=\partial_{\vec r} f\cdot\dot{\vec{r}}+\partial_t f
+  \end{equation}</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Existen otros operadores vectoriales (laplaciano, divergencia, rotacional) sobre los que no profundizaremos aquí por no ser de mucha utilidad práctica en la mecánica celeste (al menos no al nivel de este libro.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1.1.5.1.-Algoritmos-para-la-derivada">1.1.5.1. Algoritmos para la derivada<a class="anchor-link" href="#1.1.5.1.-Algoritmos-para-la-derivada">&#182;</a></h4><p><a id='algoritmos_derivada'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Existen diversos algoritmos para calcular la derivada de una función en una o varias variables.  En este libro, en donde sea necesario, nos apoyaremos de la biblioteca científica <code>scipy</code> y su rutina <code>derivative</code> que permite calcular, numéricamente, derivadas de cualquier orden.</p>
+<p>El siguiente algoritmo ilustra el uso de <code>derivative</code> y sus opciones:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">sin</span>
+    <span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">/</span><span class="n">t</span>
+
+<span class="c1">#Valor de la variable independiente donde queremos la derivada</span>
+<span class="n">t</span><span class="o">=</span><span class="mf">2.0</span>
+
+<span class="kn">from</span> <span class="nn">scipy.misc</span> <span class="k">import</span> <span class="n">derivative</span>
+
+<span class="c1">#Primera derivada usando un dx=0.01 y 3 puntos</span>
+<span class="n">dfdt</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">dx</span><span class="o">=</span><span class="mf">1e-2</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">order</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1">#Segunda derivada en t</span>
+<span class="n">d2fdt2</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">dx</span><span class="o">=</span><span class="mf">1e-2</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">order</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dfdt : Numérica = -0.4353938258295498, Exacta = -0.43539777497999166
+d2fdt2 : Numérica = -0.019250938436687903, Exacta = -0.01925093843284925
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando <code>derivative</code> es posible diseñar funciones para calcular derivadas parciales e incluso gradientes (para los cuáles no existen funciones en la biblioteca <code>scipy</code>).  Así por ejemplo:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">sin</span>
+    <span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="o">*</span><span class="n">z</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="o">*</span><span class="n">z</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">partial_derivative_x</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">):</span>
+    <span class="n">f_solo_x</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
+    <span class="n">dfdx</span><span class="o">=</span><span class="n">derivative</span><span class="p">(</span><span class="n">f_solo_x</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dfdx</span>
+
+<span class="n">x</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="n">y</span><span class="o">=</span><span class="mf">2.0</span>
+<span class="n">z</span><span class="o">=</span><span class="mf">3.0</span>
+<span class="n">dfdx</span><span class="o">=</span><span class="n">partial_derivative_x</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="n">dx</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dfdx: Numérica = 1.0061803563982654, Exacta = 1.006739536350187
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese como usamos aquí la función <code>lambda</code> <code>f_solo_x</code>, de la manera que lo hicimos en el Algorítmo (<a href="#code:funcion_lambda">funcion_lambda</a>) para conseguir el resultado deseado.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.6.-Integrales">1.1.6. Integrales<a class="anchor-link" href="#1.1.6.-Integrales">&#182;</a></h3><p><a id='integrales'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Se llama <strong>antiderivada</strong>  de una función de variable real $f(t)$, a la función $F(t)$ cuya derivada es igual a la función original:</p>
+$$
+\dot{F}(t)=f(t)
+$$<p>O en notación <em>integral</em>:</p>
+$$
+F(t)\equiv\int f(t)\;\mathrm{d}t
+$$<p>A $F(t)$ o equivalentemente $\int f(t)\;\mathrm{d}t$ se la llama también la <strong>integral indefinida</strong> de $f(t)$.</p>
+<p>La antiderivada permite calcular la <strong>cuadratura de una función</strong>, que no es otra cosa que el área encerrada por la curva en el plano cartesiano definido por la variable independiente y los valores de la función:</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Fórmula de Newton-Leibniz.</strong> <a href="#notaspie_1">$^1$</a>. Dada una función $f(t)$ que tiene antiderivada $F(t)$ definida en el intervalo $[a,b]$, el área o cuadratura de la función en el mismo intervalo esta dado por:</p>
+<p>$$ 
+  \int_a^b f(t)\;\mathrm{d}t=F(b)-F(a)
+  $$</p>
+<blockquote><p>A la cantidad $\int_a^b f(t)\;\mathrm{d}t$ se la llama <strong>integral definida</strong> de $f(t)$.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos de la integral definida podemos definir una nueva función:</p>
+$$
+I(t)=\int_a^t f(\tau)\;\mathrm{d}\tau
+$$<p>Nótese que para ser rigorusos hemos cambiado el nombre de la "variable de integración" $\tau$ para no confundirla con el límite superior de la integral $t$.</p>
+<p>Esta nueva función tiene una importante propiedad:</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Teorema fundamental del cálculo.</strong> Dada una función $f(t)$ integrable en el intervalo $[a,b]$, si definimos la función $I(t)=\int_a^t f(\tau)\;\mathrm{d}\tau$, entonces:</p>
+<p>$$ 
+  \frac{\mathrm{d}I}{\mathrm{d}t}=f(t)
+  $$</p>
+<p>o bien,</p>
+<p>\begin{equation}
+  \label{eq:teorema_fundamental_calculo}
+  \frac{\mathrm{d}}{\mathrm{d}t}\int_a^t f(\tau)\;\mathrm{d}\tau=f(t)
+  \end{equation}</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es interesante anotar que aunque la antiderivada $F(t)$ y la función $I(t)$ tienen la misma derivada en $t$, es decir $\mathrm{d}F/\mathrm{d}t=\mathrm{d}I/\mathrm{d}t=f(t)$, no son necesariamente la misma función.  Considere, por ejemplo, el hecho elemental de que $I(a)=0$ (por definición) mientras que $F(a)$ podría ser cualquier número (incluyendo cero por supuesto.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.7.-Integrales-vectoriales">1.1.7. Integrales vectoriales<a class="anchor-link" href="#1.1.7.-Integrales-vectoriales">&#182;</a></h3><p><a id='integrales_vectoriales'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una extrapolación del concepto de integral a funciones de varias variables (campos escalares y campos vectoriales) conduce a algunas operaciones integrales de gran importancia en la física.  Para los propósitos de lo que veremos en este libro, son de particular interés las integrales del tipo:</p>
+$$
+\int \vec F\cdot \mathrm{d}\vec r,
+$$<p>que se define sobre todos los valores de $\vec r$ de una curva en el espacio coordenado.  A esta integral se la conoce como <strong>integral de línea</strong>.   Si la trayectoria es cerrada, escribiremos:</p>
+$$
+\oint \vec F\cdot \mathrm{d}\vec r,
+$$<p>que no se diferencia (matemáticamente) en nada de una integral de línea.  A esta integral la llamaremos <strong>circulación</strong> del campo vectorial $\vec F$.</p>
+<p>Otro tipo de integral vectorial de interés es:</p>
+$$
+\int_\Sigma \vec F\cdot \mathrm{d}\vec{S}
+$$<p>Donde $\mathrm{d}\vec S$ tiene dirección normal a la superficie $\Sigma$ (formada por el lugar geométrico de todos los puntos que la definen) y magnitud igual al área de una fracción infinitesimal de la superficie.</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: teorema de Stokes.</strong> Si $\vec F(\vec r)$ es un campo vectorial diferenciable en todos los puntos del espacio, entonces:</p>
+<p>$$
+  \oint \vec F\cdot\mathrm{d}\vec r = \int_\Sigma (\vec{\nabla}\times \vec F)\cdot \mathrm{d}\vec{S}
+  $$</p>
+<blockquote><p>Donde $\Sigma$ es cualquier superficie que tenga como frontera la trayectoria sobre la que se define la circulación.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un importante corolario del teorema de Stokes es el siguiente:</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Corolario del teorema de Stokes.</strong> Si el campo vectorial $\vec F(\vec r)$ tiene circulación nula:</p>
+<p>$$
+  \oint \vec F\cdot\mathrm{d}\vec r = 0
+  $$</p>
+<blockquote><p>Entonces existe un campo escalar $U(\vec r)$ tal que:</p>
+</blockquote>
+<p>$$
+  \vec F=\vec{\nabla} U
+  $$</p>
+<blockquote><p>Llamamos a $U$ la función <em>potencial</em> de $\vec F$.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1.1.7.1.-Algoritmos-para-la-integral">1.1.7.1. Algoritmos para la integral<a class="anchor-link" href="#1.1.7.1.-Algoritmos-para-la-integral">&#182;</a></h4><p><a id='algoritmos_integral'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El cálculo numérico de integrales es una basta área del análisis numérico.  En cada lenguaje de programación es posible encontrar bibliotecas completas con rutinas para el cálculo de aproximaciones numéricas de integrales definidas e integrales vectoriales.</p>
+<p>Para los propósitos de este libro, usaremos la rutina <code>quad</code> de la biblioteca <code>SciPy</code> para calcular numéricamente integrales definidas de funciones de variable real.</p>
+<p>En el algoritmo provisto a continuación, calculamos, por ejemplo, el trabajo $W\equiv\int F(x)\;\mathrm{d}x$ sobre una partícula que se mueve en una dimensióm sometida a una fuerza del tipo $F(x)=-kx$, asumiendo que $k=0.1$ y que la partícula se desplaza entre $x=1.0$ y $x=5.0$:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#El integrando debe definirse como una rutina</span>
+<span class="k">def</span> <span class="nf">F</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">k</span><span class="o">*</span><span class="n">x</span>
+
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">quad</span>
+<span class="n">k</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="n">x0</span><span class="o">=</span><span class="mf">1.0</span>
+<span class="n">x1</span><span class="o">=</span><span class="mf">5.0</span>
+<span class="n">integral</span><span class="o">=</span><span class="n">quad</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">x1</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">k</span><span class="p">,))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Integral: Numérica = (-1.2, 1.3322676295501878e-14), Exacta = -1.2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que los argumentos opcionales del integrando se pasan como la <code>tupla</code> <code>args</code> que en este caso, dado que la función solo depende de un parámetro opcional, se escribe de forma poco intuitiva como <code>args=(k,)</code> donde la coma final es oblogatoria.</p>
+<p>El resultado de la turina <code>quad</code> es una <code>tupla</code> con dos números: el valor de la integral y el error estimado de la misma.  Como vemos, en el ejemplo arriba, la integral es prácticamente exacta.</p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Cuadraturas Gaussianas.</strong> El método usado por <code>quad</code> para calcular la integral se conoce como <em>cuadraturas gaussianas</em> y aproxima la integral como una serie de pocos términos del valor de la función definido en algunos puntos específicos <cite data-cite="Press2007Numerical"><a href="mybook.html#Press2007Numerical">(Press et al., 2007)</a></cite>.  Las cuadraturas gaussianas permiten calcular la integral de funciones polinómicas de forma <em>exacta</em>.  Esta es la razón por la cuál la integral en el ejemplo dado aquí, es idéntica al valor esperado.</p>
+
+</div>
+</div>
+</div>
+    </div><div style="font-size:0.8em;border-top:solid black 1px">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTAS AL PIE:</strong></p>
+<p><a id='notaspie_1'></a></p>
+<ol start='1'>
+<li>A esta fórmula se la llama a menudo <em>segundo teorema fundamental del cálculo</em></li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">Fundamentos.Calculo.Vectores</a> | Siguiente: <a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">Fundamentos.Calculo.EcuacionesDiferenciales</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

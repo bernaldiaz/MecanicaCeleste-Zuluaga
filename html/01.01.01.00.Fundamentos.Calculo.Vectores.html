@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01.01.01.00.Fundamentos.Calculo.Vectores</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13066,38 +13066,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.00.00.Fundamentos.Calculo.html">Fundamentos.Calculo</a> | Siguiente: <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">Fundamentos.Calculo.CalculoInfinitesimal</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="1.1.1.-Conjunto,-tuplas-y-vectores">1.1.1. Conjunto, tuplas y vectores<a class="anchor-link" href="#1.1.1.-Conjunto,-tuplas-y-vectores">&#182;</a></h3><p><a id='conjuntos_tuplas_vectores'></a></p>
 
 </div>
 </div>
@@ -13105,38 +13088,46 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<p>Hay tres tipos de entidades matemáticas (además de los números reales y las funciones) que usaremos con frecuencia en este capítulo (y en general en todo el libro):</p>
+<ul>
+<li><p><strong>Conjuntos</strong>. Muchas veces nos referiremos aquí a conjuntos (no necesariamente ordenados) de entidades que están relacionadas de alguna manera: las coordenadas de un punto en el espacio de fases, un conjunto de funciones, las ecuaciones diferenciales que describen el movimiento de un sistema dinámico, las partículas que interactúan gravitacionalmente en un sistema, etc. Los elementos de la mayoría de los conjuntos usados en este libro estarán numerados.  Así por ejemplo, las masas de un sistema de N partículas, $m_0$, $m_1$, ..., $m_{N-1}$ se representarán como el conjunto:</p>
+<p>$$
+\{m_i\}_{i=0,1,\ldots,N-1}
+$$</p>
+<p>Una versión sintética más común de esta notación será $\{m_i\}_N$. En el caso en el que el número de elementos sea claro en el contexto se usará simplemente $\{m_i\}$</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Numeración comenzando en cero.</strong> En lo sucesivo numeraremos todas las cantidades físicas y matemáticas (partículas, variables auxiliares, componentes de un vector o una matriz, etc.) comenzando en cero, tal y como se acostumbra en programación.  Esta elección facilitará la implementación de las fórmulas en algoritmos y programas de computadora.  Si bien la numeración comenzando en cero no es muy común en matemáticas o física, existen justificaciones poderosas para su uso, algunas de las cuáles están enumeradas en el documento <a href="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html">"Why numbering should start at zero"</a> del maestro de maestros de la programación científica, Edsger Wybe Dijkstra.</p>
+
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="01.01.00.00.Fundamentos.Calculo.html#vectores_calculo">Vectores y cálculo</a>. <b>{#vectores_calculo}</b><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#conjuntos_tuplas_vectores">Conjunto, tuplas y vectores</a>. <b>{#conjuntos_tuplas_vectores}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones">Funciones</a>. <b>{#funciones}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">Derivadas</a>. <b>{#derivadas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones_homogeneas">Funciones homogéneas</a>. <b>{#funciones_homogeneas}</b><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_derivada">Algoritmos para la derivada</a>. <b>{#algoritmos_derivada}</b></li>
-</ul>
+<ul>
+<li><p><strong>Tuplas</strong>. Las tuplas (pares, tripletas, etc.) son conjuntos ordenados de números reales. Para las tuplas usaremos la notación convencional $(x_0,x_2,\ldots,x_{N-1})$, donde los paréntesis, a diferencia de las llaves de los conjuntos más generales, nos permitirán reconocer el hecho de que el orden de los elementos es importante. Las tuplas forman, con el conjunto de los números reales, un <em>espacio vectorial</em>.  En este espacio se definen las siguientes operaciones básicas:</p>
+<ul>
+<li><p>Suma:</p>
+<p>\begin{equation}
+\label{eq:suma_tuplas}
+(a_0,a_1,\ldots)+(b_0,b_1,\ldots)\equiv(a_0+b_0,a_1+b_1,\ldots)
+\end{equation}</p>
 </li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">Integrales</a>. <b>{#integrales}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales_vectoriales">Integrales vectoriales</a>. <b>{#integrales_vectoriales}</b><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_integral">Algoritmos para la integral</a>. <b>{#algoritmos_integral}</b></li>
-</ul>
-</li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Ecuaciones diferenciales</a>. <b>{#ecuaciones_diferenciales}</b><ul>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#algoritmos_ode">Algoritmos para la solución de ODE</a>. <b>{#algoritmos_ode}</b></li>
-</ul>
-</li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#funcionales_calculo_variaciones">Funcionales y cálculo de variaciones</a>. <b>{#funcionales_calculo_variaciones}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#graficos_interactivos_variacional">Gráficos interactivos</a>. <b>{#graficos_interactivos_variacional}</b></li>
-</ul>
+<li><p>Multiplicación por un escalar:</p>
+<p>\begin{equation}
+\label{eq:k_tupla}
+ k(a_0,a_1,\ldots)\equiv(ka_0,ka_1,\ldots)
+\end{equation}</p>
+<p>donde $k$ es un número real.</p>
 </li>
 </ul>
 </li>
@@ -13148,14 +13139,112 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">01.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#fig:vectores">Figura 1.1</a>. Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $. <b>{fig:vectores}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#fig:coordenadas">Figura 1.2</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
+<p><a id='fig:vectores'></a><img src="./figures/square_vectores_definicion.png" alt="Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $" width="80.0%"></p>
+<center><b>Figura 1.1</b>. Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Vectores geométricos (euclidianos)</strong>. Los vectores geométricos o en breve vectores, son <em>segmentos orientados</em> en el espacio de tres dimensiones (ver Figura (<a href="#fig:vectores">vectores</a>)) que tienen las siguientes propiedades:</p>
+<ul>
+<li><p>Se denotarán en este libro como $\vec A$ o $\hat e$ (este último es un vector unitario) en lugar de usar la notación más común con letras en negrilla.</p>
+</li>
+<li><p>Todo vector tiene: 1) magnitud, $A$, igual a la longitud (euclidiana) del segmento correspondiente y 2) una dirección en el espacio.</p>
+</li>
+<li><p>Los vectores forman con los números reales, un espacio vectorial con operaciones definidas, geométricamente, como se muestra en la Figura (<a href="#fig:vectores">vectores</a>).</p>
+</li>
+<li><p>Todo vector, por definición, se puede escribir como una combinación lineal de tres vectores de una base ortonormal: $\hat{e}_0,\hat{e}_1,\hat{e}_2$. Los coeficientes de la combinación se conocen como componentes del vector:</p>
+<p>\begin{equation}
+\label{eq:vectores_en_base}
+\vec A=A_0\hat{e}_0+A_1\hat{e}_1+A_2\hat{e}_2.
+\end{equation}</p>
+</li>
+<li><p>El espacio de vectores es <em>isomorfico</em> a el espacio vectorial de tripletas.  Por la misma razón nos referiremos al vector, o bien como la entidad abstracta $\vec A$, como su representación en términos de los vectores unitarios de una base ortonormal (ver ítem anterior) o aún mejor, en términos de la tripleta:</p>
+<p>$$
+\vec A:(A_0,A_1,A_2)
+$$</p>
+<p>En este caso usaremos el símbolo ":" en lugar de "=" para dar entender que el vector <em>no es</em> una tripleta sino una entidad geométrica más abstracta.</p>
+<p>El isomorfismo implica también, que las componentes de los vectores en las operaciones geométricas definidas en la Figura (<a href="#fig:vectores">vectores</a>), cumplen la Ecs. (<a href="#mjx-eqn-eqsuma_tuplas">suma_tuplas</a>) y (<a href="#mjx-eqn-eqk_tupla">k_tupla</a>).</p>
+</li>
+<li><p>Además de la suma y la multiplicación por un escalar, que caracterizan el espacio vectorial, se definen dos productos adicionales:</p>
+<ul>
+<li><p><strong>Producto escalar</strong> o <strong>producto punto</strong>, $\vec A\cdot\vec B$.  El producto escalar se define, a partir los vectores unitarios de la base, como:</p>
+<p>$$\hat{e}_i\cdot \hat{e}_j=\delta_{ij},$$</p>
+<p>donde $\delta_{ij}$ es el "delta de kroenecker":</p>
+<p>\begin{equation}
+  \label{eq:delta_kroenecker}
+  \delta_{ij}=\left\{
+  \begin{array}{ccc}
+  1 &amp; &amp; i=j\\
+  0 &amp; &amp; i\neq j\\
+  \end{array}
+  \right.
+  \end{equation}</p>
+<p>Con esta esta definición y usando la representación de los vectores dada por la Ec. (<a href="#mjx-eqn-eqvectores_en_base">vectores_en_base</a>) puede probarse que:</p>
+<p>$$
+  \vec A\cdot\vec B=A_0B_0+A_1B_1+A_2B_2
+  $$</p>
+</li>
+<li><p><strong>Producto vectorial</strong> o <strong>producto cruz</strong>, $\vec A\times\vec B$. El producto vectorial se define, a partir los vectores unitarios de la base, como:</p>
+<p>\begin{equation}
+  \label{eq:base_mano_derecha}
+  \hat{e}_i\times \hat{e}_j=\epsilon_{ijk}\hat{e}_k,
+  \end{equation}</p>
+<p>donde $\epsilon_{ijk}$ es el "simbolo de Levi-Civita" (<a href="https://forvo.com/word/levi-civita/#it">"levi chivita"</a>):</p>
+<p>\begin{equation}
+  \label{eq:levi_civita}
+  {\epsilon _{ijk}=\left\{{\begin{matrix}+1&amp;{\mbox{si }}(i,j,k){\mbox{ es }}(0,1,2),(1,2,0){\mbox{ o }}(2,0,1)\\-1&amp;{\mbox{si }}(i,j,k){\mbox{ es }}(2,1,0),(0,2,1){\mbox{ o }}(1,0,2)\\0&amp;{\mbox{de otro modo }}i=j{\text{ o }}j=k{\text{ o }}k=i\end{matrix}}\right.}
+  \end{equation}</p>
+<p>Al conjunto de vectores unitarios de una base que se definen cumpliendo la Ec. (<a href="#mjx-eqn-eqbase_mano_derecha">base_mano_derecha</a>) se lo llama un <em>conjunto de vectores de mano derecha</em>.</p>
+<p>Con esta esta definición y usando la representación de los vectores dada por la Ec. (<a href="#mjx-eqn-eqvectores_en_base">vectores_en_base</a>) puede probarse que:</p>
+<p>\begin{equation}
+  \label{eq:producto_cruz}
+  \begin{array}{rcl}
+  \vec A\times\vec B 
+  &amp; = &amp; (A_1B_2-A_2B_1)\hat{e}_0+\\
+  &amp;   &amp; -(A_0B_2-A_2B_0)\hat{e}_1+\\
+  &amp;   &amp; (A_0B_1-A_1B_0)\hat{e}_2\\
+  \end{array}
+  \end{equation}</p>
+<p>Está última expresión es tan elaborada que con frecuencia se usa la regla mnemoténica:</p>
+<p>\begin{equation}
+\label{eq:producto_cruz_determinante}
+\vec A\times\vec B =
+\left|
+\begin{array}{ccc}
+\hat{e}_0 &amp; \hat{e}_1 &amp; \hat{e}_2\\
+A_0 &amp; A_1 &amp; A_2\\
+B_0 &amp; B_1 &amp; B_2\\
+\end{array}
+\right|
+\end{equation}</p>
+<p>Donde $|M|$ es el determinante de la matriz $M$.</p>
+</li>
+</ul>
+<ul>
+<li><p>Otras identidades útiles:</p>
+<ul>
+<li><p>Propiedad cíclica del <strong>triple producto escalar</strong>:</p>
+<p>\begin{equation}
+ \label{eq:triple_producto_escalar}
+ \vec A\cdot(\vec B\times\vec C)=
+ \vec C\cdot(\vec A\times\vec B)=
+ \vec B\cdot(\vec C\times\vec A)
+ \end{equation}</p>
+</li>
+<li><p><strong>Triple producto vectorial</strong>:</p>
+<p>\begin{equation}
+ \label{eq:triple_producto_vectorial}
+ \vec A\times(\vec B\times\vec C)=(\vec A\cdot\vec C)\vec B-(\vec A\cdot\vec B)\vec C
+ \end{equation}</p>
+</li>
 </ul>
 </li>
-<li>Figuras en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#fig:variacion_funcion">Figura 1.4</a>. El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $. <b>{fig:variacion_funcion}</b></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -13166,50 +13255,382 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="01.01.01.00.Fundamentos.Calculo.Vectores.html">01.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqsuma_tuplas">Ec. (1.1)</a>: suma_tuplas. <b>{eq:suma_tuplas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqk_tupla">Ec. (1.2)</a>: k_tupla. <b>{eq:k_tupla}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqvectores_en_base">Ec. (1.3)</a>: vectores_en_base. <b>{eq:vectores_en_base}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqdelta_kroenecker">Ec. (1.4)</a>: delta_kroenecker. <b>{eq:delta_kroenecker}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqbase_mano_derecha">Ec. (1.5)</a>: base_mano_derecha. <b>{eq:base_mano_derecha}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqlevi_civita">Ec. (1.6)</a>: levi_civita. <b>{eq:levi_civita}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz">Ec. (1.7)</a>: producto_cruz. <b>{eq:producto_cruz}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz_determinante">Ec. (1.8)</a>: producto_cruz_determinante. <b>{eq:producto_cruz_determinante}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_escalar">Ec. (1.9)</a>: triple_producto_escalar. <b>{eq:triple_producto_escalar}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_vectorial">Ec. (1.10)</a>: triple_producto_vectorial. <b>{eq:triple_producto_vectorial}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (1.11)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (1.12)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_cilindricas">Ec. (1.13)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (1.14)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="01.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_esfericas">Ec. (1.15)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
+<h4 id="Algoritmos-para-conjuntos-y-tuplas">Algoritmos para conjuntos y tuplas<a class="anchor-link" href="#Algoritmos-para-conjuntos-y-tuplas">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Todos los lenguajes modernos de programación, definen tipos especiales para representar conjuntos y tuplas.  En <code>Python</code> existen tres tipos de objetos básicos para este propósito: <code>listas</code>, <code>tuplas</code> y diccionarios. Existen sútiles diferencias entre las listas y las tuplas en <code>Python</code> y en general usaremos con más frecuencia las primeras.<br>
+Para para los algoritmos de este libro, es importante entender las <em>operaciones</em> entre listas, que son diferentes a las operaciones en el espacio vectorial de las tuplas matemáticas que definimos antes.</p>
+<p>Así, por ejemplo, en el siguiente algorítmo se construye una lista con las componentes del vector de estado de una partícula, "sumando" las listas de las componentes de su vector posición y velocidad:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Lista de componentes del vector posición</span>
+<span class="n">r</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="c1">#Lista de componentes del vector velocidad</span>
+<span class="n">v</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1">#Lista de componentes del vector de estado</span>
+<span class="n">X</span><span class="o">=</span><span class="n">r</span><span class="o">+</span><span class="n">v</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>X = [1, 0, 3, 0, -1, 0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El operador <code>+</code>, entre listas y tuplas de <code>Python</code> produce la unión de los elementos de las listas.</p>
+<p>Usando este operador se pueden hacer algoritmos prácticos como el que se muestra a continuación:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">sin</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">x</span>
+    <span class="k">return</span> <span class="n">y</span>
+
+<span class="n">valores_de_x</span><span class="o">=</span><span class="p">[</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">]</span>
+<span class="n">valores_de_f</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">valores_de_x</span><span class="p">:</span>
+    <span class="n">valores_de_f</span><span class="o">+=</span><span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>valores de f = [0.8414709848078965, 0.45464871341284085, 0.0470400026866224]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>aquí, comenzamos con un conjunto vacío, <code>valores_de_f=[]</code> y después, dentro de un ciclo, usamos el operador de acumulación <code>+=</code> para agreganr elementos al conjunto.  Este es un método muy común usado en el lenguaje para construir "tablas de valores", que pueden, por ejemplo usarse para hacer gráficos de funciones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Algoritmos-para-vectores">Algoritmos para vectores<a class="anchor-link" href="#Algoritmos-para-vectores">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los vectores forman un "capítulo" en la computación separado de las listas y las tuplas.  La razón básica son sus propiedades matemáticas y las operaciones definidas entre ellos.  Bibliotecas de rutinas muy completas existen en todos los lenguajes de programación para representar este tipo de entidades matemáticas.</p>
+<p>En <code>Python</code> y a lo largo de este libro usaremos los objetos y rutinas de los paquetes <code>NumPy</code> y <code>SPICE</code> para definir y manipular vectores.</p>
+<p>El ejemplo abajo muestra como se calcula el ángulo entre dos vectores $\theta_{AB}$, a partir de la interpretación geométrica del producto punto $\vec{A}\cdot\vec{B}=AB\cos\theta_{AB}$ (ver problemas al final del capítulo):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Definimos los vectores</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="n">A</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">])</span>
+<span class="n">B</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">])</span>
+
+<span class="c1">#Calculamos el producto escalar y vectorial</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">dot</span>
+<span class="n">ApuntoB</span><span class="o">=</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1">#El ángulo entre los vectores</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">arccos</span>
+<span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="k">import</span> <span class="n">norm</span>
+<span class="n">anguloAB</span><span class="o">=</span><span class="n">arccos</span><span class="p">(</span><span class="n">ApuntoB</span><span class="o">/</span><span class="p">(</span><span class="n">norm</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="n">norm</span><span class="p">(</span><span class="n">B</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>AnguloAB = 31.948059431330062 grados
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Radianes y grados en los algoritmos.</strong> Es importante entender que las funciones trigonométricas inversas como <code>arccos</code>, devuelven, en todos los lenguajes de programación, valores de los ángulos en radianes.  En el caso anterior, por ejemplo, el valor de la variable <code>anguloAB</code> al final del algoritmo en realidad era <code>0.5575988266995369</code>.  Sin embargo, decidimos mostrar su valor en grados después de multiplicar <code>anguloAB</code> por el factor de conversión $\pi/180$ (esta operación no se muestra en el código.) Así lo seguiremos haciendo en el resto del libro.  El lector que use los algoritmos no debe olvidar multiplicar por el factor de conversión para reconstruir los resultados mostrados aquí.</p>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un procedimiento similar, esta vez usando vectores y rutinas de <code>SPICE</code> (internamente <code>SPICE</code> usa vectores o arreglos de <code>NumPy</code>), puede usarse para calcular el triple producto vectorial:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="kn">from</span> <span class="nn">spiceypy</span> <span class="k">import</span> <span class="n">vdot</span><span class="p">,</span><span class="n">vcrss</span>
+
+<span class="n">A</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">])</span>
+<span class="n">B</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">])</span>
+<span class="n">C</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">])</span>
+
+<span class="n">AxBxC</span><span class="o">=</span><span class="n">vdot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">)</span><span class="o">*</span><span class="n">C</span><span class="o">-</span><span class="n">vdot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">C</span><span class="p">)</span><span class="o">*</span><span class="n">B</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A x (B x C) = [-0.  2. -4.]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>También podemos usarlas para verificar la propiedad cíclica del triple producto escalar:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="kn">from</span> <span class="nn">spiceypy</span> <span class="k">import</span> <span class="n">vnorm</span><span class="p">,</span><span class="n">vdot</span><span class="p">,</span><span class="n">vcrss</span>
+<span class="n">A</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">])</span>
+<span class="n">B</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">])</span>
+<span class="n">C</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">])</span>
+
+<span class="n">ABC</span><span class="o">=</span><span class="n">vdot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">vcrss</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">))</span>
+<span class="n">CAB</span><span class="o">=</span><span class="n">vdot</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="n">vcrss</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">))</span>
+<span class="n">BCA</span><span class="o">=</span><span class="n">vdot</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">vcrss</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="n">A</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A.(BxC) = -4.0
+C.(AxB) = -4.0
+B.(CxA) = -4.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con lo que se verifica la identidad (al menos para los vectores escogidos.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.2.-Sistemas-de-coordenadas">1.1.2. Sistemas de coordenadas<a class="anchor-link" href="#1.1.2.-Sistemas-de-coordenadas">&#182;</a></h3><p><a id='sistemas_coordenadas'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:coordenadas'></a><img src="./figures/horizontal_sistemas_coordenadas.png" alt="Definción de los sistemas de coordenadas usadas en este texto" width="100.0%"></p>
+<center><b>Figura 1.2</b>. Definción de los sistemas de coordenadas usadas en este texto</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A lo largo de este libro, usaremos los tres sistemas de coordenadas ortogonales <em>clásicos</em> (cartesianas, cilíndricas y esféricas, ver Figura (<a href="#fig:coordenadas">coordenadas</a>)) con algunas convenciones más propias de la astronomía y la mecánica celeste que del cálculo.</p>
+<p>A continuación, y en especial para clarificar nuestra notación, enumeramos detalladamente las propiedades de cada sistema.</p>
+<ul>
+<li><p><strong>Sistema de coordenadas cartesiano</strong>.</p>
+<ul>
+<li>Coordenadas: $x\in(-\infty,+\infty)$, $y\in(-\infty,+\infty)$, $z\in(-\infty,+\infty)$. </li>
+<li>Vectores unitarios: $\hat{e}_x$, $\hat{e}_y$, $\hat{e}_z$.</li>
+<li><p>Comentarios:</p>
+<ul>
+<li>En todos los casos la orientación de los ejes obedecerá la <em>regla de la mano derecha</em>, es decir, los sistemas cartesianos usados en el texto y cuyos ejes están definidos por el conjunto de vectores unitarios ($\hat{e}_x$, $\hat{e}_y$, $\hat{e}_z$) forman un <em>conjunto de mano derecha</em> (ver Ec. <a href="#mjx-eqn-eqbase_mano_derecha">base_mano_derecha</a>), a saber, en forma explícita: </li>
 </ul>
 </li>
-<li>Ecuaciones en <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqderivada_definicion">Ec. (1.16)</a>: derivada_definicion. <b>{eq:derivada_definicion}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_general">Ec. (1.17)</a>: regla_cadena_general. <b>{eq:regla_cadena_general}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cartesianas">Ec. (1.18)</a>: gradiente_cartesianas. <b>{eq:gradiente_cartesianas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cilindricas">Ec. (1.19)</a>: gradiente_cilindricas. <b>{eq:gradiente_cilindricas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_esfericas">Ec. (1.20)</a>: gradiente_esfericas. <b>{eq:gradiente_esfericas}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_multivariables">Ec. (1.21)</a>: regla_cadena_multivariables. <b>{eq:regla_cadena_multivariables}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqteorema_fundamental_calculo">Ec. (1.22)</a>: teorema_fundamental_calculo. <b>{eq:teorema_fundamental_calculo}</b></li>
+</ul>
+<p>\begin{equation}
+\label{eq:conjunto_mano_derecha}
+\begin{array}{ccl}
+\hat{e}_x\times\hat{e}_y &amp; = &amp; \hat{e}_z\\
+\hat{e}_y\times\hat{e}_z &amp; = &amp; \hat{e}_x\\
+\hat{e}_z\times\hat{e}_x &amp; = &amp; \hat{e}_y
+\end{array}
+\end{equation}</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><p><strong>Sistema de coordenadas cilíndrico</strong> (ver Figura (<a href="#fig:coordenadas">coordenadas</a>)).</p>
+<ul>
+<li><p>Coordenadas: $r\in[0,+\infty)$, $\theta\in[0,2\pi)$, $z\in(-\infty,+\infty)$.</p>
+</li>
+<li><p>Conversión al sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:cilindricas_a_cartesianas}
+  \begin{array}{ccl}
+  x &amp; = &amp; r\cos\theta\\
+  y &amp; = &amp; r\sin\theta\\
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Vectores unitarios expresados en el sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:unitarios_cilindricas}
+  \begin{array}{ccl}
+  \hat{e}_r &amp; = &amp; \cos\theta\;\hat{e}_x + \sin\theta\;\hat{e}_y\\
+  \hat{e}_\theta &amp; = &amp; -\sin\theta\;\hat{e}_x + \cos\theta\;\hat{e}_y\\
+  \hat{e}_z &amp; = &amp; \hat{e}_z
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Comentarios:</p>
+<ul>
+<li><p>El conjunto de vectores unitarios ($\hat{e}_r$, $\hat{e}_\theta$, $\hat{e}_z$) forman un conjunto de mano derecha tal y como se definió en las Ecs. (<a href="#mjx-eqn-eqconjunto_mano_derecha">conjunto_mano_derecha</a>).</p>
+</li>
+<li><p>Nótese que, a diferencia de la notación usada generalmente en los textos de cálculo, la coordenada cilíndrica $r$ usa la misma letra que la coordenada esférica $r$ y la magnitud del vector posición (ver siguiente sección).  La distinción entre las tres, dependerá del contexto.</p>
+</li>
+<li><p>Usaremos la letra griega $\theta$ para denotar el ángulo <em>acimutal</em>, a diferencia de la notación convencional que usa esta letra para la coordenada esférica polar (ángulo del vector posición respecto al eje z.)</p>
+</li>
 </ul>
 </li>
-<li>Ecuaciones en <a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales</a><ul>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_antiderivada">Ec. (1.23)</a>: ecuacion_diferencial_antiderivada. <b>{eq:ecuacion_diferencial_antiderivada}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple">Ec. (1.24)</a>: ecuacion_diferencial_simple. <b>{eq:ecuacion_diferencial_simple}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_reducida">Ec. (1.25)</a>: ecuacion_diferencial_simple_reducida. <b>{eq:ecuacion_diferencial_simple_reducida}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuaciones_reducidas">Ec. (1.26)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_identificacion">Ec. (1.27)</a>: ecuacion_diferencial_simple_identificacion. <b>{eq:ecuacion_diferencial_simple_identificacion}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqvariacion">Ec. (1.28)</a>: variacion. <b>{eq:variacion}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqlongitud_curva">Ec. (1.29)</a>: longitud_curva. <b>{eq:longitud_curva}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqfuncional_integral">Ec. (1.30)</a>: funcional_integral. <b>{eq:funcional_integral}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqdIdepsilon">Ec. (1.31)</a>: dIdepsilon. <b>{eq:dIdepsilon}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_integral_variaciones">Ec. (1.32)</a>: ecuacion_integral_variaciones. <b>{eq:ecuacion_integral_variaciones}</b></li>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_euler_lagrange">Ec. (1.33)</a>: ecuacion_euler_lagrange. <b>{eq:ecuacion_euler_lagrange}</b></li>
 </ul>
 </li>
 </ul>
@@ -13220,21 +13641,57 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:rutina_potencial">Código (1.1)</a>: rutina_potencial. <b>{code:rutina_potencial}</b></li>
-<li><a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:funcion_lambda">Código (1.2)</a>: funcion_lambda. <b>{code:funcion_lambda}</b></li>
+<ul>
+<li><p><strong>Sistema de coordenadas esférico</strong> (ver Figura (<a href="#fig:coordenadas">coordenadas</a>)).</p>
+<ul>
+<li><p>Coordenadas: $r\in[0,+\infty)$, $\theta\in[0,2\pi)$, $\phi\in[-\pi/2,+\pi/2]$.</p>
+</li>
+<li><p>Conversión al sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:esfericas_a_cartesianas}
+  \begin{array}{ccl}
+  x &amp; = &amp; r\cos\phi\cos\theta\\
+  y &amp; = &amp; r\cos\phi\sin\theta\\
+  z &amp; = &amp; r\sin\phi\\
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Vectores unitarios expresados en el sistema de coordenadas cartesianas:</p>
+<p>\begin{equation}
+  \label{eq:unitarios_esfericas}
+  \begin{array}{ccl}
+  \hat{e}_r &amp; = &amp; \cos\phi\cos\theta\;\hat{e}_x + \cos\phi\sin\theta\;\hat{e}_y + \sin\phi\;\hat{e}_z\\
+  \hat{e}_\theta &amp; = &amp; -\sin\theta\;\hat{e}_x + \cos\theta\;\hat{e}_y\\
+  \hat{e}_\phi &amp; = &amp; \cos\phi\cos\theta\;\hat{e}_x + \sin\phi\sin\theta\;\hat{e}_y - \sin\phi\;\hat{e}_z\\
+  \end{array}
+  \end{equation}</p>
+</li>
+<li><p>Comentarios:</p>
+<ul>
+<li><p>El conjunto de vectores unitarios ($\hat{e}_r$, $\hat{e}_\theta$, $\hat{e}_\phi$) forman un conjunto de mano derecha tal y como se definió en las Ecs. (<a href="#mjx-eqn-eqconjunto_mano_derecha">conjunto_mano_derecha</a>).</p>
+</li>
+<li><p>Nótese que, a diferencia de la notación usada generalmente en los textos de cálculo, la coordenada esférica $\phi$ se medirá respecto al plano $x-y$ (como una <em>latitud</em>) en lugar de hacerlo respecto al eje $z$ (como una <em>colatitud</em>).</p>
+</li>
 </ul>
 </li>
-<li>Código en <a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">01.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="01.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#code:funcional_integral">Código (1.3)</a>: funcional_integral. <b>{code:funcional_integral}</b></li>
 </ul>
 </li>
 </ul>
+<p>Una interesante página interactiva que permite visualizar mejor la definición de los sistemas de coordenadas y la orientación de los vectores coordenadas puede encontrarse en los siguientes enlaces, tanto para el <a href="http://dynref.engr.illinois.edu/rvy.html">sistema de coordenadas cilíndrica</a> como para el <a href="http://dynref.engr.illinois.edu/rvy.html">sistema de coordenadas esféricas</a>.</p>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="01.01.00.00.Fundamentos.Calculo.html">Fundamentos.Calculo</a> | Siguiente: <a href="01.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">Fundamentos.Calculo.CalculoInfinitesimal</a></p>
 
 </div>
 </div>
 </div>
+    </div>
     </div>
   </div>
 </body>
