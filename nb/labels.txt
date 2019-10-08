@@ -57,4 +57,5 @@ Labels for 'section':
 	#ecuaciones_diferenciales (01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.ipynb)
 	#algoritmos_ode (01.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.ipynb)
 	#funcionales_calculo_variaciones (01.01.04.00.Fundamentos.Calculo.CalculoVariacional.ipynb)
+	#algoritmos_calculo_variacional (01.01.04.00.Fundamentos.Calculo.CalculoVariacional.ipynb)
 	#graficos_interactivos_variacional (01.01.04.00.Fundamentos.Calculo.CalculoVariacional.ipynb)
