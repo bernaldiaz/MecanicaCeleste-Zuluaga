@@ -2,13 +2,13 @@ This is bibtex2html version 1.99, compiled on Sun Aug 26 15:55:24 BST 2018
 Copyright (c) 1997-2010 Jean-Christophe Filliâtre and Claude Marché
 This is free software with ABSOLUTELY NO WARRANTY (use option --warranty)
 
-Reading mybook.bib...ok (31 entries).
+Reading mybook.bib...ok (33 entries).
 calling BibTeX...This is BibTeX, Version 0.99d (TeX Live 2015)
-The top-level auxiliary file: bib2html606be3.aux
+The top-level auxiliary file: bib2htmldd6334.aux
 The style file: ../..//extras/mybook.bst
 Database file #1: mybook.bib
 
-Reading bib2html606be3.bbl...ok (31 entries)
+Reading bib2htmldd6334.bbl...ok (33 entries)
 Sorting...ok.
 Making HTML document (mybook.html)...ok
 Making HTML list of BibTeX entries (mybook_bib.html)...ok

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>05.01.03.00.Mecanica.Cinematica.SolucionNumerica</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13066,38 +13066,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html">Mecanica.Cinematica.SolucionEdM</a> | Siguiente: <a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html">Mecanica.Dinamica.Cantidades</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="5.1.6.-Integraci&#243;n-num&#233;rica-de-la-e.d.m.">5.1.6. Integraci&#243;n num&#233;rica de la e.d.m.<a class="anchor-link" href="#5.1.6.-Integraci&#243;n-num&#233;rica-de-la-e.d.m.">&#182;</a></h3><p><a id='integracion_numerica_edm'></a></p>
 
 </div>
 </div>
@@ -13105,113 +13088,105 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
+<p>En aquellos sistemas dinámicos en los que resolver la e.d.m. o encontrar <em>todas</em> las constantes de movimiento (resolver por cuadratura el sistema), sea imposible matemáticamente o simplemente muy difícil, es posible buscar una solución aproximada usando los métodos numéricos que estudiamos al final de la <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Seccion <em>Ecuaciones diferenciales</em></a>.</p>
+<p>Como vimos allí, para hacerlo, es necesario primero escribir la e.d.m. como el conjunto de 6 ecuaciones diferenciales de primer orden con la forma general (Ec. <a href="#mjx-eqn-eqecuaciones_reducidas">ecuaciones_reducidas</a>):</p>
+\begin{equation}
+\label{eq:edm_ecuaciones_reducidas}
+\{\dot{Y_i} = f_i(t,\{Y_k\})\}_{6}
+\end{equation}<p>Donde $Y_i$ ($i=0,1,2,\ldots,5$) son las denominadas funciones auxiliares que reemplazan aquí a las cantidades claves del sistema dinámico (las componentes de $\vec r$ y $\vec v$).  En física, llamaremos a las Ecs. (<a href="#mjx-eqn-eqedm_ecuaciones_reducidas">edm_ecuaciones_reducidas</a>), <em>ecuaciones de movimiento reducidas</em> del sistema o <em>e.d.m.r.</em></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Prefacio.html#prefacio">Prefacio</a>. <b>{#prefacio}</b><ul>
-<li><a href="01.00.00.00.Prefacio.html#otro_libro">¿Otro libro de mecánica celeste?</a>. <b>{#otro_libro}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_analitica">Mecánica celeste y mecánica analítica</a>. <b>{#celeste_analitica}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Mecánica celeste en la era de la información</a>. <b>{#celeste_era_informacion}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_python">Mecánica celeste en Python</a>. <b>{#celeste_python}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_spice">Mecánica celeste con <code>SPICE</code></a>. <b>{#celeste_spice}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#libro_distinto">¿Qué hace distinto a este libro?: un decálogo</a>. <b>{#libro_distinto}</b></li>
-</ul>
+<p>Si comparamos la forma general de las e.d.m.r. en la Ec. (<a href="#mjx-eqn-eqedm_ecuaciones_reducidas">edm_ecuaciones_reducidas</a>) con las ecuaciones de primer orden (<a href="#mjx-eqn-eqedm_primer_orden_escalar">edm_primer_orden_escalar</a>), podemos hacer la siguiente identificación para las variables auxiliares $Y_i$:</p>
+\begin{equation}
+\label{eq:variables_auxiliares_edm}
+\begin{array}{ccc}
+Y_0 = x, &amp; Y_1 = y, &amp; Y_2 = z\\
+Y_3 = v_x, &amp; Y_4 = v_y, &amp; Y_5 = v_z\\
+\end{array}
+\end{equation}<p>Por otro lado, las funciones $f_i$ serán:</p>
+$$
+\begin{array}{ccc}
+f_0(t,\{Y_k\}) = v_x = Y_3, &amp; f_1(t,\{Y_k\}) = v_y = Y_4, &amp; f_2(t,\{Y_k\}) = v_z = Y_5\\
+f_3(t,\{Y_k\}) = a_x, &amp; f_4(t,\{Y_k\}) = a_y, &amp; f_5(t,\{Y_k\}) = a_z\\
+\end{array}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con esta identificación, una forma compacta de escribir las e.d.m.r., muy útil a la hora de preparar algoritmos, es:</p>
+\begin{equation}
+\label{eq:edm_reducidas_particula}
+\dot Y_i = 
+\left\{
+\begin{array}{ccc}
+Y_{3+i} &amp; {\rm ,} &amp; 0 \leq i &lt; 3 \\
+a_{i-3}  &amp; {\rm ,} &amp; 3\leq i &lt; 6 
+\end{array}
+\right.
+\end{equation}<p>Donde hemos introducido la notación $\{a_0,a_1,a_2\}\equiv\{a_x,a_y,a_z\}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Integraci&#243;n-num&#233;rica-de-las-e.d.m.-del-ejemplo-1">Integraci&#243;n num&#233;rica de las e.d.m. del ejemplo 1<a class="anchor-link" href="#Integraci&#243;n-num&#233;rica-de-las-e.d.m.-del-ejemplo-1">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El sistema dinámico del ejemplo 1 introducido en <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_cuadraturas">la Sección <em>Integración por cuadraturas</em></a> se caracteriza por tener una aceleración del tipo $\vec a:(j_0t,0,0)$.  En términos de la parametrización de la e.d.m.r. en la Ec. (<a href="#mjx-eqn-eqedm_reducidas_particula">edm_reducidas_particula</a>), esto significa que $\{a_0,a_1,a_2\}=(j_0t,0,0)$.</p>
+<p>El sistema de ecuaciones diferenciales que describe el sistema puede implementarse en <code>Python</code> usando la rutina:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:edm_ejemplo1'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">edm_ejemplo1</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">j0</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">dYdt</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="n">dYdt</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>
+    <span class="n">dYdt</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span><span class="o">=</span><span class="p">[</span><span class="n">j0</span><span class="o">*</span><span class="n">t</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">dYdt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aunque al final de la <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Seccion <em>Ecuaciones diferenciales</em></a> nos habíamos familiarizado con este tipo de rutinas, el diseño de está en particular merece algunos comentarios:</p>
+<ul>
+<li><p>Como sabemos, el propósito de esta rutina es calcular la lista de los valores de las funciones $f_i$ (lado derecho de las Ecs. <a href="#mjx-eqn-eqedm_ecuaciones_reducidas">edm_ecuaciones_reducidas</a>) que son iguales a las primeras derivada en el tiempo de las variables auxiliares $\dot{Y}_i$. En la rutina, para hacer más explícito su significado, hemos decidido llamar a esta lista <code>dYdt</code> en lugar de <code>f</code>.  Los nombres de las variables no afectan la funcionalidad de las rutinas, pero pueden hacerla más legible y modificable.</p>
 </li>
-<li><a href="02.00.00.00.Agradecimientos.html#agradecimientos">Agradecimientos</a>. <b>{#agradecimientos}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#introduccion">Introducción</a>. <b>{#introduccion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#organizacion_libro">¿Cómo se organiza este libro?</a>. <b>{#organizacion_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#como_usar_libro">¿Cómo usar este libro?</a>. <b>{#como_usar_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#celeste_libretas">Mecánica celeste en <em>libretas</em></a>. <b>{#celeste_libretas}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#instalacion_libretas">Instalación de las libretas</a>. <b>{#instalacion_libretas}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#idioma_notacion">Idioma y Notación</a>. <b>{#idioma_notacion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#extranjerismos_pronunciacion">Extranjerismos y pronunciación</a>. <b>{#extranjerismos_pronunciacion}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#siglos_decadas">Siglos y décadas</a>. <b>{#siglos_decadas}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#notacion">Notación matemática</a>. <b>{#notacion}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#estructura_libro">Estructura del libro</a>. <b>{#estructura_libro}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#cajas_texto">Cajas de texto</a>. <b>{#cajas_texto}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#algoritmos">Algorítmos</a>. <b>{#algoritmos}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#interactivas_animaciones">Figuras interactivas y animaciones</a>. <b>{#interactivas_animaciones}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_interactiva">Ejemplo de figura interactiva</a>. <b>{#ejemplo_interactiva}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_animada">Ejemplo de figura animada</a>. <b>{#ejemplo_animada}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="04.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="04.01.00.00.Fundamentos.Calculo.html#vectores_calculo">Vectores y cálculo</a>. <b>{#vectores_calculo}</b><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#conjuntos_tuplas_vectores">Conjunto, tuplas y vectores</a>. <b>{#conjuntos_tuplas_vectores}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones">Funciones</a>. <b>{#funciones}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">Derivadas</a>. <b>{#derivadas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones_homogeneas">Funciones homogéneas</a>. <b>{#funciones_homogeneas}</b><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_derivada">Algoritmos para la derivada</a>. <b>{#algoritmos_derivada}</b></li>
-</ul>
-</li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">Integrales</a>. <b>{#integrales}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales_vectoriales">Integrales vectoriales</a>. <b>{#integrales_vectoriales}</b><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_integral">Algoritmos para la integral</a>. <b>{#algoritmos_integral}</b></li>
-</ul>
-</li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Ecuaciones diferenciales</a>. <b>{#ecuaciones_diferenciales}</b><ul>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#algoritmos_ode">Algoritmos para la solución de ODE</a>. <b>{#algoritmos_ode}</b></li>
-</ul>
-</li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#funcionales_calculo_variaciones">Funcionales y cálculo de variaciones</a>. <b>{#funcionales_calculo_variaciones}</b><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#algoritmos_calculo_variacional">Algoritmos en el cálculo variacional</a>. <b>{#algoritmos_calculo_variacional}</b></li>
-</ul>
-</li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#graficos_interactivos_variacional">Gráficos interactivos</a>. <b>{#graficos_interactivos_variacional}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="05.00.00.00.Mecanica.html#mecanica">Mecánica de partículas</a>. <b>{#mecanica}</b><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#cinematica">Cinemática</a>. <b>{#cinematica}</b><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#cantidades_cinematicas">Cantidades cinemáticas</a>. <b>{#cantidades_cinematicas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#sistemas_referencia">Sistemas de referencia</a>. <b>{#sistemas_referencia}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#ecuacion_movimiento">La ecuación de movimiento (e.d.m.)</a>. <b>{#ecuacion_movimiento}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Integración de la e.d.m.</a>. <b>{#integracion_edm}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_cuadraturas">Integración por cuadraturas</a>. <b>{#integracion_cuadraturas}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#integracion_numerica_edm">Integración numérica de la e.d.m.</a>. <b>{#integracion_numerica_edm}</b></li>
-</ul>
-</li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#dinamica">Dinámica</a>. <b>{#dinamica}</b><ul>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#cantidades_dinamicas">Cantidades dinámicas</a>. <b>{#cantidades_dinamicas}</b></li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#particulas_fuerzas">Partículas y fuerzas</a>. <b>{#particulas_fuerzas}</b></li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#sistemas_referencia_inerciales">Sistemas de referencia inerciales</a>. <b>{#sistemas_referencia_inerciales}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_fuerzas">Postulado de fuerzas</a>. <b>{#postulado_fuerzas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fuerzas_conservativas">Fuerzas conservativas y no conservativas</a>. <b>{#fuerzas_conservativas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#energia_mecanica">Energía mecánica</a>. <b>{#energia_mecanica}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#ley_inercia">¿Ley de inercia?</a>. <b>{#ley_inercia}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_accion_reaccion">Postulado de acción y reacción</a>. <b>{#postulado_accion_reaccion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_gravitacion">Postulado de gravitación universal</a>. <b>{#postulado_gravitacion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fuerza_luna">La fuerza gravitacional de la Tierra, el Sol y la la Luna</a>. <b>{#fuerza_luna}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#campo_gravitacional">El campo gravitacional</a>. <b>{#campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#energia_potencial_gravitacional">Energía potencial gravitacional</a>. <b>{#energia_potencial_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#masa_equivalencia">Masa y principio de equivalencia</a>. <b>{#masa_equivalencia}</b></li>
-</ul>
-</li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#sistemas_particulas">Sistemas de partículas</a>. <b>{#sistemas_particulas}</b><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fuerzas_centro_masa">Fuerzas y centro de masa</a>. <b>{#fuerzas_centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#centro_masa">Centro de masa de un sistema de dos partículas</a>. <b>{#centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#teoremas_conservacion">Teoremas de conservación</a>. <b>{#teoremas_conservacion}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#dinamica_centro_masa">Dinámica referida al centro de masa</a>. <b>{#dinamica_centro_masa}</b></li>
-</ul>
-</li>
-</ul>
+<li><p>Para asignar los valores de la lista <code>dYdt</code> hemos aprovechado el poder de <code>Python</code> para sacar <em>trozos</em>, <em>porciones</em> o <em>tajadas</em> (<em>slices</em> en inglés) de listas y arreglos.  Así el trozo <code>dYdt[:3]</code> corresponde a las primeras tres componentes <code>dYdt[0]</code>, <code>dYdt[1]</code>, <code>dYdt[2]</code> (nótese que, por empezar en 0, este trozo no incluye la componente <code>dYdt[3]</code>.)  Por otra parte el trozo <code>Y[3:]</code> de esta lista, corresponde a las componentes <code>Y[3]</code>, <code>Y[4]</code>, <code>Y[5]</code>.  Por tanto, la igualdad <code>dYdt[:3]=dYdt[3:]</code> equivale a escribir explícitamente <code>dYdt[0]=Y[3]</code>, <code>dYdt[1]=Y[4]</code>, <code>dYdt[2]=Y[5]</code> que justamente implementa la parte $\dot{Y}_i=Y_{i+3}$ de la Ec. (<a href="#mjx-eqn-eqedm_reducidas_particula">edm_reducidas_particula</a>)</p>
 </li>
 </ul>
 
@@ -13221,36 +13196,138 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.00.00.00.Prefacio.html">01.00.00.00.Prefacio</a><ul>
-<li><a href="01.00.00.00.Prefacio.html#fig:utlima_thule">Figura 1.1</a>. Imagen procesada de Ultima Thule, el objeto transneptuniano sobrevolado por la sonda New Horizons en 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.). <b>{fig:utlima_thule}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#fig:kepler">Figura 3.3</a>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster. <b>{fig:kepler}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.01.00.Fundamentos.Calculo.Vectores.html">04.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#fig:vectores">Figura 4.6</a>. Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $. <b>{fig:vectores}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#fig:coordenadas">Figura 4.7</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#fig:variacion_funcion">Figura 4.9</a>. El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $. <b>{fig:variacion_funcion}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html">05.02.01.00.Mecanica.Dinamica.Postulados</a><ul>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:accion_reaccion">Figura 5.15</a>. Dos formas del postulado de acción y reacción: a la izquierda el postulado débil, en el que las fuerzas son iguales y de sentido contrario, pero no son paralelas a la línea que une las partículas; a la derecha el postulado fuerte en el que la acción y reacción actúan sobre la línea que une a las partículas.. <b>{fig:accion_reaccion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:fuerza_gravitacional">Figura 5.16</a>. Definición de los vectores de posición, vector relativo y vector de fuerza en el postulado de gravitación universal.. <b>{fig:fuerza_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:accion_reaccion">Figura 5.17</a>. El único retrato disponible de Simon Stevin (ca. 1548). Crédito: Colección Universidad de Leiden.. <b>{fig:accion_reaccion}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fig:centro_masa">Figura 5.20</a>. Relación entre la posición del centro de masa $. <b>{fig:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fig:astronomia_nova">Figura 5.21</a>. Primera página de la obra cumbre de Kepler <em>Astronomía Nova</em>.. <b>{fig:astronomia_nova}</b></li>
-</ul>
-</li>
-</ul>
+<p>Una vez escrita la rutina, la solución se obtiene siguiendo los algoritmos introducidos al final de la <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Seccion <em>Ecuaciones diferenciales</em></a>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Valor del tiron</span>
+<span class="n">j0</span><span class="o">=</span><span class="mf">0.5</span>
+
+<span class="c1">#Condiciones iniciales</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="n">Yos</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1">#Tiempos para obtener la solución</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span>
+<span class="n">ts</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">5.0</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1">#Solución con odeint</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">odeint</span>
+<span class="n">Ys</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">edm_ejemplo1</span><span class="p">,</span><span class="n">Yos</span><span class="p">,</span><span class="n">ts</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">j0</span><span class="p">,))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Solucion, Ys:
+[[ 1.          0.          0.         -3.          0.          0.        ]
+ [ 0.21204503  0.          0.         -2.98268698  0.          0.        ]
+ [-0.56679785  0.          0.         -2.93074792  0.          0.        ]
+ [-1.32741651  0.          0.         -2.84418283  0.          0.        ]
+ [-2.06069881  0.          0.         -2.72299169  0.          0.        ]]
+...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos, finalmente, visualizar la solución a la e.d.m.r. haciendo un gráfico de la coordenada $x$ (columna <code>Ys[:,0]</code> de la matriz de solución) como función del tiempo <code>ts</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:ejemplo1_grafico_solucion'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">();</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;ko&#39;</span><span class="p">);</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$t$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;$x$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:ejemplo1_grafico_solucion'></a><center><b>Figura 5.12.</b> La figura muestra la solución numérica a la e.d.m. de un sistema sometido a un tirón constante $\vec j=j_0\hat{e}_x$.</center></p>
 
 </div>
 </div>
@@ -13258,109 +13335,60 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="04.01.01.00.Fundamentos.Calculo.Vectores.html">04.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqsuma_tuplas">Ec. (4.1)</a>: suma_tuplas. <b>{eq:suma_tuplas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqk_tupla">Ec. (4.2)</a>: k_tupla. <b>{eq:k_tupla}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqvectores_en_base">Ec. (4.3)</a>: vectores_en_base. <b>{eq:vectores_en_base}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqdelta_kroenecker">Ec. (4.4)</a>: delta_kroenecker. <b>{eq:delta_kroenecker}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqbase_mano_derecha">Ec. (4.5)</a>: base_mano_derecha. <b>{eq:base_mano_derecha}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqlevi_civita">Ec. (4.6)</a>: levi_civita. <b>{eq:levi_civita}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz">Ec. (4.7)</a>: producto_cruz. <b>{eq:producto_cruz}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz_determinante">Ec. (4.8)</a>: producto_cruz_determinante. <b>{eq:producto_cruz_determinante}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_escalar">Ec. (4.9)</a>: triple_producto_escalar. <b>{eq:triple_producto_escalar}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_vectorial">Ec. (4.10)</a>: triple_producto_vectorial. <b>{eq:triple_producto_vectorial}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (4.11)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (4.12)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_cilindricas">Ec. (4.13)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (4.14)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_esfericas">Ec. (4.15)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqderivada_definicion">Ec. (4.16)</a>: derivada_definicion. <b>{eq:derivada_definicion}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_general">Ec. (4.17)</a>: regla_cadena_general. <b>{eq:regla_cadena_general}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cartesianas">Ec. (4.18)</a>: gradiente_cartesianas. <b>{eq:gradiente_cartesianas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cilindricas">Ec. (4.19)</a>: gradiente_cilindricas. <b>{eq:gradiente_cilindricas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_esfericas">Ec. (4.20)</a>: gradiente_esfericas. <b>{eq:gradiente_esfericas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_multivariables">Ec. (4.21)</a>: regla_cadena_multivariables. <b>{eq:regla_cadena_multivariables}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqteorema_fundamental_calculo">Ec. (4.22)</a>: teorema_fundamental_calculo. <b>{eq:teorema_fundamental_calculo}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales</a><ul>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_antiderivada">Ec. (4.23)</a>: ecuacion_diferencial_antiderivada. <b>{eq:ecuacion_diferencial_antiderivada}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple">Ec. (4.24)</a>: ecuacion_diferencial_simple. <b>{eq:ecuacion_diferencial_simple}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_reducida">Ec. (4.25)</a>: ecuacion_diferencial_simple_reducida. <b>{eq:ecuacion_diferencial_simple_reducida}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuaciones_reducidas">Ec. (4.26)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_identificacion">Ec. (4.27)</a>: ecuacion_diferencial_simple_identificacion. <b>{eq:ecuacion_diferencial_simple_identificacion}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqvariacion">Ec. (4.28)</a>: variacion. <b>{eq:variacion}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqlongitud_curva">Ec. (4.29)</a>: longitud_curva. <b>{eq:longitud_curva}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqfuncional_integral">Ec. (4.30)</a>: funcional_integral. <b>{eq:funcional_integral}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqdIdepsilon">Ec. (4.31)</a>: dIdepsilon. <b>{eq:dIdepsilon}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_integral_variaciones">Ec. (4.32)</a>: ecuacion_integral_variaciones. <b>{eq:ecuacion_integral_variaciones}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_euler_lagrange">Ec. (4.33)</a>: ecuacion_euler_lagrange. <b>{eq:ecuacion_euler_lagrange}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html">05.01.01.00.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqa_cilindricas">Ec. (5.34)</a>: a_cilindricas. <b>{eq:a_cilindricas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqa_esfericas">Ec. (5.35)</a>: a_esfericas. <b>{eq:a_esfericas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqtransformaciones_galileo">Ec. (5.36)</a>: transformaciones_galileo. <b>{eq:transformaciones_galileo}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqley_adicion_velocidades">Ec. (5.37)</a>: ley_adicion_velocidades. <b>{eq:ley_adicion_velocidades}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqley_adicion_aceleraciones">Ec. (5.38)</a>: ley_adicion_aceleraciones. <b>{eq:ley_adicion_aceleraciones}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html">05.01.02.00.Mecanica.Cinematica.SolucionEdM</a><ul>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm">Ec. (5.39)</a>: edm. <b>{eq:edm}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden">Ec. (5.40)</a>: edm_primer_orden. <b>{eq:edm_primer_orden}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_escalar">Ec. (5.41)</a>: edm_escalar. <b>{eq:edm_escalar}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden_escalar">Ec. (5.42)</a>: edm_primer_orden_escalar. <b>{eq:edm_primer_orden_escalar}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_estado">Ec. (5.43)</a>: edm_estado. <b>{eq:edm_estado}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1">Ec. (5.44)</a>: edm_ejemplo1. <b>{eq:edm_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1_cuadratura">Ec. (5.45)</a>: edm_ejemplo1_cuadratura. <b>{eq:edm_ejemplo1_cuadratura}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo1">Ec. (5.46)</a>: Ix_ejemplo1. <b>{eq:Ix_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo2">Ec. (5.47)</a>: Ix_ejemplo2. <b>{eq:Ix_ejemplo2}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqconstantes_ejemplo1">Ec. (5.48)</a>: constantes_ejemplo1. <b>{eq:constantes_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqsolucion_ejemplo1">Ec. (5.49)</a>: solucion_ejemplo1. <b>{eq:solucion_ejemplo1}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html">05.01.03.00.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqedm_ecuaciones_reducidas">Ec. (5.50)</a>: edm_ecuaciones_reducidas. <b>{eq:edm_ecuaciones_reducidas}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqvariables_auxiliares_edm">Ec. (5.51)</a>: variables_auxiliares_edm. <b>{eq:variables_auxiliares_edm}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqedm_reducidas_particula">Ec. (5.52)</a>: edm_reducidas_particula. <b>{eq:edm_reducidas_particula}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html">05.02.01.00.Mecanica.Dinamica.Postulados</a><ul>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqedm_fuerzas_aplicadas">Ec. (5.53)</a>: edm_fuerzas_aplicadas. <b>{eq:edm_fuerzas_aplicadas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqedm_fuerzas_resultantes">Ec. (5.54)</a>: edm_fuerzas_resultantes. <b>{eq:edm_fuerzas_resultantes}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcirculacion_nula">Ec. (5.55)</a>: circulacion_nula. <b>{eq:circulacion_nula}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuncion_energia_potencial">Ec. (5.56)</a>: funcion_energia_potencial. <b>{eq:funcion_energia_potencial}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_gravitacional">Ec. (5.57)</a>: fuerza_gravitacional. <b>{eq:fuerza_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_M_m">Ec. (5.58)</a>: fuerza_M_m. <b>{eq:fuerza_M_m}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcampo_gravitacional">Ec. (5.59)</a>: campo_gravitacional. <b>{eq:campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_campo_gravitacional">Ec. (5.60)</a>: fuerza_campo_gravitacional. <b>{eq:fuerza_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqenergia_potencial_gravitacional">Ec. (5.61)</a>: energia_potencial_gravitacional. <b>{eq:energia_potencial_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcampo_gravitacional">Ec. (5.62)</a>: campo_gravitacional. <b>{eq:campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqenergia_fuerza_campo_gravitacional">Ec. (5.63)</a>: energia_fuerza_campo_gravitacional. <b>{eq:energia_fuerza_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqpotencial_campo_gravitacional">Ec. (5.64)</a>: potencial_campo_gravitacional. <b>{eq:potencial_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqrazon_masa_gravitacional_masa_inercial">Ec. (5.65)</a>: razon_masa_gravitacional_masa_inercial. <b>{eq:razon_masa_gravitacional_masa_inercial}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqcentro_masa">Ec. (5.66)</a>: centro_masa. <b>{eq:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqedm_sistema">Ec. (5.67)</a>: edm_sistema. <b>{eq:edm_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqdistancia_centro_masa">Ec. (5.68)</a>: distancia_centro_masa. <b>{eq:distancia_centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqtorca_sistema">Ec. (5.69)</a>: torca_sistema. <b>{eq:torca_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqdLdt_sistema_torca">Ec. (5.70)</a>: dLdt_sistema_torca. <b>{eq:dLdt_sistema_torca}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqtorque_sistema">Ec. (5.71)</a>: torque_sistema. <b>{eq:torque_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqestado_CM">Ec. (5.72)</a>: estado_CM. <b>{eq:estado_CM}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqL_CM_interno">Ec. (5.73)</a>: L_CM_interno. <b>{eq:L_CM_interno}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqK_CM_interno">Ec. (5.74)</a>: K_CM_interno. <b>{eq:K_CM_interno}</b></li>
-</ul>
-</li>
-</ul>
+<p>¿Cómo saber si la solución obtenida con <code>odeint</code> y mostrada en la Figura (<a href="#fig:code:ejemplo1_grafico_solucion">code:ejemplo1_grafico_solucion</a>) es la correcta?</p>
+<p>Existen dos manera de comprobarlo.  La primera es verificar que las posiciones y velocidades obtenidas satisfagan las constantes de movimiento que escribimos en las Ecs. (<a href="#mjx-eqn-eqconstantes_ejemplo1">constantes_ejemplo1</a>).</p>
+<p>Así por ejemplo, podemos verificar que el valor de $I_x$ y $S_x$ sean efectivamente constantes:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Extraemos los valores de x y dxdt de la solución</span>
+<span class="n">xs</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">xdots</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="c1">#Fórmula de la constante C_Ix</span>
+<span class="n">C_Ixs</span><span class="o">=</span><span class="n">xdots</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">j0</span><span class="o">*</span><span class="n">ts</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Fórmula de la constante C_Sx</span>
+<span class="n">C_Sxs</span><span class="o">=</span><span class="n">xs</span><span class="o">-</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span><span class="o">*</span><span class="n">j0</span><span class="o">*</span><span class="n">ts</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="n">C_Ixs</span><span class="o">*</span><span class="n">ts</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Valores de C_Ix = [-3. -3. -3. -3. -3.]...
+Valores de C_Sx = [1. 1. 1. 1. 1.]...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Comprobamos así que las fórmulas $C_{Ix}=\dot{x}-j_0t^2/2$ y $C_{Sx}=x-j_0t^3/6-I_x t$, tienen el mismo valor para todos los tiempos en los que integramos la e.d.m.r., es decir, son, por definición, constantes de movimiento.  La solución numérica, por tanto,satisface nuestras expectativas matemáticas.</p>
 
 </div>
 </div>
@@ -13368,42 +13396,254 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#code:rutina_discriminante">Código (3.1)</a>: rutina_discriminante. <b>{code:rutina_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:calcula_discriminante">Código (3.2)</a>: calcula_discriminante. <b>{code:calcula_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:plot_sin">Código (3.3)</a>: plot_sin. <b>{code:plot_sin}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:rutina_potencial">Código (4.4)</a>: rutina_potencial. <b>{code:rutina_potencial}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:funcion_lambda">Código (4.5)</a>: funcion_lambda. <b>{code:funcion_lambda}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#code:funcional_integral">Código (4.6)</a>: funcional_integral. <b>{code:funcional_integral}</b></li>
-</ul>
-</li>
-<li>Código en <a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html">05.01.03.00.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:edm_ejemplo1">Código (5.7)</a>: edm_ejemplo1. <b>{code:edm_ejemplo1}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:ejemplo1_grafico_solucion">Código (5.8)</a>: ejemplo1_grafico_solucion. <b>{code:ejemplo1_grafico_solucion}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:compara_numerica_analitica">Código (5.9)</a>: compara_numerica_analitica. <b>{code:compara_numerica_analitica}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:solucion_numerica_ejemplo2">Código (5.10)</a>: solucion_numerica_ejemplo2. <b>{code:solucion_numerica_ejemplo2}</b></li>
-</ul>
-</li>
-<li>Código en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:random_particles">Código (5.11)</a>: random_particles. <b>{code:random_particles}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:centro_masa">Código (5.12)</a>: centro_masa. <b>{code:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:grafico_sistema_ejemplo">Código (5.13)</a>: grafico_sistema_ejemplo. <b>{code:grafico_sistema_ejemplo}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:L_sistema_ejemplo">Código (5.14)</a>: L_sistema_ejemplo. <b>{code:L_sistema_ejemplo}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:K_sistema_ejemplo">Código (5.15)</a>: K_sistema_ejemplo. <b>{code:K_sistema_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
+<p>La segunda manera de verificar que nuestra solución numérica coincida con la analítica es compararla con la solución explícita escrita en las Ecs. (<a href="#mjx-eqn-eqsolucion_ejemplo1">solucion_ejemplo1</a>):</p>
+$$
+x(t)=\frac{1}{6}j_0 t^3+I_x t+S_x
+$$<p>Aquí, los valores de $I_x$ y $S_x$ pueden obtenerse de las condiciones iniciales.</p>
+<p>Una comparación gráfica entre ambas soluciones se consigue con este algoritmo:</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:compara_numerica_analitica'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Valor de las constantes de movimiento </span>
+<span class="n">Ix</span><span class="o">=</span><span class="n">Yos</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">j0</span><span class="o">*</span><span class="n">ts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">Sx</span><span class="o">=</span><span class="n">Yos</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span><span class="o">*</span><span class="n">j0</span><span class="o">*</span><span class="n">ts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="o">+</span><span class="n">Ix</span><span class="o">*</span><span class="n">ts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="c1">#Lista más completa de valores del tiempo</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span>
+<span class="n">tas</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="n">ts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">ts</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1">#Solución analítica</span>
+<span class="n">xs</span><span class="o">=</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span><span class="o">*</span><span class="n">j0</span><span class="o">*</span><span class="n">tas</span><span class="o">**</span><span class="mi">3</span><span class="o">+</span><span class="n">Ix</span><span class="o">*</span><span class="n">tas</span><span class="o">+</span><span class="n">Sx</span>
+
+<span class="c1">#Gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">();</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;ko&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Solución numérica&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">tas</span><span class="p">,</span><span class="n">xs</span><span class="p">,</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Solución analítica&quot;</span><span class="p">);</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$t$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;$x$&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYAAAAEICAYAAABWJCMKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4xLjEsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy8QZhcZAAAgAElEQVR4nO3deXxV1dX/8c8OhCGojwioYMi9aMWKhDCLIAUUlKpFFNTaaHFM6xSHVqtGrUPTn0Otc9Ugg0KsoIJQ5bEWBSdEjQhWUAQxN4A8GFAoGOas3x8noQECJJCbfYfv+/W6L8nNOeeuY+CsnLP3XsuZGSIiknxSfAcgIiJ+KAGIiCQpJQARkSSlBCAikqSUAEREklRD3wHURsuWLS0cDvsOQ0QkrnzyySerzKzVzu/HVQIIh8MUFRX5DkNEJK445yLVva9HQCIiSUoJQEQkSSkBiIgkqbgaAxCRPduyZQvLli1j48aNvkMRD5o0aUJ6ejqpqak12l4JQCSBLFu2jAMPPJBwOIxzznc4Uo/MjNWrV7Ns2TLatWtXo328PgJyzo12zn3nnPs8Wp9RWFhIOBwmJSWFcDhMYWFhtD5KxLuNGzfSokULXfyTkHOOFi1a1Oruz/cYwFhgcLQOXlhYSE5ODpFIBDMjEomQk5OjJCAJTRf/5FXbn73XBGBm7wDfR+v4eXl5lJWV0Qu4seK9srIy8vLyovWRIuLZxIkTKS4u9h3GLp5//nlKSkp8h7ED33cAe+Wcy3HOFTnnikpLS2u1b+X/7F8C9wODdnpfROpefn4+xx13HJ06daJz5858+OGHe9y+f//++7zAs3fv3jt8PX78eCKRCLFWMWDUqFF89913ZGRk7Habnc+lXpiZ1xcQBj6vybbdunWz2giFQgZYE7B/g30L1hIsFArV6jgi8WLBggW12n78+PEWCoXMOWehUMjGjx+/X58/a9Ys69Wrl23cuNHMzEpLS2358uV73Kdfv3728ccf79fnxrMtW7bU6fGq+zsAFFk119SYvwPYH/n5+aSlpbER+BVwCDCmQQPy//Qnz5GJ+BeNMbIVK1bQsmVLGjduDEDLli1p06YNAG+++SZdunQhMzOTSy65hE2bNu2y/wEHHLD9zy+99BIXXXQRACtXruSss84iKyuLrKwsZs2atcP2ZsaNN95Ix44dyczMZMKECQDMnDmT/v37M3z4cH7605+SnZ1d+YvnDvr3788f/vAHevbsSfv27Xn33XcBGDt2LFdfffX27c444wxmzpy5/bNvvPFGjjvuOAYOHMhHH31E//79OfLII5k6dSoA27Zt48Ybb6RHjx506tSJp59+entcffv2ZciQIXTo0GGXc7/vvvvIzMwkKyuLm2++GYCRI0fSo0cPsrKyGDZsGGVlZTX+uexWdVmhPl9E8Q7AbMffcO5q3twMzJ56qtbHEYkHtbkDqLxD3vm1P3fI69ats6ysLDv66KPtiiuusJkzZ5qZ2YYNGyw9Pd0WLlxoZmYXXnihPfTQQ2a24x1As2bNth/rxRdftBEjRpiZ2bnnnrt9+61bt9qaNWt22P6ll16ygQMH2tatW+3//u//rG3btvbtt9/ajBkz7KCDDrKlS5fatm3brFevXvbuu+/uEne/fv3shhtuMDOz1157zU4++WQzMxszZoxdddVV27c7/fTTbcaMGWZmBti0adPMzGzo0KE2aNAg27x5s82dO9eysrLMzOzpp5+2e+65x8zMNm7caN26dbMlS5bYjBkzLC0tzZYsWbL92JXnMm3aNDvhhBPsxx9/NDOz1atXm5nZqlWrtm+bl5dnjz76aLU/g7i5A3DO/R34ADjGObfMOXdpXX9GdnY2xcXFlJeXc8eqVXDKKXD99fDll3X9USJxZXdjYfszRnbAAQfwySefUFBQQKtWrTjvvPMYO3YsCxcupF27drRv3x6AESNG8M4779T4uG+99RZXXHEFAA0aNOB//ud/dvj+e++9x/nnn0+DBg047LDD6NevHx9//DEAPXv2JD09nZSUFDp37rzbAeKzzz4bgG7dutVoELlRo0YMHhxMYszMzKRfv36kpqaSmZm5ff833niD5557js6dO3P88cezevVqFi1atD2u6ubrT58+nYsvvpi0tDQADjnkEAA+//xz+vbtS2ZmJoWFhcyfP3+vMe6N14VgZnZ+vX5gSgqMHQudOsGvfgUffAAVt6oiySYjI4NIZNcikXsaqKyJBg0a0L9/f/r3709mZibPPvssXbp0qdG+Vacx1tVq5sZV/o03aNCArVu37nG7qts0bNiQ8vLyamNKTU3dHm9KSsr2/VNSUrbvb2Y89thjnHrqqTt81syZM2nWrFmtzuOiiy7ilVdeISsri7Fjx25/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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:compara_numerica_analitica'></a><center><b>Figura 5.13.</b> Comparación de la solución numérica (puntos) y la solución analítica (línea continua) de la e.d.m. de un sistema con tirón constante $j_0=0.5$</center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La coincidencia entre la solución analítica y la solución numérica mostrada en la Figura (<a href="#fig:code:compara_numerica_analitica">code:compara_numerica_analitica</a>) es casi perfecta.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Integraci&#243;n-num&#233;rica-de-las-e.d.m.-del-ejemplo-2">Integraci&#243;n num&#233;rica de las e.d.m. del ejemplo 2<a class="anchor-link" href="#Integraci&#243;n-num&#233;rica-de-las-e.d.m.-del-ejemplo-2">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando las mismas herramientas y algoritmos análogos a los usados antes, podemos ahora resolver el ejemplo 2 de la <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Sección <em>Integracion de la e.d.m.</em></a>.</p>
+<p>De nuevo, las ecuaciones reducidas del sistema serán, como en el ejemplo 1, las mismas de la Ec. (<a href="#mjx-eqn-eqedm_reducidas_particula">edm_reducidas_particula</a>), pero ahora $\{a_i\}=\{-\omega Y_0,0,0\}$ (nótese que hemos reemplazado $x$ por la variable auxiliar $Y_0$ de acuerdo a las reglas en Ec. <a href="#mjx-eqn-eqvariables_auxiliares_edm">variables_auxiliares_edm</a>).</p>
+<p>La rutina que implementa las <code>edm</code> en este caso será:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">edm_ejemplo2</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">omega</span><span class="p">):</span>
+    <span class="n">dYdt</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="n">dYdt</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="n">Y</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>
+    <span class="n">dYdt</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="n">omega</span><span class="o">*</span><span class="n">Y</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">dYdt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La solución al sistema, una comprobación de que la constante $C_{Ix}$ en la Ec. (<a href="#mjx-eqn-eqIx_ejemplo2">Ix_ejemplo2</a>) es en realidad una constante, y una gráfica de la posición como función del tiempo, se muestra en el siguiente algoritmo:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:solucion_numerica_ejemplo2'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Propiedades del sistema</span>
+<span class="n">omega</span><span class="o">=</span><span class="mf">2.5</span>
+
+<span class="c1">#Condiciones iniciales</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="n">Yos</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1">#Tiempos</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span>
+<span class="n">ts</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">10.0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="c1">#Solución</span>
+<span class="n">Ys</span><span class="o">=</span><span class="n">odeint</span><span class="p">(</span><span class="n">edm_ejemplo2</span><span class="p">,</span><span class="n">Yos</span><span class="p">,</span><span class="n">ts</span><span class="p">,</span><span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">omega</span><span class="p">,))</span>
+
+<span class="c1">#Constante de movimiento</span>
+<span class="n">xs</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">xdots</span><span class="o">=</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">C_Ixs</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="n">xdots</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mf">0.5</span><span class="o">*</span><span class="n">omega</span><span class="o">*</span><span class="n">xs</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Gráfico</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">();</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">Ys</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]);</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$t$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;$x$&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:solucion_numerica_ejemplo2'></a><center><b>Figura 5.14.</b> Solución numérica de la e.d.m. de un sistema dinámico con aceleracion $\vec a:(-2.5x,0,0)$.</center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Valores de C_Ix: [1.25 1.25 1.25 1.25 1.25]...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Podemos comprobar al examinar la Figura (<a href="#fig:code:solucion_numerica_ejemplo2">code:solucion_numerica_ejemplo2</a>) nuestra intuición inicial de que la dinámica del sistema correspondía a la de un movimiento oscilatorio.</p>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html">Mecanica.Cinematica.SolucionEdM</a> | Siguiente: <a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html">Mecanica.Dinamica.Cantidades</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

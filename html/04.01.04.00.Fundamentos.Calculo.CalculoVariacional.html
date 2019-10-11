@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>04.01.04.00.Fundamentos.Calculo.CalculoVariacional</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13066,38 +13066,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">Fundamentos.Calculo.EcuacionesDiferenciales</a> | Siguiente: <a href="05.00.00.00.Mecanica.html">Mecanica</a></p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h3 id="4.1.9.-Funcionales-y-c&#225;lculo-de-variaciones">4.1.9. Funcionales y c&#225;lculo de variaciones<a class="anchor-link" href="#4.1.9.-Funcionales-y-c&#225;lculo-de-variaciones">&#182;</a></h3><p><a id='funcionales_calculo_variaciones'></a></p>
 
 </div>
 </div>
@@ -13105,115 +13088,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Prefacio.html#prefacio">Prefacio</a>. <b>{#prefacio}</b><ul>
-<li><a href="01.00.00.00.Prefacio.html#otro_libro">¿Otro libro de mecánica celeste?</a>. <b>{#otro_libro}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_analitica">Mecánica celeste y mecánica analítica</a>. <b>{#celeste_analitica}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Mecánica celeste en la era de la información</a>. <b>{#celeste_era_informacion}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_python">Mecánica celeste en Python</a>. <b>{#celeste_python}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_spice">Mecánica celeste con <code>SPICE</code></a>. <b>{#celeste_spice}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#libro_distinto">¿Qué hace distinto a este libro?: un decálogo</a>. <b>{#libro_distinto}</b></li>
-</ul>
-</li>
-<li><a href="02.00.00.00.Agradecimientos.html#agradecimientos">Agradecimientos</a>. <b>{#agradecimientos}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#introduccion">Introducción</a>. <b>{#introduccion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#organizacion_libro">¿Cómo se organiza este libro?</a>. <b>{#organizacion_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#como_usar_libro">¿Cómo usar este libro?</a>. <b>{#como_usar_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#celeste_libretas">Mecánica celeste en <em>libretas</em></a>. <b>{#celeste_libretas}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#instalacion_libretas">Instalación de las libretas</a>. <b>{#instalacion_libretas}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#idioma_notacion">Idioma y Notación</a>. <b>{#idioma_notacion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#extranjerismos_pronunciacion">Extranjerismos y pronunciación</a>. <b>{#extranjerismos_pronunciacion}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#siglos_decadas">Siglos y décadas</a>. <b>{#siglos_decadas}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#notacion">Notación matemática</a>. <b>{#notacion}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#estructura_libro">Estructura del libro</a>. <b>{#estructura_libro}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#cajas_texto">Cajas de texto</a>. <b>{#cajas_texto}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#algoritmos">Algorítmos</a>. <b>{#algoritmos}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#interactivas_animaciones">Figuras interactivas y animaciones</a>. <b>{#interactivas_animaciones}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_interactiva">Ejemplo de figura interactiva</a>. <b>{#ejemplo_interactiva}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_animada">Ejemplo de figura animada</a>. <b>{#ejemplo_animada}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="04.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="04.01.00.00.Fundamentos.Calculo.html#vectores_calculo">Vectores y cálculo</a>. <b>{#vectores_calculo}</b><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#conjuntos_tuplas_vectores">Conjunto, tuplas y vectores</a>. <b>{#conjuntos_tuplas_vectores}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones">Funciones</a>. <b>{#funciones}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">Derivadas</a>. <b>{#derivadas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones_homogeneas">Funciones homogéneas</a>. <b>{#funciones_homogeneas}</b><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_derivada">Algoritmos para la derivada</a>. <b>{#algoritmos_derivada}</b></li>
-</ul>
-</li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">Integrales</a>. <b>{#integrales}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales_vectoriales">Integrales vectoriales</a>. <b>{#integrales_vectoriales}</b><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_integral">Algoritmos para la integral</a>. <b>{#algoritmos_integral}</b></li>
-</ul>
-</li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Ecuaciones diferenciales</a>. <b>{#ecuaciones_diferenciales}</b><ul>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#algoritmos_ode">Algoritmos para la solución de ODE</a>. <b>{#algoritmos_ode}</b></li>
-</ul>
-</li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#funcionales_calculo_variaciones">Funcionales y cálculo de variaciones</a>. <b>{#funcionales_calculo_variaciones}</b><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#algoritmos_calculo_variacional">Algoritmos en el cálculo variacional</a>. <b>{#algoritmos_calculo_variacional}</b></li>
-</ul>
-</li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#graficos_interactivos_variacional">Gráficos interactivos</a>. <b>{#graficos_interactivos_variacional}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="05.00.00.00.Mecanica.html#mecanica">Mecánica de partículas</a>. <b>{#mecanica}</b><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#cinematica">Cinemática</a>. <b>{#cinematica}</b><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#cantidades_cinematicas">Cantidades cinemáticas</a>. <b>{#cantidades_cinematicas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#sistemas_referencia">Sistemas de referencia</a>. <b>{#sistemas_referencia}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#ecuacion_movimiento">La ecuación de movimiento (e.d.m.)</a>. <b>{#ecuacion_movimiento}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Integración de la e.d.m.</a>. <b>{#integracion_edm}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_cuadraturas">Integración por cuadraturas</a>. <b>{#integracion_cuadraturas}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#integracion_numerica_edm">Integración numérica de la e.d.m.</a>. <b>{#integracion_numerica_edm}</b></li>
-</ul>
-</li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#dinamica">Dinámica</a>. <b>{#dinamica}</b><ul>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#cantidades_dinamicas">Cantidades dinámicas</a>. <b>{#cantidades_dinamicas}</b></li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#particulas_fuerzas">Partículas y fuerzas</a>. <b>{#particulas_fuerzas}</b></li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#sistemas_referencia_inerciales">Sistemas de referencia inerciales</a>. <b>{#sistemas_referencia_inerciales}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_fuerzas">Postulado de fuerzas</a>. <b>{#postulado_fuerzas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fuerzas_conservativas">Fuerzas conservativas y no conservativas</a>. <b>{#fuerzas_conservativas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#energia_mecanica">Energía mecánica</a>. <b>{#energia_mecanica}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#ley_inercia">¿Ley de inercia?</a>. <b>{#ley_inercia}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_accion_reaccion">Postulado de acción y reacción</a>. <b>{#postulado_accion_reaccion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_gravitacion">Postulado de gravitación universal</a>. <b>{#postulado_gravitacion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fuerza_luna">La fuerza gravitacional de la Tierra, el Sol y la la Luna</a>. <b>{#fuerza_luna}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#campo_gravitacional">El campo gravitacional</a>. <b>{#campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#energia_potencial_gravitacional">Energía potencial gravitacional</a>. <b>{#energia_potencial_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#masa_equivalencia">Masa y principio de equivalencia</a>. <b>{#masa_equivalencia}</b></li>
-</ul>
-</li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#sistemas_particulas">Sistemas de partículas</a>. <b>{#sistemas_particulas}</b><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fuerzas_centro_masa">Fuerzas y centro de masa</a>. <b>{#fuerzas_centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#centro_masa">Centro de masa de un sistema de dos partículas</a>. <b>{#centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#teoremas_conservacion">Teoremas de conservación</a>. <b>{#teoremas_conservacion}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#dinamica_centro_masa">Dinámica referida al centro de masa</a>. <b>{#dinamica_centro_masa}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Un tema poco cubierto en los textos básicos de cálculo, pero de gran utilidad en la mecánica, es el denominado <strong>cálculo de variaciones</strong>.  Si bien en esta sección de "repaso" no pretendemos ofrecer una introducción detallada a esta importante área del análisis matemático, es necesario presentar aquí algunos resultados básicos que serán de utilidad para el resto del libro.</p>
 
 </div>
 </div>
@@ -13221,36 +13096,12 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.00.00.00.Prefacio.html">01.00.00.00.Prefacio</a><ul>
-<li><a href="01.00.00.00.Prefacio.html#fig:utlima_thule">Figura 1.1</a>. Imagen procesada de Ultima Thule, el objeto transneptuniano sobrevolado por la sonda New Horizons en 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.). <b>{fig:utlima_thule}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#fig:kepler">Figura 3.3</a>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster. <b>{fig:kepler}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.01.00.Fundamentos.Calculo.Vectores.html">04.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#fig:vectores">Figura 4.6</a>. Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $. <b>{fig:vectores}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#fig:coordenadas">Figura 4.7</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#fig:variacion_funcion">Figura 4.9</a>. El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $. <b>{fig:variacion_funcion}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html">05.02.01.00.Mecanica.Dinamica.Postulados</a><ul>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:accion_reaccion">Figura 5.15</a>. Dos formas del postulado de acción y reacción: a la izquierda el postulado débil, en el que las fuerzas son iguales y de sentido contrario, pero no son paralelas a la línea que une las partículas; a la derecha el postulado fuerte en el que la acción y reacción actúan sobre la línea que une a las partículas.. <b>{fig:accion_reaccion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:fuerza_gravitacional">Figura 5.16</a>. Definición de los vectores de posición, vector relativo y vector de fuerza en el postulado de gravitación universal.. <b>{fig:fuerza_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:accion_reaccion">Figura 5.17</a>. El único retrato disponible de Simon Stevin (ca. 1548). Crédito: Colección Universidad de Leiden.. <b>{fig:accion_reaccion}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fig:centro_masa">Figura 5.20</a>. Relación entre la posición del centro de masa $. <b>{fig:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fig:astronomia_nova">Figura 5.21</a>. Primera página de la obra cumbre de Kepler <em>Astronomía Nova</em>.. <b>{fig:astronomia_nova}</b></li>
-</ul>
-</li>
-</ul>
+<p>Si el cálculo infinitesimal, que repasamos en las secciones anteriores, trata sobre la variación continua de funciones de variable real, el cálculo de variaciones se ocupa de la variación de los que se conocen como <strong>funcionales</strong>.</p>
+<p>En términos informales, un funcional es una "función de funciones", es decir, una regla de correspondencia entre el conjunto de las funciones y el de los números reales.</p>
+<p>Un ejemplo, muy interesante e ilustrativo de un funcional, es la integral definida de una función de variable real:</p>
+$$
+I[f]=\int_a^b f(t)\;\mathrm{d}t
+$$<p>La notación $I[f]$, en lugar de $I(b)$ como lo usamos en <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">la Sección <em>Integrales</em></a>, trata de poner en evidencia el hecho de que lo que nos interesa aquí no es el valor mismo de la integral definida, sino cómo el valor de esta cantidad cambia si modificamos la función $f$.  En la Figura (<a href="#fig:variacion_funcion">variacion_funcion</a>) se muestra la interpretación gráfica de la integral definida.  Sabemos que el área bajo la curva, el valor de nuestro funcional,  dependerá de si usamos la función $f(t)$ o $f_0(t)$.</p>
 
 </div>
 </div>
@@ -13258,109 +13109,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="04.01.01.00.Fundamentos.Calculo.Vectores.html">04.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqsuma_tuplas">Ec. (4.1)</a>: suma_tuplas. <b>{eq:suma_tuplas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqk_tupla">Ec. (4.2)</a>: k_tupla. <b>{eq:k_tupla}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqvectores_en_base">Ec. (4.3)</a>: vectores_en_base. <b>{eq:vectores_en_base}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqdelta_kroenecker">Ec. (4.4)</a>: delta_kroenecker. <b>{eq:delta_kroenecker}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqbase_mano_derecha">Ec. (4.5)</a>: base_mano_derecha. <b>{eq:base_mano_derecha}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqlevi_civita">Ec. (4.6)</a>: levi_civita. <b>{eq:levi_civita}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz">Ec. (4.7)</a>: producto_cruz. <b>{eq:producto_cruz}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz_determinante">Ec. (4.8)</a>: producto_cruz_determinante. <b>{eq:producto_cruz_determinante}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_escalar">Ec. (4.9)</a>: triple_producto_escalar. <b>{eq:triple_producto_escalar}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_vectorial">Ec. (4.10)</a>: triple_producto_vectorial. <b>{eq:triple_producto_vectorial}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (4.11)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (4.12)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_cilindricas">Ec. (4.13)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (4.14)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_esfericas">Ec. (4.15)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqderivada_definicion">Ec. (4.16)</a>: derivada_definicion. <b>{eq:derivada_definicion}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_general">Ec. (4.17)</a>: regla_cadena_general. <b>{eq:regla_cadena_general}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cartesianas">Ec. (4.18)</a>: gradiente_cartesianas. <b>{eq:gradiente_cartesianas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cilindricas">Ec. (4.19)</a>: gradiente_cilindricas. <b>{eq:gradiente_cilindricas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_esfericas">Ec. (4.20)</a>: gradiente_esfericas. <b>{eq:gradiente_esfericas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_multivariables">Ec. (4.21)</a>: regla_cadena_multivariables. <b>{eq:regla_cadena_multivariables}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqteorema_fundamental_calculo">Ec. (4.22)</a>: teorema_fundamental_calculo. <b>{eq:teorema_fundamental_calculo}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales</a><ul>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_antiderivada">Ec. (4.23)</a>: ecuacion_diferencial_antiderivada. <b>{eq:ecuacion_diferencial_antiderivada}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple">Ec. (4.24)</a>: ecuacion_diferencial_simple. <b>{eq:ecuacion_diferencial_simple}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_reducida">Ec. (4.25)</a>: ecuacion_diferencial_simple_reducida. <b>{eq:ecuacion_diferencial_simple_reducida}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuaciones_reducidas">Ec. (4.26)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_identificacion">Ec. (4.27)</a>: ecuacion_diferencial_simple_identificacion. <b>{eq:ecuacion_diferencial_simple_identificacion}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqvariacion">Ec. (4.28)</a>: variacion. <b>{eq:variacion}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqlongitud_curva">Ec. (4.29)</a>: longitud_curva. <b>{eq:longitud_curva}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqfuncional_integral">Ec. (4.30)</a>: funcional_integral. <b>{eq:funcional_integral}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqdIdepsilon">Ec. (4.31)</a>: dIdepsilon. <b>{eq:dIdepsilon}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_integral_variaciones">Ec. (4.32)</a>: ecuacion_integral_variaciones. <b>{eq:ecuacion_integral_variaciones}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_euler_lagrange">Ec. (4.33)</a>: ecuacion_euler_lagrange. <b>{eq:ecuacion_euler_lagrange}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html">05.01.01.00.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqa_cilindricas">Ec. (5.34)</a>: a_cilindricas. <b>{eq:a_cilindricas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqa_esfericas">Ec. (5.35)</a>: a_esfericas. <b>{eq:a_esfericas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqtransformaciones_galileo">Ec. (5.36)</a>: transformaciones_galileo. <b>{eq:transformaciones_galileo}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqley_adicion_velocidades">Ec. (5.37)</a>: ley_adicion_velocidades. <b>{eq:ley_adicion_velocidades}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqley_adicion_aceleraciones">Ec. (5.38)</a>: ley_adicion_aceleraciones. <b>{eq:ley_adicion_aceleraciones}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html">05.01.02.00.Mecanica.Cinematica.SolucionEdM</a><ul>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm">Ec. (5.39)</a>: edm. <b>{eq:edm}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden">Ec. (5.40)</a>: edm_primer_orden. <b>{eq:edm_primer_orden}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_escalar">Ec. (5.41)</a>: edm_escalar. <b>{eq:edm_escalar}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden_escalar">Ec. (5.42)</a>: edm_primer_orden_escalar. <b>{eq:edm_primer_orden_escalar}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_estado">Ec. (5.43)</a>: edm_estado. <b>{eq:edm_estado}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1">Ec. (5.44)</a>: edm_ejemplo1. <b>{eq:edm_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1_cuadratura">Ec. (5.45)</a>: edm_ejemplo1_cuadratura. <b>{eq:edm_ejemplo1_cuadratura}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo1">Ec. (5.46)</a>: Ix_ejemplo1. <b>{eq:Ix_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo2">Ec. (5.47)</a>: Ix_ejemplo2. <b>{eq:Ix_ejemplo2}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqconstantes_ejemplo1">Ec. (5.48)</a>: constantes_ejemplo1. <b>{eq:constantes_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqsolucion_ejemplo1">Ec. (5.49)</a>: solucion_ejemplo1. <b>{eq:solucion_ejemplo1}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html">05.01.03.00.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqedm_ecuaciones_reducidas">Ec. (5.50)</a>: edm_ecuaciones_reducidas. <b>{eq:edm_ecuaciones_reducidas}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqvariables_auxiliares_edm">Ec. (5.51)</a>: variables_auxiliares_edm. <b>{eq:variables_auxiliares_edm}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqedm_reducidas_particula">Ec. (5.52)</a>: edm_reducidas_particula. <b>{eq:edm_reducidas_particula}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html">05.02.01.00.Mecanica.Dinamica.Postulados</a><ul>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqedm_fuerzas_aplicadas">Ec. (5.53)</a>: edm_fuerzas_aplicadas. <b>{eq:edm_fuerzas_aplicadas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqedm_fuerzas_resultantes">Ec. (5.54)</a>: edm_fuerzas_resultantes. <b>{eq:edm_fuerzas_resultantes}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcirculacion_nula">Ec. (5.55)</a>: circulacion_nula. <b>{eq:circulacion_nula}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuncion_energia_potencial">Ec. (5.56)</a>: funcion_energia_potencial. <b>{eq:funcion_energia_potencial}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_gravitacional">Ec. (5.57)</a>: fuerza_gravitacional. <b>{eq:fuerza_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_M_m">Ec. (5.58)</a>: fuerza_M_m. <b>{eq:fuerza_M_m}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcampo_gravitacional">Ec. (5.59)</a>: campo_gravitacional. <b>{eq:campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_campo_gravitacional">Ec. (5.60)</a>: fuerza_campo_gravitacional. <b>{eq:fuerza_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqenergia_potencial_gravitacional">Ec. (5.61)</a>: energia_potencial_gravitacional. <b>{eq:energia_potencial_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcampo_gravitacional">Ec. (5.62)</a>: campo_gravitacional. <b>{eq:campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqenergia_fuerza_campo_gravitacional">Ec. (5.63)</a>: energia_fuerza_campo_gravitacional. <b>{eq:energia_fuerza_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqpotencial_campo_gravitacional">Ec. (5.64)</a>: potencial_campo_gravitacional. <b>{eq:potencial_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqrazon_masa_gravitacional_masa_inercial">Ec. (5.65)</a>: razon_masa_gravitacional_masa_inercial. <b>{eq:razon_masa_gravitacional_masa_inercial}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqcentro_masa">Ec. (5.66)</a>: centro_masa. <b>{eq:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqedm_sistema">Ec. (5.67)</a>: edm_sistema. <b>{eq:edm_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqdistancia_centro_masa">Ec. (5.68)</a>: distancia_centro_masa. <b>{eq:distancia_centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqtorca_sistema">Ec. (5.69)</a>: torca_sistema. <b>{eq:torca_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqdLdt_sistema_torca">Ec. (5.70)</a>: dLdt_sistema_torca. <b>{eq:dLdt_sistema_torca}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqtorque_sistema">Ec. (5.71)</a>: torque_sistema. <b>{eq:torque_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqestado_CM">Ec. (5.72)</a>: estado_CM. <b>{eq:estado_CM}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqL_CM_interno">Ec. (5.73)</a>: L_CM_interno. <b>{eq:L_CM_interno}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqK_CM_interno">Ec. (5.74)</a>: K_CM_interno. <b>{eq:K_CM_interno}</b></li>
-</ul>
-</li>
-</ul>
+<p><a id='fig:variacion_funcion'></a><img src="./figures/horizontal_variacion_funcion.png" alt="El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $" width="70.0%"></p>
+<center><b>Figura 4.9</b>. El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De la misma manera en la que se puede estudiar el efecto que un cambio muy pequeño $\Delta t$ en el valor de la variable independiente $t$ tiene en una función de variable real $f(t)$, como lo hicimos por ejemplo para definir la derivada (ver <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">la Sección <em>Derivadas</em></a>), en el cálculo variacional es posible estudiar el efecto que un cambio pequeño $\delta f$ de una función $f$ tiene en el funcional $I[f]$</p>
+<p>Para hacerlo debemos primero definir otra función $\eta$ que sirve de "plantilla" para el cambio.  Al cambio en $f$ se lo llama <strong>variación</strong> y se escribe como:</p>
+\begin{equation}
+\label{eq:variacion}
+\delta f\equiv \epsilon \eta
+\end{equation}<p>Una ilustración del concepto de <em>variación</em> se muestra en la Figura (<a href="#fig:variacion_funcion">variacion_funcion</a>).  Allí reconocemos una importante propiedad de la función de plantilla $\eta(t)$ y es que vale cero en los extremos del intervalo considerado $[a,b]$.</p>
 
 </div>
 </div>
@@ -13368,42 +13130,486 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#code:rutina_discriminante">Código (3.1)</a>: rutina_discriminante. <b>{code:rutina_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:calcula_discriminante">Código (3.2)</a>: calcula_discriminante. <b>{code:calcula_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:plot_sin">Código (3.3)</a>: plot_sin. <b>{code:plot_sin}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:rutina_potencial">Código (4.4)</a>: rutina_potencial. <b>{code:rutina_potencial}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:funcion_lambda">Código (4.5)</a>: funcion_lambda. <b>{code:funcion_lambda}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#code:funcional_integral">Código (4.6)</a>: funcional_integral. <b>{code:funcional_integral}</b></li>
-</ul>
-</li>
-<li>Código en <a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html">05.01.03.00.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:edm_ejemplo1">Código (5.7)</a>: edm_ejemplo1. <b>{code:edm_ejemplo1}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:ejemplo1_grafico_solucion">Código (5.8)</a>: ejemplo1_grafico_solucion. <b>{code:ejemplo1_grafico_solucion}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:compara_numerica_analitica">Código (5.9)</a>: compara_numerica_analitica. <b>{code:compara_numerica_analitica}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:solucion_numerica_ejemplo2">Código (5.10)</a>: solucion_numerica_ejemplo2. <b>{code:solucion_numerica_ejemplo2}</b></li>
-</ul>
-</li>
-<li>Código en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:random_particles">Código (5.11)</a>: random_particles. <b>{code:random_particles}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:centro_masa">Código (5.12)</a>: centro_masa. <b>{code:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:grafico_sistema_ejemplo">Código (5.13)</a>: grafico_sistema_ejemplo. <b>{code:grafico_sistema_ejemplo}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:L_sistema_ejemplo">Código (5.14)</a>: L_sistema_ejemplo. <b>{code:L_sistema_ejemplo}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:K_sistema_ejemplo">Código (5.15)</a>: K_sistema_ejemplo. <b>{code:K_sistema_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
+<p>El cálculo variacional surgió originalmente para resolver problemas prácticos en física, tales como hallar las funciones que máximan o minimizan (extremos) funcionales de alguna utilidad.</p>
+<p>Así por ejemplo, considere la siguiente pregunta: ¿cuál es la curva más corta que conecta dos puntos en el plano de euclidiano?</p>
+<p>Para responder a esta pregunta debemos primero construir el funcional "distancia a lo largo de una curva", también llamado, longitud de arco (<cite data-cite="Apostol1969Calculus"><a href="mybook.html#Apostol1969Calculus">Apostol, 1969</a></cite>):</p>
+\begin{equation}
+\label{eq:longitud_curva}
+I[f]=\int_a^b \sqrt{1+\left|\frac{\mathrm{d}f}{\mathrm{d}t}\right|^2}\;\mathrm{d}t
+\end{equation}<p>Queremos encontrar la función $f_0$ tal que $I[f_0]$ tenga el mínimo valor entre todas las posibles funciones $f$.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para encontrar la función que minimiza este funcional debemos, como se acostumbra en el cálculo (<cite data-cite="Apostol1967Calculus"><a href="mybook.html#Apostol1967Calculus">Apostol, 1967</a></cite>), derivar el funcional respecto a la cantidad que parametriza la variación: $\epsilon$.</p>
+<p>Escribamos el funcional de forma más general, en términos de una función cercana al mínimo escrita como $f=f_0+\epsilon\eta$:</p>
+\begin{equation}
+\label{eq:funcional_integral}
+I[f]=\int_a^b L(f(t),\dot{f}(t),t)\;\mathrm{d}t
+\end{equation}<p>Nótese que hemos escrito el integrando como una función general $L$ que depende del valor de la función $f(t)$, de su derivada $\dot{f}(t)$ y de la variable independiente $t$.  Implícitamente, el funcional depende también del parámetro $\epsilon$ dado que $f=f_0+\epsilon\eta$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si derivamos el funcional respecto de $\epsilon$, obtenemos:</p>
+$$
+\frac{\mathrm{d}I[f]}{\mathrm{d}\epsilon}=\int_a^b \frac{\mathrm{d}}{\mathrm{d}\epsilon} L(f(t),\dot{f}(t),t)\;\mathrm{d}t
+$$<p>Aplicando la regla de la cadena, la integral del lado derecho nos queda:</p>
+$$
+\frac{\mathrm{d}I[f]}{\mathrm{d}\epsilon}=\int_a^b 
+\left(
+\frac{\partial L}{\partial f}\frac{\mathrm{d}f}{\mathrm{d}\epsilon}+
+\frac{\partial L}{\partial \dot{f}}\frac{\mathrm{d}\dot{f}}{\mathrm{d}\epsilon}
+\right)
+\;\mathrm{d}t
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como $f(t)=f_0(t)+\epsilon\eta(t)$, entonces $\mathrm{d}f/\mathrm{d}\epsilon=\eta$, mientras que  $\mathrm{d}\dot{f}/\mathrm{d}\epsilon=\dot{\eta}$.  Así la integral anterior se desarrolla como:</p>
+\begin{equation}
+\label{eq:dIdepsilon}
+\frac{\mathrm{d}I[f]}{\mathrm{d}\epsilon}=\int_a^b 
+\left(
+\frac{\partial L}{\partial f}\eta+
+\frac{\partial L}{\partial \dot{f}}\dot{\eta}
+\right)
+\;\mathrm{d}t
+\end{equation}<p>El término $\int_a^b (\partial L/\partial \dot{f})\dot{\eta}\;\mathrm{d}t$ se puede integrar por partes, si se hace $u=\partial L/\partial \dot{f}$ y $\mathrm{d}v=\dot{\eta}\;\mathrm{d}t$:</p>
+$$
+\int_a^b \frac{\partial L}{\partial \dot{f}}\dot{\eta}\;\mathrm{d}t=
+\left.\frac{\partial L}{\partial \dot{f}}\eta\right|_a^b-
+\int_a^b \frac{\mathrm{d}}{\mathrm{d}x}\left(\frac{\partial L}{\partial \dot{f}}\right)\eta\;\mathrm{d}t
+$$<p>El primer término del lado derecho de la ecuación anterior es cero, en tanto, por definición $\eta(a)=\eta(b)=0$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en la Ec. (<a href="#mjx-eqn-eqdIdepsilon">dIdepsilon</a>), la derivada del funcional respecto de epsilon queda finalmente:</p>
+$$
+\frac{\mathrm{d}I[f]}{\mathrm{d}\epsilon}=\int_a^b 
+\eta(x)
+\left(\frac{\partial L}{\partial f}-\frac{\mathrm{d}}{\mathrm{d}x}\frac{\partial L}{\partial \dot{f}}\right)
+\;\mathrm{d}x
+$$<p>Para que $I[f]$ sea mínima en $f=f_0$ su derivada $\mathrm{d}I[f]/{\mathrm{d}\epsilon}$ debe ser cero en $\epsilon=0$.  Esto equivale a la <em>ecuación integral</em>:</p>
+\begin{equation}
+\label{eq:ecuacion_integral_variaciones}
+\int_a^b 
+\eta(x)
+\left(\frac{\partial L}{\partial f}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{f}}\right)
+\;\mathrm{d}t=0
+\end{equation}<p>que lamentablemente no es muy útil para resolver nuestro problema original.  Para acercarnos a la solución necesitamos de un poderoso teorema:</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Lema fundamental del cálculo de variacions.</strong> Si una función continua $f(t)$ en el intervalo abierto $(a,b)$ satisface la igualdad:</p>
+<p>$$
+  \int_a^b f(t)h(t)\;\mathrm{d}t=0
+  $$</p>
+<blockquote><p>para toda función $h(t)$ continuamente diferenciable (todas sus derivadas son continuas) y con <em>soporte compacto</em> (acotada), entonces $f(t)=0$.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De acuerdo con este teorema, y suponiendo que $\eta(t)$ es continuamente diferenciable y acotada, la función entre paréntesis la ecuación integral (<a href="#mjx-eqn-eqecuacion_integral_variaciones">ecuacion_integral_variaciones</a>) es:</p>
+\begin{equation}
+\label{eq:ecuacion_euler_lagrange}
+\frac{\partial L}{\partial f}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{f}}=0
+\end{equation}<p>Esta ecuación es una versión particular (para funciones de una sola variable) de la que se conoce en la historia como la <strong>ecuación de Euler-Lagrange</strong> y que será de importancia central en este libro.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Volviendo a nuestro problema original, es decir, encontrar la curva con la menor longitud entre dos puntos, y reconociendo que:</p>
+$$
+L(f(t),\dot{f}(t),t)=\sqrt{1+|\dot{f}(t)|^2},
+$$<p>Entonces $\partial L/\partial f=0$ (no aparece el símbolo $f$ en la fórmula de $L$) y $\partial L/\partial\dot{f}=\dot{f}/\sqrt{1+|\dot{f}(t)|^2}$.  De allí, la ecuación de Euler-Lagrange (<a href="#mjx-eqn-eqecuacion_euler_lagrange">ecuacion_euler_lagrange</a>) en este problema se convierte en:</p>
+$$
+\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\dot{f}}{\sqrt{1+|\dot{f}(t)|^2}}\right)=0
+$$<p>Esta ecuación significa que el término entre paréntesis es constante.  Después de un poco de algebra, la expresión resultante, se puede integrar para obtener:</p>
+$$
+f(t)=At+B,
+$$<p>donde $A$, $B$ son constantes.</p>
+<p>La respuesta final a la pregunta original es ahora clara: la curva más corta entre dos puntos en el plano euclidiano es una línea recta.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="4.1.9.1.-Algoritmos-en-el-c&#225;lculo-variacional">4.1.9.1. Algoritmos en el c&#225;lculo variacional<a class="anchor-link" href="#4.1.9.1.-Algoritmos-en-el-c&#225;lculo-variacional">&#182;</a></h4><p><a id='algoritmos_calculo_variacional'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si el cálculo variacional es poco común en los textos básicos de cálculo infinitesimal, los algoritmos relacionados con él son aún más escasos en los textos de análisis numérico.</p>
+<p>Dada la importancia del cálculo variacional en la mecánica nos detendremos un momento aquí para explorar desde la algoritmia, al menos la solución al problema de cálculo variacional que expusimos en la sección anterior: el cálculo de la curva más corta entre dos puntos en el plano euclidiano.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ello escribamos primero la rutina que servirá en nuestro caso como funcional (y que implementa la Ec. <a href="#mjx-eqn-eqlongitud_curva">longitud_curva</a>):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:funcional_integral'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">funcional_integral</span><span class="p">(</span><span class="n">f0</span><span class="p">,</span><span class="n">eta</span><span class="p">,</span><span class="n">epsilon</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="o">**</span><span class="n">opciones_de_f0</span><span class="p">):</span>
+    
+    <span class="c1">#Definimos las función con su variación</span>
+    <span class="n">f</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span><span class="n">f0</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="o">**</span><span class="n">opciones_de_f0</span><span class="p">)</span><span class="o">+</span><span class="n">epsilon</span><span class="o">*</span><span class="n">eta</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    
+    <span class="c1">#La derivada de f la calculamos con derivative</span>
+    <span class="kn">from</span> <span class="nn">scipy.misc</span> <span class="k">import</span> <span class="n">derivative</span>
+    <span class="n">dfdt</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span><span class="n">derivative</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="mf">0.01</span><span class="p">)</span>
+    
+    <span class="c1">#Este es el integrando del funcional</span>
+    <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sqrt</span>
+    <span class="n">L</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="nb">abs</span><span class="p">(</span><span class="n">dfdt</span><span class="p">(</span><span class="n">t</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    
+    <span class="c1">#El funcional es la integral definida del integrando</span>
+    <span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="k">import</span> <span class="n">quad</span>
+    <span class="n">integral</span><span class="o">=</span><span class="n">quad</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="n">longitud</span><span class="o">=</span><span class="n">integral</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">longitud</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que un <em>funcional</em> en el lenguaje de la algoritmia es una rutina que recibe como parámetros otras rutina (en este caso <code>f0</code> y <code>eta</code>) y devuelve un valor numérico (en este caso <code>longitud</code>.)</p>
+<p>La rutina en el Alg. (<a href="#code:funcional_integral">funcional_integral</a>), si bien parece compleja, recoje todos los elementos que hemos aprendido en esta sección: los parametros opcionales de una rutina expresados como <code>**opciones_de_f0</code> y que vimos en una nota de la <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones">Sección <em>Funciones</em></a>, las funciones <code>lambda</code> que vimos en la misma sección, la derivada numérica calculada usando <code>derivative</code> que conocimos en la <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">Sección <em>Derivadas</em></a> y la integral por cuadraturas usando <code>quad</code> de la <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">Sección <em>Integrales</em></a>.</p>
+<p>Más importante aún es el hecho que esta rutina puede usarse para cualquier funcional que se exprese como una integral definida de la forma de la Ec. (<a href="#mjx-eqn-eqfuncional_integral">funcional_integral</a>).  Para adaptarla a otras situaciones, simplemente se debe cambiar la función <code>L</code>.  En la sección de problemas al final de este capítulo se pone a prueba esta rutina en otros contextos.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Supongamos ahora que queremos calcular la curva más corta que une los puntos del plano cartesiano $(0,0)$ y $(\pi,1)$  (es decir $a=0$ y $b=\pi$).  Para ello proponemos una función de referencia $f_0(t)=(t/\pi)^n$.  Esta función para por ambos puntos para todo $n$.  Como función de plantilla $\eta(t)$, que debe ser una función acotada de acuerdo al lema fundamental del cálculo de variaciones, usaremos la función trigonométrica seno (que cumple la condición $\eta(a)=\sin 0=0$ y $\eta(b)=\sin\pi=0$).</p>
+<p>El siguiente algoritmo implementa estas elecciones:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Intevalo entre los puntos</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">pi</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">b</span><span class="o">=</span><span class="n">pi</span>
+
+<span class="c1">#Funcion de referencia</span>
+<span class="k">def</span> <span class="nf">curva</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">t</span><span class="o">/</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="n">n</span>
+
+<span class="c1">#Función plantilla</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span>
+<span class="n">eta</span><span class="o">=</span><span class="n">sin</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ilustrar el uso de la rutina en el Alg. (<a href="#code:funcional_integral">funcional_integral</a>), calculemos la longitud de arco para el caso en el que $n=2$ y $\epsilon=0.5$:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">If</span><span class="o">=</span><span class="n">funcional_integral</span><span class="p">(</span><span class="n">curva</span><span class="p">,</span><span class="n">eta</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I[f] = 3.337162809417341
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para encontrar la trayectoria más corta entre los puntos seleccionados, debemos minimizar una función del tipo <code>longitud_arco(epsilon)</code> que llame a la rutina <code>funcional_integral</code>, pero que solo dependa de la variable que queremos minimizar, es decir de <code>epsilon</code>.  Para ello podemos definir la función <code>lambda</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">longitud_arco</span><span class="o">=</span><span class="k">lambda</span> <span class="n">epsilon</span><span class="p">:</span><span class="n">funcional_integral</span><span class="p">(</span><span class="n">curva</span><span class="p">,</span><span class="n">eta</span><span class="p">,</span><span class="n">epsilon</span><span class="p">,</span>
+                                                <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La minimización, finalmente, se consigue usando la rutina <code>minimize</code> del paquete <code>SciPy</code>, capaz de encontar el mínimo de funciones escalares con un número arbitario de variables.  Lo único que necesita <code>minimize</code> para lograr su cometido es que le pasemos una rutina que tenga un solo parametro, en nuestro caso <code>longitud_arco</code> y un valor de prueba para la variable independiente (en nuestro caso usaremos $\epsilon=0$):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="k">import</span> <span class="n">minimize</span>
+<span class="n">solucion</span><span class="o">=</span><span class="n">minimize</span><span class="p">(</span><span class="n">longitud_arco</span><span class="p">,</span><span class="mf">0.0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Resultado de la minimización:
+      fun: 3.2975722013512403
+ hess_inv: array([[0.73687233]])
+      jac: array([1.1920929e-06])
+  message: &#39;Optimization terminated successfully.&#39;
+     nfev: 12
+      nit: 3
+     njev: 4
+   status: 0
+  success: True
+        x: array([0.25801323])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nótese que el resultado de la rutina <code>minimize</code> es un <em>objeto</em> entre cuyos atributos se encuentra el valor de la variable independiente <code>x</code> que hace mínima la función de nuestro interés, en este caso <code>longitud_de_arco</code>.</p>
+<p>Puesto en términos de nuestro problema el resultado anterior indica que para curvas del tipo $f_0(t)=(t/\pi)^2$, que sufren variaciones con una función plantilla $\eta(t)=\sin t$, la curva de mínima longitud entre el punto $(0,0)$ y el punto $(0,\pi)$, corresponde a una variación con $\epsilon=0.258$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hagamos un gráfico de la función resultante y de su comparación con la solución analítica:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span><span class="p">,</span><span class="n">pi</span>
+<span class="n">ts</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">pi</span><span class="p">)</span>
+
+<span class="c1">#Valor de epsilon proveniende de la minimización</span>
+<span class="n">epsilon</span><span class="o">=</span><span class="n">solucion</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">curva</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">),</span><span class="s1">&#39;r.&#39;</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="n">f</span><span class="s2">&quot;Curva de referencia&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">curva</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="n">epsilon</span><span class="o">*</span><span class="n">eta</span><span class="p">(</span><span class="n">ts</span><span class="p">),</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="n">f</span><span class="s2">&quot;Curva variada con $\epsilon$=</span><span class="si">{epsilon:g}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">curva</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span><span class="s1">&#39;k--&#39;</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="n">f</span><span class="s2">&quot;Línea recta&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+
+<span class="c1">#--hide--</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:04.01.04.00.Fundamentos.Calculo.CalculoVariacional_10'></a><center><b>Figura 4.10.</b> La curva continua indica una aproximación numérica al camino más corto entre los puntos $(0,0)$ y $(0,\pi)$ del plano euclidiano, encontrada al minimizar el funcional longitud de arco y usando como función de prueba $f_0=(t/\pi)^n$ (linea punteada) y como función plantilla $\epsilon(t)=\sin t$.  El valor de $\epsilon$ que corresponde a la solución se muestra en la etiqueta.  Para comparación se muestra (linea rayada) la solución exacta, que corresponde a una línea recta.</center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.1.1.-Gr&#225;ficos-interactivos">4.1.1. Gr&#225;ficos interactivos<a class="anchor-link" href="#4.1.1.-Gr&#225;ficos-interactivos">&#182;</a></h3><p><a id='graficos_interactivos_variacional'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ver los gráficos interactivos use a las libretas de <code>Jupyter</code> que que están disponibles en la versión electrónica del libro.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:04.01.04.00.Fundamentos.Calculo.CalculoVariacional_11'></a><center><b>Figura 4.11.</b> </center></p>
+
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">Fundamentos.Calculo.EcuacionesDiferenciales</a> | Siguiente: <a href="05.00.00.00.Mecanica.html">Mecanica</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

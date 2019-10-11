@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>05.02.02.00.Mecanica.Dinamica.SistemaParticulas</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13066,38 +13066,21 @@ div#notebook {
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
-
+<div style="background:lightgray">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:3em"></p>
-<p style="text-align:center;font-size:3em;font-weight:bold">Mecánica Celeste y Analítica</p>
-<p style="text-align:center;font-size:2em">Teoría, problemas y algoritmos</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./figures/portada.png" alt="Portada"></p>
+<p><a href="index.html">Indice</a> | Previo: <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html">Mecanica.Dinamica.Postulados</a> |</p>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="text-align:center;font-size:2em;font-weight:bold">Jorge I. Zuluaga</p>
-<p style="text-align:center;font-size:1.2em">Profesor Titular de Física y Astronomía</p>
-<p style="text-align:center;font-size:1.2em">Instituto de Física, Facultad de Ciencias Exactas y Naturales</p>
-<p style="text-align:center;font-size:1.2em">Universidad de Antioquia</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
+<h2 id="5.3.-Sistemas-de-part&#237;culas">5.3. Sistemas de part&#237;culas<a class="anchor-link" href="#5.3.-Sistemas-de-part&#237;culas">&#182;</a></h2><p><a id='sistemas_particulas'></a></p>
 
 </div>
 </div>
@@ -13105,115 +13088,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p style="margin:1em"></p>
-<p style="text-align:center;font-size:2em;font-weight:bold">Tabla de Contenido</p>
-<p style="margin:1em"></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-materias">&#205;ndice de materias<a class="anchor-link" href="#&#205;ndice-de-materias">&#182;</a></h2><ul>
-<li><a href="01.00.00.00.Prefacio.html#prefacio">Prefacio</a>. <b>{#prefacio}</b><ul>
-<li><a href="01.00.00.00.Prefacio.html#otro_libro">¿Otro libro de mecánica celeste?</a>. <b>{#otro_libro}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_analitica">Mecánica celeste y mecánica analítica</a>. <b>{#celeste_analitica}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Mecánica celeste en la era de la información</a>. <b>{#celeste_era_informacion}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_python">Mecánica celeste en Python</a>. <b>{#celeste_python}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#celeste_spice">Mecánica celeste con <code>SPICE</code></a>. <b>{#celeste_spice}</b></li>
-<li><a href="01.00.00.00.Prefacio.html#libro_distinto">¿Qué hace distinto a este libro?: un decálogo</a>. <b>{#libro_distinto}</b></li>
-</ul>
-</li>
-<li><a href="02.00.00.00.Agradecimientos.html#agradecimientos">Agradecimientos</a>. <b>{#agradecimientos}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#introduccion">Introducción</a>. <b>{#introduccion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#organizacion_libro">¿Cómo se organiza este libro?</a>. <b>{#organizacion_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#como_usar_libro">¿Cómo usar este libro?</a>. <b>{#como_usar_libro}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#celeste_libretas">Mecánica celeste en <em>libretas</em></a>. <b>{#celeste_libretas}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#instalacion_libretas">Instalación de las libretas</a>. <b>{#instalacion_libretas}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#idioma_notacion">Idioma y Notación</a>. <b>{#idioma_notacion}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#extranjerismos_pronunciacion">Extranjerismos y pronunciación</a>. <b>{#extranjerismos_pronunciacion}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#siglos_decadas">Siglos y décadas</a>. <b>{#siglos_decadas}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#notacion">Notación matemática</a>. <b>{#notacion}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#estructura_libro">Estructura del libro</a>. <b>{#estructura_libro}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#cajas_texto">Cajas de texto</a>. <b>{#cajas_texto}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#algoritmos">Algorítmos</a>. <b>{#algoritmos}</b></li>
-</ul>
-</li>
-<li><a href="03.00.00.00.Introduccion.html#interactivas_animaciones">Figuras interactivas y animaciones</a>. <b>{#interactivas_animaciones}</b><ul>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_interactiva">Ejemplo de figura interactiva</a>. <b>{#ejemplo_interactiva}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#ejemplo_animada">Ejemplo de figura animada</a>. <b>{#ejemplo_animada}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="04.00.00.00.Fundamentos.html#fundamentos">Fundamentos</a>. <b>{#fundamentos}</b><ul>
-<li><a href="04.01.00.00.Fundamentos.Calculo.html#vectores_calculo">Vectores y cálculo</a>. <b>{#vectores_calculo}</b><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#conjuntos_tuplas_vectores">Conjunto, tuplas y vectores</a>. <b>{#conjuntos_tuplas_vectores}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#sistemas_coordenadas">Sistemas de coordenadas</a>. <b>{#sistemas_coordenadas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones">Funciones</a>. <b>{#funciones}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#derivadas">Derivadas</a>. <b>{#derivadas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#funciones_homogeneas">Funciones homogéneas</a>. <b>{#funciones_homogeneas}</b><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_derivada">Algoritmos para la derivada</a>. <b>{#algoritmos_derivada}</b></li>
-</ul>
-</li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales">Integrales</a>. <b>{#integrales}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#integrales_vectoriales">Integrales vectoriales</a>. <b>{#integrales_vectoriales}</b><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#algoritmos_integral">Algoritmos para la integral</a>. <b>{#algoritmos_integral}</b></li>
-</ul>
-</li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#ecuaciones_diferenciales">Ecuaciones diferenciales</a>. <b>{#ecuaciones_diferenciales}</b><ul>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#algoritmos_ode">Algoritmos para la solución de ODE</a>. <b>{#algoritmos_ode}</b></li>
-</ul>
-</li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#funcionales_calculo_variaciones">Funcionales y cálculo de variaciones</a>. <b>{#funcionales_calculo_variaciones}</b><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#algoritmos_calculo_variacional">Algoritmos en el cálculo variacional</a>. <b>{#algoritmos_calculo_variacional}</b></li>
-</ul>
-</li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#graficos_interactivos_variacional">Gráficos interactivos</a>. <b>{#graficos_interactivos_variacional}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="05.00.00.00.Mecanica.html#mecanica">Mecánica de partículas</a>. <b>{#mecanica}</b><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#cinematica">Cinemática</a>. <b>{#cinematica}</b><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#cantidades_cinematicas">Cantidades cinemáticas</a>. <b>{#cantidades_cinematicas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#sistemas_referencia">Sistemas de referencia</a>. <b>{#sistemas_referencia}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#ecuacion_movimiento">La ecuación de movimiento (e.d.m.)</a>. <b>{#ecuacion_movimiento}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">Integración de la e.d.m.</a>. <b>{#integracion_edm}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_cuadraturas">Integración por cuadraturas</a>. <b>{#integracion_cuadraturas}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#integracion_numerica_edm">Integración numérica de la e.d.m.</a>. <b>{#integracion_numerica_edm}</b></li>
-</ul>
-</li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#dinamica">Dinámica</a>. <b>{#dinamica}</b><ul>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#cantidades_dinamicas">Cantidades dinámicas</a>. <b>{#cantidades_dinamicas}</b></li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#particulas_fuerzas">Partículas y fuerzas</a>. <b>{#particulas_fuerzas}</b></li>
-<li><a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#sistemas_referencia_inerciales">Sistemas de referencia inerciales</a>. <b>{#sistemas_referencia_inerciales}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_fuerzas">Postulado de fuerzas</a>. <b>{#postulado_fuerzas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fuerzas_conservativas">Fuerzas conservativas y no conservativas</a>. <b>{#fuerzas_conservativas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#energia_mecanica">Energía mecánica</a>. <b>{#energia_mecanica}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#ley_inercia">¿Ley de inercia?</a>. <b>{#ley_inercia}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_accion_reaccion">Postulado de acción y reacción</a>. <b>{#postulado_accion_reaccion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#postulado_gravitacion">Postulado de gravitación universal</a>. <b>{#postulado_gravitacion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fuerza_luna">La fuerza gravitacional de la Tierra, el Sol y la la Luna</a>. <b>{#fuerza_luna}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#campo_gravitacional">El campo gravitacional</a>. <b>{#campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#energia_potencial_gravitacional">Energía potencial gravitacional</a>. <b>{#energia_potencial_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#masa_equivalencia">Masa y principio de equivalencia</a>. <b>{#masa_equivalencia}</b></li>
-</ul>
-</li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#sistemas_particulas">Sistemas de partículas</a>. <b>{#sistemas_particulas}</b><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fuerzas_centro_masa">Fuerzas y centro de masa</a>. <b>{#fuerzas_centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#centro_masa">Centro de masa de un sistema de dos partículas</a>. <b>{#centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#teoremas_conservacion">Teoremas de conservación</a>. <b>{#teoremas_conservacion}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#dinamica_centro_masa">Dinámica referida al centro de masa</a>. <b>{#dinamica_centro_masa}</b></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Una vez definidas las cantidades y conceptos básicos de la mecánica y formulados los principios, postulados y teoremas que nos permiten describir el movimiento de partículas puntuales, tenemos los elementos necesarios para abordar la cinemática y dinámica de sistemas formados por muchas partículas.</p>
+<p>Los sistemas considerados aquí, sin embargo, estarán constituidos por partículas que interactúan a distancia, con fuerzas relativamente débiles y en números relativamente pequeños.  La mecánica de sistemas con partículas unidas por fuerzas intensas y que mantienen su posición relativa de forma estable (cuerpos rígidos) o aquellos formados por <em>moles</em> de partículas individuales, y cuya mecánica es descrita por leyes empíricas macroscópicas o por reglas estadística, está más allá del interés del libro.</p>
+<p>Una buena parte de los desarrollos teóricos contenidos en esta sección vienen originalmente del texto clásico de Goldstein, Poole \&amp; Safko, "<em>Classical mechanics</em>" <cite data-cite="Goldstein2002"><a href="mybook.html#Goldstein2002">(Goldstein et al., 2002)</a></cite> y que estaremos citando con alguna frecuencia en el resto de este libro.</p>
 
 </div>
 </div>
@@ -13221,36 +13098,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-figuras">&#205;ndice de figuras<a class="anchor-link" href="#&#205;ndice-de-figuras">&#182;</a></h2><ul>
-<li>Figuras en <a href="01.00.00.00.Prefacio.html">01.00.00.00.Prefacio</a><ul>
-<li><a href="01.00.00.00.Prefacio.html#fig:utlima_thule">Figura 1.1</a>. Imagen procesada de Ultima Thule, el objeto transneptuniano sobrevolado por la sonda New Horizons en 2019 (crédito: NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute/Roman Tkachenko.). <b>{fig:utlima_thule}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#fig:kepler">Figura 3.3</a>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster. <b>{fig:kepler}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.01.00.Fundamentos.Calculo.Vectores.html">04.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#fig:vectores">Figura 4.6</a>. Definición geométrica de vector espacial y de sus operaciones básicas (suma, resta y multiplicación por un escalar). Aunque la resta de $. <b>{fig:vectores}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#fig:coordenadas">Figura 4.7</a>. Definción de los sistemas de coordenadas usadas en este texto. <b>{fig:coordenadas}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#fig:variacion_funcion">Figura 4.9</a>. El área bajo una curva es un funcional, en tanto depende de la función que represente la curva, $f(t)$ o $f_0(t)$ Se conoce como una variación $. <b>{fig:variacion_funcion}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html">05.02.01.00.Mecanica.Dinamica.Postulados</a><ul>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:accion_reaccion">Figura 5.15</a>. Dos formas del postulado de acción y reacción: a la izquierda el postulado débil, en el que las fuerzas son iguales y de sentido contrario, pero no son paralelas a la línea que une las partículas; a la derecha el postulado fuerte en el que la acción y reacción actúan sobre la línea que une a las partículas.. <b>{fig:accion_reaccion}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:fuerza_gravitacional">Figura 5.16</a>. Definición de los vectores de posición, vector relativo y vector de fuerza en el postulado de gravitación universal.. <b>{fig:fuerza_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#fig:accion_reaccion">Figura 5.17</a>. El único retrato disponible de Simon Stevin (ca. 1548). Crédito: Colección Universidad de Leiden.. <b>{fig:accion_reaccion}</b></li>
-</ul>
-</li>
-<li>Figuras en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fig:centro_masa">Figura 5.20</a>. Relación entre la posición del centro de masa $. <b>{fig:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#fig:astronomia_nova">Figura 5.21</a>. Primera página de la obra cumbre de Kepler <em>Astronomía Nova</em>.. <b>{fig:astronomia_nova}</b></li>
-</ul>
-</li>
-</ul>
+<h3 id="5.3.1.-Fuerzas-y-centro-de-masa">5.3.1. Fuerzas y centro de masa<a class="anchor-link" href="#5.3.1.-Fuerzas-y-centro-de-masa">&#182;</a></h3><p><a id='fuerzas_centro_masa'></a></p>
 
 </div>
 </div>
@@ -13258,109 +13106,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-ecuaciones">&#205;ndice de ecuaciones<a class="anchor-link" href="#&#205;ndice-de-ecuaciones">&#182;</a></h2><ul>
-<li>Ecuaciones en <a href="04.01.01.00.Fundamentos.Calculo.Vectores.html">04.01.01.00.Fundamentos.Calculo.Vectores</a><ul>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqsuma_tuplas">Ec. (4.1)</a>: suma_tuplas. <b>{eq:suma_tuplas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqk_tupla">Ec. (4.2)</a>: k_tupla. <b>{eq:k_tupla}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqvectores_en_base">Ec. (4.3)</a>: vectores_en_base. <b>{eq:vectores_en_base}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqdelta_kroenecker">Ec. (4.4)</a>: delta_kroenecker. <b>{eq:delta_kroenecker}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqbase_mano_derecha">Ec. (4.5)</a>: base_mano_derecha. <b>{eq:base_mano_derecha}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqlevi_civita">Ec. (4.6)</a>: levi_civita. <b>{eq:levi_civita}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz">Ec. (4.7)</a>: producto_cruz. <b>{eq:producto_cruz}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqproducto_cruz_determinante">Ec. (4.8)</a>: producto_cruz_determinante. <b>{eq:producto_cruz_determinante}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_escalar">Ec. (4.9)</a>: triple_producto_escalar. <b>{eq:triple_producto_escalar}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqtriple_producto_vectorial">Ec. (4.10)</a>: triple_producto_vectorial. <b>{eq:triple_producto_vectorial}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqconjunto_mano_derecha">Ec. (4.11)</a>: conjunto_mano_derecha. <b>{eq:conjunto_mano_derecha}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqcilindricas_a_cartesianas">Ec. (4.12)</a>: cilindricas_a_cartesianas. <b>{eq:cilindricas_a_cartesianas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_cilindricas">Ec. (4.13)</a>: unitarios_cilindricas. <b>{eq:unitarios_cilindricas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-eqesfericas_a_cartesianas">Ec. (4.14)</a>: esfericas_a_cartesianas. <b>{eq:esfericas_a_cartesianas}</b></li>
-<li><a href="04.01.01.00.Fundamentos.Calculo.Vectores.html#mjx-eqn-equnitarios_esfericas">Ec. (4.15)</a>: unitarios_esfericas. <b>{eq:unitarios_esfericas}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqderivada_definicion">Ec. (4.16)</a>: derivada_definicion. <b>{eq:derivada_definicion}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_general">Ec. (4.17)</a>: regla_cadena_general. <b>{eq:regla_cadena_general}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cartesianas">Ec. (4.18)</a>: gradiente_cartesianas. <b>{eq:gradiente_cartesianas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_cilindricas">Ec. (4.19)</a>: gradiente_cilindricas. <b>{eq:gradiente_cilindricas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqgradiente_esfericas">Ec. (4.20)</a>: gradiente_esfericas. <b>{eq:gradiente_esfericas}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqregla_cadena_multivariables">Ec. (4.21)</a>: regla_cadena_multivariables. <b>{eq:regla_cadena_multivariables}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#mjx-eqn-eqteorema_fundamental_calculo">Ec. (4.22)</a>: teorema_fundamental_calculo. <b>{eq:teorema_fundamental_calculo}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html">04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales</a><ul>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_antiderivada">Ec. (4.23)</a>: ecuacion_diferencial_antiderivada. <b>{eq:ecuacion_diferencial_antiderivada}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple">Ec. (4.24)</a>: ecuacion_diferencial_simple. <b>{eq:ecuacion_diferencial_simple}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_reducida">Ec. (4.25)</a>: ecuacion_diferencial_simple_reducida. <b>{eq:ecuacion_diferencial_simple_reducida}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuaciones_reducidas">Ec. (4.26)</a>: ecuaciones_reducidas. <b>{eq:ecuaciones_reducidas}</b></li>
-<li><a href="04.01.03.00.Fundamentos.Calculo.EcuacionesDiferenciales.html#mjx-eqn-eqecuacion_diferencial_simple_identificacion">Ec. (4.27)</a>: ecuacion_diferencial_simple_identificacion. <b>{eq:ecuacion_diferencial_simple_identificacion}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqvariacion">Ec. (4.28)</a>: variacion. <b>{eq:variacion}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqlongitud_curva">Ec. (4.29)</a>: longitud_curva. <b>{eq:longitud_curva}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqfuncional_integral">Ec. (4.30)</a>: funcional_integral. <b>{eq:funcional_integral}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqdIdepsilon">Ec. (4.31)</a>: dIdepsilon. <b>{eq:dIdepsilon}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_integral_variaciones">Ec. (4.32)</a>: ecuacion_integral_variaciones. <b>{eq:ecuacion_integral_variaciones}</b></li>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#mjx-eqn-eqecuacion_euler_lagrange">Ec. (4.33)</a>: ecuacion_euler_lagrange. <b>{eq:ecuacion_euler_lagrange}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html">05.01.01.00.Mecanica.Cinematica.Cantidades</a><ul>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqa_cilindricas">Ec. (5.34)</a>: a_cilindricas. <b>{eq:a_cilindricas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqa_esfericas">Ec. (5.35)</a>: a_esfericas. <b>{eq:a_esfericas}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqtransformaciones_galileo">Ec. (5.36)</a>: transformaciones_galileo. <b>{eq:transformaciones_galileo}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqley_adicion_velocidades">Ec. (5.37)</a>: ley_adicion_velocidades. <b>{eq:ley_adicion_velocidades}</b></li>
-<li><a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#mjx-eqn-eqley_adicion_aceleraciones">Ec. (5.38)</a>: ley_adicion_aceleraciones. <b>{eq:ley_adicion_aceleraciones}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html">05.01.02.00.Mecanica.Cinematica.SolucionEdM</a><ul>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm">Ec. (5.39)</a>: edm. <b>{eq:edm}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden">Ec. (5.40)</a>: edm_primer_orden. <b>{eq:edm_primer_orden}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_escalar">Ec. (5.41)</a>: edm_escalar. <b>{eq:edm_escalar}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_primer_orden_escalar">Ec. (5.42)</a>: edm_primer_orden_escalar. <b>{eq:edm_primer_orden_escalar}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_estado">Ec. (5.43)</a>: edm_estado. <b>{eq:edm_estado}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1">Ec. (5.44)</a>: edm_ejemplo1. <b>{eq:edm_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqedm_ejemplo1_cuadratura">Ec. (5.45)</a>: edm_ejemplo1_cuadratura. <b>{eq:edm_ejemplo1_cuadratura}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo1">Ec. (5.46)</a>: Ix_ejemplo1. <b>{eq:Ix_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqIx_ejemplo2">Ec. (5.47)</a>: Ix_ejemplo2. <b>{eq:Ix_ejemplo2}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqconstantes_ejemplo1">Ec. (5.48)</a>: constantes_ejemplo1. <b>{eq:constantes_ejemplo1}</b></li>
-<li><a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#mjx-eqn-eqsolucion_ejemplo1">Ec. (5.49)</a>: solucion_ejemplo1. <b>{eq:solucion_ejemplo1}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html">05.01.03.00.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqedm_ecuaciones_reducidas">Ec. (5.50)</a>: edm_ecuaciones_reducidas. <b>{eq:edm_ecuaciones_reducidas}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqvariables_auxiliares_edm">Ec. (5.51)</a>: variables_auxiliares_edm. <b>{eq:variables_auxiliares_edm}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#mjx-eqn-eqedm_reducidas_particula">Ec. (5.52)</a>: edm_reducidas_particula. <b>{eq:edm_reducidas_particula}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html">05.02.01.00.Mecanica.Dinamica.Postulados</a><ul>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqedm_fuerzas_aplicadas">Ec. (5.53)</a>: edm_fuerzas_aplicadas. <b>{eq:edm_fuerzas_aplicadas}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqedm_fuerzas_resultantes">Ec. (5.54)</a>: edm_fuerzas_resultantes. <b>{eq:edm_fuerzas_resultantes}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcirculacion_nula">Ec. (5.55)</a>: circulacion_nula. <b>{eq:circulacion_nula}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuncion_energia_potencial">Ec. (5.56)</a>: funcion_energia_potencial. <b>{eq:funcion_energia_potencial}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_gravitacional">Ec. (5.57)</a>: fuerza_gravitacional. <b>{eq:fuerza_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_M_m">Ec. (5.58)</a>: fuerza_M_m. <b>{eq:fuerza_M_m}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcampo_gravitacional">Ec. (5.59)</a>: campo_gravitacional. <b>{eq:campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqfuerza_campo_gravitacional">Ec. (5.60)</a>: fuerza_campo_gravitacional. <b>{eq:fuerza_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqenergia_potencial_gravitacional">Ec. (5.61)</a>: energia_potencial_gravitacional. <b>{eq:energia_potencial_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqcampo_gravitacional">Ec. (5.62)</a>: campo_gravitacional. <b>{eq:campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqenergia_fuerza_campo_gravitacional">Ec. (5.63)</a>: energia_fuerza_campo_gravitacional. <b>{eq:energia_fuerza_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqpotencial_campo_gravitacional">Ec. (5.64)</a>: potencial_campo_gravitacional. <b>{eq:potencial_campo_gravitacional}</b></li>
-<li><a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#mjx-eqn-eqrazon_masa_gravitacional_masa_inercial">Ec. (5.65)</a>: razon_masa_gravitacional_masa_inercial. <b>{eq:razon_masa_gravitacional_masa_inercial}</b></li>
-</ul>
-</li>
-<li>Ecuaciones en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqcentro_masa">Ec. (5.66)</a>: centro_masa. <b>{eq:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqedm_sistema">Ec. (5.67)</a>: edm_sistema. <b>{eq:edm_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqdistancia_centro_masa">Ec. (5.68)</a>: distancia_centro_masa. <b>{eq:distancia_centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqtorca_sistema">Ec. (5.69)</a>: torca_sistema. <b>{eq:torca_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqdLdt_sistema_torca">Ec. (5.70)</a>: dLdt_sistema_torca. <b>{eq:dLdt_sistema_torca}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqtorque_sistema">Ec. (5.71)</a>: torque_sistema. <b>{eq:torque_sistema}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqestado_CM">Ec. (5.72)</a>: estado_CM. <b>{eq:estado_CM}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqL_CM_interno">Ec. (5.73)</a>: L_CM_interno. <b>{eq:L_CM_interno}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#mjx-eqn-eqK_CM_interno">Ec. (5.74)</a>: K_CM_interno. <b>{eq:K_CM_interno}</b></li>
-</ul>
-</li>
-</ul>
+<p>Cada partícula en nuestro sistema esta sometida a dos tipos de fuerzas: (1) las fuerzas externas $\vec{F}^{E}_i$, producidas por cuerpos externos o campos diferentes a los producidos por las componentes del sistema y (2) las fuerzas entre las partículas $\vec{F}_{ij}$.</p>
 
 </div>
 </div>
@@ -13368,42 +13114,1202 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#205;ndice-de-c&#243;digos">&#205;ndice de c&#243;digos<a class="anchor-link" href="#&#205;ndice-de-c&#243;digos">&#182;</a></h2><ul>
-<li>Código en <a href="03.00.00.00.Introduccion.html">03.00.00.00.Introduccion</a><ul>
-<li><a href="03.00.00.00.Introduccion.html#code:rutina_discriminante">Código (3.1)</a>: rutina_discriminante. <b>{code:rutina_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:calcula_discriminante">Código (3.2)</a>: calcula_discriminante. <b>{code:calcula_discriminante}</b></li>
-<li><a href="03.00.00.00.Introduccion.html#code:plot_sin">Código (3.3)</a>: plot_sin. <b>{code:plot_sin}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html">04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal</a><ul>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:rutina_potencial">Código (4.4)</a>: rutina_potencial. <b>{code:rutina_potencial}</b></li>
-<li><a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#code:funcion_lambda">Código (4.5)</a>: funcion_lambda. <b>{code:funcion_lambda}</b></li>
-</ul>
-</li>
-<li>Código en <a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html">04.01.04.00.Fundamentos.Calculo.CalculoVariacional</a><ul>
-<li><a href="04.01.04.00.Fundamentos.Calculo.CalculoVariacional.html#code:funcional_integral">Código (4.6)</a>: funcional_integral. <b>{code:funcional_integral}</b></li>
-</ul>
-</li>
-<li>Código en <a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html">05.01.03.00.Mecanica.Cinematica.SolucionNumerica</a><ul>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:edm_ejemplo1">Código (5.7)</a>: edm_ejemplo1. <b>{code:edm_ejemplo1}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:ejemplo1_grafico_solucion">Código (5.8)</a>: ejemplo1_grafico_solucion. <b>{code:ejemplo1_grafico_solucion}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:compara_numerica_analitica">Código (5.9)</a>: compara_numerica_analitica. <b>{code:compara_numerica_analitica}</b></li>
-<li><a href="05.01.03.00.Mecanica.Cinematica.SolucionNumerica.html#code:solucion_numerica_ejemplo2">Código (5.10)</a>: solucion_numerica_ejemplo2. <b>{code:solucion_numerica_ejemplo2}</b></li>
-</ul>
-</li>
-<li>Código en <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html">05.02.02.00.Mecanica.Dinamica.SistemaParticulas</a><ul>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:random_particles">Código (5.11)</a>: random_particles. <b>{code:random_particles}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:centro_masa">Código (5.12)</a>: centro_masa. <b>{code:centro_masa}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:grafico_sistema_ejemplo">Código (5.13)</a>: grafico_sistema_ejemplo. <b>{code:grafico_sistema_ejemplo}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:L_sistema_ejemplo">Código (5.14)</a>: L_sistema_ejemplo. <b>{code:L_sistema_ejemplo}</b></li>
-<li><a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#code:K_sistema_ejemplo">Código (5.15)</a>: K_sistema_ejemplo. <b>{code:K_sistema_ejemplo}</b></li>
-</ul>
-</li>
-</ul>
+<p>La evolución del sistema se obtiene resolviendo simultáneamenete el conjunto de las e.d.m. de cada partícula, que se puede escribir en términos de las fuerzas externas e internas como:</p>
+$$
+\left\{m_i \ddot{\vec r_i} = \vec F^E_i+\sum_{j\neq i} \vec F_{ij}\right\}_N
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si sumamos todas las e.d.m. y suponemos que las fuerzas entre partículas satisfacen la ley de acción y reacción (débil o fuerte), esto es $\vec{F}_{ji}=-\vec{F}_{ij}$, podemos escribir:</p>
+$$
+\sum_i m_i \ddot{\vec r_i} = \sum_i \vec F^E_i
+$$<p>o bien:</p>
+$$
+\frac{\mathrm{d}^2}{\mathrm{d}t^2}\left(\sum_i m_i \vec{r}_i\right) = \sum_i \vec F^E_i
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si definimos:</p>
+\begin{equation}
+\label{eq:centro_masa}
+\vec R\equiv \frac{\sum_i m_i \vec{r}_i}{M}
+\end{equation}<p>donde $M=\sum_i m_i$ es la masa total del sistema, las e.d.m. de todas las partículas del sistema se transforman en una sola ecuación, que tiene exactamente la misma forma que la e.d.m. de una sola partícula de masa $M$ y posición $\vec{R}$ sometida a una fuerza total $F^E=\sum_i \vec F^E_i$:</p>
+\begin{equation}
+\label{eq:edm_sistema}
+M\ddot{\vec R}=\vec F^E
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Esto sencillo resultado tiene implicaciones trascententales.  Significa, esencialmente, que muchos de las cantidades cinemáticas y dinámicas definidas hasta ahora para partículas indivuales, así como algunos de los resultados vistos antes, se aplican también cuando describimos sistemas de partículas, siempre y cuando nos ocupemos del movimiento de un punto imaginario localizado en la posición $\vec R$ dada por la Ec. (<a href="#mjx-eqn-eqcentro_masa">centro_masa</a>).  Llamamos a este punto el <strong>centro de Masa</strong> del sistema.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para ilustrar numéricamente el concepto de centro de masa consideremos un sistema de $N$ partículas con posiciones y masas aleatorias sobre el plano xy.</p>
+<p>Para ello generemos valores uniformemente distribuidos en el intervalo $[0,100)$ que corresponderán a la masa de las partículas en kg.  La posición de las partículas se generara asumiendo que sus coordenadas se encuentran restringidas al interior de un cuadrado de lado 2 m y apoyado sobre el origen del sistema de coordenadas.  Por su lado, supondremos que las componentes de la velocidad están restringidas al intervalo $[-0.2,0.2]$ m/s.</p>
+<p>El algoritmo para preparar las masas, posiciones y velocidades de las partículas será:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:random_particles'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Número de partículas </span>
+<span class="n">N</span><span class="o">=</span><span class="mi">3</span>
+
+<span class="c1">#Semilla de números aleatorios</span>
+<span class="kn">from</span> <span class="nn">numpy.random</span> <span class="k">import</span> <span class="n">seed</span>
+<span class="n">seed</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="c1">#Valores aleatorios de las masas</span>
+<span class="kn">from</span> <span class="nn">numpy.random</span> <span class="k">import</span> <span class="n">uniform</span>
+<span class="n">ms</span><span class="o">=</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="n">N</span><span class="p">)</span>
+
+<span class="c1">#Masa total</span>
+<span class="n">M</span><span class="o">=</span><span class="n">ms</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1">#Tabla de posiciones</span>
+<span class="n">rs</span><span class="o">=</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="c1">#Ponemos todos los valores de z en 0</span>
+<span class="n">rs</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="c1">#Tabla de velocidades</span>
+<span class="n">vs</span><span class="o">=</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="c1">#Ponemos todos los valores de vz en 0</span>
+<span class="n">vs</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Masas:
+[64.41 38.07 66.3 ]...
+Posiciones:
+[[0.33 1.93]
+ [1.98 0.47]
+ [0.81 0.27]]
+...
+Velocidades:
+[[ 0.01  0.11]
+ [-0.16 -0.12]
+ [-0.11 -0.1 ]]
+...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: semilla de números aleatorios.</strong> La mayoría de los algoritmos de generación de números aleatorios, lo hacen partiendo de una <em>semilla entera</em>, a partir del cuál generan secuencias de números perfectamente predecibles pero que a los ojos de un ser humano parecen completamente al azar (pseudo-aleatorios).</p>
+<blockquote><p>En el Alg. (<a href="#code:random_particles">random_particles</a>) hemos generado las propiedades del sistema físico fijando la semilla en un valor arbitrario de 30 (de allí el comando <code>seed(30)</code>.) De este modo, al correr este algorimo siempre obtendremos las mismas propiedades.</p>
+<p>Si el lector desea generar un conjunto completamente diferente puede cambiar este número por cualquier otro (siempre que sea entero.)  Más interesante aún es comprobar el efecto que tienen eliminar (o comentar esta línea.)</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando la Ec. (<a href="#mjx-eqn-eqcentro_masa">centro_masa</a>), podemos calcular la posición y velocidad del centro de masa con el siguiente algoritmo:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:centro_masa'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="n">R_CM</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">ms</span><span class="p">[:,</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">rs</span><span class="p">)</span><span class="o">/</span><span class="n">M</span>
+<span class="n">V_CM</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">ms</span><span class="p">[:,</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">vs</span><span class="p">)</span><span class="o">/</span><span class="n">M</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Posición centro de masa: [0.89 0.95]
+Velocidad centro de masa: [-0.08 -0.03]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Operaciones entre vectores y matrices.</strong> En lo que queda de esta sección, pero también en algunos de los capítulos posteriores, nos enfrentaremos con mucha frecuencia a situaciones en las que es necesario realizar operaciones entre vectores y matrices (como <code>ms</code> y <code>rs</code> en el algoritmo anterior), que merecen un poco de atención.</p>
+<blockquote><p>El cálculo, en una sola línea de código, de la posición del centro de masa que hicimos en el Alg. (<a href="#code:centro_masa">centro_masa</a>) no es para nada trivial.</p>
+<p>Si quisieramos hacerlo paso a paso el código (uno de los muchos posibles) sería bastante bastante engorroso:</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="n">R_CM</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+      <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+          <span class="n">R_CM</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">R_CM</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">ms</span><span class="o">*</span><span class="n">rs</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+<blockquote><p>En este ineficiente algoritmo (el único posible en lenguajes como <code>C</code>), el primer ciclo <code>for</code> es para recorrer las componentes del vector <code>R_CM</code> y el segundo para recorrer las partículas del sistema.</p>
+<p>Si tuvieramos que escribir todas las expresiones vectoriales usando algoritmos como aquel, este texto tendría miles de páginas y posiblemente se convertiría en un aburrido libro de "programación ineficiente" (cuando en realidad lo emocionante esta en la física.)</p>
+<p>Hay cinco trucos entones que debemos reconocer para todos los algoritmos sucesivos:</p>
+<ol>
+<li><p>Si queremos multiplicar un vector por una matrix, por ejemplo para calcular $\{m_i\vec{r}_i\}$ no podemos simplemente escribir <code>ms*rs</code> (aunque el sistema eventualmente no produzca ningún error el resultado será equivocado).  Para hacer correctamente esta multiplicación, debemos asegurarnos que <code>ms</code> (que es un vector de dimensiones $1\times N$, donde $N$ es el número de partículas) se convierta en un vector columna $N\times 1$.  El truco en <code>Python</code> para ello es escribir simplemente <code>ms[:,None]</code>.</p>
+</li>
+<li><p>Si queremos sumar las filas de una matrix $N\times M$ basta usar la rutina <code>sum</code> incorporada en la biblioteca base del lenguaje.  Así <code>sum(rs)</code> produce un vector de $M$ componentes que tiene la suma <em>vectorial</em> de todas las filas de la matriz <code>rs</code>.  Este y el anterior truco, son los que permiten escribir en una línea las componentes de $\vec R$: <code>R_CM=sum(ms[:,None]*rs)/M</code>.</p>
+</li>
+<li><p>Si queremos restar a la matriz <code>rs</code> un vector constante <code>R_CM</code>, la operación <code>rs-R_CM</code> producirá un error.  La razón es que el operador <code>-</code> asume que los dos arreglos tienen el mismo tamaño; en realidad <code>rs</code> es una matriz $N\times 3$ y <code>R_CM</code> un vector simple de 3 componentes.  Para restar cada fila de la matriz <code>rs</code> por el vector <code>R_CM</code> se debe usar la rutina <code>subtract</code> de <code>NumPy</code>: <code>subtrac(rs,R_CM)</code>.</p>
+</li>
+<li><p>Las operaciones vectoriales <code>cross</code> (producto cruz) y <code>dot</code> (producto punto) del paquete <code>NumPy</code>, aplicadas sobre dos matrices $N\times3$ (como las matrices de posiciones <code>rs</code> y velocidades <code>vs</code> de las partículas del sistema), realizan las operaciones fila por fila (cada fila de la matriz se considera un vector.)  Así <code>cross(rs,vs)</code> es igual al conjunto $\{\vec{r}_i\times\vec{v}_i\}$ y es en sí misma una matriz $N\times3$.  Lo mismo sucede con <code>dot(rs,rs)</code>, aunque en este último caso el resultado es un vector columna $N\times 1$ con los productos punto $\{\vec{r}_i\cdot\vec{r}_i\}$.</p>
+</li>
+<li><p>La operación <code>norm</code> (que esta en el subpaquete <code>linalg</code> de <code>NumPy</code>) y que permite calcular la magnitud euclidiana de un vector, se puede aplicar sobre una matriz como <code>vs</code> para obtener la magnitud de cada fila; pero no de cualquier manera.  <code>norm(vs)</code> devuelve un solo número.  Pero <code>norm(vs,axis=1)</code> devuelve la magnitud de cada fila (el <code>axis=1</code> le indica a <code>norm</code> que recorra la matriz por filas; alternativamente <code>axis=0</code> le dirá a que lo haga por columnas, que no es nuestro interés aquí.)  Así el código <code>norm(vs,axis=1)**2</code> permite calcular el conjunto $\{v_i^2\}$.</p>
+</li>
+</ol>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Un gráfico de la posición y velocidad de las partículas del sistema y de la posición y velocidad del centro de masa puede obtenerse con el siguiente algoritmo:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:grafico_sistema_ejemplo'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">();</span>
+
+<span class="c1">#Etiquetas sobre las partículas</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">rs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="n">i</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;cyan&quot;</span><span class="p">,</span>
+             <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+
+<span class="c1">#Posiciones y velocidades de las partículas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">rs</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">rs</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">s</span><span class="o">=</span><span class="mi">5</span><span class="o">*</span><span class="n">ms</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">rs</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">rs</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">vs</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">vs</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#Posiciones y velocidad del centro de masa</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">R_CM</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">R_CM</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">s</span><span class="o">=</span><span class="n">M</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">R_CM</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">R_CM</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">V_CM</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">V_CM</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#Decoración</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;$x$ (m)&quot;</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;$y$ (m)&quot;</span><span class="p">);</span>
+
+<span class="c1">#Ajusta gráfico</span>
+<span class="kn">from</span> <span class="nn">pymcel.plot</span> <span class="k">import</span> <span class="n">fija_ejes_proporcionales</span>
+<span class="n">fija_ejes_proporcionales</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">(),(</span><span class="n">rs</span><span class="p">,</span><span class="n">R_CM</span><span class="p">),</span><span class="n">margin</span><span class="o">=</span><span class="mf">0.4</span><span class="p">);</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">();</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:grafico_sistema_ejemplo'></a><center><b>Figura 5.18.</b> Un sistema de tres partículas.  El tamaño del círculo que representa cada partícula es proporcional a su masa.  La cruz y la flecha adherida a ella muestran la posición y velocidad del centro de masa.</center></p>
+
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Escala de los ejes en el espacio.</strong> La rutina <code>fija_ejes_proporcionales</code> del paquete <code>pymcel</code> que que viene con la versión electrónica de este libro y que utilizamos en el Alg. (<a href="#code:grafico_sistema_ejemplo">grafico_sistema_ejemplo</a>), juega en ese algoritmo un papel muy importante.</p>
+<blockquote><p>En lo sucesivo, al representar la posición de partículas en el espacio coordenado, es indispensable que la escala de los ejes sea exactamente la misma. El lector puede verificar con una regla, que una unidad sobre el eje horizontal en la Figura (<a href="#fig:code:grafico_sistema_ejemplo">code:grafico_sistema_ejemplo</a>) mide exactamente lo mismo que una unidad del eje vertical. De este modo las posiciones o los vectores representados no estarán deformados, un efecto que crea distorsiones en nuestra interpretación de esas cantidades (más adelante veremos que solo usando esta rutina, las trayectorias circulares apareceran efectivamente como círculos.)</p>
+<p>El código de esta rutina es muy elaborado como para reproducirlo en el libro.  El lector curiosos puede encontrar todos los algoritmos del paquete <code>pymcel</code> en el material distribuido con la <a href="http://mybook.org">versión electrónica del libro</a>.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:05.02.02.00.Mecanica.Dinamica.SistemaParticulas_19'></a><center><b>Figura 5.19.</b> </center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.3.2.-Centro-de-masa-de-un-sistema-de-dos-part&#237;culas">5.3.2. Centro de masa de un sistema de dos part&#237;culas<a class="anchor-link" href="#5.3.2.-Centro-de-masa-de-un-sistema-de-dos-part&#237;culas">&#182;</a></h3><p><a id='centro_masa'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De particular de interés para la mecánica celeste son las propiedades del centro de masa de un sistema formado por solo dos partículas:</p>
+$$
+\vec R_\mathrm{CM}=\frac{m_1 \vec r_1 + m_2 \vec r_2}{M}
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es fácil mostrar que en este caso, el centro de masa siempre se encuentra en la línea que une a las dos partículas (ver problemas al final del capítulo.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si introducimos el vector relativo $\vec r\equiv\vec r_1-\vec r_2$, es posible mostrar que la posición de cada partícula se puede escribir en términos de la posición del centro de masa $\vec R_\mathrm{CM}$ y el vector $\vec r$ como:</p>
+\begin{eqnarray}
+\vec r_1 &amp; = &amp; \vec{R}_\mathrm{CM} + \frac{m_2}{M} \vec r\\
+\vec r_2 &amp; = &amp; \vec{R}_\mathrm{CM} - \frac{m_1}{M} \vec r
+\end{eqnarray}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:centro_masa'></a><img src="./figures/horizontal_centro_masa.png" alt="Relación entre la posición del centro de masa $" width="80.0%"></p>
+<center><b>Figura 5.20</b>. Relación entre la posición del centro de masa $</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Como vemos la distancia del centro de masa a cada partícula es directamente proporcional a la masa de la otra partícula.  Así, si llamamos $\vec{r}_i'=\vec r_i-\vec R$ al vector que va del centro de masa a la posición de cada partícula, entonces:</p>
+\begin{equation}
+\label{eq:distancia_centro_masa}
+\frac{r_1'}{r_2'}=\frac{m_2}{m_1}
+\end{equation}
+</div>
+</div>
+</div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Un poco de historia: Kepler y el centro de masa.</strong> Muchos años antes de que Newton hubiera formalizado las leyes de la mecánica, antes de que apareciera el concepto de masa, fuerza o el postulado de acción y reacción, todos los cuales son requeridos para la deducción formal de la relación expresada en la Ec. (<a href="#mjx-eqn-eqdistancia_centro_masa">distancia_centro_masa</a>), Kepler había ya intuido este resultado.  En su obra cumbre <em>Astronomía Nueva</em> de 1609, presentó, entre los que denomino sus <em>8 axiomas de una teoría verdadera de la gravedad</em>, la siguiente afirmación:</p>
+<p><img src="./figures/vertical_astronomia_nova.png" alt="Primera página de la obra cumbre de Kepler *Astronomía Nova*." width="50.0%">$$\mathrm{\mathbf{Figura\;5.21}.}$$</p>
+<blockquote><blockquote><p>"<em>Si la Tierra y la Luna no fueran mantenidas en sus respectivas órbitas por una fuerza espiritual o de alguna otra naturaleza equivalente, la Tierra ascendería hacia la Luna 1/54 de la distancia y la Luna descendería las restantes 53 partes del intervalo y así se unirían.  Pero este cálculo presupone que ambos poseen la misma densidad</em>."<a href="#notaspie_1">$^1$</a></p>
+</blockquote>
+<p>Este hecho pone en evidencia dos cosas: (1) la clarividencia del matemático alemán, quién entre otras cosas además de la citada, intuyó algunas importantes propiedades de la gravedad y de sus efectos sobre el movimiento planetario 80 años antes que Newton y sus contemporáneos; y (2) que las ideas de la mecánica que hoy atribuímos exclusivamente a Newton estaban "flotando" en el ambiente intelectual de su época desde hacía casi 100 años. Newton, como lo sería también Maxwell un siglo y medio después en el caso de la electricidad y el magnetismo, fue en cierto sentido un compilador de la sabiduría "mecánica" de su época.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.3.3.-Teoremas-de-conservaci&#243;n">5.3.3. Teoremas de conservaci&#243;n<a class="anchor-link" href="#5.3.3.-Teoremas-de-conservaci&#243;n">&#182;</a></h3><p><a id='teoremas_conservacion'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando la e.d.m. para un sistema de partículas (Ec. \ref{}) y algunas de las deducciones que ya habíamos realizado en el caso de partículas individuales, podemos deducir algunos teoremas mecánicas de gran importancia.</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Teorema de conservación del momentum lineal.</strong> Si la fuerza externa total sobre un sistema de partículas es nula, el momentum total del sistema se mantiene constante.  En términos matemáticos:</p>
+<p>$$
+  \vec{F}^\mathrm{E}=\sum_i \vec{F}_i^\mathrm{E}=0\Longleftrightarrow \vec{P}=\vec{P}_\mathrm{CM}
+  $$</p>
+<blockquote><p>Donde $\vec{P}_\mathrm{CM}$ es un vector constante.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Este teorema ocupa un lugar central en la mecánica y sus implicaciones no son para nada triviales. Piense tan solo en el hecho de que aún si un sistema contiene un enorme número de partículas, que rebotan entre sí o se dispersan unas contra otras, procesos en los cuáles el momento de las partículas se modifica de formas a veces inesperadas, la suma de todos los momentos individuales producirá siempre el mismo número.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Premultiplicamos ahora la e.d.m. en la Ec. (<a href="#mjx-eqn-eqedm_sistema">edm_sistema</a>) por el factor integrante $\vec{r}_i\times$ y sumando sobre todas las partículas:</p>
+$$
+\sum_i m_i r_i\times\ddot{r}_i=\sum_i\vec{r}_i\times\left(\vec{F}^E_i + \sum_{j\neq i}\vec{F}_{ij}\right)
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El lado izquierdo izquierdo de esta última ecuación se puede expresar en términos de cuadraturas (ver <a href="05.01.02.00.Mecanica.Cinematica.SolucionEdM.html#integracion_edm">la Sección <em>Integración de la e.d.m.</em></a>), de modo que la ecuación adopta la forma más conveniente de:</p>
+$$
+\frac{\mathrm{d}}{\mathrm{d}t}\left(\sum_i m_i r_i\times\dot{r}_i\right)=\vec{r}_i\times\sum\left(\vec{F}^E_i + \vec{F}_{ij}\right),
+$$<p>donde reconocemos, del lado izquierdo al momento angular total $\vec L=\sum m_i\vec{r}_i\times\dot{\vec{r}}_i$ y del derecho la torca neta:</p>
+\begin{equation}
+\label{eq:torca_sistema}
+\vec \tau=\vec{r}_i\times\sum\left(\vec{F}^E_i + \vec{F}_{ij}\right).
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En términos de estas cantidades, la e.d.m. de un sistema de particulas se puede escribir, alternativamente, como:</p>
+\begin{equation}
+\label{eq:dLdt_sistema_torca}
+\dot{\vec{L}}=\tau
+\end{equation}
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Volvamos a la torca. Por el postulado de acción y reacción (Pos. \ref{box:pos:accion.reaccion}) las torcas de las fuerzas entre las partículas se pueden agrupar por pares de la forma:</p>
+$$
+\vec r_k\times \vec F_{lk}+\vec r_l \times \vec F_{kl}=-\vec{r}_{lk}\times \vec F_{lk},
+$$<p>donde $\vec{r}_{lk}=\vec{r}_l-\vec{r}_k$ es el vector relativo, y hemos usado índices $l,k$ distintos a los originales $i,j$ de la e.d.m. para evitar confusiones.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Si adicionalmente, las interacciones son tales que el postulado de acción y reacción fuerte se cumple, es decir si $\vec{r}_{lk}\parallel \vec{F}_{lk}$, entonces todas las torcas internas se cancelan mutuamente y como consecuencia:</p>
+\begin{equation}
+\label{eq:torque_sistema}
+\vec{\tau} = \sum \vec{r}_i\times \vec{F}^E_i,
+\end{equation}<p>de donde, finamente, la e.d.m. del sistema de partículas (Ec. <a href="#mjx-eqn-eqdLdt_sistema_torca">dLdt_sistema_torca</a>) tiene la forma explícita:</p>
+$$
+\dot{\vec{L}}=\sum \vec{r}_i\times \vec{F}^E_i
+$$<p>Esta última ecuación conduce a un segundo importante teorema de conservación:</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: Teorema de conservación del momentum angular.</strong> Si la torca externa total sobre un sistema de partículas es nula, el momento angular total del sistema se mantiene constante.  En términos matemáticos:</p>
+<p>$$
+  \vec{\tau} = \sum \vec{r}_i\times \vec{F}^E_i=\vec 0\Longleftrightarrow \vec{L}=\vec{L}_\mathrm{0}
+  $$</p>
+<blockquote><p>Donde $\vec{L}_\mathrm{0}$ es un vector constante.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Es claro que la condición básica del teorema de conservación del momento angular (torque neto nulo) se cumple también en el caso en el que las fuerzas externas son nulas.  Es decir, en un sistema aislado de partículas, tanto el momento lineal como el momento angular se conservan.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De nuevo, por trivial que nos parezca el teorema de conservación del momento angular, esta lejos de serlo.  La cantidad implicada aquí es mucho más compleja que el momento lineal y resulta sencillamente increíble que bajo una condición tan particular como la que supone el teorema, una combinación no trivial de cantidades cinemáticas produzcan un vector constante.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pongamos a prueba el teorema usando el sistema de partículas que habíamos introducido en la <a href="#fuerzas_centro_masa">Sección <em>Fuerzas y centro de masa</em></a>.  Para ello calculemos el momento angular total del sistema:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:L_sistema_ejemplo'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Momento angular de cada partícula</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">cross</span>
+<span class="n">Ls</span><span class="o">=</span><span class="n">ms</span><span class="p">[:,</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">cross</span><span class="p">(</span><span class="n">rs</span><span class="p">,</span><span class="n">vs</span><span class="p">)</span>
+
+<span class="c1">#Momento angular total</span>
+<span class="n">L</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">Ls</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Momentos angulares individuales:
+[[ 0.    0.    1.35]
+ [ 0.   -0.   -6.25]
+ [ 0.   -0.   -3.72]]
+Momento angular total:
+[ 0.    0.   -8.62]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Propaguemos ahora sus posiciones y velocidades asumiendo que las partículas se mueven con velocidad constante, es decir, sin experimentan ninguna fuerza de interacción mutua, y más importante, ninguna fuerza externa.  En esta condición dinámica las velocidades no se modifican:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Tiempo futuro</span>
+<span class="n">t</span><span class="o">=</span><span class="mf">10.0</span>
+
+<span class="c1">#Posición y velocidad de las partículas en t</span>
+<span class="n">rs_t</span><span class="o">=</span><span class="n">rs</span><span class="o">+</span><span class="mi">10</span><span class="o">*</span><span class="n">vs</span>
+<span class="n">vs_t</span><span class="o">=</span><span class="n">vs</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Posiciones iniciales: rs =
+[[0.33 1.93 0.  ]
+ [1.98 0.47 0.  ]
+ [0.81 0.27 0.  ]]
+Posiciones finales: vs =
+[[ 0.4   2.99  0.  ]
+ [ 0.34 -0.75  0.  ]
+ [-0.25 -0.77  0.  ]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Véamos ahora cuánto valen los momentos angulares individuales y total, después de que las partículas se propagaran:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Momento angular de cada partícula</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">cross</span>
+<span class="n">Ls_t</span><span class="o">=</span><span class="n">ms</span><span class="p">[:,</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">cross</span><span class="p">(</span><span class="n">rs_t</span><span class="p">,</span><span class="n">vs_t</span><span class="p">)</span>
+
+<span class="c1">#Momento angular total</span>
+<span class="n">L_t</span><span class="o">=</span><span class="n">Ls_t</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Momentos angulares después:
+[[ 0.    0.    1.35]
+ [ 0.   -0.   -6.25]
+ [ 0.    0.   -3.72]]
+Momento angular total después:
+[ 0.    0.   -8.62]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>El momento angular total después de la propagación resulta igual al momento angular antes de ella (Alg. <a href="#code:L_sistema_ejemplo">L_sistema_ejemplo</a>) con lo que comprobamos que en la ausencia de fuerzas externas, incluso frente a modificaciones no triviales de las posiciones, el momento angular se mantiene constante.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.3.4.-Din&#225;mica-referida-al-centro-de-masa">5.3.4. Din&#225;mica referida al centro de masa<a class="anchor-link" href="#5.3.4.-Din&#225;mica-referida-al-centro-de-masa">&#182;</a></h3><p><a id='dinamica_centro_masa'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una forma especial de las e.d.m. de un sistema de partículas, se obtiene cuando lo describimos desde un sistemade referencia "atado" del centro de masa (origen en el centro de masa y velocidad igual a él.)</p>
+<p>Usando las transformaciones de Galileo (Pos. \ref{box:pos:transformaciones.galileo}) la posición y velocidad de cada partícula referida al centro de masa será (Ecs. <a href="#mjx-eqn-eqley_adicion_velocidades">ley_adicion_velocidades</a> y <a href="#mjx-eqn-eqtransformaciones_galileo">transformaciones_galileo</a>):</p>
+\begin{equation}
+\label{eq:estado_CM}
+\begin{array}{rcl}
+\vec r_i(t) &amp; = &amp; \vec R_\mathrm{CM}(t)+\vec{r}_i'(t)\\
+\vec v_i(t) &amp; = &amp; \vec V_\mathrm{CM}(t)+\vec{v}_i'(t) \\
+\end{array}
+\end{equation}<p>Aquí, las cantidades primadas están referidas al nuevo sistema de referencia. En general $\vec{R}_\mathrm{CM}(t)=\int \vec{V}_\mathrm{CM}(t)\;\mathrm{d}t$ será la posición del centro de masa en $t$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Momento-angular-total-del-sistema">Momento angular total del sistema<a class="anchor-link" href="#Momento-angular-total-del-sistema">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En el sistema de referencia del centro de masa el momentum angular es:</p>
+$$
+\begin{array}{rcl}
+\vec L &amp; = &amp; \sum_i \vec r_i \times \vec p_i \\
+       &amp; = &amp; \sum_i m_i(\vec R_\mathrm{CM}+\vec{r}_i')\times (\vec V_\mathrm{CM}+\vec{v}_i')\\
+       &amp; = &amp; (\sum_i m_i)\vec R_\mathrm{CM}\times\vec V_\mathrm{CM}+\vec R_\mathrm{CM}\times(\sum_i m_i\vec{v}_i')+
+             (\sum_i m_i\vec{r}_i')\times\vec{V_\mathrm{CM}}+
+             \sum_i (m_i\vec{r}_i'\times\vec{v}_i')
+\end{array}
+$$<p>En esta expresión $\sum m_i\vec{r}_i'$ y $\sum m_i\vec{v}_i'$ son, respectivamente, vectores proporcionales a la posición y velocidad del centro de masa (ver Ec. <a href="#mjx-eqn-eqcentro_masa">centro_masa</a>), pero medidos en el sistema de referencia del mismo centro de masa; por definción, ambas cantidades son entonces nulas (para una sencilla comprobación numérica, ver algoritmos abajo.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finalmente, el momento angular total del sistema se puede escribir como:</p>
+\begin{equation}
+\label{eq:L_CM_interno}
+\vec L = \vec R_\mathrm{CM}\times \vec P_\mathrm{CM} + \sum_i \vec r'_i\times \vec p'_i
+\end{equation}<p>es decir, <strong>el momento angular total de un sistema de partículas</strong> es es igual a la suma del <strong>momento angular del centro de masa</strong> y el <strong>momentum angular total de las partículas en el sistema de referencia del centro de masa</strong>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nuevamente podemos comprobar este resultado usando el sistema de ejemplo que introdujimos en <a href="#fuerzas_centro_masa">la Sección <em>Fuerzas y centro de masa</em></a>.</p>
+<p>Calculemos primero el momento angular del centro de masa del sistema:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Momento angular del centro de masaa</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">cross</span>
+<span class="n">L_CM</span><span class="o">=</span><span class="n">M</span><span class="o">*</span><span class="n">cross</span><span class="p">(</span><span class="n">R_CM</span><span class="p">,</span><span class="n">V_CM</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Momento angular del centro de masa:
+[ 0.   -0.    7.96]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para calcular el momento angular de las partículas en el sistema de referencia del centro de masa, debemos primero calcular la posición y velocidad de ellas en ese sistema usando las Ecs. (<a href="#mjx-eqn-eqestado_CM">estado_CM</a>):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Posición y velocidad referida al centro de masa</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">subtract</span>
+<span class="n">rps</span><span class="o">=</span><span class="n">subtract</span><span class="p">(</span><span class="n">rs</span><span class="p">,</span><span class="n">R_CM</span><span class="p">)</span>
+<span class="n">vps</span><span class="o">=</span><span class="n">subtract</span><span class="p">(</span><span class="n">vs</span><span class="p">,</span><span class="n">V_CM</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Posiciones respecto al CM:
+[[-0.56  0.98]
+ [ 1.09 -0.48]
+ [-0.08 -0.68]]
+Velocidades respecto al CM:
+[[ 0.08  0.13]
+ [-0.09 -0.09]
+ [-0.03 -0.08]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Con este resultado podemos verificar la afirmación que habíamos hecho en la deducción de la Ec. (<a href="#mjx-eqn-eqL_CM_interno">L_CM_interno</a>), en la que habíamos dicho que $\sum m_i\vec{r}_i'$ y $\sum m_i\vec{v}_i'$ son vectores nulos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">R_CM_CM</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">ms</span><span class="p">[:,</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">rps</span><span class="p">)</span><span class="o">/</span><span class="n">M</span>
+<span class="n">V_CM_CM</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">ms</span><span class="p">[:,</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">vps</span><span class="p">)</span><span class="o">/</span><span class="n">M</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Posiciones del CM respecto al CM:
+[1.53e-16 0.00e+00]
+Posiciones del CM respecto al CM:
+[-3.95e-18  5.26e-18]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hecha esta verificación, podemos ahora calcular el momento angular total de las partículas en el sistema de referencia del centro de masa:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Momento angular de cada partícula</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">cross</span>
+<span class="n">Lps</span><span class="o">=</span><span class="n">ms</span><span class="p">[:,</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="n">cross</span><span class="p">(</span><span class="n">rps</span><span class="p">,</span><span class="n">vps</span><span class="p">)</span>
+
+<span class="c1">#Momento angular total</span>
+<span class="n">Lp</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">Lps</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Momento angular total referido al centro de masa:
+[  0.     0.   -16.58]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ciertamente este vector no coincide con el momentum angular total referido al origen que habíamos calculado en el Alg. (<a href="#code:L_sistema_ejemplo">L_sistema_ejemplo</a>); pero esto es natural puesto que no hemos sumado el momento angular del centro de masa que calculamos antes:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Momento angular total</span>
+<span class="n">L</span><span class="o">=</span><span class="n">L_CM</span><span class="o">+</span><span class="n">Lp</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Momento angular total:
+[ 0.    0.   -8.62]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Que coincide con el obtenida con el Alg. (<a href="#code:L_sistema_ejemplo">L_sistema_ejemplo</a>).  Con esto hemos comprobado la relación expresada en la Ec. (<a href="#mjx-eqn-eqL_CM_interno">L_CM_interno</a>).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Energ&#237;a-cin&#233;tica-total-del-sistema">Energ&#237;a cin&#233;tica total del sistema<a class="anchor-link" href="#Energ&#237;a-cin&#233;tica-total-del-sistema">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Una relación similar a la encontrada en la Ec. (<a href="#mjx-eqn-eqL_CM_interno">L_CM_interno</a>) para el momento angular, puede deducirse también para el caso de la energía cinética total $K$.</p>
+<p>Usando el teorema del trabajo y energía (Teo. \ref{box:teo:trabajo.energia}) puede probarse que en el caso de un sistema de partículas $K$ es:</p>
+$$
+K=\frac{1}{2}\sum m_i v_i^2
+$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reemplazando en esta expresión la velocidad de cada partícula en el sistema original por su velocidad en el sistema de referencia del centro de masa, $\vec{v}_i=\vec{v}_i'+\vec{V}$  (Ec. <a href="#mjx-eqn-eqestado_CM">estado_CM</a>) se obtiene:</p>
+$$
+K=
+\frac{1}{2}\sum m_i \vec V^2+
+\vec V\cdot\frac{\mathrm{d}}{\mathrm{d}t}\left(\sum m_i \vec{r}_i'\right)+
+\frac{1}{2}\sum m_i\vec{v}_i'^2
+$$<p>de donde por los mismos argumentos en la deducción de la Ec. (<a href="#mjx-eqn-eqL_CM_interno">L_CM_interno</a>) obtenemos finalmente:</p>
+\begin{equation}
+\label{eq:K_CM_interno}
+K = \frac{1}{2} M V^2 + \frac{1}{2} \sum m_i {v_i}'^2,
+\end{equation}<p>es decir la <strong>energía cinética total del sistema</strong> es igual a <strong>la energía cinética del centro de masa</strong> más <strong>la energía cinética total referida al centro de masa</strong> (energía interna.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De nuevo podemos verificar este resultado usando el sistema de ejemplo.</p>
+<p>Para ello, primero calculemos la energía cinética total usando las velocidades referidas al sistema de referencia original:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:K_sistema_ejemplo'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Magnitud de las velocidades de las partículas</span>
+<span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="k">import</span> <span class="n">norm</span>
+<span class="n">vmags</span><span class="o">=</span><span class="n">norm</span><span class="p">(</span><span class="n">vs</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#Energía cinética individual de cada partícula</span>
+<span class="n">Ks</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="n">ms</span><span class="o">*</span><span class="n">vmags</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Energía cinética total</span>
+<span class="n">K</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">Ks</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Energía cinética de las partículas:
+[0.37 0.79 0.73]
+Energía cinética total: 1.90
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ahora podemos hacerlo usando la nueva expresión:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Energía cinética del centro de masa:</span>
+<span class="n">K_CM</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="n">M</span><span class="o">*</span><span class="n">norm</span><span class="p">(</span><span class="n">V_CM</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Magnitud de las velocidades</span>
+<span class="n">vpmags</span><span class="o">=</span><span class="n">norm</span><span class="p">(</span><span class="n">vps</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#Energía cinética individual de cada partícula</span>
+<span class="n">Kps</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="n">ms</span><span class="o">*</span><span class="n">vpmags</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Energía cinética en el centro de masa</span>
+<span class="n">Kp</span><span class="o">=</span><span class="n">Kps</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1">#Energía total</span>
+<span class="n">K</span><span class="o">=</span><span class="n">K_CM</span><span class="o">+</span><span class="n">Kp</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Energía cinética del CM: 0.5505136059795793
+Energía cinética de las partículas (respecto al CM): [0.8  0.32 0.22]
+Energía cinética total (respecto al CM): 1.35
+Energía cinética total: 1.90
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>De nuevo, la energía cinética calculada con la Ec. (<a href="#mjx-eqn-eqK_CM_interno">K_CM_interno</a>) coincide con la obtenida en el Alg. (<a href="#code:K_sistema_ejemplo">K_sistema_ejemplo</a>).</p>
+
+</div>
+</div>
+</div><div style="font-size:0.8em;border-top:solid black 1px">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>NOTAS AL PIE:</strong></p>
+<p><a id='notaspie_1'></a></p>
+<ol start='1'>
+<li>En realidad el centro de masa del sistema Tierra-Luna esta a 1/81 de la distancia entre ambos (la masa de la Tierra es 81 veces la de la Luna.)  Sin embargo, la estimación de Kepler, como bien lo aclara al final de esta cita sin que terminemos de entenderle, se basaba en la suposición de que la masa de nuestro satélite se puede estimar exclusivamente a partir de su tamaño.  Usando el valor contemporáneo del radio de la Luna y de la Tierra, la masa estimada de nuestro satélite, a partir de su tamaño y suponiendo densidades iguales, sería $(R_\mathrm{Luna}/R_\mathrm{Tierra})^3=(1737/6371)^3=1/49$ de la masa de la Tierra, que es cercano al valor de 1/54 usado por Kepler.</li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>

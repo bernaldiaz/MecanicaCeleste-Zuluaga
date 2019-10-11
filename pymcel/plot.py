@@ -1,4 +1,4 @@
-def fija_ejes_proporcionales(ax,values):
+def fija_ejes_proporcionales(ax,values,margin=0.05):
     """Ajusta los ejes para hacerlos proporcionales de acuerdo a un
     conjunto de valores.
 
@@ -24,9 +24,18 @@ def fija_ejes_proporcionales(ax,values):
 
     """
     import numpy as np
+    
+    #values
+    vals=np.array([])
+    for value in values:
+        vals=np.append(vals,np.array(value).flatten())
+    #Center of values
+    rcm=vals.mean()
+    vals=vals-rcm
+
     fig=ax.figure
     bbox=ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
-    width,height=bbox.width, bbox.height
+    width,height=bbox.width,bbox.height
     fx=width/height
     fy=1
     if fx<1:
@@ -36,10 +45,10 @@ def fija_ejes_proporcionales(ax,values):
     else:
         fx*=(1+margin)
         fy*=(1+margin)
-    max_value=abs(np.array(values)).max()    
-    ax.set_xlim((-fx*max_value,fx*max_value))
-    ax.set_ylim((-fy*max_value,fy*max_value))
-    print(max_value,width/height)
+
+    max_value=np.abs(vals).max()
+    ax.set_xlim((rcm-fx*max_value,rcm+fx*max_value))
+    ax.set_ylim((rcm-fy*max_value,rcm+fy*max_value))
     return ax.get_xlim(),ax.get_ylim()
 
 def fija_ejes3d_proporcionales(ax):
