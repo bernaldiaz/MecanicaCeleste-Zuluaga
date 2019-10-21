@@ -83,3 +83,31 @@ def calcula_discriminante(a,b,c):
 # ########################################
 #  .//Mecanica.Dinamica.SistemaParticulas.ipynb
 # ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.Formulacion.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.SolucionAnalitica.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.SolucionAnalitica.ConstantesMovimiento.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.SolucionAnalitica.Energia.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.SolucionAnalitica.Sintesis.ipynb
+# ########################################
+
+# ########################################
+#  .//ProblemaNCuerpos.TeoremaVirial.ipynb
+# ########################################

@@ -13193,7 +13193,7 @@ $$
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema 5.5. Teorema del tabajo y la energía.</strong> Si una partícula que en un sistema de referencia inercial, se mueve sobre una trayectoria entre dos puntos $\vec r_1$ (donde tiene velocidad $\vec v_1$) y $\vec r_2$ (donde tiene velocidad $\vec v_2$), esta sometida a una fuerza neta aplicada $\vec F$ que cambia de acuerdo a una función conocida y continua sobre la trayectoria, entonces,  el trabajo realizado por la fuerza aplicada es $W = \int \vec{F}\cdot \mathrm{d}\vec r$ y la siguiente igualdad es válida:</p>
+<p><strong>Teorema 6.5. Teorema del tabajo y la energía.</strong> Si una partícula que en un sistema de referencia inercial, se mueve sobre una trayectoria entre dos puntos $\vec r_1$ (donde tiene velocidad $\vec v_1$) y $\vec r_2$ (donde tiene velocidad $\vec v_2$), esta sometida a una fuerza neta aplicada $\vec F$ que cambia de acuerdo a una función conocida y continua sobre la trayectoria, entonces,  el trabajo realizado por la fuerza aplicada es $W = \int \vec{F}\cdot \mathrm{d}\vec r$ y la siguiente igualdad es válida:</p>
 <p>$$
   W = \Delta K
   $$</p>
@@ -13304,12 +13304,13 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>El teorema del trabajo y la energía (Teo. \ref{box:teo:trabajo_energia}) para una fuerza conservativa se escribe entonces como:</p>
-$$
+\begin{equation}
+\label{eq:deltaU_deltaK}
 \begin{array}{rcl}
 -\Delta U &amp; = &amp; \Delta K\\
 \Delta(K+U) &amp; = &amp; 0.
 \end{array}
-$$<p>Este último resultado implica que la cantidad $E\equiv K+U$ se conserva durante el movimiento de una partícula bajo la acción de una fuerza conservativa.  Llamaremos a esta cantidad en lo sucesivo <strong>energía mecánica</strong> y a esta interesante propiedad (que es producto del teorema del trabajo y la energía), <strong>conservación de la energía mecánica</strong>.</p>
+\end{equation}<p>Este último resultado implica que la cantidad $E\equiv K+U$ se conserva durante el movimiento de una partícula bajo la acción de una fuerza conservativa.  Llamaremos a esta cantidad en lo sucesivo <strong>energía mecánica</strong> y a esta interesante propiedad (que es producto del teorema del trabajo y la energía), <strong>conservación de la energía mecánica</strong>.</p>
 
 </div>
 </div>
@@ -13356,7 +13357,7 @@ $$<blockquote><p>Donde $E\equiv K+\sum U_i$, siendo $\{U_i\}$ las funciones de e
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Teorema de inercia.</strong> Si la fuerza resultante o la fuerza neta aplicada sobre una partícula es nula durante un cierto intervalo de tiempo $[t_1,t_2)$<a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#notaspie_1">$^1$</a>, su momento lineal en ese intervalo será constante e igual al momento lineal que tenía en $t_1$:</p>
+<p><strong>Teorema: Teorema de inercia.</strong> Si la fuerza resultante o la fuerza neta aplicada sobre una partícula es nula durante un cierto intervalo de tiempo $[t_1,t_2)$<a href="06.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_1">$^1$</a>, su momento lineal en ese intervalo será constante e igual al momento lineal que tenía en $t_1$:</p>
 <p>$$
    \vec F(t\in[t_1,t_2))=\vec 0\Longleftrightarrow \vec p(t\in[t_1,t_2))=\vec{p}(t_1)
    $$</p>
@@ -13643,7 +13644,29 @@ U=-\frac{G M m}{r},
 \end{equation}
 </div>
 </div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Energía potencial gravitacional negativa.</strong> En términos rigurosos la función de energía potencial más general de la que podemos derivar la fuerza gravitacional es</p>
+<blockquote>$$U=-\frac{GMm}{r}+C$$<p>siendo $C$ una constante arbitraria.  Esta libertad implica que el valor de la energía gravitacional no tiene en realidad un significado físico relevante.  Lo importante en la dinámica es la diferencia de energía potencial entre dos puntos del espacio $\Delta U$ y que determina, por ejemplo, el cambio en la energía cinética a través de la Ec. (<a href="#mjx-eqn-eqdeltaU_deltaK">deltaU_deltaK</a>.)  Naturalmente para el cáluclo de $\Delta U$ el valor de $C$ es irrelevante.</p>
+<p>La elección arbitraria de $C=0$ que hicimos al escribir la Ec. (<a href="#mjx-eqn-eqenergia_potencial_gravitacional">energia_potencial_gravitacional</a>), sin embargo, tiene una interpretación interesante, que podemos obtener al aplicar la conservación de la energía $\Delta K=-\Delta U$ en una situación hipotética.</p>
+<p>Imaginemos que cuando dos partículas están a una distancia $r$ finita, su energía cinética total es 0 (están en reposo relativo) y su energía potencial $U_0&lt;0$.  Por efecto de la acción instantánea de un agente externo, una de las partículas se acelera (el sistema recibe una inyección de energía mecánica $\Delta E&gt;0$) hasta que las dos partículas terminan separadadas a una distancia enorme  $r\rightarrow \infty$ donde su velocidad vuelve a ser casi nula $v\rightarrow 0$ (podría ser mayor, pero asumiremos este caso extremo).</p>
+<p>A esa distancia, el sistema tiene energía cinética total $K\rightarrow0$ y dado que $C=0$, su energía potencial será también $U\rightarrow 0$.  Aplicando la conservación de la energía mecánica total:</p>
+$$
+  \begin{array}{rcl}
+  \Delta K &amp; = &amp; -\Delta U\\
+  0-(0+\Delta E) &amp; = &amp; -(0-U_0)\\
+  \Delta E &amp; = &amp; -U_0
+  \end{array}
+  $$<p>En conclusión: <em>El valor absoluto de la energía potencial $U_0$ se puede interpretar como la energía mecánica adicional que necesita un sistema para apenas escapar de su mutua interacción gravitacional</em>.</p>
+<p>En otros términos, el signo negativo de la energía potencial podría interpretarse no solamente como una elección arbitraria de una constante matemática sino también como una <em>deuda energética</em>, es decir como la energía que debe aportar un agente externo para liberar a las partículas de su "esclavitud" gravitacional.</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13689,7 +13712,7 @@ De nuevo, junto con la Ec. ([fuerza_campo_gravitacional](#mjx-eqn-eqfuerza_campo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La masa, como aparece en la Ec. (<a href="#mjx-eqn-eqcampo_gravitacional">campo_gravitacional</a>), es tanto una medida de las capacidad de un cuerpo para producir campo gravitacional (y afectar a otras partículas), o, como se expresa en <a href="#mjx-eqn-eqfuerza_campo_gravitacional">fuerza_campo_gravitacional</a>, una medida de su "sensibilidad" al campo gravitacional producido por otros cuerpos <a href="#notaspie_2">$^2$</a>.</p>
+<p>La masa, como aparece en la Ec. (<a href="#mjx-eqn-eqcampo_gravitacional">campo_gravitacional</a>), es tanto una medida de las capacidad de un cuerpo para producir campo gravitacional (y afectar a otras partículas), o, como se expresa en <a href="#mjx-eqn-eqfuerza_campo_gravitacional">fuerza_campo_gravitacional</a>, una medida de su "sensibilidad" al campo gravitacional producido por otros cuerpos <a href="06.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_2">$^2$</a>.</p>
 <p>La masa, así concebida, es muy diferente, conceptualmente, a la que usamos (y uso Newton originalmente) para definir las cantidades dinámicas en la <a href="05.02.00.00.Mecanica.Dinamica.Cantidades.html#cantidades_dinamicas">Sección <em>Cantidades dinámicas</em></a>.  Por ello es necesario precisar la diferencia entre esos dos tipos de masa con una definición:</p>
 
 </div>
@@ -13698,7 +13721,7 @@ De nuevo, junto con la Ec. ([fuerza_campo_gravitacional](#mjx-eqn-eqfuerza_campo
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición 5.6. Masa inercial y masa gravitacional.</strong> En mecánica Newtoniana distinguimos dos tipos de masa conceptualmente diferentes:</p>
+<p><strong>Definición 6.6. Masa inercial y masa gravitacional.</strong> En mecánica Newtoniana distinguimos dos tipos de masa conceptualmente diferentes:</p>
 <blockquote><p>Llamamos <strong>masa inercial m_I</strong> a la razón entre las magnitudes del momento lineal de una partícula y su velocidad, a saber $m_I=p/v$.  La masa inercial de una partícula es la que aparece en la ecuación de movimiento $\ddot{\vec{r}}=\vec F/m_I$ y en la energía cinética $K=m_I v^2/2$.</p>
 <p>Por otro lado la <strong>masa gravitacional $m_G$</strong> es la masa que determina la intensidad del campo gravitacional producido por una partícula $V=G m_G/r$ (<em>masa gravitacional activa</em>) <em>o</em> la intensidad de la fuerza que ella experimenta en un campo gravitacional de otro cuerpo, $\vec F=m_G\vec g$ (<em>masa gravitacional pasiva</em>).</p>
 </blockquote>
@@ -13726,7 +13749,7 @@ De nuevo, junto con la Ec. ([fuerza_campo_gravitacional](#mjx-eqn-eqfuerza_campo
 <blockquote><p>El primer experimento preciso de este tipo fue realizado por Simon Stevin (1548-1620), un matemático, filósofo e ingeniero <em>flamenco</em> (es decir de la región que hoy llamamos Bélgica) que hizo importantes contribuciones tempranas a la mecánica prenewtoniana.</p>
 <p><img src="./figures/vertical_simon_stevin.png" alt="El único retrato disponible de Simon Stevin (ca. 1548). Crédito: Colección Universidad de Leiden." width="30.0%">$$\mathrm{\mathbf{Figura\;5.17}.}$$</p>
 <p>En 1586, Stevin lanzó dos esferas de acero que tenían una masa diferente por un factor de 10, desde una altura de aproximadamente 10 metros. Registro la diferencia en el tiempo de caída escuchando el golpe que hacían las esferas al golpear el suelo <cite data-cite="Devreese2008Stevin"><a href="mybook.html#Devreese2008Stevin">(Devreese, 2008)</a></cite>. El resultado fue contundente: las dos esferas caían casi exactamente al mismo tiempo (al menos dentro de la sensibilidad del experimento.)</p>
-<p>Posteriormente Galileo (quien citaría a Stevin en sus libros) realizó comprobaciones similares usando planos inclinados <a href="#notaspie_3">$^3$</a>.  Newton y Bessel intentaron resolver también la cuestión, esta vez usando péndulos (el período de un péndulo depende también de la aceleración que sufre el cuerpo) con resultados similares a Stevin: todos los cuerpos sin importar su masa y composición, tienen la misma aceleración en el campo gravitacional de la Tierra.  En términos de la Ec. (<a href="#mjx-eqn-eqrazon_masa_gravitacional_masa_inercial">razon_masa_gravitacional_masa_inercial</a>), $m_G/m_I=1$.</p>
+<p>Posteriormente Galileo (quien citaría a Stevin en sus libros) realizó comprobaciones similares usando planos inclinados <a href="06.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_3">$^3$</a>.  Newton y Bessel intentaron resolver también la cuestión, esta vez usando péndulos (el período de un péndulo depende también de la aceleración que sufre el cuerpo) con resultados similares a Stevin: todos los cuerpos sin importar su masa y composición, tienen la misma aceleración en el campo gravitacional de la Tierra.  En términos de la Ec. (<a href="#mjx-eqn-eqrazon_masa_gravitacional_masa_inercial">razon_masa_gravitacional_masa_inercial</a>), $m_G/m_I=1$.</p>
 <p>Las medidas más precisas de la razón entre las masas gravitacional e inercial fueron realizadas entre 1889 y 1909 por el físico húngaro Roland von Eötvos (<a href="https://es.forvo.com/search/E%C3%B6tv%C3%B6s/hu/">"fon otfosh"</a>) y sus colaboradores, usando para ello un instrumento conocido como la balanza de torsión (similar al usado para medir la constante de gravitación universal.) Los experimentos probaron la igualdad entre la masa gravitacional y la masa inercial hasta la octava cifra significativa y fueron repetidos en la segunda mitad de los 1900 hasta alcanzar la precisión mencionada en el texto: once dígitos significativos <cite data-cite="Roll1964Equivalence"><a href="mybook.html#Roll1964Equivalence">(Roll et al., 1964)</a></cite>.</p>
 </blockquote>
 
@@ -13745,7 +13768,7 @@ De nuevo, junto con la Ec. ([fuerza_campo_gravitacional](#mjx-eqn-eqfuerza_campo
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Principio: Principio de equivalencia (versión débil).</strong> <a href="#notaspie_4">$^4$</a>. La aceleración de de una partícula puntual en un campo gravitacional depende únicamente del valor del campo y es independiente de la masa y composición de la partícula. En términos matemáticos, en la mecánica newtoniana, $m_G=m_I$.</p>
+<p><strong>Principio: Principio de equivalencia (versión débil).</strong> <a href="06.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_4">$^4$</a>. La aceleración de de una partícula puntual en un campo gravitacional depende únicamente del valor del campo y es independiente de la masa y composición de la partícula. En términos matemáticos, en la mecánica newtoniana, $m_G=m_I$.</p>
 
 </div>
 </div>
