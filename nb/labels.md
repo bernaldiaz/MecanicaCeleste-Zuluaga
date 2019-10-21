@@ -260,10 +260,10 @@
 		* `#solucion_analitica`
 - Labels for '06.02.01.00.ProblemaNCuerpos.SolucionAnalitica.ConstantesMovimiento.ipynb':
 	- Labels for 'section':
-		* `#ncuerpos_teoremas_conservación`
+		* `#ncuerpos_teoremas_conservacion`
 		* `#ncuerpos_momento`
 		* `#ncuerpos_centro_masa`
-		* `#Ncuerpos_momentum_angular`
+		* `#ncuerpos_momento_angular`
 	- Labels for 'box':
 		* `box:def:plano.invariable`
 	- Labels for 'figure':
@@ -297,6 +297,35 @@
 		* `box:teo:bruns`
 	- Labels for 'equation':
 		* `eq:ncuerpos_constantes_movimiento`
+- Labels for '06.03.00.00.ProblemaNCuerpos.SolucionNumerica.ConstantesMovimiento.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_numerico_constantes_virial`
+	- Labels for 'code':
+		* `code:ncuerpos_constantes_condiciones_iniciales`
+- Labels for '06.03.00.00.ProblemaNCuerpos.SolucionNumerica.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_solucion_numerica`
+		* `#unidades_canonicas`
+		* `#ncuerpos_edmr`
+		* `#ncuerpos_algoritmo_solucion`
+		* `#ncuerpos_numerico_interactivas`
+		* `#ncuerpos_numerico_interactivos`
+		* `#ncuerpos_numerico_animacion`
+	- Labels for 'figure':
+		* `fig:ncuerpos_numerico_ejemplo`
+	- Labels for 'code':
+		* `code:edm_ncuerpos`
+		* `code:solucion_a_rs_vs`
+		* `code:sistema_a_Y`
+		* `code:solucion_a_estado`
+		* `code:plot_ncuerpos_3d`
+		* `code:ncuerpos_animacion`
+	- Labels for 'equation':
+		* `eq:definicion_unidades_canonicas`
+		* `eq:ncuerpos_numerico_ecuaciones`
+		* `eq:numerico_variables_auxiliares`
+		* `eq:definicion_rij`
+		* `eq:ncuerpos_edmr`
 - Labels for '06.03.00.00.ProblemaNCuerpos.TeoremaVirial.ipynb':
 	- Labels for 'section':
 		* `#ncuerpos_virial`
