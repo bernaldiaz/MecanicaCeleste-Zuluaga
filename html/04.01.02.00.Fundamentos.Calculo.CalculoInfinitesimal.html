@@ -13102,9 +13102,10 @@ div#notebook {
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: $t$ como variable genérica de las funciones.</strong> En todos los textos de matemáticas (incluso en los de física) se acostumbra usar $x$ como el nombre preferido para representar, de forma genérica, la variable independiente de las funciones. En lo sucesivo cambiaremos esta convención al llamar $t$ a la variable independiente genérica.  La razón no puede ser más sencilla: en la mecánica $t$ es el nombre que damos a la variable independiente por excelencia, el tiempo, de modo que muchas de las fórmulas que desarrollaremos en este capítulo, se trasladaran simbólicamente casi sin modificación a la mecánica.</p>
+<p><strong>Nota: $t$ como variable genérica de las funciones.</strong><a id=''></a> En todos los textos de matemáticas (incluso en los de física) se acostumbra usar $x$ como el nombre preferido para representar, de forma genérica, la variable independiente de las funciones. En lo sucesivo cambiaremos esta convención al llamar $t$ a la variable independiente genérica.  La razón no puede ser más sencilla: en la mecánica $t$ es el nombre que damos a la variable independiente por excelencia, el tiempo, de modo que muchas de las fórmulas que desarrollaremos en este capítulo, se trasladaran simbólicamente casi sin modificación a la mecánica.</p>
 <blockquote><p>Es obvio que la elección de la letra con la que representamos la variable independiente, no modifica en nada las definiciones y teoremas que veremos en esta sección, de modo que esperamos esta elección no moleste a los más conservadores ni confunda a quienes han estudiado ampliamente estos temas en otros textos.</p>
 </blockquote>
 
@@ -13175,9 +13176,10 @@ U(1.0,2.0,0.0) con k = 6.67e-11 y n = -2 = 1.334e-11
 
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Argumentos obligatorios y argumentos opcionales.</strong> Toda rutina en <code>Python</code> puede tener unos argumentos obligatorios (que llamaremos variables) o unos opcionales.</p>
+<p><strong>Nota: Argumentos obligatorios y argumentos opcionales.</strong><a id=''></a> Toda rutina en <code>Python</code> puede tener unos argumentos obligatorios (que llamaremos variables) o unos opcionales.</p>
 <blockquote><p>Las variables son en estricto sentido una <code>tupla</code> de valores, por ejemplo <code>x,y,z</code> en la función $U$ en el Alg. (<a href="#code:rutina_potencial">rutina_potencial</a>).</p>
 <p>Los argumentos opcionales son, por otro lado, un <code>diccionario</code> de valores, que no es otra cosa que una lista de valores identificados con un nombre (también llamdo clave o <code>key</code>).  En la función $U$ en el Alg. (<a href="#code:rutina">rutina</a>) los argumentos opcionales son <code>k=1,n=-1</code>.</p>
 <p>En <code>Python</code> las variables y las opciones de una rutina pueden representarse usando los objetos especiales <code>*variables</code> y <code>**opciones</code>. El uso de estos objetos especiales no es muy común, pero en ciertas situaciones puede ser bastante útil.</p>
@@ -13277,9 +13279,10 @@ U(1.0,2.0,0.0) con k = 6.67e-11 y n = -2 = 1.334e-11
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Notación de la derivada.</strong> A lo largo de la historia la manera como se ha representado la función derivada ha cambiado.  Existen al menos tres notaciones comunes:</p>
+<p><strong>Nota: Notación de la derivada.</strong><a id=''></a> A lo largo de la historia la manera como se ha representado la función derivada ha cambiado.  Existen al menos tres notaciones comunes:</p>
 <blockquote><ul>
 <li>La <strong>notación de Leibniz</strong>, $\mathrm{d}f/\mathrm{dt}$, $\mathrm{d}^2f/\mathrm{d}t^2$.  En esta notación la derivada se representa como si fuera la razón entre dos cantidades, pero no es así ¡mucho cuidado! Usaremos la notación de Leibniz especialmente para representar la derivada de funciones que se escriben de forma explícita, así por ejemplo: </li>
 </ul>
@@ -13333,9 +13336,10 @@ $$
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Regla de la Cadena.</strong> Dada una función compuesta $f(u(t))$, la derivada de $f$ respecto a $t$ es:</p>
+<p><strong>Teorema: Regla de la Cadena.</strong><a id='box:teo:regla.cadena'></a> Dada una función compuesta $f(u(t))$, la derivada de $f$ respecto a $t$ es:</p>
 $$
 \frac{\mathrm{d}f}{\mathrm{d}t}=\frac{\mathrm{d}f}{\mathrm{d}u}\frac{\mathrm{d}u}{\mathrm{d}t}
 $$
@@ -13412,9 +13416,10 @@ $$
 </div>
 </div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición 6.2. Funciones homogéneas.</strong> Una función general $f(\{q_i\})$ se llama homogénea si frente a una operación de escalado de sus variables (multiplicación por un escalar), la función <em>escala</em> también. En términos matemáticos:</p>
+<p><strong>Definición 7.2. Funciones homogéneas.</strong><a id='box:def:funciones.homogeneas'></a> Una función general $f(\{q_i\})$ se llama homogénea si frente a una operación de escalado de sus variables (multiplicación por un escalar), la función <em>escala</em> también. En términos matemáticos:</p>
 <p>$$
   f(\{\lambda q_i\})=\lambda^k f(\{q_i\})
   $$</p>
@@ -13436,9 +13441,10 @@ $$
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Teorema de funciones homogeneas de de Euler.</strong> Si una función $f(\{q_i\}_N)$ es homogénea de grado $k$, entonces:</p>
+<p><strong>Teorema: Teorema de funciones homogeneas de de Euler.</strong><a id='box:teo:funciones.homogeneas.euler'></a> Si una función $f(\{q_i\}_N)$ es homogénea de grado $k$, entonces:</p>
 <p>$$
   \sum_i q_i \frac{\partial f}{\partial q_i} = k f
   $$</p>
@@ -13496,9 +13502,10 @@ $$
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Una notación para el gradiente.</strong> Como lo hicimos con la derivada parcial, a lo largo de este libro, abreviaremos el gradiente usando la notación especial:</p>
+<p><strong>Nota: Una notación para el gradiente.</strong><a id=''></a> Como lo hicimos con la derivada parcial, a lo largo de este libro, abreviaremos el gradiente usando la notación especial:</p>
 <p>$$
   \partial_{\vec{r}} f\equiv\frac{\partial f}{\partial \vec r}\equiv\vec{\nabla}f
   $$</p>
@@ -13672,9 +13679,10 @@ $$<p>A $F(t)$ o equivalentemente $\int f(t)\;\mathrm{d}t$ se la llama también l
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Fórmula de Newton-Leibniz.</strong> <a href="06.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_1">$^1$</a>. Dada una función $f(t)$ que tiene antiderivada $F(t)$ definida en el intervalo $[a,b]$, el área o cuadratura de la función en el mismo intervalo esta dado por:</p>
+<p><strong>Teorema: Fórmula de Newton-Leibniz.</strong><a id='box:teo:formula.newton.leibniz'></a> <a href="06.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_1">$^1$</a>. Dada una función $f(t)$ que tiene antiderivada $F(t)$ definida en el intervalo $[a,b]$, el área o cuadratura de la función en el mismo intervalo esta dado por:</p>
 <p>$$ 
   \int_a^b f(t)\;\mathrm{d}t=F(b)-F(a)
   $$</p>
@@ -13698,9 +13706,10 @@ $$<p>Nótese que para ser rigorusos hemos cambiado el nombre de la "variable de 
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Teorema fundamental del cálculo.</strong> Dada una función $f(t)$ integrable en el intervalo $[a,b]$, si definimos la función $I(t)=\int_a^t f(\tau)\;\mathrm{d}\tau$, entonces:</p>
+<p><strong>Teorema: Teorema fundamental del cálculo.</strong><a id='box:teo:fundamental.calculo'></a> Dada una función $f(t)$ integrable en el intervalo $[a,b]$, si definimos la función $I(t)=\int_a^t f(\tau)\;\mathrm{d}\tau$, entonces:</p>
 <p>$$ 
   \frac{\mathrm{d}I}{\mathrm{d}t}=f(t)
   $$</p>
@@ -13749,9 +13758,10 @@ $$<p>Donde $\mathrm{d}\vec S$ tiene dirección normal a la superficie $\Sigma$ (
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: teorema de Stokes.</strong> Si $\vec F(\vec r)$ es un campo vectorial diferenciable en todos los puntos del espacio, entonces:</p>
+<p><strong>Teorema: teorema de Stokes.</strong><a id='box:teo:stokes'></a> Si $\vec F(\vec r)$ es un campo vectorial diferenciable en todos los puntos del espacio, entonces:</p>
 <p>$$
   \oint \vec F\cdot\mathrm{d}\vec r = \int_\Sigma (\vec{\nabla}\times \vec F)\cdot \mathrm{d}\vec{S}
   $$</p>
@@ -13771,9 +13781,10 @@ $$<p>Donde $\mathrm{d}\vec S$ tiene dirección normal a la superficie $\Sigma$ (
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Corolario de Stokes.</strong> Si el campo vectorial $\vec F(\vec r)$ tiene circulación nula:</p>
+<p><strong>Teorema: Corolario de Stokes.</strong><a id='box:cor:stokes'></a> Si el campo vectorial $\vec F(\vec r)$ tiene circulación nula:</p>
 <p>$$
   \oint \vec F\cdot\mathrm{d}\vec r = 0
   $$</p>
@@ -13859,9 +13870,10 @@ $$<p>Donde $\mathrm{d}\vec S$ tiene dirección normal a la superficie $\Sigma$ (
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Cuadraturas Gaussianas.</strong> El método usado por <code>quad</code> para calcular la integral se conoce como <em>cuadraturas gaussianas</em> y aproxima la integral como una serie de pocos términos del valor de la función definido en algunos puntos específicos <cite data-cite="Press2007Numerical"><a href="mybook.html#Press2007Numerical">(Press et al., 2007)</a></cite>.  Las cuadraturas gaussianas permiten calcular la integral de funciones polinómicas de forma <em>exacta</em>.  Esta es la razón por la cuál la integral en el ejemplo dado aquí, es idéntica al valor esperado.</p>
+<p><strong>Nota: Cuadraturas Gaussianas.</strong><a id=''></a> El método usado por <code>quad</code> para calcular la integral se conoce como <em>cuadraturas gaussianas</em> y aproxima la integral como una serie de pocos términos del valor de la función definido en algunos puntos específicos <cite data-cite="Press2007Numerical"><a href="mybook.html#Press2007Numerical">(Press et al., 2007)</a></cite>.  Las cuadraturas gaussianas permiten calcular la integral de funciones polinómicas de forma <em>exacta</em>.  Esta es la razón por la cuál la integral en el ejemplo dado aquí, es idéntica al valor esperado.</p>
 
 </div>
 </div>

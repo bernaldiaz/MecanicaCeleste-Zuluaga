@@ -13245,9 +13245,10 @@ Velocidades:
 
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: semilla de números aleatorios.</strong> La mayoría de los algoritmos de generación de números aleatorios, lo hacen partiendo de una <em>semilla entera</em>, a partir del cuál generan secuencias de números perfectamente predecibles pero que a los ojos de un ser humano parecen completamente al azar (pseudo-aleatorios).</p>
+<p><strong>Nota: semilla de números aleatorios.</strong><a id=''></a> La mayoría de los algoritmos de generación de números aleatorios, lo hacen partiendo de una <em>semilla entera</em>, a partir del cuál generan secuencias de números perfectamente predecibles pero que a los ojos de un ser humano parecen completamente al azar (pseudo-aleatorios).</p>
 <blockquote><p>En el Alg. (<a href="#code:random_particles">random_particles</a>) hemos generado las propiedades del sistema físico fijando la semilla en un valor arbitrario de 30 (de allí el comando <code>seed(30)</code>.) De este modo, al correr este algorimo siempre obtendremos las mismas propiedades.</p>
 <p>Si el lector desea generar un conjunto completamente diferente puede cambiar este número por cualquier otro (siempre que sea entero.)  Más interesante aún es comprobar el efecto que tienen eliminar (o comentar esta línea.)</p>
 </blockquote>
@@ -13310,9 +13311,10 @@ Velocidad centro de masa: [-0.08 -0.03]
 
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Operaciones entre vectores y matrices.</strong> En lo que queda de esta sección, pero también en algunos de los capítulos posteriores, nos enfrentaremos con mucha frecuencia a situaciones en las que es necesario realizar operaciones entre vectores y matrices (como <code>ms</code> y <code>rs</code> en el algoritmo anterior), que merecen un poco de atención.</p>
+<p><strong>Nota: Operaciones entre vectores y matrices.</strong><a id=''></a> En lo que queda de esta sección, pero también en algunos de los capítulos posteriores, nos enfrentaremos con mucha frecuencia a situaciones en las que es necesario realizar operaciones entre vectores y matrices (como <code>ms</code> y <code>rs</code> en el algoritmo anterior), que merecen un poco de atención.</p>
 <blockquote><p>El cálculo, en una sola línea de código, de la posición del centro de masa que hicimos en el Alg. (<a href="#code:centro_masa">centro_masa</a>) no es para nada trivial.</p>
 <p>Si quisieramos hacerlo paso a paso el código (uno de los muchos posibles) sería bastante bastante engorroso:</p>
 </blockquote>
@@ -13433,15 +13435,16 @@ Velocidad centro de masa: [-0.08 -0.03]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='code:grafico_sistema_ejemplo'></a><center><b>Figura 5.18.</b> Un sistema de tres partículas.  El tamaño del círculo que representa cada partícula es proporcional a su masa.  La cruz y la flecha adherida a ella muestran la posición y velocidad del centro de masa.</center></p>
+<p><a id='code:grafico_sistema_ejemplo'></a><center><b>Figura 5.39.</b> Un sistema de tres partículas.  El tamaño del círculo que representa cada partícula es proporcional a su masa.  La cruz y la flecha adherida a ella muestran la posición y velocidad del centro de masa.</center></p>
 
 </div>
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Escala de los ejes en el espacio.</strong> La rutina <code>fija_ejes_proporcionales</code> del paquete <code>pymcel</code> que que viene con la versión electrónica de este libro y que utilizamos en el Alg. (<a href="#code:grafico_sistema_ejemplo">grafico_sistema_ejemplo</a>), juega en ese algoritmo un papel muy importante.</p>
+<p><strong>Nota: Escala de los ejes en el espacio.</strong><a id=''></a> La rutina <code>fija_ejes_proporcionales</code> del paquete <code>pymcel</code> que que viene con la versión electrónica de este libro y que utilizamos en el Alg. (<a href="#code:grafico_sistema_ejemplo">grafico_sistema_ejemplo</a>), juega en ese algoritmo un papel muy importante.</p>
 <blockquote><p>En lo sucesivo, al representar la posición de partículas en el espacio coordenado, es indispensable que la escala de los ejes sea exactamente la misma. El lector puede verificar con una regla, que una unidad sobre el eje horizontal en la Figura (<a href="#fig:code:grafico_sistema_ejemplo">code:grafico_sistema_ejemplo</a>) mide exactamente lo mismo que una unidad del eje vertical. De este modo las posiciones o los vectores representados no estarán deformados, un efecto que crea distorsiones en nuestra interpretación de esas cantidades (más adelante veremos que solo usando esta rutina, las trayectorias circulares apareceran efectivamente como círculos.)</p>
 <p>El código de esta rutina es muy elaborado como para reproducirlo en el libro.  El lector curiosos puede encontrar todos los algoritmos del paquete <code>pymcel</code> en el material distribuido con la <a href="http://mybook.org">versión electrónica del libro</a>.</p>
 </blockquote>
@@ -13453,7 +13456,7 @@ Velocidad centro de masa: [-0.08 -0.03]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:05.02.02.00.Mecanica.Dinamica.SistemaParticulas_19'></a><center><b>Figura 5.19.</b> </center></p>
+<p><a id='fig:05.02.02.00.Mecanica.Dinamica.SistemaParticulas_40'></a><center><b>Figura 5.40.</b> </center></p>
 
 </div>
 </div>
@@ -13499,7 +13502,7 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:centro_masa'></a><img src="./figures/horizontal_centro_masa.png" alt="Relación entre la posición del centro de masa $" width="80.0%"></p>
-<center><b>Figura 5.20</b>. Relación entre la posición del centro de masa $</center>
+<center><b>Figura 5.41</b>. Relación entre la posición del centro de masa $</center>
 </div>
 </div>
 </div>
@@ -13515,10 +13518,11 @@ $$
 </div>
 </div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Un poco de historia: Kepler y el centro de masa.</strong> Muchos años antes de que Newton hubiera formalizado las leyes de la mecánica, antes de que apareciera el concepto de masa, fuerza o el postulado de acción y reacción, todos los cuales son requeridos para la deducción formal de la relación expresada en la Ec. (<a href="#mjx-eqn-eqdistancia_centro_masa">distancia_centro_masa</a>), Kepler había ya intuido este resultado.  En su obra cumbre <em>Astronomía Nueva</em> de 1609, presentó, entre los que denomino sus <em>8 axiomas de una teoría verdadera de la gravedad</em>, la siguiente afirmación:</p>
-<p><img src="./figures/vertical_astronomia_nova.png" alt="Primera página de la obra cumbre de Kepler *Astronomía Nova*." width="50.0%">$$\mathrm{\mathbf{Figura\;5.21}.}$$</p>
+<p><strong>Un poco de historia: Kepler y el centro de masa.</strong><a id=''></a> Muchos años antes de que Newton hubiera formalizado las leyes de la mecánica, antes de que apareciera el concepto de masa, fuerza o el postulado de acción y reacción, todos los cuales son requeridos para la deducción formal de la relación expresada en la Ec. (<a href="#mjx-eqn-eqdistancia_centro_masa">distancia_centro_masa</a>), Kepler había ya intuido este resultado.  En su obra cumbre <em>Astronomía Nueva</em> de 1609, presentó, entre los que denomino sus <em>8 axiomas de una teoría verdadera de la gravedad</em>, la siguiente afirmación:</p>
+<p><img src="./figures/vertical_astronomia_nova.png" alt="Primera página de la obra cumbre de Kepler *Astronomía Nova*." width="50.0%">$$\mathrm{\mathbf{Figura\;5.42}.}$$</p>
 <blockquote><blockquote><p>"<em>Si la Tierra y la Luna no fueran mantenidas en sus respectivas órbitas por una fuerza espiritual o de alguna otra naturaleza equivalente, la Tierra ascendería hacia la Luna 1/54 de la distancia y la Luna descendería las restantes 53 partes del intervalo y así se unirían.  Pero este cálculo presupone que ambos poseen la misma densidad</em>."<a href="06.03.00.00.ProblemaNCuerpos.TeoremaVirial.html#notaspie_1">$^1$</a></p>
 </blockquote>
 <p>Este hecho pone en evidencia dos cosas: (1) la clarividencia del matemático alemán, quién entre otras cosas además de la citada, intuyó algunas importantes propiedades de la gravedad y de sus efectos sobre el movimiento planetario 80 años antes que Newton y sus contemporáneos; y (2) que las ideas de la mecánica que hoy atribuímos exclusivamente a Newton estaban "flotando" en el ambiente intelectual de su época desde hacía casi 100 años. Newton, como lo sería también Maxwell un siglo y medio después en el caso de la electricidad y el magnetismo, fue en cierto sentido un compilador de la sabiduría "mecánica" de su época.</p>
@@ -13545,9 +13549,10 @@ $$
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Teorema de conservación del momentum lineal.</strong> Si la fuerza externa total sobre un sistema de partículas es nula, el momentum total del sistema se mantiene constante.  En términos matemáticos:</p>
+<p><strong>Teorema: Teorema de conservación del momentum lineal.</strong><a id='box:teo:conservacion.p.sistemas'></a> Si la fuerza externa total sobre un sistema de partículas es nula, el momentum total del sistema se mantiene constante.  En términos matemáticos:</p>
 <p>$$
   \vec{F}^\mathrm{E}=\sum_i \vec{F}_i^\mathrm{E}=0\Longleftrightarrow \vec{P}=\vec{P}_\mathrm{CM}
   $$</p>
@@ -13604,7 +13609,7 @@ $$<p>donde reconocemos, del lado izquierdo al momento angular total $\vec L=\sum
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Volvamos a la torca. Por el postulado de acción y reacción (Pos. \ref{box:pos:accion.reaccion}) las torcas de las fuerzas entre las partículas se pueden agrupar por pares de la forma:</p>
+<p>Volvamos a la torca. Por el postulado de acción y reacción (Pos. <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#box:pos:accion.reaccion">edm_sistema</a>) las torcas de las fuerzas entre las partículas se pueden agrupar por pares de la forma:</p>
 $$
 \vec r_k\times \vec F_{lk}+\vec r_l \times \vec F_{kl}=-\vec{r}_{lk}\times \vec F_{lk},
 $$<p>donde $\vec{r}_{lk}=\vec{r}_l-\vec{r}_k$ es el vector relativo, y hemos usado índices $l,k$ distintos a los originales $i,j$ de la e.d.m. para evitar confusiones.</p>
@@ -13628,9 +13633,10 @@ $$<p>Esta última ecuación conduce a un segundo importante teorema de conservac
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Teorema de conservación del momentum angular.</strong> Si la torca externa total sobre un sistema de partículas es nula, el momento angular total del sistema se mantiene constante.  En términos matemáticos:</p>
+<p><strong>Teorema: Teorema de conservación del momentum angular.</strong><a id='box:teo:conservacion.L.sistemas'></a> Si la torca externa total sobre un sistema de partículas es nula, el momento angular total del sistema se mantiene constante.  En términos matemáticos:</p>
 <p>$$
   \vec{\tau} = \sum \vec{r}_i\times \vec{F}^E_i=\vec 0\Longleftrightarrow \vec{L}=\vec{L}_\mathrm{0}
   $$</p>
@@ -13843,7 +13849,7 @@ Momento angular total después:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Una forma especial de las e.d.m. de un sistema de partículas, se obtiene cuando lo describimos desde un sistemade referencia "atado" del centro de masa (origen en el centro de masa y velocidad igual a él.)</p>
-<p>Usando las transformaciones de Galileo (Pos. \ref{box:pos:transformaciones.galileo}) la posición y velocidad de cada partícula referida al centro de masa será (Ecs. <a href="#mjx-eqn-eqley_adicion_velocidades">ley_adicion_velocidades</a> y <a href="#mjx-eqn-eqtransformaciones_galileo">transformaciones_galileo</a>):</p>
+<p>Usando las transformaciones de Galileo (Pos. <a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#box:pos:transformaciones.galileo">L_sistema_ejemplo</a>) la posición y velocidad de cada partícula referida al centro de masa será (Ecs. <a href="#mjx-eqn-eqley_adicion_velocidades">ley_adicion_velocidades</a> y <a href="#mjx-eqn-eqtransformaciones_galileo">transformaciones_galileo</a>):</p>
 \begin{equation}
 \label{eq:estado_CM}
 \begin{array}{rcl}
@@ -14146,7 +14152,7 @@ Posiciones del CM respecto al CM:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Una relación similar a la encontrada en la Ec. (<a href="#mjx-eqn-eqL_CM_interno">L_CM_interno</a>) para el momento angular, puede deducirse también para el caso de la energía cinética total $K$.</p>
-<p>Usando el teorema del trabajo y energía (Teo. \ref{box:teo:trabajo.energia}) puede probarse que en el caso de un sistema de partículas $K$ es:</p>
+<p>Usando el teorema del trabajo y energía (Teo. <a href="05.02.01.00.Mecanica.Dinamica.Postulados.html#box:teo:trabajo.energia">L_CM_interno</a>) puede probarse que en el caso de un sistema de partículas $K$ es:</p>
 $$
 K=\frac{1}{2}\sum m_i v_i^2
 $$

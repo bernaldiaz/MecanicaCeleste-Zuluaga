@@ -58,6 +58,74 @@ def calcula_discriminante(a,b,c):
 # ########################################
 
 # ########################################
+#  .//Fundamentos.Conicas.Geometria.ipynb
+# ########################################
+
+# ########################################
+#  .//Fundamentos.Conicas.Algebra.ipynb
+# ########################################
+
+def rota_puntos(R,x,y,z):
+    from spiceypy import mxv
+    from numpy import zeros_like
+    N=len(x)
+    xp=zeros_like(x)
+    yp=zeros_like(y)
+    zp=zeros_like(z)
+    for i in range(N):
+        xp[i],yp[i],zp[i]=mxv(R,[x[i],y[i],z[i]])
+    return xp,yp,zp
+
+
+def polinomio_segundo_grado(coeficientes,x,y):
+    A,B,C,D,E,F=coeficientes
+    P=A*x**2+B*x*y+C*y**2+D*x+E*y+F
+    return P
+
+
+# ########################################
+#  .//Fundamentos.Conicas.Anomalias.ipynb
+# ########################################
+
+def puntos_conica(p,e,df=0.1):
+
+    #Compute fmin,fmax
+    from numpy import pi
+    if e<1:
+        fmin=-pi
+        fmax=pi
+    elif e>1:
+        from numpy import arccos
+        psi=arccos(1/e)
+        fmin=-pi+psi+df
+        fmax=pi-psi-df
+    else:
+        fmin=-pi+df
+        fmax=pi-df
+            
+    #Valores del ángulo
+    from numpy import linspace,pi
+    fs=linspace(fmin,fmax,500)
+
+    #Distancias 
+    from numpy import cos
+    rs=p/(1+e*cos(fs))
+
+    #Coordenadas
+    from numpy import sin
+    xs=rs*cos(fs)
+    ys=rs*sin(fs)
+    from numpy import zeros_like
+    zs=zeros_like(xs)
+    
+    return xs,ys,zs
+
+
+# ########################################
+#  .//Fundamentos.Conicas.Rotaciones.ipynb
+# ########################################
+
+# ########################################
 #  .//Mecanica.ipynb
 # ########################################
 
@@ -180,8 +248,84 @@ def plot_ncuerpos_3d(rs,vs,**opciones):
     fija_ejes3d_proporcionales(ax);
     fig.tight_layout();
     plt.show();
+    return fig
 
 
 # ########################################
 #  .//ProblemaNCuerpos.SolucionNumerica.ConstantesMovimiento.ipynb
+# ########################################
+
+def ncuerpos_solucion(sistema,ts):
+    #Condiciones iniciales
+    from pymcel.export import sistema_a_Y
+    N,mus,Y0s=sistema_a_Y(sistema)
+    
+    #Masa total
+    M=sum(mus)
+    
+    #Número de tiempos
+    Nt=len(ts)
+    
+    #Solución
+    from scipy.integrate import odeint
+    solucion=odeint(edm_ncuerpos,Y0s,ts,args=(N,mus))
+    
+    #Extracción de las posiciones y velocidades
+    from pymcel.export import solucion_a_estado
+    rs,vs=solucion_a_estado(solucion,N,Nt)
+    
+    #Calcula las constantes de movimiento
+    from numpy import zeros
+    PCM=zeros(3)
+    for i in range(N):
+        PCM=PCM+mus[i]*vs[i,0,:]
+
+    #Posición del CM como función del tiempo    
+    RCM=zeros((Nt,3))
+    for i in range(N):
+        RCM=RCM+mus[i]*rs[i,:,:]
+    RCM/=M
+
+    #Momento angular
+    from numpy import zeros,cross
+    L=zeros(3)
+    for i in range(N):
+        L=L+mus[i]*cross(rs[i,0,:],vs[i,0,:])
+
+    #Energía total
+    from numpy.linalg import norm
+    K=zeros(Nt)
+    U=zeros(Nt)
+    for i in range(N):
+        K=K+0.5*mus[i]*norm(vs[i,:,:],axis=1)**2
+        for j in range(N):
+            if i==j:continue
+            rij=norm(rs[i,:,:]-rs[j,:,:],axis=1)
+            U+=-0.5*mus[i]*mus[j]/rij
+    E=K[0]+U[0]
+    
+    #Constantes
+    constantes=dict(M=M,
+                    RCM=RCM,PCM=PCM,
+                    L=L,K=K,U=U,E=E)
+        
+    #Posiciones y velocidades relativas al centro de masa    
+    from numpy import subtract
+    rps=rs-RCM
+    vps=subtract(vs,PCM/M)
+    
+    #Devuelve las posiciones y velocidades
+    return rs,vs,rps,vps,constantes
+
+
+# ########################################
+#  .//Problema2Cuerpos.ipynb
+# ########################################
+
+# ########################################
+#  .//Problema2Cuerpos.Motivacion.ipynb
+# ########################################
+
+# ########################################
+#  .//Problema2Cuerpos.ProblemaRelativo.ipynb
 # ########################################

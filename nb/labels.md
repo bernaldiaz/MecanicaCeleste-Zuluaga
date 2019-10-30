@@ -118,6 +118,104 @@
 		* `eq:dIdepsilon`
 		* `eq:ecuacion_integral_variaciones`
 		* `eq:ecuacion_euler_lagrange`
+- Labels for '04.02.01.00.Fundamentos.Conicas.Geometria.ipynb':
+	- Labels for 'section':
+		* `#conicas`
+		* `#conicas_definicion`
+		* `#conicas_nombre_algebra`
+		* `#conicas_directriz`
+		* `#conicas_sintesis_geometrica`
+	- Labels for 'figure':
+		* `fig:conicas_definicion`
+		* `fig:conicas_apolonio`
+		* `fig:conicas_directriz`
+	- Labels for 'equation':
+		* `eq:ecuacion_apside`
+		* `eq:conica_razon`
+		* `eq:conica_razon_cartesianas`
+		* `eq:ecuacion_directriz`
+		* `eq:alpha`
+		* `eq:q`
+		* `eq:ecuacion_directriz_trasladada`
+		* `eq:eta_apolonio`
+- Labels for '04.02.02.00.Fundamentos.Conicas.Algebra.ipynb':
+	- Labels for 'section':
+		* `#conicas_algebra`
+		* `#conicas_centro`
+		* `#conicas_ejes`
+		* `#elipse_interactiva`
+		* `#subsubsec_conicas_hiperbola`
+		* `#hiperbola_interactiva`
+		* `#conicas_rotacion_plano`
+		* `#conicas_ecuacion_general`
+		* `#grafico_conica_rotada_plano`
+		* `#conicas_sintesis_algebraica`
+	- Labels for 'figure':
+		* `fig:elipse`
+	- Labels for 'code':
+		* `code:spice_rotate`
+		* `code:rota_puntos`
+		* `code:polinomio_segundo_grado`
+	- Labels for 'equation':
+		* `eq:ecuacion_apside_pe`
+		* `eq:traslacion_centro`
+		* `eq:semiejemayor`
+		* `eq:ecuacion_centro`
+		* `eq:semiejemenor`
+		* `eq:ecuacion_centro_hiperbola`
+		* `eq:beta`
+		* `eq:cos_psi`
+		* `eq:rotacion2d`
+		* `eq:rotacion2d_matricial`
+		* `eq:matriz_rotacion2d`
+		* `eq:inversa_matriz_rotacion`
+		* `eq:rotacion2d_inversa_matricial`
+		* `eq:rotacion2d_inversa`
+		* `eq:ecuacion_conica_trasladada_rotada`
+		* `eq:ecuacion_general`
+		* `eq:ecuacion_general_coeficientes`
+		* `eq:eta_ecuacion_general`
+		* `eq:teta_ecuacion_general`
+		* `eq:ty_ecuacion_general`
+- Labels for '04.02.03.00.Fundamentos.Conicas.Anomalias.ipynb':
+	- Labels for 'section':
+		* `#conicas_cilindricas`
+		* `#subsubsec_conicas_anomalias`
+	- Labels for 'figure':
+		* `fig:conica_foco`
+		* `fig:anomalia_excentrica`
+	- Labels for 'code':
+		* `code:conica_dibujo`
+		* `code:puntos_conica`
+	- Labels for 'equation':
+		* `eq:ecuacion_foco`
+		* `eq:conica_parametricas_f`
+		* `eq:conica_ecuacion_cilindricas`
+		* `eq:conica_parametricas_E`
+		* `eq:conica_anomalia_excentrica`
+		* `eq:fE`
+		* `eq:hiperbola_parametrica_F`
+- Labels for '04.02.04.00.Fundamentos.Conicas.Rotaciones.ipynb':
+	- Labels for 'section':
+		* `#conicas_espacio`
+		* `#angulos_euler`
+		* `#matrices_rotacion_generales`
+		* `#grafico_conica_rotada_espacio`
+		* `#elementos_orbitales`
+	- Labels for 'figure':
+		* `fig:angulos_euler`
+	- Labels for 'code':
+		* `code:calculo_M_explicito`
+		* `code:calculo_M_general`
+	- Labels for 'equation':
+		* `eq:rotacion3d_observador_R`
+		* `eq:rotacion3d_observador_M`
+		* `eq:matrizM_definicion`
+		* `eq:matrizM_explicita`
+		* `eq:matrizM_explicita_transpuesta`
+		* `eq:rotacion3d_natural_R`
+		* `eq:rotacion3d_natural_M`
+		* `eq:elementos_estado_f`
 - Labels for '05.00.00.00.Mecanica.ipynb':
 	- Labels for 'section':
 		* `#mecanica`
@@ -272,9 +370,9 @@
 		* `code:masas_estado_planetas`
 	- Labels for 'equation':
 		* `eq:ncuerpos_suma_edm`
-		* `eq:ncuerpos_momentum`
+		* `eq:ncuerpos_momento`
 		* `eq:ncuerpos_centro_masa`
-		* `eq:ncuerpos_momentum_lineal`
+		* `eq:ncuerpos_momento_angular`
 - Labels for '06.02.02.00.ProblemaNCuerpos.SolucionAnalitica.Energia.ipynb':
 	- Labels for 'section':
 		* `#ncuerpos_potencial`
@@ -300,8 +398,11 @@
 - Labels for '06.03.00.00.ProblemaNCuerpos.SolucionNumerica.ConstantesMovimiento.ipynb':
 	- Labels for 'section':
 		* `#ncuerpos_numerico_constantes_virial`
+		* `#ncuerpos_algoritmo_general`
 	- Labels for 'code':
 		* `code:ncuerpos_constantes_condiciones_iniciales`
+		* `code:ncuerpos_ejemplo2`
+		* `code:ncuerpos_solucion`
 - Labels for '06.03.00.00.ProblemaNCuerpos.SolucionNumerica.ipynb':
 	- Labels for 'section':
 		* `#ncuerpos_solucion_numerica`
@@ -318,6 +419,7 @@
 		* `code:solucion_a_rs_vs`
 		* `code:sistema_a_Y`
 		* `code:solucion_a_estado`
+		* `code:ncuerpos_ejemplo1`
 		* `code:plot_ncuerpos_3d`
 		* `code:ncuerpos_animacion`
 	- Labels for 'equation':
@@ -352,3 +454,51 @@
 		* `eq:teorema_virial_EK`
 		* `eq:teorema_virial_canonico`
 		* `eq:virial_v_dispersion`
+- Labels for '07.00.00.00.Problema2Cuerpos.ipynb':
+	- Labels for 'section':
+		* `#problema_doscuerpos`
+- Labels for '07.01.00.00.Problema2Cuerpos.Motivacion.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_motivación`
+	- Labels for 'figure':
+		* `fig:sistemas_jerarquicos`
+	- Labels for 'code':
+		* `code:ncuerpos_jerarquico1`
+- Labels for '07.02.00.00.Problema2Cuerpos.ProblemaRelativo.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_reducido`
+		* `#doscuerpos_constantes`
+		* `#doscuerpos_h`
+		* `#doscuerpos_epsilon`
+		* `#doscuerpos_e`
+		* `#doscuerpos_ecuacion`
+		* `#doscuerpos_velocidad`
+		* `#teorema_orbital`
+	- Labels for 'box':
+		* `box:teo:areas`
+		* `box:teo:movimiento.orbital`
+		* `box:teo:armonico`
+	- Labels for 'figure':
+		* `fig:problema_dos_cuerpos`
+		* `fig:doscuerpos_trayectorias`
+	- Labels for 'equation':
+		* `eq:edm_doscuerpos`
+		* `eq:r1_r2_r`
+		* `eq:v1_v2_v`
+		* `eq:edm_doscuerpos_relativo`
+		* `eq:h`
+		* `eq:r`
+		* `eq:dotr`
+		* `eq:h_escalar`
+		* `eq:dotq`
+		* `eq:epsilon`
+		* `eq:epsilon_cartesianas`
+		* `eq:epsilon_cilindricas`
+		* `eq:edmxh`
+		* `eq:cuadratura_e`
+		* `eq:e`
+		* `eq:e_h_epsilon`
+		* `eq:doscuerpos_trayectoria`
+		* `eq:e_mu_2a`
+		* `eq:teorema_armonico`
+		* `eq:ley_armonica`

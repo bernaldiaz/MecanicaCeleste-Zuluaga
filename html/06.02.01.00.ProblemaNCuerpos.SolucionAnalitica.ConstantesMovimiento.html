@@ -13090,7 +13090,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>En la forma específica del problema de los N cuerpos presentada aquí, asumimos que el sistema de partículas esta aislado del Universo, es decir, sobre los cuerpos no actúa ninguna fuerzas externa.</p>
-<p>Como vimos en la <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#teoremas_conservacion">Sección <em>Teoremas de conservación en sistemas de partículas</em></a>, esta condición implica que tanto el momentum lineal total del sistema (ver Teo. \ref{box:teo:conservacion.p.sistemas}), como su momentum angular total (ver Teo. \ref{box:teo:conservacion.L.sistemas}) se conservan.</p>
+<p>Como vimos en la <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#teoremas_conservacion">Sección <em>Teoremas de conservación en sistemas de partículas</em></a>, esta condición implica que tanto el momentum lineal total del sistema (ver Teo. <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#box:teo:conservacion.p.sistemas">ncuerpos_formulacion_ecuaciones</a>), como su momentum angular total (ver Teo. <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#box:teo:conservacion.L.sistemas">ncuerpos_formulacion_ecuaciones</a>) se conservan.</p>
 <p>De acuerdo con esto, las funciones:</p>
 $$
 \begin{array}{rcl}
@@ -13164,7 +13164,7 @@ $$<p>donde como siempre asumimos que las masas de todas las partículas del sist
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Esta expresión no es otra cosa que una forma del teorema de conservación del momento lineal y provee la primera constante (vectorial) de movimiento del problema de N cuerpos:</p>
 \begin{equation}
-\label{eq:ncuerpos_momentum}
+\label{eq:ncuerpos_momento}
 \sum_i m_i \dot{\vec{r}}_i={\vec P}_\mathrm{CM}
 \end{equation}<p>Por tratarse de una expresión vectorial, en esta cuadratura hay contenidas en realidad tres constantes de movimiento: $\sum_i m_i\dot{x}_i=P_{\mathrm{CM},x}$, $\sum_i m_i\dot{y}_i=P_{\mathrm{CM},y}$ y $\sum_i m_i\dot{z}_i=P_{\mathrm{CM},z}$.</p>
 
@@ -13172,9 +13172,10 @@ $$<p>donde como siempre asumimos que las masas de todas las partículas del sist
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: El sistema de referencia del centro de masa.</strong> La constancia de ${\vec P}_{\mathrm{CM}}$ en el problema de los N cuerpos, nos permite introducir un sistema de referencia inercial ideal para la descripción simplificada del problema.  Naturalemente nos referimos al sistema de referencia del centro de masa, que tiene, respecto al sistema de referencia general considerado hasta aquí, una velocidad constante e igual a ${\vec V}_{\mathrm{CM}}={\vec P}_{\mathrm{CM}}/M$ (donde $M=\sum m_i$).</p>
+<p><strong>Nota: El sistema de referencia del centro de masa.</strong><a id=''></a> La constancia de ${\vec P}_{\mathrm{CM}}$ en el problema de los N cuerpos, nos permite introducir un sistema de referencia inercial ideal para la descripción simplificada del problema.  Naturalemente nos referimos al sistema de referencia del centro de masa, que tiene, respecto al sistema de referencia general considerado hasta aquí, una velocidad constante e igual a ${\vec V}_{\mathrm{CM}}={\vec P}_{\mathrm{CM}}/M$ (donde $M=\sum m_i$).</p>
 <blockquote><p>El movimiento de las partículas en este sistema de referencia es el más <em>simple</em> que podemos percibir desde un sistema de referencia inercial. Por la misma razón, en lo sucesivo y siempre y cuando no se diga lo contrario, la dinámica de la mayoría de los sistemas de N cuerpos considerados en este libro se describirá en el sistema de referencia de su centro de masa.</p>
 </blockquote>
 
@@ -13280,7 +13281,7 @@ $$
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Esta última ecuación permite identificar la constante de movimiento:</p>
 \begin{equation}
-\label{eq:ncuerpos_momentum_lineal}
+\label{eq:ncuerpos_momento_angular}
 \sum m_i \vec{r}_i \times \dot{\vec{r}}_i= \vec L
 \end{equation}<p>que reconocemos, naturalmente, con el momento angular total del sistema.</p>
 
@@ -13296,9 +13297,10 @@ $$
 </div>
 </div><div style="background:lightgray;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición 6.8. Plano invariable (de Laplace) y sistema natural de referencia</strong>.  Dado un sistema de N partículas puntuales $\{m_i\}$, llamamos <strong>plano invariable (de Laplace)..</strong> a aquel que tiene como vector normal $\hat n={\vec L}'/L'$, donde:</p>
+<p><strong>Definición 7.8. Plano invariable (de Laplace) y sistema natural de referencia</strong>.  Dado un sistema de N partículas puntuales $\{m_i\}$, llamamos <strong>plano invariable (de Laplace)..</strong><a id='box:def:plano.invariable'></a> a aquel que tiene como vector normal $\hat n={\vec L}'/L'$, donde:</p>
 <blockquote>$${\vec L}'=\sum m_i {{\vec r}_i}' \times {\dot{\vec{r}}_i}'$$<p>es el momento angular total de las partículas referidas al sistema de referencia del centro de masa.  Dado que ${\vec L}'$ es constante, es posible usar las posiciones y velocidades de las partículas en un tiempo arbitrario para calcular la dirección del plano invariable.</p>
 <p>Llamamos <strong>sistema natural de coordenadas</strong> de un sistema de N cuerpos a aquel que tiene: 1) origen en el centro de masa y 2) plano $x-y$ sobre el plano invariable de Laplace (ver Figura Figura (<a href="#fig:plano_invariable">plano_invariable</a>)).)</p>
 </blockquote>
@@ -13311,26 +13313,27 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:plano_invariable'></a><img src="./figures/square_plano_invariable.png" alt="Ilustración gráfica de la orientación del plano invariable de Laplace.  El plano invariable esta definido en el sistema de referencia inercial del centro de masa y se mueve con él con velocidad $V_" width="70.0%"></p>
-<center><b>Figura 6.24</b>. Ilustración gráfica de la orientación del plano invariable de Laplace.  El plano invariable esta definido en el sistema de referencia inercial del centro de masa y se mueve con él con velocidad $V_</center>
+<center><b>Figura 6.45</b>. Ilustración gráfica de la orientación del plano invariable de Laplace.  El plano invariable esta definido en el sistema de referencia inercial del centro de masa y se mueve con él con velocidad $V_</center>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Es importante insistir en que el vector que define la dirección del plano invariable de Laplace, no es, en general el vector en la Ec. (<a href="#mjx-eqn-eqncuerpos_momentum_lineal">ncuerpos_momentum_lineal</a>) que, como vimos en la <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#dinamica_centro_masa">Sección <em>Dinámica referida al centro de masa</em></a> se puede escribir como:</p>
+<p>Es importante insistir en que el vector que define la dirección del plano invariable de Laplace, no es, en general el vector en la Ec. (<a href="#mjx-eqn-eqncuerpos_momento_angular">ncuerpos_momento_angular</a>) que, como vimos en la <a href="05.02.02.00.Mecanica.Dinamica.SistemaParticulas.html#dinamica_centro_masa">Sección <em>Dinámica referida al centro de masa</em></a> se puede escribir como:</p>
 $$
 \vec L=M{\vec R}_\mathrm{CM}\times{\vec V}_\mathrm{CM}+\sum m_i {{\vec r}_i}' \times {\dot{\vec{r}}_i}'.
-$$<p>El vector de la Definición \ref{box:def:plano.invariable}, que es esencialmente el segundo término de la ecuación anterior, no tiene la misma dirección de $\vec L$ debido al término $M{\vec R}_\mathrm{CM}\times{\vec V}_\mathrm{CM}$ (momento angular del centro de masa.)  Por lo tanto, es muy importante al construir el sistema de coordenadas natural, tener cuidado de asegurárse que las posiciones y velocidades de las partículas estén referidas al centro de masa.</p>
+$$<p>El vector de la Definición <a href="#box:def:plano.invariable">ncuerpos_momento_angular</a>, que es esencialmente el segundo término de la ecuación anterior, no tiene la misma dirección de $\vec L$ debido al término $M{\vec R}_\mathrm{CM}\times{\vec V}_\mathrm{CM}$ (momento angular del centro de masa.)  Por lo tanto, es muy importante al construir el sistema de coordenadas natural, tener cuidado de asegurárse que las posiciones y velocidades de las partículas estén referidas al centro de masa.</p>
 
 </div>
 </div>
 </div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Un poco de historia: El plano invariable del Sistema Solar.</strong> Durante más de 100 años, los astrónomos han intentado encontrar la orientación del plano invariable del Sistema Solar.  El esfuerzo no ha sido sencillo, en tanto durante en el mismo lapso, la masa de los cuerpos no siempre se ha conocido con precisión e incluso, cuerpos enteramente nuevos se descubren de vez en cuando.</p>
-<blockquote><p>La determinación más precisa de la orientación del plano invariable se hizo recientemente <cite data-cite="Souami2012SolarPlane"><a href="mybook.html#Souami2012SolarPlane">(Souami & Souchay, 2012)</a></cite> y concluyó que este importante plano tiene una inclinación, respecto al plano del ecuador en el sistema ICRF (ver la <a href="Not Found#sistemas_referencia_astronomicos">Sección <em>Sistema de referencia astronómicos</em></a>) de 23$^\circ$ 0' 31".9 y una longitude del nodo ascendente de 3$^\circ$ 51' 9".4 (para una definición de estos ángulos ver la <a href="Not Found#conicas_espacio">Sección <em>Cónicas en el espacio</em></a>.)  Esto implica, que el plano invariable del Sistema Solar esta inclinado respecto al plano de la eclípica de J2000.0 (que es muy importante en la mecánica celeste al usarse como el plano de referencia fundamental para el cálculo de posiciones planetarias) en un ángulo de 1$^\circ$ 34' 43".3.</p>
+<p><strong>Un poco de historia: El plano invariable del Sistema Solar.</strong><a id=''></a> Durante más de 100 años, los astrónomos han intentado encontrar la orientación del plano invariable del Sistema Solar.  El esfuerzo no ha sido sencillo, en tanto durante en el mismo lapso, la masa de los cuerpos no siempre se ha conocido con precisión e incluso, cuerpos enteramente nuevos se descubren de vez en cuando.</p>
+<blockquote><p>La determinación más precisa de la orientación del plano invariable se hizo recientemente <cite data-cite="Souami2012SolarPlane"><a href="mybook.html#Souami2012SolarPlane">(Souami & Souchay, 2012)</a></cite> y concluyó que este importante plano tiene una inclinación, respecto al plano del ecuador en el sistema ICRF (ver la <a href="Not Found#sistemas_referencia_astronomicos">Sección <em>Sistema de referencia astronómicos</em></a>) de 23$^\circ$ 0' 31".9 y una longitude del nodo ascendente de 3$^\circ$ 51' 9".4 (para una definición de estos ángulos ver la <a href="04.02.04.00.Fundamentos.Conicas.Rotaciones.html#conicas_espacio">Sección <em>Cónicas en el espacio</em></a>.)  Esto implica, que el plano invariable del Sistema Solar esta inclinado respecto al plano de la eclípica de J2000.0 (que es muy importante en la mecánica celeste al usarse como el plano de referencia fundamental para el cálculo de posiciones planetarias) en un ángulo de 1$^\circ$ 34' 43".3.</p>
 </blockquote>
 
 </div>

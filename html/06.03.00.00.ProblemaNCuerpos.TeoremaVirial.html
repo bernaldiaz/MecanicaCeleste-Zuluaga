@@ -13260,8 +13260,8 @@ que depende de las fuerzas que experimentan las partículas del sistema instant�
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Es posible demostrar (ver problemas al final del capítulo) que la $U(\{\vec{r}_i\})$ definida por la Ec. (<a href="#mjx-eqn-eqU_no_restringido">U_no_restringido</a>) es una función homogénea con $k=-1$ (ver Def. \ref{box:def:funciones.homogéneas}).</p>
-<p>Por lo tanto, por el Teo. \ref{box:teo:funciones.homogeneas.eules} el virial de un sistema de N cuerpos es simplemente igual a su energía potencial:</p>
+<p>Es posible demostrar (ver problemas al final del capítulo) que la $U(\{\vec{r}_i\})$ definida por la Ec. (<a href="#mjx-eqn-eqU_no_restringido">U_no_restringido</a>) es una función homogénea con $k=-1$ (ver Def. <a href="#box:def:funciones.homogéneas">U_no_restringido</a>).</p>
+<p>Por lo tanto, por el Teo. <a href="#box:teo:funciones.homogeneas.eules">U_no_restringido</a> el virial de un sistema de N cuerpos es simplemente igual a su energía potencial:</p>
 $$
 {\cal V} = - \sum_i \vec{r}_i\cdot\partial_{{\vec r}_i} U = U
 $$
@@ -13336,7 +13336,7 @@ $$
 $$<p>pero:</p>
 $$
 \langle \dot G\rangle=\lim_{T\rightarrow\infty} \frac{1}{T}\int_0^{T} \dot G dt=\lim_{T\rightarrow\infty} \left(\frac{G(T)-G(0)}{T}\right)
-$$<p>donde usamos el teorema fundamental del cálculo (ver Teo. \ref{box:teo:fundamental.calculo}.)</p>
+$$<p>donde usamos el teorema fundamental del cálculo (ver Teo. <a href="04.01.02.00.Fundamentos.Calculo.CalculoInfinitesimal.html#box:teo:fundamental.calculo">I_G</a>.)</p>
 
 </div>
 </div>
@@ -13353,9 +13353,10 @@ $$<p>Lo que conduce a uno de los más importantes teoremas de la dinámica de si
 </div>
 </div><div class="box_theorem">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Teorema del virial.</strong> Si en un sistema de N cuerpos se define la cantidad física $G\equiv\sum_i m_i\vec{r}_i\cdot\dot{\vec{r}_i}$, la condición $G_\mathrm{max}\leq G\leq G_\mathrm{min}$ ($G$ esta acotada) es necesaria y suficiente<a href="#notaspie_4">$^4$</a> para que el promedio asintótico de las funciones de energía potencial $U$ y energía cinética $K$, satisfagan:</p>
+<p><strong>Teorema: Teorema del virial.</strong><a id='box:teo:virial'></a> Si en un sistema de N cuerpos se define la cantidad física $G\equiv\sum_i m_i\vec{r}_i\cdot\dot{\vec{r}_i}$, la condición $G_\mathrm{max}\leq G\leq G_\mathrm{min}$ ($G$ esta acotada) es necesaria y suficiente<a href="#notaspie_4">$^4$</a> para que el promedio asintótico de las funciones de energía potencial $U$ y energía cinética $K$, satisfagan:</p>
 <p>\begin{equation}
   \label{eq:teorema_virial_UK}
   \langle U\rangle=-2\langle K\rangle
@@ -13583,7 +13584,7 @@ E = -1.8842965645060087e+29 kg km^2/s^2
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='code:virial_sistema_solar'></a><center><b>Figura 6.25.</b> </center></p>
+<p><a id='code:virial_sistema_solar'></a><center><b>Figura 6.46.</b> </center></p>
 
 </div>
 </div>
@@ -13616,7 +13617,7 @@ E = -1.8842965645060087e+29 kg km^2/s^2
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:coma_cluster'></a><img src="./figures/square_coma_cluster.png" alt="Mosaico en falso color del cúmulo de Galaxias de Coma que combina imágenes en luz visible e infrarrojo. Crédito: NASA / JPL-Caltech / L. Jenkins (GSFC)." width="70.0%"></p>
-<center><b>Figura 6.26</b>. Mosaico en falso color del cúmulo de Galaxias de Coma que combina imágenes en luz visible e infrarrojo. Crédito: NASA / JPL-Caltech / L. Jenkins (GSFC).</center>
+<center><b>Figura 6.47</b>. Mosaico en falso color del cúmulo de Galaxias de Coma que combina imágenes en luz visible e infrarrojo. Crédito: NASA / JPL-Caltech / L. Jenkins (GSFC).</center>
 </div>
 </div>
 </div>
@@ -13631,7 +13632,7 @@ E = -1.8842965645060087e+29 kg km^2/s^2
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Se dice que un cúmulo de galaxias, estrellas o simplemente de "partículas" de materia oscura, esta "virializado", si ha alcanzado un estado dinámico en el cuál el teorema del virial describe apropiadamente los promedios estadísticos de sus propiedades cinemáticas (velocidades y posiciones.)  En virtud de las condiciones del Teo. (\ref{box:teo:virial}), esto significa, esencialmente, que el sistema es ligado o estable a largo plazo.</p>
+<p>Se dice que un cúmulo de galaxias, estrellas o simplemente de "partículas" de materia oscura, esta "virializado", si ha alcanzado un estado dinámico en el cuál el teorema del virial describe apropiadamente los promedios estadísticos de sus propiedades cinemáticas (velocidades y posiciones.)  En virtud de las condiciones del Teo. (<a href="#box:teo:virial">teorema_virial_UK</a>), esto significa, esencialmente, que el sistema es ligado o estable a largo plazo.</p>
 
 </div>
 </div>
@@ -13751,9 +13752,10 @@ $$
 </div>
 </div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Un poco de historia: Fritz Zwicky, el teorema del virial y la materia oscura.</strong> La estimación de la masa del cúmulo de Coma, usando el teorema del virial, que presentamos aquí, reproduce el trabajo del reconocido astrónomo suizo Fritz Zwicky (<a href="https://es.forvo.com/search/Fritz%20Zwicky/en/">"Fritz tsviky"</a>), uno de los primeros en aplicar el teorema en Astronomía.</p>
+<p><strong>Un poco de historia: Fritz Zwicky, el teorema del virial y la materia oscura.</strong><a id=''></a> La estimación de la masa del cúmulo de Coma, usando el teorema del virial, que presentamos aquí, reproduce el trabajo del reconocido astrónomo suizo Fritz Zwicky (<a href="https://es.forvo.com/search/Fritz%20Zwicky/en/">"Fritz tsviky"</a>), uno de los primeros en aplicar el teorema en Astronomía.</p>
 <blockquote><p>En 1933, Zwicky presento en la revista Suiza <em>Helvetica Physica Acta</em> un artículo titulado "<em>El desplazamiento al rojo de las nebulosas extragalácticas</em>".  En este artículo, usando estimaciones del número y la masa de las galaxias del Cúmulo (que midió a partir de su luminosidad), así como medidas de su radio aproximado, Zwicky calculó la dispersión de velocidades $\langle v^2\rangle$ con la Ec. (<a href="#mjx-eqn-eqvirial_v_dispersion">virial_v_dispersion</a>).</p>
 <p>Para su sorpresa las velocidades típicas estimadas con el teorema del virial para las galaxias en el cúmulo, $\langle v^2\rangle^{1/2}\approx 80$ km/s, eran casi 10 veces menores que las que se obtenían al medir el corrimiento espectral de la luz de las galaxias.  Es decir, las galaxias reales se estaban moviendo tan rápido en el cúmulo que este sistema no podría estar ligado (satisfacer el teorema del virial).</p>
 <p>Otra posibilidad era que la masa usada en la Ec. (<a href="#mjx-eqn-eqvirial_v_dispersion">virial_v_dispersion</a>) y que el supuso podía estimar a partir de la materia luminosa de las galaxias, fuera en realidad 10 veces mayor.  Esto implicaba la existencia de una forma de materia invisible (que no emite luz) y que Zwicky llamo en su artículo en alemán <em>dunkle Materie</em> o Materia oscura.</p>

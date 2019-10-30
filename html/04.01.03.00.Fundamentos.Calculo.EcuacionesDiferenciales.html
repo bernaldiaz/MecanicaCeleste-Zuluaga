@@ -13277,9 +13277,10 @@ Y_1=G &amp;,&amp; f_1(t,Y_0,Y_1)=-k Y_0\\
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: El plural en los algoritmos.</strong> Preste atención a la convención que usaremos en lo sucesivo de usar la letra <code>s</code> como sufijo del nombre de algunos arreglos y matrices (p.e. <code>Yos</code>, <code>ts</code>).  En lo sucesivo (a no ser que se indique lo contrario) <code>t</code> denotará un valor individual de la variable, pero <code>ts</code> será un arreglo de valores de <code>t</code>.</p>
+<p><strong>Nota: El plural en los algoritmos.</strong><a id=''></a> Preste atención a la convención que usaremos en lo sucesivo de usar la letra <code>s</code> como sufijo del nombre de algunos arreglos y matrices (p.e. <code>Yos</code>, <code>ts</code>).  En lo sucesivo (a no ser que se indique lo contrario) <code>t</code> denotará un valor individual de la variable, pero <code>ts</code> será un arreglo de valores de <code>t</code>.</p>
 
 </div>
 </div>
@@ -13426,9 +13427,10 @@ Y_1=G &amp;,&amp; f_1(t,Y_0,Y_1)=-k Y_0\\
 </div>
 </div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
     	 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: Los algoritmos detrás de <code>odeint</code>.</strong> La rutina <code>odeint</code> es un <em>empaque</em> en <code>Python</code> (<em>wrap</em> en inglés) de un complejo y robusto paquete de rutinas conocido como <a href="https://computing.llnl.gov/casc/odepack"><code>ODEPACK</code></a>.  Desarrollado por el <em>Center for Applied Scientific Computing</em> del <em>Lawrence Livermore National Laboratory</em>, las rutinas de <code>ODEPACK</code> están escritas en lenguaje <code>FORTRAN77</code> (<code>Python</code> se usa únicamente para pasar los parámetros al paquete y para recuperar las salidas; ese es justamente el sentido del nombre "empaque") y han sido probadas y perfeccionadas durante varias décadas en distintas aplicaciones científicas y de ingeniería <cite data-cite="Hindmarsh1983odepack"><a href="mybook.html#Hindmarsh1983odepack">(Hindmarsch, 1983)</a></cite>.</p>
+<p><strong>Nota: Los algoritmos detrás de <code>odeint</code>.</strong><a id=''></a> La rutina <code>odeint</code> es un <em>empaque</em> en <code>Python</code> (<em>wrap</em> en inglés) de un complejo y robusto paquete de rutinas conocido como <a href="https://computing.llnl.gov/casc/odepack"><code>ODEPACK</code></a>.  Desarrollado por el <em>Center for Applied Scientific Computing</em> del <em>Lawrence Livermore National Laboratory</em>, las rutinas de <code>ODEPACK</code> están escritas en lenguaje <code>FORTRAN77</code> (<code>Python</code> se usa únicamente para pasar los parámetros al paquete y para recuperar las salidas; ese es justamente el sentido del nombre "empaque") y han sido probadas y perfeccionadas durante varias décadas en distintas aplicaciones científicas y de ingeniería <cite data-cite="Hindmarsh1983odepack"><a href="mybook.html#Hindmarsh1983odepack">(Hindmarsch, 1983)</a></cite>.</p>
 <blockquote><p>Existen otras rutinas en el paquete <code>SciPy</code> para resolver ecuaciones diferenciales con condiciones inicales (IVP). Por ejemplo <code>ode</code> y <code>solve_ivp</code> pueden usarse también (esta última es, por ejemplo, la recomendada por los desarrolladores de <code>SciPy</code>). Sin embargo, estas otras rutinas tienen una <em>interface</em> un poco más complicada.  Así por ejemplo, para integrar la e.d.m. del ejemplo visto aquí, usando <code>solve_ivp</code>, el código <strong>mínimo</strong> en <code>Python</code> sería:</p>
 </blockquote>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">solve_ivp</span>
