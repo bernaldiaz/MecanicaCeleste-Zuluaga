@@ -13292,15 +13292,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Postulado: Transformaciones de Galileo.</strong><a id='box:pos:transformaciones.galileo'></a> Si dos sistemas de referencia, $R$ y $R'$ usan las mismas unidades y el origen de sus sistema de coordenadas coincide en $t=0$, las siguientes relaciones entre las propiedades cinemáticas básicas medidas en los dos sistemas de referencia, se consideran válidas:</p>
+<p><strong>Postulado: Transformaciones de Galileo.</strong><a id='box:pos:transformaciones.galileo'></a> Si dos sistemas de referencia, $R$ y $R'$ usan las mismas unidades y el origen de sus sistema de coordenadas coincide en $t=0$, las siguientes relaciones entre las propiedades cinemáticas básicas medidas en los dos sistemas de referencia, se consideran válidas (ver Figura (<a href="#fig:transformaciones_galileo">transformaciones_galileo</a>)):</p>
 <p>\begin{equation}
   \label{eq:transformaciones_galileo}
   \begin{array}{rcl}
   t &amp; = &amp; t'\\
-  \vec r &amp; = &amp; \vec{r}' + \int_0^t \vec u(t)\;\mathrm{d}t
+  \vec r &amp; = &amp; \vec{r}' + \vec u t
   \end{array}
   \end{equation}</p>
-<blockquote><p>Donde $\vec{u}(t)$ es la velocidad del origen de coordenadas del sistema $R'$ respecto del sistema $R$.</p>
+<blockquote><p>Donde $\vec{u}$ es la velocidad (constante) del origen de coordenadas del sistema $R'$ respecto del sistema $R$.</p>
 </blockquote>
 
 </div>
@@ -13310,12 +13310,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:transformaciones_galileo'></a><img src="./figures/square_transformaciones_galileo.png" alt="Construcción geométrica para deducir la regla de transformación de la posición $" width="50.0%"></p>
+<center><b>Figura 5.34</b>. Construcción geométrica para deducir la regla de transformación de la posición $</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Estas transformaciones fundamentales, permiten escribir las reglas de transformación para cualquier otras propiedad cinemática, por ejemplo, para la velocidad y la aceleración:</p>
 \begin{eqnarray}
 \label{eq:ley_adicion_velocidades}
 \vec{v} &amp; = &amp; \vec{v}'+\vec u\\
 \label{eq:ley_adicion_aceleraciones}
-\vec{a} &amp; = &amp; \vec{a}'+\dot{\vec u}
+\vec{a} &amp; = &amp; \vec{a}'
 \end{eqnarray}<p>La Ec. (<a href="#mjx-eqn-eqley_adicion_velocidades">ley_adicion_velocidades</a>) se conoce como la <strong>ley de adición de velocidades galileana</strong> y tiene una importancia histórica en el desarrollo de los postulados de la teoría de la relatividad.  La Ec. (<a href="#mjx-eqn-eqley_adicion_aceleraciones">ley_adicion_aceleraciones</a>) será importante en la definición, en las próximas secciones, del concepto de <strong>sistema de referencia inercial</strong>.</p>
 
 </div>

@@ -13072,7 +13072,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="index.html">Indice</a> | Previo: <a href="07.01.00.00.Problema2Cuerpos.Motivacion.html">Problema2Cuerpos.Motivacion</a> |</p>
+<p><a href="index.html">Indice</a> | Previo: <a href="07.01.00.00.Problema2Cuerpos.Motivacion.html">Problema2Cuerpos.Motivacion</a> | Siguiente: <a href="07.03.00.00.Problema2Cuerpos.OrbitaEspacio.html">Problema2Cuerpos.OrbitaEspacio</a></p>
 
 </div>
 </div>
@@ -13113,7 +13113,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:problema_dos_cuerpos'></a><img src="./figures/horizontal_centro_masa.png" alt="Configuración del problema de los dos cuerpos." width="80.0%"></p>
-<center><b>Figura 7.57</b>. Configuración del problema de los dos cuerpos.</center>
+<center><b>Figura 7.71</b>. Configuración del problema de los dos cuerpos.</center>
 </div>
 </div>
 </div>
@@ -13228,7 +13228,7 @@ $$<p>de donde encontramos nuestro primera constante de movimiento:</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:problema_dos_cuerpos'></a><img src="./figures/square_plano_orbital.png" alt="El problema de los dos cuerpos puede reducirse al movimiento de su vector relativo $" width="80.0%"></p>
-<center><b>Figura 7.58</b>. El problema de los dos cuerpos puede reducirse al movimiento de su vector relativo $</center>
+<center><b>Figura 7.72</b>. El problema de los dos cuerpos puede reducirse al movimiento de su vector relativo $</center>
 </div>
 </div>
 </div>
@@ -13273,7 +13273,10 @@ $$<p>La constancia $h$ conduce a uno de los más conocidos teoremas de la mecán
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Teorema: Teorema de áreas.</strong><a id='box:teo:areas'></a> La <em>velocidad areal</em> del vector relativo (la razón de cambio del área barrida por el vector en su movimiento) en el problema de los dos cuerpos es constante e igual a:</p>
-<blockquote>$$\frac{\mathrm{d}A}{\mathrm{d}t}=\frac{1}{2}h$$<p>donde $h=|\vec r\times\dot{\vec r}|$.</p>
+<blockquote>\begin{equation}
+  \label{eq:velocidad_areal}
+  \frac{\mathrm{d}A}{\mathrm{d}t}=\frac{1}{2}h
+  \end{equation}<p>donde $h=|\vec r\times\dot{\vec r}|$.</p>
 <p>En otros términos, el vector relativo en el problema de los dos cuerpos barre áreas iguales en tiempos iguales.</p>
 </blockquote>
 
@@ -13441,17 +13444,7 @@ e=\sqrt{1+\frac{2\epsilon h^2}{\mu^2}}
 
 </div>
 </div>
-</div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
-    	 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Un poco de historia: Laplace, de la mecánica celeste a la mecánica cuántica.</strong><a id=''></a> El vector de excentricidad tiene una historia muy interesante.</p>
-
 </div>
-</div>
-</div>
-    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13521,6 +13514,31 @@ r = \frac{h^2/\mu}{1 + e \cos \theta_{er}},
 
 </div>
 </div>
+</div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Un poco de historia: Laplace y el vector de excentricidad.</strong><a id=''></a> Aunque pensamos normalmente que la solución al problema de los dos cuerpos fue obtenida por primera vez por Newton, en realidad la versión desarrollada aquí no es precisamente la que apareció en los <em>Principia</em>.</p>
+<blockquote><p>El primero en seguir el procedimiento y la notación mostrada aquí,  usando para ello las constantes de movimiento en el problema, y en particular el vector de excentricidad, fue el científico estadoudinense <strong>Josiah Willard Gibbs</strong> (1839-1903.)  Gibbs es además el padre de la notación vectorial que hemos usado y usaremos a lo largo de este texto, por lo que muchos de los resultados presentados aquí no tuvieron esta forma antes de 1870 cuando Gibbs escribió sus trabajos en el tema.</p>
+<p>Gibbs había a su vez tomado la idea del vector de excentricidad de los trabajos del matemático alemám <strong>William Rowan Hamilton</strong>. En 1845, Hamilton publicó un artículo titulado "Aplicaciones de los cuaterniones en algunos problemas dinámicos" (los cuaterniones fueron inventados por Hamilton y precedieron a los vectores geométricos de Gibbs.)  En este trabajo, el matemático alemán reportaba el descubrimiento de una nueva constante de movimiento en el problema de los dos cuerpos, precisamente el vector $\vec e$ de la Ec. (<a href="#mjx-eqn-eqe">e</a>).</p>
+<p>Hoy sabemos que en realidad, Hamilton no había descubierto nada nuevo.  La primera referencia conocida del vector de excentricidad se debe al matemático Francés Pierre-Simon Laplace <cite data-cite="Goldstein1975LRL1"><a href="mybook.html#Goldstein1975LRL1">(Goldstein, 1975)</a></cite>. Es por esto que hoy al vector $\vec e$ (o en realidad versiones analogas al mismo) se lo conozca en algunos contextos como el <em>vector de Laplace</em>. Para ser justos deberíamos llamarlo el <em>vector de Laplace-Hamilton</em>.  Si bien Laplace no uso exactamente la notación y el procedimiento mostrado en esta sección, es un hecho conocido que dedujo la forma que debía tener la órbita en el problema reducido de los dos cuerpos, manipulando el vector $\vec e$ de manera analoga a como lo hicimos aquí.</p>
+<p>Laplace (1749-1827, ver Figura (<a href="#fig:laplace">laplace</a>)) es una de las figuras más sobresalientes de las matemáticas, la física, la ingeniería y la astronomía de los 1700 y principios de los 1800.  Los principios y problemas básicos de la mecánica celeste que fueron presentados y desarrollados por Newton y sus contemporáneos en términos geométricos, fueron traducidos enteramente en términos de cálculo infinitesimal (incluyendo la teoría de ecuaciones diferenciales) por Laplace, quién presentó a partir de 1799 una síntesis de todos los avances en el área que se habían realizado en los más de 100 que habían transcurrido desde la publicación de los <em>Principia</em> en 1687.  El resultado fue un tratado de cinco volumenes titulado convenientemente <em>Traité de mécanique céleste</em> (Tratado de Mecánica Celeste o abreviado la Mecánica Celeste.)</p>
+<p>La Mecánica Celeste de Laplace es considerado por muchos el libro más importante en el área escrito después de los <em>Principia</em>.  Allí, además de la solución original al problema de los dos cuerpos presentada en esta sección, Laplace abordó la mayoría de los problemas centrales de la mecánica celeste, incluyendo algunos que Newton no había podido resolver: la teoría general de perturbaciones, la teoría general de mareas gravitacionales, el movimiento en campos gravitacionales producidos por cuerpos no esféricos, la estabilidad del sistema solar, entre muchos otros.</p>
+<p>Muchos de los resultados en este libro y en la mayoría de los textos de mecánica celeste escritos en los últimos 200 años, son en realidad reelaboraciones modernas o aplicaciones de los resultados presentados en la Mecánica Celeste de Laplace.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:laplace'></a><img src="./figures/horizontal_laplace.png" alt="Izquierda: pintura de Pierre-Simon Laplace de James Posselwhite. Derecha: portada del Tomo I del Tratado de Mecánica Celeste de Laplace, el libro más importante en el área publicado después de los *Principia* (foto Colección *Heralds of Science from the Burndy Library*.)" width="100.0%"></p>
+<center><b>Figura 7.73</b>. Izquierda: pintura de Pierre-Simon Laplace de James Posselwhite. Derecha: portada del Tomo I del Tratado de Mecánica Celeste de Laplace, el libro más importante en el área publicado después de los *Principia* (foto Colección *Heralds of Science from the Burndy Library*.)</center>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13528,9 +13546,9 @@ r = \frac{h^2/\mu}{1 + e \cos \theta_{er}},
 <p>Una cosa es el movimiento del vector relativo y otra la trayectoria que describen las partículas mismas en el espacio ¿son también esas trayectorias cónicas?</p>
 <p>Usando las Ecs. (<a href="#mjx-eqn-eqr1_r2_r">r1_r2_r</a>) y la solución en la Ec. (<a href="#mjx-eqn-eqdoscuerpos_trayectoria">doscuerpos_trayectoria</a>) puede probarse que la distancia de cada partícula al centro de masa esta dada por:</p>
 \begin{eqnarray}
-\nonumber
+\label{eq:doscuerpos_trayectoria_m1}
 r_1 &amp; = &amp; \frac{(m_2/M) h^2/\mu}{1 + e \cos f }\\
-\nonumber
+\label{eq:doscuerpos_trayectoria_m2}
 r_2 &amp; = &amp; \frac{(m_1/M) h^2/\mu}{1 + e \cos f }\\
 \end{eqnarray}<p>Este resultado implica las dos partículas tienen trayectorias cónicas con idéntica excentricidad, foco en el centro de masa y <em>semilatus rectum</em> proporcional a la distancia de cada una al centro de masa:</p>
 \begin{eqnarray}
@@ -13546,7 +13564,7 @@ p_2 &amp; = &amp; \frac{m_1}{M}p\\
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:doscuerpos_trayectorias'></a><img src="./figures/horizontal_doscuerpos.png" alt="Trayectorias del vector relativo (arriba) y de las partículas individuales (abajo). Las trayectorias tienen todas la misma excentricidad.  El foco de la trayectoria del vector relativo es un punto arbitrario en el espacio $" width="100.0%"></p>
-<center><b>Figura 7.59</b>. Trayectorias del vector relativo (arriba) y de las partículas individuales (abajo). Las trayectorias tienen todas la misma excentricidad.  El foco de la trayectoria del vector relativo es un punto arbitrario en el espacio $</center>
+<center><b>Figura 7.74</b>. Trayectorias del vector relativo (arriba) y de las partículas individuales (abajo). Las trayectorias tienen todas la misma excentricidad.  El foco de la trayectoria del vector relativo es un punto arbitrario en el espacio $</center>
 </div>
 </div>
 </div>
@@ -13599,6 +13617,7 @@ $$<p>Después de una sencilla manipulación algebraica obtenemos:</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Si reemplazamos en la cuadratura de la energía específica relativa (Ec. <a href="#mjx-eqn-eqepsilon">epsilon</a>) obtenemos:</p>
 \begin{equation}
+\label{eq:vis_viva}
 v^2=\mu\left(\frac{2}{r}-\frac{1}{a}\right)
 \end{equation}<p>Donde de nuevo esta relación es válida únicamente si $e\neq 1$.  Llamamos a esta relación la <em>vis viva</em>.</p>
 
@@ -13623,26 +13642,301 @@ $$
 $$
 h=|\vec r\times \dot{\vec r}|=vr\sin\phi
 $$<p>donde $\phi$ es el ángulo entre el vector posición y la velocidad (ver Figura (<a href="#fig:doscuerpos_trayectorias">doscuerpos_trayectorias</a>)) que llamaremos en lo sucesivo el <em>argumento de la velocidad</em> y que en virtud de la expresión anterior esta dado por:</p>
-$$
+\begin{equation}
+\label{eq:fi_conica}
 \sin\phi=\frac{h}{rv}
-$$
+\end{equation}
+</div>
+</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Nota: Ángulo a partir de la magnitud del producto cruz.</strong><a id=''></a> Aunque la Ec. (<a href="#mjx-eqn-eqfi_conica">fi_conica</a>) no tiene nunguna discusión, en la práctica el cálculo de $\phi$ a partir de ella tiene una sutileza.  Dado que $h,r,v&gt;0$ el signo de $\sin\phi$ siempre será positivo.  Eso implicaría que $\phi&lt;\pi/2$.  Sin embargo si calculamos ahora el producto punto de $\vec r$ y $\dot{\vec r}$ (usando su definición en coordenadas cilíndricas, <a href="05.01.01.00.Mecanica.Cinematica.Cantidades.html#cantidades_cinematicas">Sección <em>Cantidades cinemáticas</em></a>):</p>
+<blockquote>$$
+  cos\phi=\vec r\cdot\dot{\vec r}=r\dot{r}
+  $$<p>De aquí vemos que cuando $\dot{r}&lt;0$, $\cos\phi&lt;0$ y por tanto $\phi&gt;\pi/2$.  Es decir la  Ec. (<a href="#mjx-eqn-eqfi_conica">fi_conica</a>) solo nos dará el valor correcto de $\phi$ cuando $\dot{r}\geq0$.</p>
+<p>Pero, en términos de $r$ y $v$ ¿a qué condición corresponde  $\dot{r}&lt;0$?</p>
+<p>Sabemos que cuando $0&lt;f&lt;\pi$, el vector relativo se estará alejando del periapsis, es decir ${\dot r}&gt;0$.  Del otro lado cuando  $\pi&lt;f&lt;2\pi$ entonces ${\dot r}&lt;0$.  De aquí podemos deducir una fórmula, que si bien no es enteramente trivial, es lo mejor que podemos hacer para calcular el argumento de la velocidad en el cuadrante correcto:</p>
+\begin{equation}
+  \phi = 
+  \left\{
+  \begin{array}{ll}
+  \sin^{-1}\left(\frac{h}{rv}\right) &amp; \mathrm{Si}\;0\leq f&lt;pi\\
+  \pi-\sin^{-1}\left(\frac{h}{rv}\right) &amp; \mathrm{Si}\;\pi\leq f&lt;2pi\\
+  \end{array}
+  \right.
+  \end{equation}
+</blockquote>
+
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Finalmente, el ángulo que forma la velocidad respecto a la dirección del periapsis (dirección del vector $\vec e$) estará dada por:</p>
-$$
-\theta_v = \phi+f
-$$
+\begin{equation}
+\label{eq:tetav_conica}
+\theta_v = f+\phi
+\end{equation}
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7.6.-Teoremas-del-movimiento-orbital">7.6. Teoremas del movimiento orbital<a class="anchor-link" href="#7.6.-Teoremas-del-movimiento-orbital">&#182;</a></h2><p><a id='teorema_orbital'></a></p>
+<h2 id="7.6.-El-hodogr&#225;fo-del-problema-de-los-dos-cuerpos">7.6. El hodogr&#225;fo del problema de los dos cuerpos<a class="anchor-link" href="#7.6.-El-hodogr&#225;fo-del-problema-de-los-dos-cuerpos">&#182;</a></h2><p><a id='hodografo_doscuerpos'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hay una propiedad interesante que tiene el problema de los dos cuerpos.  Fue descubierta por Hamilton (ver recuadro <em>Un poco de historia</em>) mientras estudiaba las consecuencias de describir el problema en términos vectoriales (en realidad usando cuaterniones, los antepasados de los vectores geométricos.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Para conocer esta propiedad escribamos un algoritmo que nos permita calcular las componentes del vector veclocidad a lo largo de la trayectoria elíptica de un sistema de dos cuerpos ligado.</p>
+<p>Supongamos para ello condiciones que nos garanticen que la cónica tiene periapsis sobre el semieje $x+$ (es decir $\vec e/e={\hat e}_x$).  Si asumimos condiciones iniciales del tipo $\vec r_0=x_0{\hat e}_x$, $\dot{\vec r}_0=v_{0y}{\hat e}_y$, puede mostrarse que la condición anterior se cumple si $v_{0y}&lt;\sqrt{\mu x_0}$ (ver problemas al final del capítulo.)</p>
+<p>Un conjunto de condiciones iniciales que cumple esta condición es:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Condiciones iniciales</span>
+<span class="n">mu</span><span class="o">=</span><span class="mi">1</span> <span class="c1">#unidades canónicas (u.c.)</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span>
+<span class="n">x0</span><span class="o">=</span><span class="mf">1.0</span> <span class="c1">#u.c.</span>
+<span class="n">vy0</span><span class="o">=</span><span class="mf">0.5</span> <span class="c1">#u.c.</span>
+
+<span class="c1">#Magnitud de h</span>
+<span class="n">h</span><span class="o">=</span><span class="n">x0</span><span class="o">*</span><span class="n">vy0</span>
+
+<span class="c1">#Energía específica relativa</span>
+<span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="k">import</span> <span class="n">norm</span>
+<span class="n">epsilon</span><span class="o">=</span><span class="mf">0.5</span><span class="o">*</span><span class="n">vy0</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">mu</span><span class="o">/</span><span class="n">x0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>h = 0.5
+epsilon = -0.875
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Usando las Ecs. (<a href="#mjx-eqn-eqdoscuerpos_trayectoria">doscuerpos_trayectoria</a>) y (<a href="#mjx-eqn-eqe">e</a>) podemos calcular las propiedades de la órbita descrita por el vector relativo:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Parámetros geométricos derivados</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sqrt</span>
+<span class="n">p</span><span class="o">=</span><span class="n">h</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">mu</span>
+<span class="n">e</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">epsilon</span><span class="o">*</span><span class="n">h</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">mu</span><span class="p">)</span>
+<span class="n">a</span><span class="o">=</span><span class="n">p</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">e</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>p = 0.25
+a = 0.5714285714285714
+e = 0.75
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Comprobamos que efectivamente para las condiciones iniciales provistas la órbita resultante es una órbita elíptica ($e&lt;1$.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Calculemos ahora las componentes de la velocidad de la partícula a lo largo de la trayectoria, usando para ello la <em>vis viva</em> (Ec. <a href="#mjx-eqn-eqvis_viva">vis_viva</a>) y el argumento de la velocidad (Ecs. <a href="#mjx-eqn-eqfi_conica">fi_conica</a> y <a href="#mjx-eqn-eqtetav_conica">tetav_conica</a>):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Valores de la anomalía verdadera</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span><span class="p">,</span><span class="n">pi</span>
+<span class="n">fs</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1">#Valores de r</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span><span class="p">,</span><span class="n">cos</span>
+<span class="n">rs</span><span class="o">=</span><span class="n">p</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">e</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">fs</span><span class="p">))</span>
+
+<span class="c1">#Valores de v</span>
+<span class="n">vs</span><span class="o">=</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mu</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="n">rs</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">a</span><span class="p">))</span>
+
+<span class="c1">#Valores de phi</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">arcsin</span><span class="p">,</span><span class="n">zeros_like</span>
+<span class="n">phis</span><span class="o">=</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">fs</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">f</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fs</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">f</span><span class="o">&lt;</span><span class="n">pi</span><span class="p">:</span>
+        <span class="n">phis</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">arcsin</span><span class="p">(</span><span class="n">h</span><span class="o">/</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">vs</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">phis</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">pi</span><span class="o">-</span><span class="n">arcsin</span><span class="p">(</span><span class="n">h</span><span class="o">/</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">vs</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+
+<span class="c1">#Valores de tetav</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">mod</span>
+<span class="n">tetavs</span><span class="o">=</span><span class="n">phis</span><span class="o">+</span><span class="n">fs</span>
+
+<span class="c1">#Componentes de la velocidad</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span>
+<span class="n">vxs</span><span class="o">=</span><span class="n">vs</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">tetavs</span><span class="p">)</span>
+<span class="n">vys</span><span class="o">=</span><span class="n">vs</span><span class="o">*</span><span class="n">sin</span><span class="p">(</span><span class="n">tetavs</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hagamos una gráfica del extremo de la velocidad relativa:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+
+<span class="c1">#Grafica</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">vxs</span><span class="p">,</span><span class="n">vys</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+
+<span class="c1">#Decoración</span>
+<span class="kn">from</span> <span class="nn">pymcel.plot</span> <span class="k">import</span> <span class="n">fija_ejes_proporcionales</span>
+<span class="n">valores</span><span class="o">=</span><span class="p">(</span><span class="n">vxs</span><span class="p">,</span><span class="n">vys</span><span class="p">)</span>
+<span class="n">xrango</span><span class="p">,</span><span class="n">yrango</span><span class="o">=</span><span class="n">fija_ejes_proporcionales</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="n">valores</span><span class="p">,</span><span class="n">xcm</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1">#Dibuja ejes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xrango</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="s1">&#39;k-&#39;</span><span class="p">);</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">yrango</span><span class="p">,</span><span class="s1">&#39;k-&#39;</span><span class="p">);</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$v_x$&quot;</span><span class="p">);</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$v_y$&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:07.02.00.00.Problema2Cuerpos.ProblemaRelativo_75'></a><center><b>Figura 7.75.</b> </center></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A este gráfico se lo conoce en general como el <em>hodografo</em>.  Como podemos apreciar, en el problema de los dos cuerpos el hodógrafo es una circunferencia descentrada, un resultado general que se puede formular como un teorema general (cuya demostración puede desarrollarse en la sección de problemas al final de este capítulo):</p>
+
+</div>
+</div>
+</div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Teorema: El teorema del hodografo.</strong><a id='box:teo:hodografo'></a> El vector velocidad relativa en el problema de los dos cuerpos describe un círculo (hodografo) que tiene centro en $(0,\mu e/h)$ y radio $\mu/h$.  Por la misma razón la ecuación paramétrica para la velocidad es:</p>
+<blockquote>\begin{equation}
+  \label{eq:v_hodografo}
+  \begin{array}{rcl}
+  \dot x &amp; = &amp; -\frac{\mu}{h} \sin f\\
+  \dot y &amp; = &amp; \frac{\mu}{h} (e+\cos f)\\
+  \dot z &amp; = &amp; 0\\
+  \end{array}
+  \end{equation}<p>Este resultado es independiente de la cónica (independiente del valor de $e$).</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="7.7.-El-teorema-arm&#243;nico">7.7. El teorema arm&#243;nico<a class="anchor-link" href="#7.7.-El-teorema-arm&#243;nico">&#182;</a></h2><p><a id='teorema_armónico'></a></p>
 
 </div>
 </div>
@@ -13682,7 +13976,7 @@ $$
 <p>En realidad la ley armónica es un corolario del teorema de áreas.  En el caso, por ejemplo, de una órbita elíptica, que es una órbita con período $T$, la velocidad areal se puede escribir como:</p>
 $$
 \frac{\mathrm{d}A}{\mathrm{d}t}=\frac{A}{T}=\frac{\pi a b}{T}
-$$<p>donde hemos aprovechado el hecho que la velocidad areal es constante para escribirla como la razón entre el área total de la elipse $A=\pi a b$ y el período de la misma.</p>
+$$<p>donde hemos aprovechado el hecho que la velocidad areal es constante para escribirla como la razón entre el área total de la elipse $A=\pi a b$ (Ec. <a href="#mjx-eqn-eqarea_elipse">area_elipse</a>) y el período de la misma.</p>
 
 </div>
 </div>
@@ -13726,6 +14020,14 @@ $$<p>Esta última es exactamente la relación $n^2a^3=\mu$ del teorema armónico
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="7.8.-Teoremas-del-movimiento-orbital">7.8. Teoremas del movimiento orbital<a class="anchor-link" href="#7.8.-Teoremas-del-movimiento-orbital">&#182;</a></h2><p><a id='teoremas_orbital'></a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Podemos finalmente sintetizar los resultados de esta sección enumerando en un mismo lugar los teoremas fundamentales del movimiento relativo de dos cuerpos:</p>
 <ul>
 <li><p><strong>Primer teorema del movimiento orbital</strong> (Teo. <a href="#box:teo:movimiento.orbital">ley_armonica</a>). El vector relativo de un sistema de dos cuerpos describe una trayectoria cónica.</p>
@@ -13739,7 +14041,49 @@ $$<p>Esta última es exactamente la relación $n^2a^3=\mu$ del teorema armónico
 
 </div>
 </div>
+</div><div style="background:#F5CBA7;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Un poco de historia: Newton, Hooke y el primer teorema del movimiento orbital.</strong><a id=''></a> Uno de los logros más significativos de la teoría del movimiento y la gravedad formulada por Newton en los 1680 y presentada en los <em>Principia</em> fue la demostración, que sintetizamos en esta sección usando métodos modernos, de que un cuerpo sometido a una fuerza central que varía con el inverso del cuadrado de la distancia se movería sobre una curva cónica.</p>
+<blockquote><p>Como sucedió con la idea de la fuerza de gravedad, todo parece indicar que el primero en intuir esta relación fue  Robert Hooke. En 1679, Newton, en respuesta a una carta previa de Hooke discutiendo el problema de la gravedad y la rotación de la Tierra, explicaba que contrario a lo que pensaban los escolásticos, quienes esgrimían contra la rotación de la Tierra la idea de que si un cuerpo se soltaba desde una cierta altura caería al oeste del punto de lanzamiento porque la Tierra debajo de él se habría movido hacia el oriente, en realidad por la ley de inercia el objeto caería un poco hacia el oriente: al lanzarse desde un punto más lejano del centro de la Tierra, su velocidad tangencial sería mayor que la velocidad de la superficie (ver Figura (<a href="#fig:hooke_newton">hooke_newton</a>).)  Continuaba Newton explicando que si además el cuerpo pudiera moverse por dentro del planeta describiría, por efecto de la aceleración gravitacional una trayectoria en espiral hacia el centro.</p>
+<p>Este sería uno de los poquísimos errores de intuición física que cometería Newton en público. La corrección del error le permitiría deducir con su teoría gravitacional, la primera ley de Kepler, pero también le costaría muchos dolores de cabeza en su debate público con Hooke por la prioridad en el descubrimiento.</p>
+<p>Hooke respondió a Newton corrigiéndo en dos aspectos sus conclusiones sobre el experimento mental planteado. El primero era que si el cuerpo de su experimento se lanzaba en la latitud de Londrés en realidad caería hacia el sur oriente, esto porque la aceleración esta dirigida hacia el centro de la Tierra que desde la latitud de Inglaterra esta inclinado hacia al sur.  La segunda y más crucial corrección fue, citando textualmente a Hooke "<em>mi teoría del movimiento circular me hace suponer que [la trayectoria del cuerpo] sería algo muy diferente y en lo absoluto parecido a una espiral, sino más bien una especie de elipsoide</em>." Hooke razonaba correctamente al mostrar que el movimiento de un cuerpo sometido a la atracción de la Tierra se movería de forma similar a un planeta alrededor del Sol.</p>
+<p>Newton reconocería después que Hooke estaba en lo cierto, pero más importante, esta corrección lo motivo (como él mismo lo reconocío posteriormente) a verificar, usando el cálculo infinitesimal que había inventado unos años antes, si el movimiento sobre una elipse era compatible con una fuerza que variaba con el inverso del cuadrado de la distancia.  Así lo hizo como quedo formulado en un teorema que presentó en un ensayo, anterior a los <em>Principia</em> pero que se convertiría en la semilla del Libro III del mismo, titulado <em>De motu corporum in gyrum</em> (Sobre los movientos de cuerpos en una órbita) y que fue leída por la <em>Royal Society</em> en 1684.</p>
+<p>Hasta ahí todo se reduciría a explicar algo que se conocía desde los tiempos de Kepler.  Pero una nueva teoría necesita predicciones enteramente nuevas.  En diciembre de 1680 y enero de 1681 aparicieron en el cielo dos cometas  casi idénticos (ver Figura (<a href="#fig:cometa_1680">cometa_1680</a>).)  El astrónomo real John Flamsteed sostenía la teoría de que se trataba del mismo objeto que se había aproximado al Sol en 1680 y después había dado la vuelta "detrás" de él apareciendo en enero de 1681.  Newton se intereso en la teoría de Flamsteed y recogió observaciones realizadas por él mismo, por el astrónomo real, por el italiano Giovanny Domenico Cassini y por su archienemigo Robert Hooke.  Para 1682 Newton obtuvo finalmente la respuesta esperada: el cometa de 1680/1681 se movía en una trayectoría casi parabólica, producida por la atracción "magnética" del Sol y que, como la trayectoría elíptica, también obedecía la ley del inverso cuadrado de la distancia.  La primera ley de Kepler se convertía así en el primer teorema del movimiento planetario formulado aquí.</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:hooke_newton'></a><img src="./figures/horizontal_hooke_newton.png" alt="Izquierda: ilustración de Newton adaptada de la correspondencia con Hooke en 1679 y en la que explicaba la trayectoria que seguiría una partícula soltada desde el reposo en un punto A a una cierta altura sobre una Tierra que rota. Para esta trayectoria Newton asumía que la fuerza de gravedad era proporcional a la distancia al centro (que es lo que pasaría dentro de la Tierra sólida.)  Derecha: trayectoría elíptica que seguiría la partícula si toda la masa de la Tierra estuviera concentrada en el punto C y la fuerza variara con el inverso del cuadrado de la distancia.  Esta trayectoria fue sugerida por Robert Hooke e inspiro a Newton a demostrar la primera ley de Kepler usando su teoría de la gravedad." width="80.0%"></p>
+<center><b>Figura 7.76</b>. Izquierda: ilustración de Newton adaptada de la correspondencia con Hooke en 1679 y en la que explicaba la trayectoria que seguiría una partícula soltada desde el reposo en un punto A a una cierta altura sobre una Tierra que rota. Para esta trayectoria Newton asumía que la fuerza de gravedad era proporcional a la distancia al centro (que es lo que pasaría dentro de la Tierra sólida.)  Derecha: trayectoría elíptica que seguiría la partícula si toda la masa de la Tierra estuviera concentrada en el punto C y la fuerza variara con el inverso del cuadrado de la distancia.  Esta trayectoria fue sugerida por Robert Hooke e inspiro a Newton a demostrar la primera ley de Kepler usando su teoría de la gravedad.</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:cometa_1680'></a><img src="./figures/square_cometa_1680.png" alt="Pintura del holandés Lieve Verschuier que muestra la apariencia del gran cometa de 1680, llamado también el cometa de Newton.  Crédito: Museo de Rotterdam." width="80.0%"></p>
+<center><b>Figura 7.77</b>. Pintura del holandés Lieve Verschuier que muestra la apariencia del gran cometa de 1680, llamado también el cometa de Newton.  Crédito: Museo de Rotterdam.</center>
+</div>
+</div>
+</div><div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="index.html">Indice</a> | Previo: <a href="07.01.00.00.Problema2Cuerpos.Motivacion.html">Problema2Cuerpos.Motivacion</a> | Siguiente: <a href="07.03.00.00.Problema2Cuerpos.OrbitaEspacio.html">Problema2Cuerpos.OrbitaEspacio</a></p>
+
+</div>
+</div>
+</div>
+    </div>
     </div>
   </div>
 </body>
