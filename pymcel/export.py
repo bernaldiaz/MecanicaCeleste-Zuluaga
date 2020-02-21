@@ -222,6 +222,14 @@ def conica_de_elementos(p=10.0,e=0.8,i=0.0,Omega=0.0,omega=0.0,
 
 
 # ########################################
+#  .//Fundamentos.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/Fundamentos.Problemas.ipynb
+# ########################################
+
+# ########################################
 #  .//Mecanica.ipynb
 # ########################################
 
@@ -255,6 +263,14 @@ def conica_de_elementos(p=10.0,e=0.8,i=0.0,Omega=0.0,omega=0.0,
 
 # ########################################
 #  .//Mecanica.SistemasNoInerciales.Numerico.ipynb
+# ########################################
+
+# ########################################
+#  .//Mecanica.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/Mecanica.Problemas.ipynb
 # ########################################
 
 # ########################################
@@ -421,6 +437,14 @@ def ncuerpos_solucion(sistema,ts):
     #Devuelve las posiciones y velocidades
     return rs,vs,rps,vps,constantes
 
+
+# ########################################
+#  .//ProblemaNCuerpos.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/ProblemaNCuerpos.Problemas.ipynb
+# ########################################
 
 # ########################################
 #  .//Problema2Cuerpos.ipynb
@@ -757,6 +781,14 @@ def propaga_f_g(mu,rvec0,vvec0,t0,t,delta=1e-14,verbose=False):
 # ########################################
 
 # ########################################
+#  .//Problema2Cuerpos.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/Problema2Cuerpos.Problemas.ipynb
+# ########################################
+
+# ########################################
 #  .//Problema3Cuerpos.ipynb
 # ########################################
 
@@ -952,6 +984,14 @@ def orbitas_crtbp3d(alfa,ro,vo,
 # ########################################
 
 # ########################################
+#  .//Problema3Cuerpos.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/Problema3Cuerpos.Problemas.ipynb
+# ########################################
+
+# ########################################
 #  .//FormalismoLagrangiano.ipynb
 # ########################################
 
@@ -1033,6 +1073,14 @@ def Veff(r,Vf,**parametros):
 # ########################################
 
 # ########################################
+#  .//FormalismoLagrangiano.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/FormalismoLagrangiano.Problemas.ipynb
+# ########################################
+
+# ########################################
 #  .//FormalismoHamiltoniano.ipynb
 # ########################################
 
@@ -1074,6 +1122,14 @@ def Veff(r,Vf,**parametros):
 
 # ########################################
 #  .//FormalismoHamiltoniano.MecanicaCeleste.HamiltonJacobi.ipynb
+# ########################################
+
+# ########################################
+#  .//FormalismoHamiltoniano.ProblemasSeleccionados.ipynb
+# ########################################
+
+# ########################################
+#  ./build/probs/FormalismoHamiltoniano.Problemas.ipynb
 # ########################################
 
 # ########################################

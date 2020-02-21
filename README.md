@@ -1,4 +1,4 @@
-# Mecánica Celeste y Analítica
+# Mecánica Celeste
 
 ## Teoría, algoritmos y problemas
 

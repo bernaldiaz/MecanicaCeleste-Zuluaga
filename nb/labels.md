@@ -234,6 +234,12 @@
 		* `eq:rotacion3d_natural_R`
 		* `eq:rotacion3d_natural_M`
 		* `eq:elementos_estado_f`
+- Labels for '04.03.00.00.Fundamentos.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#fundamentos_problemas`
+	- Labels for 'figure':
+		* `fig:prob:elipse`
+		* `fig:prob:latlon`
 - Labels for '05.00.00.00.Mecanica.ipynb':
 	- Labels for 'section':
 		* `#mecanica`
@@ -359,6 +365,11 @@
 		* `eq:estado_CM`
 		* `eq:L_CM_interno`
 		* `eq:K_CM_interno`
+- Labels for '05.03.00.00.Mecanica.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#mecanica_problemas`
+	- Labels for 'figure':
+		* `fig:prob:lanzamiento_proyectil`
 - Labels for '05.03.00.00.Mecanica.SistemasNoInerciales.ipynb':
 	- Labels for 'section':
 		* `#sistemas_no_inerciales`
@@ -449,6 +460,9 @@
 		* `box:teo:bruns`
 	- Labels for 'equation':
 		* `eq:ncuerpos_constantes_movimiento`
+- Labels for '06.03.00.00.ProblemaNCuerpos.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_problemas`
 - Labels for '06.03.00.00.ProblemaNCuerpos.SolucionNumerica.ConstantesMovimiento.ipynb':
 	- Labels for 'section':
 		* `#ncuerpos_numerico_constantes_virial`
@@ -717,6 +731,11 @@
 		* `eq:dot_Omega`
 		* `eq:dot_omega`
 		* `eq:dot_f`
+- Labels for '07.07.00.00.Problema2Cuerpos.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_problemas`
+	- Labels for 'figure':
+		* `fig:prob:orbita_satelite`
 - Labels for '07.07.00.00.Problema2Cuerpos.SPICE.ipynb':
 	- Labels for 'section':
 		* `#doscuerpos_SPICE`
@@ -803,6 +822,9 @@
 		* `eq:xL1_aprox`
 		* `eq:xL2_aprox`
 		* `eq:xL3_aprox`
+- Labels for '08.06.00.00.Problema3Cuerpos.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#trescuerpos_problemas`
 - Labels for '08.06.01.00.Problema3Cuerpos.Aplicaciones.RadioHill.ipynb':
 	- Labels for 'section':
 		* `#crtbp_esfera_influencia`
@@ -954,6 +976,15 @@
 - Labels for '09.06.00.00.FormalismoLagrangiano.MecanicaCeleste.ipynb':
 	- Labels for 'section':
 		* `#celeste_lagrangiano`
+- Labels for '09.06.00.00.FormalismoLagrangiano.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#lagrangiano_problemas`
+	- Labels for 'figure':
+		* `fig:prob:tres_masas_aro`
+		* `fig:prob:dona_resorte`
+		* `fig:prob:cilindros_contacto`
+		* `fig:prob:masas_resorte`
+		* `fig:prob:pendulo_doble`
 - Labels for '09.06.00.01.FormalismoLagrangiano.MecanicaCeleste.Problema2Cuerpos.EcuacionRadial.ipynb':
 	- Labels for 'section':
 		* `#edm_variable_radial`
@@ -1035,7 +1066,7 @@
 	- Labels for 'section':
 		* `#transformaciones_canonicas`
 	- Labels for 'figure':
-		* `fig:Figure_164`
+		* `fig:Figure_173`
 	- Labels for 'equation':
 		* `eq:dQ_K`
 		* `eq:dP_H`
@@ -1096,6 +1127,9 @@
 - Labels for '10.04.00.00.FormalismoHamiltoniano.MecanicaCeleste.ipynb':
 	- Labels for 'section':
 		* `#celeste_hamiltoniano`
+- Labels for '10.04.00.00.FormalismoHamiltoniano.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#hamiltoniano_problemas`
 - Labels for '11.00.00.00.ApendiceAlgoritmos.ipynb':
 	- Labels for 'section':
 		* `#algoritmos_utiles`
