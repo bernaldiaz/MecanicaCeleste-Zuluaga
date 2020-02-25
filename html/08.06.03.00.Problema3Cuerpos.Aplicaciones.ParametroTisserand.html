@@ -13081,7 +13081,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8.13.8.-El-par&#225;metro-de-Tisserand">8.13.8. El par&#225;metro de Tisserand<a class="anchor-link" href="#8.13.8.-El-par&#225;metro-de-Tisserand">&#182;</a></h3><p><a id='trescuerpos_parametro_tisserand'></a></p>
+<h3 id="8.13.9.-El-par&#225;metro-de-Tisserand">8.13.9. El par&#225;metro de Tisserand<a class="anchor-link" href="#8.13.9.-El-par&#225;metro-de-Tisserand">&#182;</a></h3><p><a id='trescuerpos_parametro_tisserand'></a></p>
 
 </div>
 </div>
@@ -13929,7 +13929,7 @@ U_V = 14.148407295669351
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8.13.9.-Clasificaci&#243;n-de-los-objetos-cercanos-a-la-Tierra-(NEOs)">8.13.9. Clasificaci&#243;n de los objetos cercanos a la Tierra (NEOs)<a class="anchor-link" href="#8.13.9.-Clasificaci&#243;n-de-los-objetos-cercanos-a-la-Tierra-(NEOs)">&#182;</a></h3><p><a id='T_NEOs_clasificacion'></a></p>
+<h3 id="8.13.1.-Clasificaci&#243;n-de-los-objetos-cercanos-a-la-Tierra">8.13.1. Clasificaci&#243;n de los objetos cercanos a la Tierra<a class="anchor-link" href="#8.13.1.-Clasificaci&#243;n-de-los-objetos-cercanos-a-la-Tierra">&#182;</a></h3><p><a id='T_NEOs_clasificacion'></a></p>
 
 </div>
 </div>
@@ -14035,73 +14035,8 @@ U_V = 14.148407295669351
       <td>350.495585</td>
       <td>110.434218</td>
     </tr>
-    <tr>
-      <td>1036 Ganymed (1924 TD)</td>
-      <td>1.244303</td>
-      <td>0.533046</td>
-      <td>26.677643</td>
-      <td>132.364631</td>
-      <td>215.546826</td>
-    </tr>
-    <tr>
-      <td>1221 Amor (1932 EA1)</td>
-      <td>1.083970</td>
-      <td>0.435285</td>
-      <td>11.876536</td>
-      <td>26.694797</td>
-      <td>171.326998</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>P/2016 BA14 (PANSTARRS)</td>
-      <td>1.008665</td>
-      <td>0.666179</td>
-      <td>18.918089</td>
-      <td>351.902215</td>
-      <td>180.531223</td>
-    </tr>
-    <tr>
-      <td>P/2016 J3 (STEREO)</td>
-      <td>0.468179</td>
-      <td>0.881375</td>
-      <td>25.256972</td>
-      <td>210.946799</td>
-      <td>258.975181</td>
-    </tr>
-    <tr>
-      <td>P/2017 Y3 (Leonard)</td>
-      <td>1.275382</td>
-      <td>0.870717</td>
-      <td>27.585714</td>
-      <td>67.528996</td>
-      <td>153.874364</td>
-    </tr>
-    <tr>
-      <td>P/2019 M2</td>
-      <td>1.063395</td>
-      <td>0.648537</td>
-      <td>12.282065</td>
-      <td>332.520616</td>
-      <td>307.603321</td>
-    </tr>
-    <tr>
-      <td>P/2019 Y3 (Catalina)</td>
-      <td>0.911999</td>
-      <td>0.695783</td>
-      <td>24.635224</td>
-      <td>2.266732</td>
-      <td>139.382700</td>
-    </tr>
   </tbody>
 </table>
-<p>22321 rows × 5 columns</p>
 </div>
 </div>
 
@@ -14127,7 +14062,8 @@ U_V = 14.148407295669351
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;q&quot;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;e&quot;</span><span class="p">])</span>
 <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">cos</span><span class="p">,</span><span class="n">sqrt</span><span class="p">,</span><span class="n">pi</span>
-<span class="n">datos</span><span class="p">[</span><span class="s2">&quot;T&quot;</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;i&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;e&quot;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">datos</span><span class="p">[</span><span class="s2">&quot;T&quot;</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;i&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">)</span><span class="o">*</span>\
+           <span class="n">sqrt</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;e&quot;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14201,65 +14137,8 @@ U_V = 14.148407295669351
       <td>9.393854</td>
       <td>2.953457</td>
     </tr>
-    <tr>
-      <td>1036 Ganymed (1924 TD)</td>
-      <td>2.664725</td>
-      <td>0.533046</td>
-      <td>26.677643</td>
-      <td>2.843517</td>
-    </tr>
-    <tr>
-      <td>1221 Amor (1932 EA1)</td>
-      <td>1.919498</td>
-      <td>0.435285</td>
-      <td>11.876536</td>
-      <td>2.962206</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>P/2016 BA14 (PANSTARRS)</td>
-      <td>3.021577</td>
-      <td>0.666179</td>
-      <td>18.918089</td>
-      <td>2.783671</td>
-    </tr>
-    <tr>
-      <td>P/2016 J3 (STEREO)</td>
-      <td>3.946704</td>
-      <td>0.881375</td>
-      <td>25.256972</td>
-      <td>1.950978</td>
-    </tr>
-    <tr>
-      <td>P/2017 Y3 (Leonard)</td>
-      <td>9.865044</td>
-      <td>0.870717</td>
-      <td>27.585714</td>
-      <td>2.839437</td>
-    </tr>
-    <tr>
-      <td>P/2019 M2</td>
-      <td>3.025626</td>
-      <td>0.648537</td>
-      <td>12.282065</td>
-      <td>2.917955</td>
-    </tr>
-    <tr>
-      <td>P/2019 Y3 (Catalina)</td>
-      <td>2.997859</td>
-      <td>0.695783</td>
-      <td>24.635224</td>
-      <td>2.594395</td>
-    </tr>
   </tbody>
 </table>
-<p>22321 rows × 4 columns</p>
 </div>
 </div>
 
@@ -14466,7 +14345,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8.13.1.-Clasificaci&#243;n-de-los-objetos-cercanos-a-J&#250;piter">8.13.1. Clasificaci&#243;n de los objetos cercanos a J&#250;piter<a class="anchor-link" href="#8.13.1.-Clasificaci&#243;n-de-los-objetos-cercanos-a-J&#250;piter">&#182;</a></h3><p><a id='T_jupiter_clasificacion'></a></p>
+<h3 id="8.13.11.-Clasificaci&#243;n-de-los-objetos-cercanos-a-J&#250;piter">8.13.11. Clasificaci&#243;n de los objetos cercanos a J&#250;piter<a class="anchor-link" href="#8.13.11.-Clasificaci&#243;n-de-los-objetos-cercanos-a-J&#250;piter">&#182;</a></h3><p><a id='T_jupiter_clasificacion'></a></p>
 
 </div>
 </div>
@@ -14502,7 +14381,8 @@ $$
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Lee objetos</span>
 <span class="kn">from</span> <span class="nn">pandas</span> <span class="k">import</span> <span class="n">read_csv</span>
-<span class="n">datos</span><span class="o">=</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;pymcel/data/JupiterComet-2020_02.csv&quot;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;full_name&quot;</span><span class="p">])</span>
+<span class="n">datos</span><span class="o">=</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;pymcel/data/JupiterComet-2020_02.csv&quot;</span><span class="p">,</span>
+               <span class="n">index_col</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;full_name&quot;</span><span class="p">])</span>
 <span class="n">datos</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;q&quot;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">datos</span><span class="p">[</span><span class="s2">&quot;e&quot;</span><span class="p">])</span>
 
 <span class="c1">#Gráfico de dispersión</span>

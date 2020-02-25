@@ -2,7 +2,7 @@
 
 ## Teoría, algoritmos y problemas
 
-### Jorge I. Zuluaga, Profesor titular de Astronomía y Física, Instituto de Física, Universidad de Antioquia
+### El autor, Título, Institución
 
 Para obtener una copia de este libro clone el repositorio:
 
@@ -16,7 +16,21 @@ El libro viene en tres versiones:
 2. Versión para la web, [empiece a leer aquí](html/index.html).
 3. Versión interactiva como notebooks de `Jupyter`.
 
-Para utilizar los notebooks de Ipython, ejecute `Jupyter`:
+Para utilizar los notebooks de `Ipython` (`Jupyter`):
+
+1. **Corra las pruebas**: Antes de comenzar debemos verificar que los
+   paquetes requeridos están instalados.  Ejecute en consola:
+
+   ```
+   jupyter nbconvert --to notebook --execute Pruebas.ipynb
+   ```
+
+2. **Instalación**: Si falta algún paquete o si no tiene consola
+   (Windows) abra Jupyter y diríjase a la libreta de instalación
+   `Instalacion.ipynb` y siga las instrucciones.
+
+   Puede ejecutar `Jupyter` en Linux o en Windows desde la línea de
+   comandos con la siguiente instrucción:
 
    ```
      nohup jupyter-notebook --no-browser --port=8888
@@ -25,8 +39,8 @@ Para utilizar los notebooks de Ipython, ejecute `Jupyter`:
 Todos los notebooks se encuentran en el directorio `nb`. 
 
 Antes de comenzar ejecute el *notebook* de instalación
-`install.ipynb`.  Este notebook que instala todos los
-prerrequisitos para ejecutar el libro.
+`Instalacion.ipynb`.  Este notebook que instala todos los prerrequisitos
+para ejecutar el libro.
 
 ## Licencia
 

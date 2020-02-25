@@ -813,6 +813,7 @@
 		* `#crtbp_L1`
 		* `#crtbp_L2`
 		* `#crtbp_L3`
+		* `#crtbp_colineales_precision`
 	- Labels for 'figure':
 		* `fig:reposo_crtbp`
 		* `fig:puntos_equilibrio_crtbp`
@@ -1035,6 +1036,8 @@
 		* `#ecuaciones_hamilton`
 		* `#ecuaciones_canonicas`
 		* `#principio_hamilton_modificado`
+	- Labels for 'figure':
+		* `fig:william_hamilton`
 	- Labels for 'equation':
 		* `eq:dotp_Lqp`
 		* `eq:H_L`
@@ -1070,7 +1073,7 @@
 	- Labels for 'section':
 		* `#transformaciones_canonicas`
 	- Labels for 'figure':
-		* `fig:Figure_176`
+		* `fig:Figure_177`
 	- Labels for 'equation':
 		* `eq:dQ_K`
 		* `eq:dP_H`

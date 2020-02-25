@@ -13246,17 +13246,19 @@ V_\mathrm{mod} = -\frac{(1-\alpha)}{r_{1}} - \frac{\alpha}{r_{2}} - \frac{1}{2}(
 
 </div>
 </div>
-</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Nota: el factor de suavizado</strong>. En el cálculo del potencial hemos usado un artefacto matemático, que no procede de la teoría del CRTBP.  Puesto que el valor del potencial es teóricamente infinito cuando $r_1=0$ o $r_2=0$ hemos introducido en las expresiones para el potencial una cantidad ficticia <code>eps</code> proporcional al parámetro $\alpha$ del sistema (relacionado con la masa de las partículas), y que hace que el potencial mantenga un valor finito cerca al centro de las partículas. La introducción de esta cantidad artificial implica también que los valores calculados del potencial no son los correctos a una cierta distancia de las partículas (típicamente similar al valor de <code>eps</code>).</p>
-<p>Este <em>artefacto numérico</em> facilita la representación gráfica del potencial, pero también es importante en otras aplicaciones de la mecánica celeste.  Así por ejemplo cuando se simula numéricamente la interacción gravitacional de partículas en sistemas de N cuerpos tales como galaxias o nubes de gas, el facto <code>eps</code> recibe el nombre de <strong>factorde suavizado</strong> y se usa para simular de alguna manera el hecho de que las *partículas de materia** tienen en realidad una dimensión finita (no son realmente puntuales).</p>
+<p><strong>Nota: el factor de suavizado.</strong><a id=''></a> En el cálculo del potencial hemos usado un artefacto matemático, que no procede de la teoría del CRTBP.  Puesto que el valor del potencial es teóricamente infinito cuando $r_1=0$ o $r_2=0$ hemos introducido en las expresiones para el potencial una cantidad ficticia <code>eps</code> proporcional al parámetro $\alpha$ del sistema (relacionado con la masa de las partículas), y que hace que el potencial mantenga un valor finito cerca al centro de las partículas. La introducción de esta cantidad artificial implica también que los valores calculados del potencial no son los correctos a una cierta distancia de las partículas (típicamente similar al valor de <code>eps</code>).</p>
+<blockquote><p>Este <em>artefacto numérico</em> facilita la representación gráfica del potencial, pero también es importante en otras aplicaciones de la mecánica celeste.  Así por ejemplo cuando se simula numéricamente la interacción gravitacional de partículas en sistemas de N cuerpos tales como galaxias o nubes de gas, el facto <code>eps</code> recibe el nombre de <strong>factorde suavizado</strong> y se usa para simular de alguna manera el hecho de que las *partículas de materia** tienen en realidad una dimensión finita (no son realmente puntuales).</p>
 </blockquote>
 
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
