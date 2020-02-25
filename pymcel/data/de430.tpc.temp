@@ -1,0 +1,21 @@
+KPL/PCK
+ 
+ 
+M_constants (PcK) SPICE kernel file
+===========================================================================
+
+        By: Jorge I. Zuluaga (SEAP/UdeA)    2019 October 1
+
+ 
+Purpose
+--------------------------------------------------------
+
+	This file contain the masses of the bodies cused in the
+	integrations producing the ephemeris DE430.
+
+	It is based on the file "de430_tech-comments.txt" available at:
+
+	   https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de430_tech-comments.txt
+	 
+Masses
+--------------------------------------------------------
