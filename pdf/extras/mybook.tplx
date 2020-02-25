@@ -1,0 +1,198 @@
+%===============================================================================
+% Preamble
+%===============================================================================
+% Default to the notebook output style
+((* if not cell_style is defined *))
+    ((* set cell_style = 'style_ipython.tplx' *))
+((* endif *))
+
+% Inherit from the specified cell style.
+((* extends cell_style *))
+
+%===============================================================================
+% Latex Book
+%===============================================================================
+
+((* block predoc *))
+    ((( super() )))
+    ((* block tableofcontents *))\tableofcontents\listoffigures((* endblock tableofcontents *))
+((* endblock predoc *))
+
+((* block docclass *))
+\documentclass{mybook}
+((* endblock docclass *))
+
+((* block markdowncell scoped *))
+((( cell.source | citation2latex | strip_files_prefix | convert_pandoc('markdown', 'json',extra_args=[]) | resolve_references | convert_pandoc('json','latex', extra_args=["--top-level-division=chapter"]) )))
+((* endblock markdowncell *))
+
+((* block title *))
+
+%Common definitions
+\input{bin/common.defs.tex}
+
+%Personalized definitions
+\input{extras/mybook.defs.tex}
+
+\title{\mytitle}
+((* endblock title *))
+
+((* block author *))
+\author{\myauthor}
+((* endblock author *))
+
+((* block maketitle *))
+\maketitle
+((* endblock maketitle *))
+
+((* block bibliography *))
+\bibliographystyle{mybook}
+\bibliography{mybook}
+((* endblock bibliography *))
+
+%===============================================================================
+% Rules of cell modifications
+%===============================================================================
+
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+% Modification by tags
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Input
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+((*- block input_group -*))
+((*- if 'hide_input' in cell['metadata'].get('tags', {}) -*))
+\vspace{-1em}
+
+((*- if 'figcaption' in cell['metadata'].keys() -*))
+((( "\n" )))
+%%(((cell['metadata']['figcaption'])))
+((*- endif -*))
+
+((( "\n" )))
+%%hidecode
+((( "\n" )))
+
+((*- else -*))
+
+((( super() )))
+
+((*- endif -*))
+((*- endblock input_group -*))
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Any_cell
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+((*- block any_cell -*))
+
+((*- if 'hide' in cell['metadata'].get('tags', {}) or 'hide_pdf' in cell['metadata'].get('tags', {}) -*))
+
+%%HIDE%%
+
+((*- elif 'solution' in cell['metadata'].get('tags', {}) and not 'code' in cell['metadata'].get('tags', {}) -*))
+
+\color{red}
+((( super() )))
+\color{black}
+
+((*- elif 'box_summary' in cell['metadata'].get('tags', {}) -*))
+
+\begin{box_summary}{((( cell.metadata.title )))}
+((( super() )))
+\end{box_summary}
+
+((*- elif 'box_history' in cell['metadata'].get('tags', {}) -*))
+
+\begin{box_history}{((( cell.metadata.title )))}{((( cell.metadata.boxplace )))}{((( cell.metadata.boxtype )))}
+\small
+((( super() )))
+\end{box_history}
+
+((*- elif 'box_definition' in cell['metadata'].get('tags', {}) -*))
+
+\begin{box_definition}{((( cell.metadata.title )))}{((( cell.metadata.label )))}
+((( super() )))
+\end{box_definition}
+
+((*- elif 'box_theorem' in cell['metadata'].get('tags', {}) -*))
+
+\begin{box_theorem}{((( cell.metadata.title )))}{((( cell.metadata.label )))}
+((( super() )))
+\end{box_theorem}
+
+((*- elif 'box_postulate' in cell['metadata'].get('tags', {}) -*))
+
+\begin{box_postulate}{((( cell.metadata.title )))}{((( cell.metadata.label )))}
+((( super() )))
+\end{box_postulate}
+
+((*- elif 'box_principle' in cell['metadata'].get('tags', {}) -*))
+
+\begin{box_principle}{((( cell.metadata.title )))}{((( cell.metadata.label )))}
+((( super() )))
+\end{box_principle}
+
+((*- elif 'box_note' in cell['metadata'].get('tags', {}) -*))
+
+\begin{box_note}{((( cell.metadata.title )))}
+((( super() )))
+\end{box_note}
+
+((*- else -*))
+
+((( super() )))
+
+((*- endif -*))
+
+((*- endblock any_cell -*))
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+((* block input scoped *))
+    ((( add_my_prompt(cell.source | highlight_code(strip_verbatim=True),cell,'','incolor') )))
+((* endblock input *))
+
+% Purpose: Renders an output/input prompt
+((* macro add_my_prompt(text,cell,prompt,prompt_color) -*))
+((*- if cell.execution_count is defined -*))
+((*- set execution_count = "" ~ (cell.execution_count | replace(None, " ")) -*))
+((*- else -*))
+((*- set execution_count = " " -*))
+((*- endif -*))
+((*- set indention =  "" * (execution_count | length + 0) -*))
+
+((*- if cell['metadata']['codelabel'] -*))
+\begin{code}{Algoritmo}{((( cell['metadata']['codelabel'] )))}
+((*- else -*))
+\begin{code}{}{}
+((*- endif -*))
+
+\begin{Verbatim}[fontsize=\small,commandchars=\\\{\}]
+((( text )))
+\end{Verbatim}
+
+((*- if 'figcaption' in cell['metadata'].keys() -*))
+((( "\n" )))
+%%(((cell['metadata']['figcaption'])))
+((*- else -*))
+((( "\n" )))
+%%
+((*- endif -*))
+
+((*- if cell['metadata']['codeplot'] -*))
+((( "\n" )))
+\tcblower
+\footnotesize
+\em ver Figura \ref{fig:((( cell['metadata']['codelabel'] )))}
+\end{code}
+((*- else -*))
+((( "\n" )))
+\end{code}
+((*- endif -*))
+
+((*- endmacro *))

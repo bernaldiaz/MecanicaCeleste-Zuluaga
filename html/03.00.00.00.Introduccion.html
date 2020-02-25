@@ -13101,7 +13101,7 @@ div#notebook {
 <ul>
 <li>Los fundamentos matemáticos y físicos.</li>
 <li>Mecánica celeste usando vectores y geometría (formalismo vectorial de la mecánica).</li>
-<li>Mecánica analítica (formalismo lagrangiano y hamiltoniano) y su aplicación en mecánica celeste (clásica y postnewtoniana).</li>
+<li>Mecánica analítica (formalismo lagrangiano y hamiltoniano) y su aplicación en mecánica celeste.</li>
 </ul>
 <p>En los siguiente párrafos encontrarán una síntesis <em>narrada</em> del libro; algo así como una <em>tabla de contenido comentada</em> que le permitirá al lector, no solo orientarse en el texto, sino también entender la manera como se encadenan cada una de sus partes.</p>
 <p>Y es que todo libro debería contar una <em>historia</em>. En los textos académicos, lamentablemente, esa "vocación" narrativa parece perderse en medio de figuras, teoremas y algoritmos. Esta sección puede ser entonces entendida, como un esfuerzo para esbozar la <em>historia</em> que se hila a través de sus capítulos.</p>
@@ -13113,20 +13113,17 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Parte 1 (<a href="04.00.00.00.Fundamentos.html#fundamentos">Capítulo 1</a>): Fundamentos</strong>. Antes de comenzar, respasaremos algunos temas de matemáticas y física necesarios para estudiar mecánica celeste.  Si bien el lector debería estar familiarizado con la mayoría de estos temas, hemos decidio incluir este capítulo no solo para hacer al texto autocontenido, sino también con el propósito de compilar resultados útiles, definiciones y algorítmos, en el formato y notación del texto, que se usarán en capítulos posteriores.</p>
+<li><p><strong>Parte 1: Fundamentos matemáticos y físicos</strong>. Antes de comenzar, respasaremos algunos temas de matemáticas y de física necesarios para estudiar mecánica celeste.  Si bien el lector debería estar familiarizado con la mayoría de estos temas, he decidido incluir este capítulo no solo para hacer al texto autocontenido, sino también con el propósito de compilar resultados útiles, definiciones y algorítmos, en el formato y notación del texto, que se usarán en capítulos posteriores.</p>
 <ul>
-<li><p><strong><a href="Not Found#fundamentos_geometria">Sección 1</a>: Fundamentos de geometría analítica.</strong>  En este capítulo nos concentraremos en repasar (o presentar) las propiedades de las figuras cónicas, su definición y descripción geométrica más general, así como su descripción algebraica.</p>
-<p>Las figuras cónicas juegan un papel central en la mecánica celeste y estar familiarizado con ellas, permitirá resolver más fácilmente problemas físicos relativamente complejos.</p>
-<p>Estudiaremos las cónicas, tanto en el plano, como en el espacio de tres dimensiones.  Con este propósito, introduciremos aquí el tema de las rotaciones en dos y tres dimensiones (ángulos de Euler) que son usados con frecuencia en la mecánica celeste.</p>
+<li><p><strong><a href="04.00.00.00.Fundamentos.html#fundamentos">Capítulo de <em>Fundamentos matematicos</em></a></strong>.  Algunos consideran a la mecánica celeste un área de las matemáticas aplicadas.  En ella confluyen técnicas matemáticas de todos los orígenes.  Por esta misma razón para comprender incluso los aspectos más básicos de la teoría es necesario contar con una sólida fundamentación matemática.  Por razones de espacio no podemos cubrir todos los temás relevantes en esta sección, pero nos hemos concentrado en dos de particular importancia en todo el texto:</p>
+<ul>
+<li><p><strong><a href="Not Found#cónicas">Sección de <em>Cálculo infinitesimal</em></a></strong>: El cálculo infinitesimal fue <em>descubierto</em> por Isaac Newton a finales de los 1600 (y más tarde descubierto independientemente también por Gottfried Leibniz), inspirado, en parte en problemas mecánicos.  Estos métodos matemáticos permitieron a Newton, sus contemporáneos y suscesores resolver los complicados problemas de la mecánica celeste que inauguraron la disciplina.  Por la misma razón es indispensable que el lector repase las cantidades y resultados centrales de este método analítico, que es justamente el tema de esta sección.  Al hacerlo aprovecharemos además para recoger algunas definiciones y resultados importantes de la geometría y el cálculo de vectores, los elementos básicos de la teoría de ecuaciones diferenciales y del más <em>exótico</em> cálculo de variaciones.  Ninguno de los apartes de este capítulo cumple funciones <em>decorativas</em> o es completamente prescindible.  A pesar de parecer una sección ajeno al libro, un material que debería dejarse solo a los autores expertos en el tema, en realidad todos los resultados expuestos aquí serán usados en el resto de capítulos.</p>
 </li>
-<li><p><strong><a href="Not Found#fundamentos_mecanica">Sección 2</a>: Fundamentos de mecánica.</strong>  Como hizo Newton en los <em>Principia</em>, antes de resolver el problema del "movimiento planetario", es necesario definir las cantidades físicas básicas, formular los principios fundamentales y obtener las leyes y teoremas que permiten entender el movimiento de los cuerpos en cualquier contexto (no solo en un contexto gravitacional).</p>
-<p>Este capítulo es una breve síntesis de un texto de mecánica newtoniana. Tiene elementos distintivos: hace una presentación moderna de la teoría (con definiciones y leyes que se diferencian un poco de la formulación histórica, muy común en los textos universitarios); hace énfasis en una formulación basada en el cálculo vectorial y en distintos sistemas de coordenadas; introduce algoritmos para la solución numérica de las ecuaciones de movimiento de sistemas dinámicos (algoritmos que serán muy importantes en el resto del libro); y presenta una síntesis de algunos resultados importantes de la cinemática y dinámica en sistemas de referenica rotantes (que son de interés en el estudio del <em>problema circular restringido de los tres cuerpos</em>.)</p>
+<li><p><strong><a href="Not Found#cónicas">Sección de <em>Curvas cónicas</em></a></strong>: En esta sección nos concentraremos en repasar (o presentar) las propiedades de las figuras cónicas, su definición y descripción geométrica más general, así como su descripción algebraica.  Las cónicas juegan un papel central en la mecánica celeste y estar familiarizado con ellas, permitirá resolver más fácilmente problemas físicos relativamente complejos.  Estudiaremos esta familia particular de curvas, tanto en el plano, como en el espacio de tres dimensiones.  Con este propósito, introduciremos aquí el tema de las rotaciones en dos y tres dimensiones (ángulos de Euler) que son usados con frecuencia en la mecánica celeste pero también en la mecánica analítica.</p>
 </li>
-<li><p><strong><a href="Not Found#fundamentos_relatividad">Sección 3</a>: Fundamentos de relatividad.</strong>  Como lo mencionamos en el prefacio, otro elemento que hace diferente a este libro, es la introducción de algunos tópicos modernos que han estado normalmente ausentes de los textos de mecánica celeste, al menos para el nivel al que esta dirigido. Para llegar a ese punto es necesario, sin embargo, presentar una fundamentación básica de la teoría de la relatividad (especial y general).</p>
-<p>La síntesis presentada aquí es bastante breve y tiene dos propósitos prácticos: 1) introducir el concepto de métrica del espacio-tiempo y sus consecuencias para la cinemática; nos concentraremos específicamente en las métricas de Minkowski y de Schwarzschild. Y 2) a partir de las métricas, derivar resultados sobre las diferencias en los intervalos de tiempo medido por observadores inerciales y otros en campos gravitacionales.  Ambos temas serán la base para presentar algunos resultados de <em>mecánica celeste postnewtoniana</em> en capítulos posteriores.</p>
+</ul>
 </li>
-<li><p><strong><a href="Not Found#fundamentos_astronomia">Sección 4</a>: Fundamentos de astronomía.</strong>  Muchos de los ejemplos y problemas en el curso se refieren a sistemas físicos reales, dentro y afuera del Sistema Solar.  La mecánica celeste, como área de la astronomía, se desarrollo para predecir, justamente, la posición en el cielo de los planetas o determinar la trayectoria de cometas y otros cuerpos errantes.</p>
-<p>En este capítulo repasaremos algunos conceptos de Astronomía que serán de utilidad en el resto del texto: la organización general del Sistema Solar, algunos elementos de nomenclatura astrónomica, la medida del tiempo y los sistemas de referencia usados para especificar la posición tanto en el cielo como en el espacio de tres dimensiones, de cuerpo astronómicos o vehículos espaciales.</p>
+<li><p><strong><a href="05.00.00.00.Mecanica.html#mecanica">Capítulo de <em>Mecánica newtoniana</em></a></strong>. Es casi imposible presentar la mecánica celeste y menos aún la mecánica analítica, sin repasar primero las definiciones, postulados y proposiciones de la mecánica básica, o mecánica newtoniana, como se la llama comunmente.  Este capítulo esta justamente dedicado a presentar el que llamaremos <strong>formalismo vectorial o geométrico</strong> de la mecánica, desarrollado a partir de las ideas mismas de Newton pero enriquecidas significativamente por sus sucesores en los siguientes dos siglos. Si bien, de nuevo, este podría parecer un tema <em>elemental</em> para tratar en otro libro, la manera en la que se presenta aquí es particularmente única. He tratado de formular las ideas de siempre en un orden más moderno y en algunos casos poco ortodoxo.  No pretendo con ello producir <em>ninguna revolución</em>, pero al hacerlo, la presentación de los tema centrales del libro se hace más natural.  El capítulo se concentra en la mecánica de partículas y sistemas de partículas, sin ocuparse de otros temas interesantes de la mecánica, la dinámica de cuerpos rígidos o de fluídos, que no serán aplicados en el resto del texto.</p>
 </li>
 </ul>
 </li>
@@ -13139,23 +13136,13 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Parte 2: El formalismo vectorial de la mecánica.</strong> Como veremos a lo largo del libro, la mecánica puede ser presentada usandos dos enfoques matemáticas o <em>formalismos</em> diferentes.  En esta parte del curso nos concentraremos en la formulación geométrica o vectorial de la mecánica celeste, la más popular y la que uso originalmente Newton en sus <em>Principia</em> y que fue desarrollada posteiormente por Euler.</p>
+<li><p><strong>Parte 2: El formalismo vectorial de la mecánica celeste</strong>. Como veremos a lo largo del libro, la mecánica puede ser presentada usandos dos enfoques matemáticas o <em>formalismos</em> diferentes.  En esta parte del curso nos concentraremos en la formulación geométrica o vectorial de la mecánica celeste, la más popular y la que uso originalmente Newton en sus <em>Principia</em> y que fue desarrollada posteiormente por sus sucesores.</p>
 <ul>
-<li><p><strong><a href="06.00.00.00.ProblemaNCuerpos.html#problema_ncuerpos">Capítulo 2</a>: El problema de Los N Cuerpos.</strong> A diferencia de la mayoría de los textos en esta área, en este libro comenzamos por el más general de los problemas de la mecánica celeste: el problema de los N cuerpos.  En este problema, el reto consiste en predecir la posición y velocidad de muchos cuerpos que interactúan gravitacionalmente.  Si bien el problema de los N cuerpos fue el último en ser formulado y abordado rigurosamente en la historia, su presentación temprana en este libro, permitirá introducir resultados y métodos que serán de utilidad para el resto del texto.</p>
-<p>De particular interés será la introducción en este capítulo de los algoritmos para resolver numéricamente el problema. Estos algoritmos y algunas herramientas computacionales relacionadas, serán muy importante en el resto del texto, para comparar y validar resultados de los modelos analíticos.  Se presentará también aquí el concepto de integrales de movimiento o <em>cuadraturas</em>, uno de los métodos usados clásicamente para extraer información sobre un sistema dinámico sin resolverlo completamente.  El método de las cuadraturas será central en lo que queda del texto.</p>
+<li><p><strong><a href="06.00.00.00.ProblemaNCuerpos.html#problema_ncuerpos">Capítulo <em>El problema de los N cuerpos</em></a></strong>. A diferencia de la mayoría de los textos en mecánica celeste, en este libro comenzamos por abordar y estudiar con algún detalle, el más general de los problemas de esta disciplina: el problema de los N cuerpos.  En este problema, el reto consiste en predecir la posición y velocidad de muchos cuerpos que interactúan gravitacionalmente.  Si bien el problema de los N cuerpos fue posiblemente el último de los grandes problemas de mecánica celeste en ser formulado y abordado rigurosamente en la historia, su presentación temprana en este libro, permitirá introducir resultados y métodos que serán de utilidad para el resto del texto.  De particular interés será la introducción en este capítulo de los algoritmos para resolver numéricamente el problema. Estos algoritmos y algunas herramientas computacionales relacionadas, serán muy importante en el resto del texto, para comparar y validar resultados de modelos analíticos.  Se presentará también aquí el concepto de integrales de movimiento o <em>cuadraturas</em>, uno de los métodos usados clásicamente para extraer información sobre un sistema dinámico sin resolverlo completamente.  Este método será usado regularmente en los demás capítulos.</p>
 </li>
-<li><p><strong><a href="Not Found#problema_dos_cuerpos">Capítulo 3</a>: El problema de los dos cuerpos.</strong>  Una de las idealizaciones más conocidas de la mecánica celeste consiste en suponer que cuando dos cuerpos astronómicos interactúan gravitacionalmente, el efecto del resto del Universo es completamente despreciable.  Naturalmente, no existe ningún sistema astronómico real que cumpla cabalmente estas condición. Todos los sistemas del universo, en sentido estricto, son sistemas de N cuerpos.</p>
-<p>En este capítulo mostraremos, a través de experimentos numéricos y ejemplos astronómicos reales, que la mayoría de los sistemas astronómicos se pueden analizar dinámicamente como <em>sistemas de N cuerpos jerárquicos,</em> es decir, sistemas en los que las partículas se agrupan por pares (pares de partículas, pares de pares, etc.) que se perturban mutuamente.</p>
-<p>El problema de los dos cuerpos no es, sin embargo, el destino final de la mecánica celeste, sino su punto de partida.  Es un resultado útil para estudiar sistemas mucho más complejos. Resolveremos en este capítulo el problema de los dos cuerpos usando el método de las cuadraturas (primeras integrales de movimiento) introducido en el capítulo anterior.  Demostraremos que el movimiento relativo de dos cuerpos se realiza sobre una cónica y desarrollaremos en detalle las relaciones entre las propiedades geométricas de esa cónica y las propiedades dinámicas del sistema.  Resolveremos también, usando métodos geométricos primero y después métodos del cálculo, el denominado problema de los dos cuerpos en el tiempo, que conducirá a la famosa ecuación de Kepler.</p>
+<li><p><strong><a href="Not Found#problema_dos_cuerpos">Capítulo <em>El problema de los dos cuerpos</em></a></strong>.  Una de las idealizaciones más conocidas de la mecánica celeste es aquella que consiste en suponer que cuando dos cuerpos astronómicos interactúan gravitacionalmente, el efecto del resto del Universo es completamente despreciable.  Naturalmente, no existe ningún sistema astronómico real que cumpla cabalmente estas condición. Todos los sistemas del universo, en sentido estricto, son sistemas de N cuerpos. En este capítulo mostraremos, a través de experimentos numéricos y ejemplos astronómicos reales, que la mayoría de los sistemas astronómicos se pueden analizar dinámicamente como <em>sistemas de N cuerpos jerárquicos</em>, es decir, sistemas en los que las partículas se agrupan por pares (pares de partículas, pares de pares, etc.) que se perturban mutuamente. El problema de los dos cuerpos no es, sin embargo, el destino final de la mecánica celeste, sino su punto de partida.  Es un resultado útil para estudiar sistemas mucho más complejos. Resolveremos en este capítulo el problema de los dos cuerpos usando el método de las cuadraturas (primeras integrales de movimiento) introducido en el capítulo anterior.  Demostraremos que el movimiento relativo de dos cuerpos se realiza sobre una cónica y desarrollaremos en detalle las relaciones entre las propiedades geométricas de esa cónica y las propiedades dinámicas del sistema.  Resolveremos también, usando métodos geométricos primero y después métodos del cálculo, el denominado problema de los dos cuerpos en el tiempo, que conducirá a la famosa ecuación de Kepler.</p>
 </li>
-<li><p><strong><a href="Not Found#aplicaciones_dos_cuerpos">Capítulo 4</a>: Aplicaciones del problema de los dos cuerpos.</strong> Antes de abordar sistemas más complejos, nos ocuparemos en este capítulo de estudiar a fondo algunas aplicaciones de interés para la astronomía o la ingeniería aeroespacial, de los resultados del capítulo anterior: la descripción de la trayectoria de cuerpos astronómicos y vehículos espaciales usando elementos orbitales instantáneos (osculatrices); la transformación entre el denominado <em>vector de estado</em> y los elementos orbitales y viceversa; la determinación de las órbitas, usando información de la posición y el movimiento de un cuerpo.</p>
-<p>Usaremos estos resultados para hacer predicciones, de primer orden, de la posición de algunos cuerpos astronómicos reales.  Estudiaremos también los fundamentos de la teoría de perturbaciones, en la que no profundizaremos, sin embargo (este es un tema que se deja para libros más avanzados).</p>
-<p>Nos aprovecharemos, además, de las capacidades del sistema de información <code>SPICE</code> de NASA para predecir la posición precisa de cuerpos astronómicos reales y para calcular con ellas efemérides astronómicas (condiciones de eclipses, ocultaciones, fases de la Luna y los planetas, etc.)</p>
-<p>En síntesis, este será el más astronómico de todos los capítulos del texto.</p>
-</li>
-<li><p><strong><a href="08.00.00.00.Problema3Cuerpos.html#problema_tres_cuerpos">Capítulo 5</a>: El problema de los tres cuerpos.</strong>  A pesar del poder que la teoría desarrollada en el capítulo anterior tiene para describir el movimiento de muchos sistemas astronómicos, existen situaciones que escapan a una descripción <em>kepleriana</em> del movimiento orbital (incluso, una que incluye perturbaciones).  El caso de la Luna, el de algunos cometas perturbados por Júpiter y vehículos espaciales modernos, son especialmente significativos.</p>
-<p>En este capítulo abordaremos, inicialmente, el problema general de los tres cuerpos, es decir, aquel en el que la dinámica no es jerarquica.  A diferencia del problema de los dos cuerpos, no se conoce una solución general en términos de funciones analíticas o de series al problema de los tres cuerpos (aunque se sabe que existe una.)</p>
-<p>Una versión restringida de este problema, a saber el <em>problema circular restringido de tres cuerpos</em> (<em>CRTBP</em> por su sigla en inglés), tiene propiedades teóricas que han resultado de interés en la descripción de sistemas astronómicos reales.    Estudiaremos aquí en detalle el CRTBP, su descripción dinámica y cinemática, tanto en sistemas inerciales como no inerciales. Introduciremos algoritmos para la solución numérica del problema en el sistema rotante. Encontraremos su constante de movimiento, la <em>constante de Jacobi</em> y una aproximación astronómica en términos de elementos orbitales, el <em>parámetro de Tisserand</em>.  Deduciremos las propiedades y visualizaremos las denominadas <em>regiones de exclusión</em> y <em>curvas de cero velocidad</em> (conceptos interesantes que permiten, si no predecir dónde estarán los cuerpos, al menos, donde no estarán).  Finalmente se deducirán las propiedades de los <em>puntos de equilibrio de Lagrange</em> y algunas aplicaciones astronómicas y en mecánica orbital del problema.</p>
+<li><p><strong><a href="08.00.00.00.Problema3Cuerpos.html#problema_tres_cuerpos">Capítulo <em>El problema restringido de los tres cuerpos</em></a></strong>. A pesar del poder que la teoría desarrollada en el capítulo anterior tiene para describir el movimiento de muchos sistemas astronómicos, existen situaciones que escapan a una descripción <em>kepleriana</em> del movimiento orbital (incluso, una que incluye perturbaciones).  El caso de la Luna, el de algunos cometas perturbados por Júpiter y el de vehículos espaciales modernos, son especialmente significativos.  En este capítulo abordaremos, inicialmente, el problema general de los tres cuerpos, es decir, aquel en el que la dinámica no es jerarquica.  A diferencia del problema de los dos cuerpos, no se conoce una solución general en términos de funciones analíticas al problema de los tres cuerpos. Una versión restringida de este problema, a saber el <em>problema circular restringido de tres cuerpos</em> (<em>CRTBP</em> por su sigla en inglés), tiene propiedades teóricas que han resultado de interés en la descripción de sistemas astronómicos reales.    Estudiaremos aquí en detalle el CRTBP, su descripción dinámica y cinemática, tanto en sistemas inerciales como no inerciales. Introduciremos algoritmos para la solución numérica del problema en el sistema rotante. Encontraremos su constante de movimiento, la <em>constante de Jacobi</em> y una aproximación astronómica en términos de elementos orbitales, el <em>parámetro de Tisserand</em>.  Deduciremos las propiedades y visualizaremos las denominadas <em>regiones de exclusión</em> y <em>curvas de cero velocidad</em> (conceptos interesantes que permiten, si no predecir dónde estarán los cuerpos, al menos, donde no estarán).  Finalmente se deducirán las propiedades de los <em>puntos de equilibrio de Lagrange</em> y algunas aplicaciones astronómicas y en mecánica orbital del problema.</p>
 </li>
 </ul>
 </li>
@@ -13168,30 +13155,11 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><p><strong>Parte 3: El formalismo analítico de la mecánica.</strong> En esta parte del libro, introduciremos el <em>formalismo analítico de la mecánica</em> y su aplicación en la solución a la mecánica celeste.  El formalismo analítico tiene una importancia central en la física que trasciende la mecánica celeste (se usa por ejemplo para estudiar la dinámica de cuerpos rígidos y sistemas oscilantes, el caos en sistemas dinámicos, la mecánica relativista, el electromagnetismo, la teoría de campos clásica y la mecánica cuántica.)  Si bien ninguna aplicación del formalismo distinta a la mecánica celeste, se desarrollara en este texto (como si sucede en algunos textos avanzados de mecánica clásica) los fundamentos teóricos presentados en esta parte le permitiran al lector abordar el estudio de esas otras disciplinas.</p>
+<li><p><strong>Parte 3: El formalismo analítico de la mecánica.</strong> En esta parte del libro, introduciremos el <em>formalismo analítico de la mecánica</em> y su aplicación en la solución de problemas de mecánica celeste.  El formalismo analítico tiene una importancia central en la física que trasciende a la mecánica celeste (se usa por ejemplo para estudiar la dinámica de cuerpos rígidos y sistemas oscilantes, el caos en sistemas dinámicos, la mecánica relativista, el electromagnetismo, la teoría de campos clásica y la mecánica cuántica).  Si bien pocas aplicaciones del formalismo, distintas a la mecánica celeste, se desarrollara en este texto (como si sucede en algunos textos avanzados de mecánica clásica) los fundamentos teóricos presentados en esta parte le permitiran al lector abordar el estudio de esas otras disciplinas en textos específicos de mecánica analítico o en textos más avanzados.</p>
 <ul>
-<li><p><strong><a href="09.00.00.00.FormalismoLagrangiano.html#formalismo_lagrangiano">Capítulo 6</a>: El formalismo lagrangiano.</strong>  En este capítulo se introducen los principios y teoremas centrales del formalismo analítico de la mecánica, en particular los principios de Alambert-Lagrange y de Hamilton.  Haremos aquí, un especial énfasis en las motivaciones teóricas que llevaron a matemáticos y físicos de los 1700 a introducir este formalismo (un tema en el que los textos más avanzados de mecánica clásica, apenas si consideran.)</p>
-<p>Se introducirá aquí la función lagrangiana, las ecuaciones de Lagrange y, a través de la aplicación del cálculo variacional (del que se hará una introducción breve y práctica), se deduciran las ecuaciones generales de Euler-Lagrange (que tienen una aplicación amplia en muchas áreas de la física).</p>
-<p>Muchos de los ejemplos usados para ilustrar el formalismo Lagrangiano serán, como se usa en la mayoría de los textos avanzados de mecánica clásica, sistemas mecánicos simples (péndulos, bloques en movimiento, esferas y cilindros que ruedan, etc.)  Sin embargo, a diferencia de esos textos, no profundizaremos demasiado en sistemas de este tipo (el interés central aquí son los problemas gravitacionales.)  Este hecho, sin embargo, no compromete el rigor o la extensión en la que el formalismo lagrangiano será presentado y desarrollado aquí.</p>
-<p>Como un elemento novedoso se presentarán en este capítulo algunos algoritmos aplicados al formalismo lagrangiano, y en particular a la comprensión mejor del principio de Hamilton y los métodos del cálculo variacional.</p>
+<li><p><strong><a href="09.00.00.00.FormalismoLagrangiano.html#formalismo_lagrangiano">Capítulo <em>El formalismo lagrangiano y la mecánica celeste</em></a></strong>.  En este capítulo se introducen los principios y teoremas centrales del formalismo analítico de la mecánica, en particular los principios de Alambert-Lagrange y de Hamilton.  Haremos aquí, un especial énfasis en las motivaciones teóricas que llevaron a matemáticos y físicos de los 1700 a introducir este formalismo (un tema en el que los textos más avanzados de mecánica clásica, apenas si consideran.)  Se introducirá aquí la función lagrangiana, las ecuaciones de Lagrange y, a través de la aplicación del cálculo variacional, se deduciran las ecuaciones generales de Euler-Lagrange (que tienen una aplicación amplia en muchas áreas de la física). Como un elemento novedoso se presentarán en este capítulo algunos algoritmos aplicados al formalismo lagrangiano, y en particular a la comprensión mejor del principio de Hamilton y los métodos del cálculo variacional. Con los elementos básicos del formalismo lagrangiano a la mano, procedermos a aplicarlo en la solución de problemas concretos en mecánica celeste.  Para ello presentaremos, primero, resultados importantes sobre la relación entre las simetrías de la función lagrangiana y las cantidades conservadas en el movimiento (teorema de Noether). A partir de allí, procederemos de forma similar a como lo hicimos con el formalismo vectorial, a resolver el problema general de los N cuerpos y el de los dos cuerpos.  Deduciremos el lagrangiano de los N cuerpos y de sus simetrías obtendremos las cantidades conservadas en el sistema.  Pero ¿de qué sirve deducir los mismos resultados que ya habíamos visto en el capítulo correspondiente de la segunda parte?.  Usaremos lo que sabemos de mecánica celeste para ilustrar el poder del formalismo lagrangiano frente al formalismo vectorial.  Posteriormente, abordaremos el problema de los dos cuerpos usando el formalismo lagrangiano.  En este caso, a diferencia del problema de los N cuerpos, tendremos una novedad.  En lugar de restringirnos al caso de la gravitación Newtoniano, estudiaremos aquí el problema más general de sistemas de dos cuerpos sometidos a fuerzas centrales con un potencial generalizado. Los resultados obtenidos aquí, tendrán un rango más amplio de aplicación. Podrán por ejemplo usarse para estudiar la física de sólidos, moléculas y átomos, pero también la mecánica celeste postnewtoniana.  Estudiaremos, en este contexto, el problema de fuerzas centrales reducido a una dimensión, el potencial efectivo (y las correspondientes zonas de exclusión).  Para el caso del potencial newtoniano deduciremos la denominada ecuación de la forma orbital y resolveremos el problema de los dos cuerpos a partir de ella. Para el caso de un potencial general, pero no muy distinto del potencial Newtoniano, estudiaremos el denominado <em>avance del perihelio</em> uno de los resultados teóricos de la mecánicaceleste que a la larga serían de la mayor importancia histórica al ofrecer las primeras evidencias de la validez de la teoría general de la relatividad.</p>
 </li>
-<li><p><strong><a href="Not Found#aplicaciones_lagrangiano">Capítulo 7</a>: Aplicaciones del formalismo lagrangiano.</strong>  Con los elementos básicos del formalismo lagrangiano a la mano, procedermos a aplicarlo en la solución de problemas concretos en mecánica celeste.  Para ello presentaremos, primero, resultados importantes sobre la relación entre las simetrías de la función lagrangiana y las cantidades conservadas en el movimiento (teorema de Noether). A partir de allí, procederemos de forma similar a como lo hicimos con el formalismo vectorial, a resolver el problema general de los N cuerpos y el de los dos cuerpos.</p>
-<p>Deduciremos el lagrangiano de los N cuerpos y de sus simetrías obtendremos las cantidades conservadas en el sistema.  Pero ¿de qué sirve deducir los mismos resultados que ya habíamos visto en el capítulo correspondiente de la segunda parte?  Usaremos lo que sabemos de mecánica celester para ilustrar el poder del formalismo lagrangiano frente al formalismo vectorial.</p>
-<p>Posteriormente, abordaremos el problema de los dos cuerpos usando el formalismo lagrangiano.  En este caso, a diferencia del problema de los N cuerpos, tendremos una novedad.  En lugar de restringirnos al caso de la gravitación Newtoniano, estudiaremos aquí el problema más general de sistemas de dos cuerpos sometidos a fuerzas centrales con un potencial generalizado. Los resultados obtenidos aquí, tendrán un rango más amplio de aplicación. Podrán por ejemplo usarse para estudiar la física de sólidos, moléculas y átomos, pero también la mecánica celeste postnewtoniana.</p>
-<p>Estudiaremos, en este contexto, el problema de fuerzas centrales reducido a una dimensión, el potencial efectivo (y las correspondientes zonas de exclusión).  Para el caso del potencial newtoniano deduciremos la denominada ecuación de la forma orbital y resolveremos el problema de los dos cuerpos a partir de ella. Para el caso de un potencial general, pero no muy distinto del potencial Newtoniano, estudiaremos el denominado <em>avance del perihelio</em> como una introducción al capítulo siguiente.</p>
-</li>
-<li><p><strong><a href="Not Found#mecanica_postnewtoniana">Capítulo 8</a>: El problema de los dos cuerpos postnewtoniano.</strong>  Con los elementos desarrollados en el capítulo anterior, estaremos en posición de abordar la solución general a una versión restringida del problema de los dos cuerpos en el contexto de la relatividad general (la denominada <em>aproximación postnewtoniana</em>).</p>
-<p>Para ello partiremos de la métrica de Schwarzschild y las ecuaciones de la geodésica (una versión geométrica de de las ecuaciones de Euler Lagrange.) A partir de ellas y con argumentos de simetría, obtendremos las primeras integrales o cuadraturas y deduciremos el lagrangiano y su potencial efectivo, para el movimiento de una partícula muy ligera (partícula de prueba) en la métrica de Schwarzschild.</p>
-<p>Usando estos elementos estudiaremos dos aplicaciones específicas: el avance del perihelio de Mercurio, el primer problema de mecánica celeste que resolvió la Relatividad General y la primera prueba de su superioridad frente a la teoría newtoniana del movimiento y la gravedad. Y el movimiento de partículas de prueba alrededor de cuerpos muy densos (estrellas de neutrones o agujeros negros.)</p>
-</li>
-<li><p><strong><a href="10.00.00.00.FormalismoHamiltoniano.html#formalismo_hamiltoniano">Capítulo 9</a>: El formalismo hamiltoniano</strong>.  En este capítulo abordamos el más general (y poderoso) formalismo analítico de la mecánica: el formalismo Hamiltoniano.  Después de discutir las motivación para la introducción de este formalismo (motivaciones de naturaleza principalmente geométrica), deduciremos de forma heurística las ecuaciones canónicas (de primer orden) de Hamilton; introduciremos la función Hamiltoniana y demostraremos su equivalencia con las ecuaciones (de segundo orden) de Euler-Lagrange.  Ilustraremos el poder del formalismo y la descripción de los sistemas en el denominado <em>espacio de fase</em>; para ello nos valdremos inicialmente de sistemas dinámicos simples (péndulos y bloques), como hicimos en el primer capítulo de esta parte.</p>
-<p>Posteriormente abordaremos (sin el detalle en el que lo hicimos en el caso del formalismo Lagrangiano y por las obvias analogías entre los dos formalismos) el tema de las simetrías y las cantidades conservadas, e introduciremos los útiles <em>corchetes de Poisson</em>, como herramienta matemática para estudiar dichas simetrías.</p>
-<p>Escribiremos los hamiltonianos del problema general de los N cuerpos, el del problema de los dos cuerpos y el del problema circular restringido de los tres cuerpos, y redescubriremos, usando los elementos de este nuevo formalismo, las propiedades ya conocidas de estos sistemas.</p>
-</li>
-<li><p><strong><a href="Not Found#formalismo_hamilto_jacobi">Capítulo 10</a>: El formalismo de Hamiltoniano-Jacobi</strong>.  Una de las formas más frecuentes en las que se aplica el formalismo Hamiltoniano en la mecánica celeste, es la de aprovechar las simetrías de los sistemas gravitacionales, para, a través de transformaciones de <em>coordenadas</em> en el espacio de fase, escribir formas simplificadas de los Hamiltonianos.  Estas formas simplificadas, además, permiten aplicar de forma más directa la teoría de perturbaciones y así estudiar sistemas muy complejos (un tema que no esta incluído en este libro.)</p>
-<p>En este capítulo introduciremos, primero, el tema de las transformaciones canónicas, que son transformaciones de coordenadas en el espacio de fase que mantienen la <em>estructura hamiltoniana</em> de los sistemas (es decir, que hacen que los sistemas sigan siendo descritos con las ecuaciones canónicas). Nos concentraremos, especialmente en el formalismo de la función generatriz de las transformaciones canónicas.</p>
-<p>A continuación, aplicando lo visto en el capítulo anterior y la teoría de transformaciones canónicas recién introducida, presentaremos el formalismo de Hamilton-Jacobi que permite, entre otras cosas, encontrar sistemas de coordenadas que simplifican significativamente la descripción de ciertos sistemas físicos.  En particular utilizaremos este formalismo para deducir, en el problema de los dos cuerpos, el Hamiltoniano del sistema en términos de elementos orbitales; en particular, en términos de funciones específicas de esos elementos orbitales, que hacen lo más simple posible el hamiltoniano del sistema.</p>
-<p>El resultado más importante de este capítulo será la deducción de las denominadas <em>variables de Dalaunay</em> que son de gran utilidad y poder en la mecánica celeste moderna y posiblemente el punto de partida de algunos textos de mecánica celeste avanzados.</p>
+<li><p><strong><a href="10.00.00.00.FormalismoHamiltoniano.html#formalismo_hamiltoniano">Capítulo <em>El formalismo hamiltoniano y la mecánica celeste</em></a></strong>. En este capítulo abordamos el más general (y poderoso) formalismo analítico de la mecánica: el formalismo Hamiltoniano.  Después de discutir las motivación para la introducción de este formalismo (motivaciones de naturaleza principalmente geométrica), deduciremos de forma heurística las ecuaciones canónicas (de primer orden) de Hamilton; introduciremos la función Hamiltoniana y demostraremos su equivalencia con las ecuaciones (de segundo orden) de Euler-Lagrange.  Ilustraremos el poder del formalismo y la descripción de los sistemas en el denominado <em>espacio de fase</em>; para ello nos valdremos inicialmente de sistemas dinámicos simples (péndulos y bloques), como hicimos en el primer capítulo de esta parte. Posteriormente abordaremos (sin el detalle en el que lo hicimos en el caso del formalismo Lagrangiano y por las obvias analogías entre los dos formalismos) el tema de las simetrías y las cantidades conservadas, e introduciremos los útiles <em>corchetes de Poisson</em>, como herramienta matemática para estudiar dichas simetrías.  Escribiremos los hamiltonianos del problema general de los N cuerpos, el del problema de los dos cuerpos y el del problema circular restringido de los tres cuerpos, y redescubriremos, usando los elementos de este nuevo formalismo, las propiedades ya conocidas de estos sistemas.  Una de las aplicaciones más poderosas del formalismo Hamiltoniano, se consigue al aprovechar las simetrías de los sistemas gravitacionales, para, a través de transformaciones de <em>coordenadas</em> en el espacio de fase, escribir formas simplificadas de los Hamiltonianos.  Estas formas simplificadas, además, permiten aplicar de forma más directa la teoría de perturbaciones y así estudiar sistemas muy complejos (un tema que no esta incluído en este libro.)  En este capítulo introduciremos, primero, el tema de las transformaciones canónicas, que son transformaciones de coordenadas en el espacio de fase que mantienen la <em>estructura hamiltoniana</em> de los sistemas (es decir, que hacen que los sistemas sigan siendo descritos con las ecuaciones canónicas). Nos concentraremos, especialmente en el formalismo de la función generatriz de las transformaciones canónicas. A continuación, aplicando  la teoría de transformaciones canónicas presentaremos el método de Hamilton-Jacobi que permite, entre otras cosas, encontrar sistemas de coordenadas que simplifican significativamente la descripción de ciertos sistemas físicos.  En particular utilizaremos este formalismo para deducir, en el problema de los dos cuerpos, el Hamiltoniano del sistema en términos de elementos orbitales; en particular, en términos de funciones específicas de esos elementos orbitales, que hacen lo más simple posible el hamiltoniano del sistema.  El resultado más importante de este capítulo será la deducción de las denominadas <em>variables de Dalaunay</em> que son de gran utilidad y poder en la mecánica celeste moderna y posiblemente el punto de partida de algunos textos de mecánica celeste avanzados.</p>
 </li>
 </ul>
 </li>
@@ -13211,23 +13179,6 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><p><strong>Apéndices</strong>.  La última parte del libro, presenta material complementario y de referencia, que puede ser de interés consultar durante su lectura.</p>
-<ul>
-<li><strong><a href="Not Found#python_minimo">Apéndice A</a>: Python mínimo</strong>.  En este apéndice ofrecemos un breve tutorial introductorio al lenguaje <code>Python</code> y a la biblioteca de gráficos de <code>Matplotlib</code> que usaremos como herramientas para presentar los algoritmos de la mecánica celeste, desarrollar ejemplo y formular problemas (ver la <a href="01.00.00.00.Prefacio.html#celeste_python">sección <em>mecánica celeste y <code>Python</code></em> en el Prefacio</a>).</li>
-<li><strong><a href="Not Found#SPICE">Apéndice B</a>: El sistema de información <code>SPICE</code></strong>. Como comentamos en la <a href="01.00.00.00.Prefacio.html#celeste_spice">sección <em>mecánica celeste con <code>SPICE</code></em> en el Prefacio</a>, una de las herramientas prácticas de programación de las que nos apoyaremos en este libro, es el sistema de información <code>SPICE</code> del NAIF de NASA.  En este apéndice ofrecemos una guía de referencia básica a este sistema, que puede ser consultada para entender mejor algunos de los ejemplos desarrollados a lo largo del libro. </li>
-<li><strong><a href="Not Found#notacion_glosario">Apéndice C</a>: Notación y glosario.</strong> La notación en física y en astronomía, así como el vocabulario, puede cambiar mucho de unos textos a otros.  En este apéndice encontrará una guía de referencia práctica a la notación y el vocabulario usado en este libro.</li>
-<li><strong><a href="Not Found#pymcel">Apéndice D</a>: La biblioteca <code>pymcel</code>.</strong> Las rutinas útiles escritas a lo largo del libro se han compilado en un paquete de <code>Python</code> que acompaña este libro.  En este apéndice se ofrece una lista completa de las rutinas del paquete.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="3.2.-&#191;C&#243;mo-usar-este-libro?">3.2. &#191;C&#243;mo usar este libro?<a class="anchor-link" href="#3.2.-&#191;C&#243;mo-usar-este-libro?">&#182;</a></h2><p><a id='como_usar_libro'></a></p>
 
 </div>
@@ -13238,9 +13189,9 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Este libro puede ser utilizado de tres formas diferentes:</p>
 <ol>
-<li><p>Como un texto para el <em>autoaprendizaje</em> de la mecánica celeste y analítica.  Estudiantes y profesionales de muchas disciplinas, se pueden valer de él para acercarse a ellas.</p>
+<li><p>Como un texto para el <em>autoaprendizaje</em> de la mecánica celeste y la mecánica analítica.  Estudiantes y profesionales de muchas disciplinas, se pueden valer de él para tener su primer acercarmiento a estas disciplinas.</p>
 </li>
-<li><p>Como el texto guía de un primer curso de mecánica celeste.  Una fuente de lecciones y problemas útiles para organizar un curso de pregrado.</p>
+<li><p>Como el texto guía de un primer curso de mecánica celeste y de mecánica analítica.  El texto es una fuente de lecciones y problemas útiles para organizar un curso de pregrado.</p>
 </li>
 <li><p>Como material de referencia para estudaintes y profesionales.  Muchas fórmulas, algoritmos, e incluso anécdotas e historias interesantes, podrían resultar útiles para quiénes ya tienen una formación en el área.</p>
 </li>
@@ -13252,8 +13203,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como <strong>texto para el autoaprendizaje</strong>, recomiendo <strong>leerlo enteramente</strong> incluyendo la primera parte de Fundamentación en la que se encuentran algunos elementos teóricos (matemáticos y físicos) requeridos para el resto del libro.</p>
-<p>Para quiénes tengan una formación avanzada en física, astronomía o ingeniería, es posible que una buena fracción de los temas de esa primera parte resulten sencillos y puedan obviarse.  Sin embargo, aunque los tópicos tratados allí aparezcan conocidos (al menos por los nombres), su tratamiento puede resultar novedoso; de modo que no deje de echarle una mirada.  En particular recomiendo revisar, como mínimo, las secciones dedicadas a la solución numérica de las ecuaciones de movimiento, la dinámica en sistemas rotantes y los principios de relatividad, donde podrían encontrarse las diferencias más significativas respecto a los textos canónicos de matemáticas y física.</p>
+<p>Como <strong>texto para el autoaprendizaje</strong>, recomiendo <strong>leer el texto en su totalidad</strong> incluyendo la primera parte de Fundamentación matemática y física, en la que se encuentran algunos elementos teóricos requeridos para el resto del libro.</p>
+<p>Para quiénes tengan una formación avanzada en física, astronomía o ingeniería, es posible que una buena fracción de los temas de esa primera parte resulten sencillos y puedan obviarse.  Sin embargo, aunque los tópicos tratados allí parezcan conocidos (al menos nominalmente), su tratamiento puede resultar novedoso. Si este es su caso, no deje de echarle una mirada a esos primeros capítulos.  En particular recomiendo revisar, como mínimo, las secciones dedicadas a la solución numérica de ecuaciones diferenciales, incluyendo las ecuaciones de movimiento en mecánica newtoniana, los rudimentos de cálculo variacional y la dinámica en sistemas rotantes, donde podrían encontrarse las diferencias más significativas respecto a los textos canónicos de matemáticas y física, y donde además se introducen herramientas algorítmicas que serán de uso muy corriente en el resto del libro.</p>
 
 </div>
 </div>
@@ -13261,9 +13212,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>El uso ideal de este libro es como <strong>texto guía</strong> de un primer curso de mecánica celeste y analítica. El libro fue escrito a partir de la experiencia de más de 5 años ofreciendo el curso en el pregrado de astronomía de la Universidad de Antioqui; por la misma razón esta la extensión y organización particular del texto, se adapta de forma <em>precisa</em> a las condiciones propias de un curso universitario de un semestre de duración (cuatro meses efectivos de lecciones.)  El curso se ofrece ha ofrecido exitosamente a estudiantes que han cursado los cursos básicos de física (hasta el curso de oscilaciones y ondas) y de cálculo (incluyendo cálculo vectorial y ecuaciones diferenciales.)</p>
+<p>El uso ideal de este libro es como <strong>texto guía</strong> de un primer curso de mecánica celeste y mecánica analítica. El libro fue escrito a partir de la experiencia de más de 5 años ofreciendo el curso en el pregrado de astronomía de la Universidad de Antioquia (en Medellín, Colombia). Por la misma razón, la extensión y organización particular del texto, se adapta de forma <em>precisa</em> a las condiciones propias de un curso universitario de un semestre de duración (cuatro meses efectivos de lecciones.)  El curso se ha ofrecido exitosamente a estudiantes que han aprobado los cursos básicos de física (hasta el tema de oscilaciones y ondas) y de cálculo (incluyendo cálculo vectorial y ecuaciones diferenciales.)</p>
 <p>Todos los capítulos del libro libro han sido dictados dentro del plazo del curso. Sin embargo, dependiendo del nivel académico de los estudiantes y de su independencia intelectual, el curso puede dictarse sin incluir todos los temas de la primera parte.</p>
-<p>Por mi experiencia dictando el curso, el repaso de los fundamentos puede resultar extenso (como mínimo toma un mes que es justamente el período en el que los estudiantes tienen una motivación y disposición mayor, además de menos  distracciones de otros cursos.) Sugeriría, entonces, que de sacrificarse algunos temas de esa parte, se asigne la lectura independiente a los estudiantes de los temas mejor conocidos y se evalúe a través de la completa lista de problemas incluídos al final de esa parte.</p>
+<p>Por mi experiencia dictando el curso, el repaso de los fundamentos puede resultar extenso (como mínimo toma un mes que es justamente el período en el que los estudiantes tienen una motivación y disposición mayor, además de menos  distracciones de otros cursos.) Sugeriría, entonces, que de sacrificarse algunos temas de esa parte, se asigne la lectura independiente a los estudiantes de los temas mejor conocidos y se evalúe a través de la lista de problemas incluídos al final de los capítulos de esa parte.</p>
 
 </div>
 </div>
@@ -13271,7 +13222,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como se menciono en la <a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Sección "Mecánica celeste en la era de la información" del Prefacio</a>, y se detallará abajo, el libro fue escrito usando <em>libretas de <code>Jupyter</code></em>, una por cada clase (a lo sumo se pueden dictar dos clases con cada libreta).  Es decir, el número de <em>libretas</em>  y su organización puede ofrecer una idea del programación detallado de actividades del curso o del plan de lectura.</p>
+<p>Como mencioné en la <a href="01.00.00.00.Prefacio.html#celeste_era_informacion">Sección <em>Mecánica celeste en la era de la información</em> del Prefacio</a>, y se detallará abajo, el libro fue escrito usando <em>libretas de <code>Jupyter</code></em>, una por cada clase (a lo sumo se pueden dictar dos clases con cada libreta).  Es decir, el número de <em>libretas</em> y su organización puede ofrecer una idea del programa detallado de actividades del curso o del plan de lecturas.</p>
 
 </div>
 </div>
@@ -13288,9 +13239,9 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>El libro ha sido concebido, escrito y compilado enteramente usando <em>libretas</em> de <code>Jupyter</code>.  Las libretas, que están disponibles en la versión electrónica del texto, son archivos en un formato especial (no son programa de <code>Python</code>, ni páginas web) que pueden ser visualizadas y ejecutadas usando un navegador de Internet.</p>
-<p>El uso de las libretas no es indispensable para entender el contenido del libro, pero pueden ofrecer una experiencia interactiva muy enriquecedora, que a veces puede acelerar el proceso de aprendizaje.  El uso de las libretas en clase puede, además, hacer más dinámica la interacción entre el profesor y los estudiantes.</p>
+<p>El uso de las libretas no es indispensable para entender el contenido del libro, pero puede ofrecer una experiencia interactiva muy enriquecedora y a veces acelerar el proceso de aprendizaje.  El uso de las libretas en clase puede, además, hacer más dinámica y amena la interacción entre el profesor y los estudiantes.</p>
 <p>Para hacer uso de las libretas se debe contar con un <strong>computador de escritorio</strong> que use cualquier sistema operativo (<code>Windows</code>, <code>Linux</code> o <code>MacOS</code>).  Por la misma razón, en caso de usarla, recomiendo que el curso se desarrolle en una sala de computo.  Para ejecutar las libretas es necesario instalar primero el interprete y la biblioteca base del lenguaje <code>Python</code>, un conjunto específico de paquetes y el sistema <code>Jupyter</code>, además de varias de sus extensiones (los detalles se presentan en la siguiente sección.)</p>
-<p>La versión web de este libro, puede ser también una alternativa a las libretas de <code>Jupyter</code>. Tiene la ventaja de que solo requiere un dispositivo con conexión a Internet (de escritorio o móvil) y puede manipularse en cualquier contexto.  Aunque la versión web carece de casi todas las características interactivas de las libretas de <code>Jupyter</code>, en ella encontraran, además de todos los algoritmos y gráficos, todas las animaciones y otros elementos de <em>hipertexto</em>.</p>
+<p>La <a href="http://seap-udea.org/MecanicaCeleste_Zuluaga">versión en línea</a> de este libro (páginas web), puede ser también una alternativa a las libretas de <code>Jupyter</code>. Este formato tiene la ventaja que solo requiere un dispositivo con conexión a Internet (de escritorio o móvil) y puede manipularse en cualquier contexto.  Aunque la versión web carece de casi todas las características interactivas de las libretas de <code>Jupyter</code>, en ella encontraran, además de todos los algoritmos y gráficos, animaciones y otros elementos de <em>hipertexto</em>.</p>
 
 </div>
 </div>
@@ -13315,9 +13266,9 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li><p><strong>Instalación del lenguaje <code>Python</code> y las bibliotecas básicas del lenguaje.</strong> El primer requisito para utilizar las libretas es instalar el interprete y las bibliotecas del sistema del lenguaje <code>Python</code>.  Existen diversas maneras para hacerlo en cada sistema operativo y abundante información en Internet. Mi recomendación es utilizar sel sistema <a href="https://www.anaconda.com"><code>Anaconda</code></a> que ofrece en una plataforma completa de programación incluyendo los archivos del lenguaje <code>Python</code>, una amplia diversidad de paquetes científicos, el sistema <code>Jupyter</code> y todas las herramientas necesarias para la instalación de otros paquetes.</p>
+<li><p><strong>Instalación del lenguaje <code>Python</code> y las bibliotecas básicas del lenguaje.</strong> El primer requisito para utilizar las libretas es instalar el interprete y las bibliotecas del sistema del lenguaje <code>Python</code>.  Existen diversas maneras para hacerlo en cada sistema operativo y abundantes instrucciones en Internet. Mi recomendación es utilizar el sistema <a href="https://www.anaconda.com"><code>Anaconda</code></a> que ofrece, en una plataforma integrada, los archivos del lenguaje <code>Python</code>, una amplia diversidad de paquetes científicos, el sistema <code>Jupyter</code> y todas las herramientas necesarias para la instalación de otros paquetes.</p>
 </li>
-<li><p><strong>Descarga las libretas.</strong>  Una vez haya instalado <code>Python</code> y <code>Jupyter</code>, puede descargar las libretas del libro los archivos adicionales requeridos por ellas del sitio web del libro.  Para ello siga las instrucciones provistas allí.</p>
+<li><p><strong>Descargar las libretas.</strong>  Una vez haya instalado <code>Python</code> y <code>Jupyter</code>, puede descargar las libretas del libro los archivos adicionales requeridos por ellas del sitio web del libro.  Para ello siga las instrucciones provistas allí.</p>
 </li>
 <li><p><strong>Ejecución de pruebas.</strong>  Para verificar si las libretas funcionan correctamente, una vez descargadas, busque y abra la libreta <code>Pruebas.html</code>.  Una vez abierta ejecute todas sus celdas (<code>Cell / Run all</code>).  Si la ejecución se realiza completa, en la última celda aparecera un reporte completo con los resultados de la prueba.  Si alguna de las prueba individuales falla, es posible que sea necesario instalar paquetes, datos adicionales y otras dependencias.</p>
 </li>
@@ -13339,7 +13290,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.4.1.-Extranjerismos-y-pronunciaci&#243;n">3.4.1. Extranjerismos y pronunciaci&#243;n<a class="anchor-link" href="#3.4.1.-Extranjerismos-y-pronunciaci&#243;n">&#182;</a></h3><p><a id='extranjerismos_pronunciacion'></a></p>
+<h3 id="3.4.1.-Palabras-extranjeras-y-gu&#237;a-de-pronunciaci&#243;n">3.4.1. Palabras extranjeras y gu&#237;a de pronunciaci&#243;n<a class="anchor-link" href="#3.4.1.-Palabras-extranjeras-y-gu&#237;a-de-pronunciaci&#243;n">&#182;</a></h3><p><a id='extranjerismos_pronunciacion'></a></p>
 
 </div>
 </div>
@@ -13356,8 +13307,16 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Muchos de los científicos (hombres y mujeres) que han contribuído con el desarrollo de la mecánica celeste en sus cuatro siglos de historia, tienen nombres y apellidos no hispanos.  Su correcta pronunciación, especialmente en el caso de autores franceses o de origen germano, es difícil para quienes no hablamos las lenguas de esos pueblos.</p>
-<p>Un caso notable, por ejemplo, es el nombre de la matemática alemana <em>Emmy Noether</em>.  En castellano la mayoría pronunciaríamos "emi noeter" o "emmi neder" (siguiendo la tradición inglesa con la que estamos más familiarizados.)  <a href="11.00.00.00.ApendiceAlgoritmos.html#notaspie_1">$^1$</a> La pronunciación "correcta" (en alemán) del nombre de esta mátemática, es en realidad "emmi noutar".</p>
+<p>Un caso notable, por ejemplo, es el nombre de la matemática alemana <em>Emmy Noether</em>.  En castellano la mayoría pronunciaríamos "emi noeter" o "emmi neder" (siguiendo la tradición inglesa con la que estamos más familiarizados.)  Como una primera guía para la correcta pronunciación de estos nombres, a lo largo del libro presentaremos "transliteraciones" al castellano, indicando, entre comillas las letras y palabras más cercanas que un hispanohablante podría usar.  Así por ejemplo "niuton" será la trasliteración fonética de Newton y la pronunciación "correcta" (en alemán) del nombre de Emmy Noether, será "emmi noutar".</p>
 <p>Para hacernos a una idea fonética más precisa nos apoyaremos a lo largo del libro de la increíble colección compilada en <a href="http://forvo.com">este sitio web</a> que ofrece pronunciaciones en línea, en decenas de idiomas, de miles de nombres, palabras y frases.  Allí encontrará por ejemplo la pronunciación correcta, en su idioma original del nombre <a href="https://es.forvo.com/search/Emmy%20Noether/de/">Emmy Noether</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>¿Es todo esto indispensable para entender la mecánica celeste o la mecánica analítica?.  Ciertamente no.  Pero no solo de teoría vivimos los humanos.  La comunicación y socialización es central al proyecto científico y es bueno entender y hacerse entender especialmente en contextos internacionales.</p>
 
 </div>
 </div>
@@ -13377,7 +13336,7 @@ div#notebook {
 <p>Para referirnos a los siglos, sin embargo, nos desviaremos de las reglas convencionales del español. Según esas reglas al período comprendido, por ejemplo, entre 1701 y 1800, se lo llama el siglo XVIII.  Para este autor, la notación usando números romanos, si bien ampliamente aceptada, es confusa y exige realizar operaciones mentales innecesarias (número romano $\rightarrow$ número indoarabigo $\rightarrow$ restar uno $\rightarrow$ multiplicar por 100).</p>
 <p>En los sucesivo para referirnos al período comprendido entre 1700 y 1799 (comenzando en el año cero y no en el año uno como dicta la regla) hablaremos de <strong>los 1700</strong>.  Así mismo el siglo XX será <strong>los 1900</strong> y así sucesivamente.</p>
 <p>Dado que en las reglas establecidas del español, los 1900 hacen referencia en realidad a la década entre 1901 y 1910, cuando queramos refereirnos a un período de diez años siempre usaremos explícitamente la palábra <strong>década</strong>: década de 1680, decada de 1960, etc.</p>
-<p>No pretendó, con este acto de rebeldía <em>gramático</em>, cambiar el idioma. Pero sí, al menos en lo que respecta a este libro, faciltar la lectura de los períodos históricos.</p>
+<p>No pretendó, con este acto de rebeldía <em>idiomática</em>, cambiar el castellano. Pero sí, al menos en lo que respecta a este libro, faciltar la lectura de los períodos históricos.</p>
 
 </div>
 </div>
@@ -13395,7 +13354,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Todos los libros de ciencias físicas o matemáticas se "casan" con una notación específica.  La elección de la notación, no es sin embargo una tarea sencilla, en tanto son muy comunes los casos de textos que en virtud de su notación se hacen practicamente ilegibles aunque traten los mismos temas o problemas de otros que usan notaciones más comunes.</p>
 <p>Pensando justamente en esto, he tomado la decisión de utilizar, en la medida de las posibilidades, la misma notación de algunos textos clásicos de mecánica celeste, que se diferencia, a veces significativamente, de la que utilizan libros de matemáticas e incluso de física, con los que el lector puede estar familiarizado.</p>
-<p>El lector encontrará los detalles específicos de la notación usada en el libro en la [Sección <em>Vectores y cálculo</em>].</p>
+<p>El lector encontrará los detalles específicos de la notación usada en el libro en la <a href="04.01.00.00.Fundamentos.Calculo.html#vectores_calculo">Sección <em>Vectores y cálculo</em></a>.</p>
 
 </div>
 </div>
@@ -13403,7 +13362,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.5.-Estructura-del-libro">3.5. Estructura del libro<a class="anchor-link" href="#3.5.-Estructura-del-libro">&#182;</a></h2><p><a id='estructura_libro'></a></p>
+<h2 id="3.5.-Elementos-no-textuales">3.5. Elementos no textuales<a class="anchor-link" href="#3.5.-Elementos-no-textuales">&#182;</a></h2><p><a id='elementos_no_textuales'></a></p>
 
 </div>
 </div>
@@ -13411,7 +13370,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Para facilitar la lectura del libro y hacer de la experiencia de leerlo algo realmente excitante, el libro, además de toda la teoría que esperamos encontrar en un texto académico, contiene una serie de elementos gráficos con los que debemos familiarizarnos.</p>
+<p>Para facilitar la lectura del libro y hacer de la experiencia de leerlo algo más agradable e incluso excitante, el texto contiene una serie de elementos gráficos con los que debemos familiarizarnos.</p>
 
 </div>
 </div>
@@ -13427,11 +13386,11 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Mucha información importante en el texto se presenta en <em>cajas</em> independientes y cuyas características gráficas resaltan del resto del documento. En particular existen 3 tipos de cajas:</p>
+<p>Mucha información importante texto se presenta en <em>cajas</em> independientes al texto principal y cuyas características gráficas resaltan del resto del documento. En particular existen 5 tipos de cajas:</p>
 <ul>
-<li><p><strong>Resumen del capítulo</strong>.  Esta caja aparece normalmente al principio del libro y contiene una breve síntesis de cada capítulo.  No deje de leer este resumen para identificar los temas centrales de cada parte del libro. El profesor podría usar la información contenida allí para definir los objetivos específicos de la evaluación.</p>
+<li><p><strong>Resumen del capítulo</strong>.  Esta caja aparece normalmente al principio de cada capítulo y contiene una breve síntesis del mismo.  No deje de leer este resumen para identificar los temas centrales de cada parte del libro. El profesor podría usar la información contenida allí para definir los objetivos específicos de la evaluación.</p>
 </li>
-<li><p><strong>Notas</strong>. A veces es necesario desviarse un momento del hilo del texto para alcarar o ampliar asuntos relacionados con la notación, algunos detalles sobre los paquetes y algorítmos utilizados, o simplemente llamar la atención sobre un asunto importante.  A continuación se muestra un ejemplo de una <em>caja de nota</em>.</p>
+<li><p><strong>Notas</strong>. A veces es necesario desviarse un momento del hilo del texto para aclarar o ampliar asuntos relacionados con la notación, los paquetes y algorítmos utilizados, o simplemente llamar la atención sobre un asunto importante.  A continuación se muestra un ejemplo de una <em>caja de nota</em>.</p>
 </li>
 </ul>
 
@@ -13442,7 +13401,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Nota: El lenguaje <em>Markdown</em>.</strong><a id=''></a> La mayor parte del texto de este libro, ha sido escrito en las celdas de libretas de <code>Jupyter</code> en un lenguaje de descripción de documentos conocido como <em>Markdown</em>.  Puede explorar la sintaxis del lenguaje, o bien desplegando el contenido de las <em>celdas</em> de las libretas, o bien consultando la documentación.</p>
+<p><strong>Nota: El lenguaje <em>Markdown</em>.</strong><a id=''></a> La mayor parte del contenido textual de este libro, ha sido escrito en las celdas de libretas de <code>Jupyter</code> en un lenguaje de descripción de documentos conocido como <em>Markdown</em>.  Puede explorar la sintaxis del lenguaje, o bien desplegando el contenido de las <em>celdas</em> de las libretas, o bien consultando la abundante <a href="https://markdown.es/">documentación en línea</a>.</p>
 
 </div>
 </div>
@@ -13462,7 +13421,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Definición 11.1. Mecánica celeste.</strong><a id=''></a> Llamamos <em>Mecánica Celeste</em> a la disciplina científica que aplica las leyes de la mecánica para estudiar el movimiento de cuerpos bajo la acción dominante de la gravedad. Dado que solo en en lugares lejanos a la superficie terrestre (normalmente fuera de su atmósfera), la gravedad es la fuerza dominante, la mecánica celeste normalmente describe el movimiento de cuerpos astronómicos (desde partículas de roca, hielo o polvo interestelar, hasta planetas y estrellas) y de vehículos espaciales.  En este último caso se habla más de <em>Mecánica orbital</em>.</p>
+<p><strong>Definición 11.1. Mecánica celeste.</strong><a id=''></a> Llamamos <em>Mecánica Celeste</em> a la disciplina científica que aplica las leyes de la mecánica para estudiar el movimiento de cuerpos bajo la acción dominante de la gravedad. Dado que solo en lugares lejanos a la superficie terrestre (normalmente fuera de su atmósfera), la gravedad es la fuerza dominante, la mecánica celeste normalmente describe el movimiento de cuerpos astronómicos (desde partículas pequeñas, hielo o polvo interestelar, hasta planetas y estrellas) y de vehículos espaciales.  En este último caso se habla normalmente de <em>Mecánica orbital</em>.</p>
 
 </div>
 </div>
@@ -13472,7 +13431,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><strong>Teoremas y leyes</strong>. Como las definiciones, en muchas ocasiones será indispensable separarnos un momento de una explicación para formular más rigurosamente un resultado, normalmente obtenido por razonamiento deductivo en el marco de una teoría (teoremas, colorarios) o por razonamiento inductivo a partir de la experiencia (leyes).</li>
+<li><strong>Teoremas, postulados y leyes</strong>. Como las definiciones, en muchas ocasiones será indispensable separarnos un momento de una explicación para formular más rigurosamente un resultado, normalmente obtenido por razonamiento deductivo en el marco de una teoría (teoremas, lemas, colorarios) o por razonamiento inductivo a partir de la experiencia (leyes y postulados).  Para hacerlo usaremos cajas de texto con una numeración independiente de aquella usada para las definiciones.  Sin embargo, es importante aclarar que en el caso de los denominados <em>teoremas</em> me he abstenido de usar sistemáticamente esta palabra en el encabezado de los respectivos recuadros.  En su lugar he decidido imitar a algunos autores clásicos (en particular a Euclides) que usaban sistemáticamente la palabra <strong>proposición</strong> en lugar de teorema para referirse a afirmaciones demostrables. Es decir, en este libro, una <em>proposición</em> será un resultado importante que puede estar o no demostrado en el texto.  Al hacerlo quiero evitar posar aquí de matemático, una profesión a la que respeto profundamente<a href="11.00.00.00.ApendiceAlgoritmos.html#notaspie_1">$^1$</a>.  Aún así, cuando una <em>proposición</em> dada corresponda a un teorema bien conocido, usaré la palabra teorema en el título interno de la caja.  Las dos <em>proposiciones</em> mostradas en las cajas a continuación ilustran estos conceptos.</li>
 </ul>
 
 </div>
@@ -13482,7 +13441,17 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Teorema: Teorema de Danelin.</strong><a id=''></a> Dada una esfera tangente a un cono y un plano que corta el cono en un determinado ángulo, el punto de tangencia de la esfera con el plano es uno de los focos de la cónica.</p>
+<p><strong>Proposición: Sistemas de referencia inerciales.</strong><a id=''></a> Si un sistema de referencia $O'$ se mueve con velocidad constante con respecto a un sistema de referencia inercial $O$, entonces $O'$ es también un sistema de referencia inercial.</p>
+
+</div>
+</div>
+</div>
+    </div><div class="box_theorem">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Proposición: Teorema de Danelin.</strong><a id=''></a> Dada una esfera tangente a un cono y un plano que corta el cono en un determinado ángulo, el punto de tangencia de la esfera con el plano es uno de los focos de la cónica correspondiente.</p>
 
 </div>
 </div>
@@ -13491,8 +13460,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='fig:teorema_danelin'></a><img src="./figures/square_teorema_danelin.png" alt="Ilustración esquemática del *teorema de Danelin*." width="50.0%"></p>
+<center><b>Figura 3.3</b>. Ilustración esquemática del *teorema de Danelin*.</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><strong>Un poco de historia</strong>. Finalmente, pero no menos importante, son las anécdotas e historias que contaremos a lo largo de todo el libro.  Como se menciono en el prefacio, la mecánica celeste tiene ya más de 400 años (aproximadamente 100 años más que la mecánica analítica) y cientos de libros y miles de artículos se han escrito en el tema.  Es casi imposible hablar de mecánica celeste y analítica, sin mencionar de vez en cuando las historias que rodearon la invención de una técnica, la biografía de alguno de los grandes hombres y mujeres que concibieron las ideas contenidas en el libro o simplemente una anécdota curiosa relacionada con algún tema de interes.</li>
+<li><strong>Un poco de historia</strong>. Finalmente, pero no menos importante, están las anécdotas e historias que contaremos a lo largo de todo el libro.  Como se menciono en el prefacio, la mecánica celeste tiene ya más de 400 años (aproximadamente 100 años más que la mecánica analítica) y cientos de libros y miles de artículos se han escrito en el tema.  Es casi imposible hablar de mecánica celeste y analítica, sin mencionar de vez en cuando las historias que rodearon la invención de una técnica, la biografía de alguno de los grandes hombres y mujeres que concibieron las ideas contenidas en el libro o simplemente una anécdota curiosa relacionada con algún tema de interes.</li>
 </ul>
 
 </div>
@@ -13503,9 +13480,8 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Un poco de historia: ¿Kepler o Newton?.</strong><a id=''></a> En el Prefacio daba a entender que la mecánica celeste posiblemente había comenzado con los trabajos pioneros de Johannes Kepler (ver Figura (<a href="#fig:kepler">kepler</a>)).  Otros autores van más lejos y apuntan a los astrónomos de la antigüedad y la edad media, especialmente indios, chinos, arabes y griegos, que desarrollaron modelos complejos para la descripción del movimiento de los cuerpos celestes.  Los más conservadores apuntan a Sir Isaac Newton, quien después de la publicación de su obra cumbre, los <em>Principia</em>, sentó las bases físicas, no solo para la mecánica celeste, sino también, en general, para toda la mecánica.</p>
-<p><img src="./figures/vertical_kepler.png" alt="Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster" width="50.0%">$$\mathrm{\mathbf{Figura\;3.3}.}$$</p>
-<blockquote><p>La razón en este libro para escoger a Kepler, como el <em>padre</em> de la disciplina (y en general de la astronomía física) fueron sus contribuciones decisivas y bastante bien conocidas, para esclarecer definitivamente la <em>cinemática</em> del movimiento planetario.  En particular, el descubrimiento (o enunciado matemáticos) de sus conocidas <em>leyes del movimiento planetario</em>, representaron un cambio cualitativo en el desarrollo de la teoría del movimiento planetario e inspiraron en últimas el trabajo de Newton.</p>
-<p>Adicionalmente, y esto es aún más importante, Kepler fue uno de los primeros astrónomos modernos (renacentistas europeo) en hacer consideraciones teóricas sobre la causa del movimiento planetario, más allá de ocuparse de su descripción, como lo hicieron la mayoría de los astrónomos de la antigüedad y la edad media. Esto pone a Kepler, entre esos astrónomos, como el primer <em>astrofísico</em> de la historia.</p>
+<blockquote><p>La razón en este libro para escoger a Kepler, como el <em>padre</em> de la disciplina (y en general de la astronomía física) fueron sus contribuciones decisivas y bastante bien conocidas para esclarecer definitivamente la <em>cinemática</em> del movimiento planetario.  En particular, el descubrimiento (o el enunciado matemático) de sus conocidas <em>leyes del movimiento planetario</em> representaron un cambio cualitativo en el desarrollo de la teoría del movimiento planetario e inspiraron en últimas el trabajo de Newton y sus contemporáneos.</p>
+<p>Adicionalmente, y esto es aún más importante, Kepler fue uno de los primeros astrónomos modernos (renacentistas europeos) en hacer consideraciones teóricas sobre la causa del movimiento planetario, más allá de ocuparse de su descripción, como lo hicieron la mayoría de los astrónomos de la antigüedad y la edad media. Esto pone a Kepler, entre esos astrónomos, como el primer <em>astrofísico</em> de la historia.</p>
 </blockquote>
 
 </div>
@@ -13515,7 +13491,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.5.2.-Algor&#237;tmos">3.5.2. Algor&#237;tmos<a class="anchor-link" href="#3.5.2.-Algor&#237;tmos">&#182;</a></h3><p><a id='algoritmos'></a></p>
+<p><a id='fig:kepler'></a><img src="./figures/vertical_kepler.png" alt="Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster (Alemania)." width="50.0%"></p>
+<center><b>Figura 3.4</b>. Retrato de Johanes Kepler, copia de un original de 1610 de pintor desconocido y que se conserva en el monasterio Benedictino de Kremsmünster (Alemania).</center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.5.2.-Algoritmos">3.5.2. Algoritmos<a class="anchor-link" href="#3.5.2.-Algoritmos">&#182;</a></h3><p><a id='algoritmos'></a></p>
 
 </div>
 </div>
@@ -13523,8 +13507,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como se ha insistido hasta aquí, una de las novedades más importantes de este libro, es el énfasis que se ha querido dar en los algoritmos y la aplicación de técnicas computacionales en la comprensión y aplicación de la mecánica celeste.  A lo largo de todo el texto encontraremos <em>algoritmos</em> para realizar tareas de computo propias de cada uno de los temas abordados.</p>
-<p>Existen en general tres tipos de <em>algoritmos</em> que encontraremos a lo largo del texto.  En primer lugar están los algoritmos más sencillos, <em>retazos de código</em> (en inglés <em>code snippets</em>), que ejecutan tareas básicas de preparación para algoritmos más complejos.  Este es un caso de ellos:</p>
+<p>Como he insistido hasta aquí, una de las novedades más importantes de este libro es el énfasis que he querido dar a los <em>algoritmos</em>.  Por algoritmo entenderemos aquí pequeños (o no tan pequeños) fragmentos de código (<em>code snippet</em> en inglés) que realizan tareas numéricas específicas o son parte de un algoritmo mayor.</p>
+<p>He evitado hablar de <em>programas</em> o <em>códigos</em> para resaltar el hecho de que lo importante en ellos es la lógica de las operaciones y no el lenguaje específico en el que están escritos.  A pesar de este esfuerzo por mantener el tema lo más general posible, es virtualmente imposible escribir algoritmos que se puedan ejecutar realmente en las libretas, sin recurrir a ciertas particularidades del lenguaje en el que están descritos,  <code>Python</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Existen en general tres tipos de <em>algoritmos</em> que encontraremos a lo largo del texto.  En primer lugar están los algoritmos más sencillos, aquellos que ejecutan tareas básicas de preparación de datos para algoritmos más complejos.  Este es un caso de ellos:</p>
 
 </div>
 </div>
@@ -13545,10 +13537,42 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Discriminante = -7.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Los algoritmos más complejos pueden, como las ecuaciones, venir numerados:</p>
+<p>Muchos de estos algoritmos simples vienen seguidos del resultado más importante de las operaciones que codifican.  En el caso anterior se muestra por ejemplo el valor del discriminante (el valor de la variable <code>disc</code>).  El algoritmo (o código) para producir ese resultado:</p>
+<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Discriminante = {disc:.1f}&quot;</span><span class="p">)</span>
+</pre></div>
+<p>Pero este algoritmo (y la celda correspondiente) no se muestra en el libro impreso para evitar la proliferación de código irrelevante.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los algoritmos más complejos pueden, como las ecuaciones, estar numerados:</p>
 
 </div>
 </div>
@@ -13563,24 +13587,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calcula_discriminante</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Calcula el discriminante de una ecuación de segundo grado.</span>
-<span class="sd">    </span>
-<span class="sd">    Argumentos:</span>
-<span class="sd">    ==========</span>
-<span class="sd">    a,b,c (float): Coeficientes</span>
-<span class="sd">    </span>
-<span class="sd">    Retorna:</span>
-<span class="sd">    =======</span>
-<span class="sd">    d (float): Valor del discriminante</span>
-<span class="sd">    </span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">a</span><span class="o">=</span><span class="mi">1</span>
-    <span class="n">b</span><span class="o">=-</span><span class="mi">1</span>
-    <span class="n">c</span><span class="o">=</span><span class="mi">2</span>
     <span class="n">disc</span><span class="o">=</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span>
     <span class="k">return</span> <span class="n">disc</span>
 </pre></div>
@@ -13593,33 +13603,18 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En este caso, además, el algoritmo representa una rutina o función, que podría ser usada más adelante, no solo en el mismo capítulo, sino en un capítulo posterior.  Todas las rutinas como estas, hacen parte de un paquete que viene con el libro, el paquete <code>pymcel</code>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Hay algoritmos que se ejecutan implícitamente pero para los cuáles, al menos en el libro impreso o en el libro para la web, no mostramos el código, bien sea por economía o porque es muy complejo e irrelevante para el libro.  Un ejemplo común de este código oculto, es el código que usamos para mostrar los resultados de algunos cálculos.  Por ejemplo:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='code:calcula_discriminante'></a></p>
+<p>En este caso, el algoritmo contiene una rutina o función, que podría ser usada más adelante, incluso en un capítulo posterior.  Todas las rutinas como estas, hacen parte de un paquete incluído con las libretas llamado <code>pymcel</code>.  Para usar la rutina en el Alg. (<a href="#code:rutina_discriminante">rutina_discriminante</a>) en otra parte del libro se usa:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">=</span><span class="n">calcula_discriminante</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pymcel.export</span> <span class="k">import</span> <span class="n">calcula_discriminante</span>
+<span class="n">d</span><span class="o">=</span><span class="n">calcula_discriminante</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13627,23 +13622,46 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Cualquier lenguaje de programación moderno depende de numerosas bibliotecas en las que están codificados procedimientos de uso regular o muy especializados.  En todos los algoritmos presentados en el libro, siempre que se use una rutina de una biblioteca externa, se presentará el código que hace referencia a la biblioteca de forma explícita.  Consider por ejemplo este algoritmo:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='code:raiz_polinomio'></a></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Coeficientes de un polinomio de segundo grado</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">c</span><span class="o">=-</span><span class="mi">2</span>
 
-<div class="output_wrapper">
-<div class="output">
+<span class="c1">#Calcula discriminante</span>
+<span class="kn">from</span> <span class="nn">pymcel.export</span> <span class="k">import</span> <span class="n">calcula_discriminante</span>
+<span class="n">d</span><span class="o">=</span><span class="n">calcula_discriminante</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
 
+<span class="c1">#Calcula raices</span>
+<span class="k">if</span> <span class="n">d</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sqrt</span>
+    <span class="n">x1</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">x2</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">-</span><span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El polinomio no tiene raices reales&quot;</span><span class="p">)</span>
+</pre></div>
 
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>El valor del discriminante es: -7
-</pre>
-</div>
-</div>
-
+    </div>
 </div>
 </div>
 
@@ -13651,18 +13669,63 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nótese que en el código (<a href="#code:calcula_discriminante">calcula_discriminante</a>) no hay ningón comando para mostrar el valor de la variable <code>discriminante</code> y mucho menos del mensaje asociado.  Esa tarea se realiza en una celda de código oculta.  En las libretas de clase, el lector encontrará todas las celdas.</p>
+<p>En él hemos usado la rutina <code>sqrt</code> (raíz cuadrada) de la biblioteca <code>NumPy</code> para calcular, en este caso, las raices de un polinomio de segundo grado.  Para ello, antes de la línea que usa la raíz cuadrada hemos incluido la instrucción:</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span>
+</pre></div>
+<p>Aunque en los programas regurales, estas instrucciones se ponen al principio, he decidido colocarlas lo más cerca posible al lugar donde se usan de modo que los fragmentos de código funcionen fuera del contexto del libro.   El lector poco familiarizado con el lenguaje <code>Python</code> puede hacer caso omiso a estas instrucciones, que nada le agregan a la lógica de los algoritmos.</p>
 
 </div>
 </div>
-</div>
+</div><div style="background:white;border:solid black 2px;pad:10px;margin-left:7em;margin-top:1em;margin-bottom:1em;">
+    	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>También tenemos los códigos que dan como resultado figuras o gráficos.  Estos están entre los más interesantes y útiles.  Todos los códigos que producen figuras están numerados.  Así mismo los gráficos que producen aparecen en el texto como figuras independientes.  Incluso, en el texto impreso, y por razones de eficiencia del espacio, algunas de esos gráficos pueden estar en lugares lejanos de la posición del código.  Es por esto que en todos los algoritmos que producen gráficos encontraran (en la parte inferior) una referencia a la figura correspondiente.</p>
+<p><strong>Nota: las instrucciones <code>import</code> y la velocidad de los programas.</strong><a id=''></a> Es importante advertir que en algunos algoritmos, usar muchas instrucciones del timpo <code>import</code> entre las líneas de código puede disminuir la velocidad del código.  La recomendación general es la de poner este tipo de instrucciones al principio del programa.  Así el Alg. (<a href="#code:raiz_polinomio">raiz_polinomio</a>) debería escribirse así:</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymcel.export</span> <span class="kn">import</span> <span class="n">calcula_discriminante</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span>
+
+<span class="c1">#Coeficientes de un polinomio de segundo grado</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">c</span><span class="o">=-</span><span class="mi">2</span>
+
+<span class="c1">#Calcula discriminante</span>
+<span class="n">d</span><span class="o">=</span><span class="n">calcula_discriminante</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+
+<span class="c1">#Calcula raices</span>
+<span class="k">if</span> <span class="n">d</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+    <span class="n">x1</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">+</span><span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">x2</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">b</span><span class="o">-</span><span class="n">sqrt</span><span class="p">(</span><span class="n">d</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;El polinomio no tiene raices reales&quot;</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
+</div>
+    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Otro tipo de algoritmos frecuentes son aquellos que dan como resultado figuras o gráficos.  Estos están entre los más interesantes y útiles, aunque pueden ser complicados y causar algo de estupor para los menos familiarizados con el lenguaje de programación.  Les recomiendo a todos poner especial atención en estos algoritmos, tratar de entenderlos e imitarlos.  Una buena parte de la ciencia que hacemos hoy día depende de producir bonitos productos gráficos que ilustren de forma compacta conceptos o resultados difíciles de describir de otra manera.</p>
+<p>Todos los códigos que producen figuras están numerados.  Así mismo los gráficos que producen aparecen en el texto, incluso en el impreso, como figuras independientes y numeradas.  Por razones de eficiencia en el uso del espacio, algunas de esos gráficos pueden estar en lugares lejanos de la posición del código.  Es por esto que en todos los algoritmos que producen gráficos encontraran (en la parte inferior) una referencia a la figura correspondiente.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13674,15 +13737,14 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span><span class="p">,</span><span class="n">sin</span><span class="p">,</span><span class="n">pi</span>
-
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span><span class="p">,</span><span class="n">sin</span><span class="p">,</span><span class="n">pi</span>
 <span class="n">t</span><span class="o">=</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">)</span>
 <span class="n">x</span><span class="o">=</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;k-&#39;</span><span class="p">);</span>
 
@@ -13694,11 +13756,33 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEGCAYAAABLgMOSAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4xLjEsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy8QZhcZAAAgAElEQVR4nO3dd3hUdfr+8fdDqNJCFZe+fJG6GCHA2lZUQLxQQQEBQViqUqRGJLQAoQRdQAUMIqAEEETKUmTpsquyKgEBIRQjiBJRQlulCSHP748M/iJSkpCZz0zyvK5rrsycOWfOPaybO6d+RFUxxhhj0iuH6wDGGGMCkxWIMcaYDLECMcYYkyFWIMYYYzLECsQYY0yG5HQdwJeKFy+uFSpUcB3DGGMCyrZt246raomrp2erAqlQoQKxsbGuYxhjTEARkcPXmm67sIwxxmSIFYgxxpgMsQIxxhiTIVYgxhhjMsQKxBhjTIY4LRARmS0ix0Rk93XeFxF5Q0TiRWSXiNRO9V5HEfna8+jou9TGGGPA/RbIu0CTG7z/GFDZ8+gORAOISFEgAqgP1AMiRKSIV5MaY4z5HafXgajqf0Skwg1maQbEaMo95z8TkWARuQNoAKxX1ZMAIrKelCJa4N3E5lpUle+//57t27cTFxdHnjx5CA4OpkiRIr97lC1blhw5XP/NYozJLP5+IWFp4PtUr494pl1v+h+ISHdStl4oV66cd1JmM2fOnGHNmjVs27aN7du3s337do4fP37T5UqVKsVTTz1FixYtePDBB8mZ09//8zPG3EiW/3+wqs4AZgCEhoba6Fm34Mcff2TKlClER0dz6tQpcuXKRc2aNWnWrBm1a9emdu3a/OUvf+Hy5cucOnWKU6dOcfr0aU6dOkViYiLr169nzpw5REdHU6xYMZo1a0bLli155JFHyJ07t+uvZ4xJJ38vkASgbKrXZTzTEkjZjZV6+mafpcpm4uLimDRpEnPnzuXSpUs89dRT9OnTh7/+9a/kyZPnmssUKlSI8uXL/25a9+7dOXfuHGvWrGHJkiV88MEHzJ49m/Lly/OPf/yDFi1aICK++ErGmMygqk4fQAVg93Xeawr8CxDgr8AXnulFgUNAEc/jEFD0ZuuqU6eOmrTbvn27Nm3aVAHNly+f9uzZUw8cOJBpn3/hwgX95z//qbVq1VJAGzRooDt37sy0zzfGZA4gVq/xO9X1abwLgP8CVUTkiIh0EZEXROQFzyyrgYNAPPA20BNAUw6eRwJbPY/RnmkmE1y+fJnx48dTr149Pv/8c0aNGsV3333HtGnTqFy5cqatJ0+ePDRr1oxt27YRHR3NV199xd13302PHj3SdEzFGOPYtVolqz5sC+TmDh06pA888IAC+swzz+jJkyd9tu4TJ07oiy++qEFBQRocHKxvvvmmJicn+2z9xphrwx+3QIz/UFXmzZvHXXfdxY4dO4iJiWHhwoUUKeK7y2uKFi3KG2+8wc6dO6lTpw49e/akY8eOXLhwwWcZjDFpZwViOHXqFM8++yzPPfcctWrVYteuXTz33HPODmjXqFGD9evXExkZydy5c2nQoAFHjx51ksUYc31WINnct99+S926dVm8eDFjx45l8+bN+MOojSLCsGHDWLJkCV999RV169Zl27ZtrmMZY1KxAsnG9u3bx/3338/Jkyf597//zZAhQwgKCnId63eefvppPv30U4KCgnjggQd4//33XUcyxnhYgWRTX375JQ888ABJSUls3ryZe++913Wk6woJCWHr1q3Url2bNm3aMGLEiCuneRtjHLICyYY+/fRTHnroIW677TY+/vhjatWq5TrSTZUsWZKNGzfSqVMnIiMjCQsLsxIxxjF/vxLdZLL169fTvHlzSpcuzYYNGwLq/mB58uRh1qxZ5M+fn0mTJlG4cGFGjBjhOpYx2ZYVSDbyz3/+k9atW1O1alXWrVvH7bff7jpSuokIr7/+Or/88gsREREULFiQ/v37u45lTLZkBZJNbNy4kVatWhEaGsrq1at9en1HZsuRIwczZ87kzJkzDBgwgIIFC9K1a1fXsYzJduwYSDYQFxdHixYtqFq1KmvWrAno8rgiZ86cvPfeezRp0oTu3bvb2VnGOGAFksX99NNPNG3alLx587Jq1SoKFy7sOlKmyZ07N0uWLOGBBx6gffv2rFq1ynUkY7IVK5As7Pz58zRr1oyffvqJlStX/uH26lnBbbfdxsqVKwkJCaFly5Z88sknriMZk21YgWRRycnJdOzYkS+++IL58+dTt25d15G8plChQqxZs4Zy5crRsmVLfvjhB9eRjMkWrECyqKFDh/LBBx/wyiuv8NRTT7mO43XFihVj2bJlnDlzhlatWnHx4kXXkYzJ8qxA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zmsFIiIbRGT3NR7NUs+nKaeBXfdUMBG5A/gLsDbV5HCgKlAXKApc914BqjpDVUNVNbREiRK38pWMyba6detG586diYyMZOXKla7j+IXevXsTHx/P/PnzKVasmOs4TuT01gerasPrvSciP4nIHap61FMQNxqI4BlgmapeSvXZV7ZefhWRd4CwTAltjLmmK7d937lzJ+3btyc2NpbKlSu7juXMvHnziImJYfjw4Tz44IOu4zjjahfWCqCj53lHYPkN5m3LVbuvPKWDpGwzNgd2eyGjMSaVvHnzsmTJEnLlysXTTz/N2bNnXUdyIjY2lu7du3P//fczYsQI13GcclUgUUAjEfkaaOh5jYiEishvY2uKSAWgLHD1IAXzReQr4CugOJD17xlgjB8oX748CxYsIC4ujq5du5KdLkQG+O6773jiiScoWbIkH3zwATlzem0nTkBw8u1V9QTwyDWmxwJdU73+FvjDGJCq+rA38xljrq9Ro0aMHTuW8PBw6tevT79+/VxH8omff/6Zxx9/nHPnzrFhwwZKlSrlOpJzdiW6MSbdXn75ZZ566inCwsL46KOPXMfxuqSkJFq3bk1cXByLFy+mRo0ariP5BSsQY0y6iQjvvvsud955J82bN2fbtm2uI3mNqtKnTx/WrFlDdHQ0jRo1ch3Jb1iBGGMypFChQqxbt44iRYrw6KOPsmfPHteRvOK1114jOjqal156iW7durmO41esQIwxGVamTBk2btxI7ty5adSoEd98843rSJlq+fLlDBw4kBYtWhAVFeU6jt+xAjHG3JJKlSqxfv16fv31Vxo2bMiRI0dcR8oU69ato23bttStW5eYmBhy5LBfl1ezfxFjzC2rUaMGa9eu5cSJEzRq1Ihjx250bbD/W7ZsGU888QR33nknK1eu5LbbbnMdyS9ZgRhjMkVoaCgffvghhw8f5tFHH+X06dOuI2VITEwMrVq1ok6dOnz00UeULFnSdSS/ZQVijMk0DzzwAEuXLmXPnj00bNiQhIQE15HSZdq0aXTs2JEGDRr8doKAuT4rEGNMpmrSpAnLli1j//791K1bly+++MJ1pDQZP348vXv35sknn2TVqlUUKFDAdSS/ZwVijMl0TZs25b///S958uThb3/7G++9957rSNelqoSHhzNkyBCeffZZFi9eTN68eV3HCghWIMYYr6hZsyZbt27l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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='code:plot_sin'></a><center><b>Figura 3.4.</b> </center></p>
+<p><a id='code:plot_sin'></a><center><b>Figura 3.5.</b> </center></p>
 
 </div>
 </div>
@@ -13706,7 +13790,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La mayoría de las figuras del libro han sido elaboradas usando software de diseño independientes.  Sin embargo, algunas figuras, especialmente gráficos de datos o resultados de simulaciones, son generadas por las libretas con las que fue escrito el libro.  Si bien los algoritmos con los que son creados esas figuras (que llamaremos <em>gráficos generados</em>) no aparecen en la versión impresa o en la versión web (pueden ser muy elaborados e irrelevantes para los fines del curso), ellos si pueden aparecer en las libretas de clase.</p>
+<p>La mayoría de las figuras del libro han sido elaboradas usando software de diseño independientes.  Sin embargo, algunas figuras, especialmente gráficos de datos o resultados de simulaciones, son generadas por las libretas con las que fue escrito el libro.  Si bien los algoritmos con los que son creados esas figuras (que llamaremos <em>gráficos generados</em>) no aparecen en la versión impresa o en la versión web porque pueden ser muy elaborados e irrelevantes para los fines del texto, si pueden aparecer en las libretas de clase.</p>
 
 </div>
 </div>
@@ -13739,7 +13823,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='fig:03.00.00.00.Introduccion_5'></a><center><b>Figura 3.5.</b> Gráfico de las funciones trigonométricas básicas, en el intervalo de interés (gráfico generado).</center></p>
+<p><a id='fig:03.00.00.00.Introduccion_6'></a><center><b>Figura 3.6.</b> Gráfico de las funciones trigonométricas básicas, en el intervalo de interés (gráfico generado).</center></p>
 
 </div>
 </div>
@@ -13755,8 +13839,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Uno de las cosas que hace poderosas a las libretas de <code>Jupyter</code>, como medios para compartir información o estudiar un tema, es la posibilidad de interactuar con la información que se esta compartiendo o asimilando.  Esto se consigue principalmente accediendo al contenido de las celdas de la libreta (código) y eventualmente modificándolas.</p>
-<p>Pero hay otra posibilidad que ofrecen las libretas y es la de generar gráficos interactivos y animaciones, que permiten al lector o al estudiante, modificar de forma sencilla los parámetros de un algoritmo o una solución (gráficos interactivos) o ver en movimiento figuras que normalmente vemos estáticas en los libros.</p>
+<p>Uno de las cosas que hace poderosas a las libretas de <code>Jupyter</code> como medios para compartir información o estudiar un tema, es la posibilidad de interactuar directamente con esa información.  Esto se consigue modificando el contenido de las celdas de las libretas (código) y ejecutándolas independientemente.</p>
+<p>Pero hay otra posibilidad.  En muchos apartes del libro se han creado gráficos interactivos y animaciones que permitiran al lector o al estudiante, modificar de forma gráfica (sin ir directamente al código) los parámetros de un algoritmo (gráficos interactivos) o ver en movimiento figuras que normalmente están estáticas en los libros.</p>
 
 </div>
 </div>
@@ -13772,7 +13856,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Para ver las figuras interactivas, debe utilizar las libretas del curso.</p>
+<p>Para ver las figuras interactivas, debe utilizar las libretas del curso displonibles en la <a href="http://seap-udea.org/MecanicaCeleste_Zuluaga">versión en línea</a> del libro.</p>
 
 </div>
 </div>
@@ -13795,7 +13879,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%capture</span>
@@ -13830,7 +13914,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Para facilitar el control de la animación (además de permitirla en la versión web), es posible convertirla en el formato <code>jshtml</code>:</p>
+<p>Para facilitar el control de la animación (además de permitir que pueda verse en la versión web del libro), es posible convertirla en el formato <code>jshtml</code>:</p>
 
 </div>
 </div>
@@ -14024,39 +14108,39 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_img59303449b8604927bac7f54512dcb52a">
+  <img id="_anim_img8bf7ba4977da470eae4d27c37c4c0118">
   <div class="anim-controls">
-    <input id="_anim_slider59303449b8604927bac7f54512dcb52a" type="range" class="anim-slider"
+    <input id="_anim_slider8bf7ba4977da470eae4d27c37c4c0118" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="anim59303449b8604927bac7f54512dcb52a.set_frame(parseInt(this.value));"></input>
+           oninput="anim8bf7ba4977da470eae4d27c37c4c0118.set_frame(parseInt(this.value));"></input>
     <div class="anim-buttons">
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.slower()"><i class="fa fa-minus"></i></button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.first_frame()"><i class="fa fa-fast-backward">
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.slower()"><i class="fa fa-minus"></i></button>
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.first_frame()"><i class="fa fa-fast-backward">
           </i></button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.previous_frame()">
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.reverse_animation()">
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.pause_animation()"><i class="fa fa-pause">
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.pause_animation()"><i class="fa fa-pause">
           </i></button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.play_animation()"><i class="fa fa-play"></i>
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.play_animation()"><i class="fa fa-play"></i>
           </button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.next_frame()"><i class="fa fa-step-forward">
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.next_frame()"><i class="fa fa-step-forward">
           </i></button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.last_frame()"><i class="fa fa-fast-forward">
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.last_frame()"><i class="fa fa-fast-forward">
           </i></button>
-      <button onclick="anim59303449b8604927bac7f54512dcb52a.faster()"><i class="fa fa-plus"></i></button>
+      <button onclick="anim8bf7ba4977da470eae4d27c37c4c0118.faster()"><i class="fa fa-plus"></i></button>
     </div>
-    <form action="#n" name="_anim_loop_select59303449b8604927bac7f54512dcb52a" class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_59303449b8604927bac7f54512dcb52a"
+    <form action="#n" name="_anim_loop_select8bf7ba4977da470eae4d27c37c4c0118" class="anim-state">
+      <input type="radio" name="state" value="once" id="_anim_radio1_8bf7ba4977da470eae4d27c37c4c0118"
              checked>
-      <label for="_anim_radio1_59303449b8604927bac7f54512dcb52a">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_59303449b8604927bac7f54512dcb52a"
+      <label for="_anim_radio1_8bf7ba4977da470eae4d27c37c4c0118">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_8bf7ba4977da470eae4d27c37c4c0118"
              >
-      <label for="_anim_radio2_59303449b8604927bac7f54512dcb52a">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_59303449b8604927bac7f54512dcb52a"
+      <label for="_anim_radio2_8bf7ba4977da470eae4d27c37c4c0118">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_8bf7ba4977da470eae4d27c37c4c0118"
              >
-      <label for="_anim_radio3_59303449b8604927bac7f54512dcb52a">Reflect</label>
+      <label for="_anim_radio3_8bf7ba4977da470eae4d27c37c4c0118">Reflect</label>
     </form>
   </div>
 </div>
@@ -14066,9 +14150,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img59303449b8604927bac7f54512dcb52a";
-    var slider_id = "_anim_slider59303449b8604927bac7f54512dcb52a";
-    var loop_select_id = "_anim_loop_select59303449b8604927bac7f54512dcb52a";
+    var img_id = "_anim_img8bf7ba4977da470eae4d27c37c4c0118";
+    var slider_id = "_anim_slider8bf7ba4977da470eae4d27c37c4c0118";
+    var loop_select_id = "_anim_loop_select8bf7ba4977da470eae4d27c37c4c0118";
     var frames = new Array(100);
 
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz\
@@ -39634,7 +39718,7 @@ AACwGApAAAAAi6EABAAAsBgKQAAAAIv5f2NOzWyFCL4MAAAAAElFTkSuQmCC\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim59303449b8604927bac7f54512dcb52a = new Animation(frames, img_id, slider_id, 50.0,
+        anim8bf7ba4977da470eae4d27c37c4c0118 = new Animation(frames, img_id, slider_id, 50.0,
                                  loop_select_id);
     }, 0);
   })()
@@ -39651,7 +39735,7 @@ AACwGApAAAAAi6EABAAAsBgKQAAAAIv5f2NOzWyFCL4MAAAAAElFTkSuQmCC\
 <p><strong>NOTAS AL PIE:</strong></p>
 <p><a id='notaspie_1'></a></p>
 <ol start='1'>
-<li>En el libro presentaremos "transliteraciones" de la pronunciación en castellano, indicando, entre comillas las letras y palabras más cercanas que un hispanohablante podría usar.  Así por ejemplo "niuton" será la trasliteración fonética de Newton.</li>
+<li>Decía el matemático húngaro Paul Eördos ("pol érdos") que un <em>matemático es una máquina para convertir café en teoremas</em>, una frase que aunque parece simplificar la naturaleza de los matemáticos, en realidad demuestra la importancia que tienen los teoremas para esta milenaria profesión.</li>
 </ol>
 
 </div>

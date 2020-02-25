@@ -13110,7 +13110,51 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>a. Dado que $r_{1}=\sqrt{\left(x-x_{1}\right)^{2}+y^{2}+z^{2}}$, miremos que</p>
+<blockquote>\begin{eqnarray}
+\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{1}{r_{1}}\right)&amp;=&amp;\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{1}{\sqrt{\left(x-x_{1}\right)^{2}+y^{2}+z^{2}}}\right)\\\mbox{reorgnizando}\rightarrow&amp;=&amp;\frac{\mathrm{d}}{\mathrm{d}t}\left(\left[\left(x-x_{1}\right)^{2}+y^{2}+z^{2}\right]^{-1/2}\right)\\\mbox{aplicando regla de la cadena}\rightarrow&amp;=&amp;-\frac{1}{2}\frac{2\left(x-x_{1}\right)\dot{x}+2y\dot{y}+2z\dot{z}}{\left[\left(x-x_{1}\right)^{2}+y^{2}+z^{2}\right]^{3/2}}\\\mbox{simplificando}\rightarrow&amp;=&amp;-\frac{\left(x-x_{1}\right)\dot{x}+y\dot{y}+z\dot{z}}{r_{1}^{3}}.
+\end{eqnarray}<p>Ahora, como $\dot{\vec{r}}=\dot{x}\hat{i}+\dot{y}\hat{j}+\dot{z}\hat{k}$, entonces</p>
+\begin{eqnarray}
+\vec{r}_{1}\cdot\dot{\vec{r}}=\left[\left(x-x_{1}\right)\hat{i}+y\hat{j}+z\hat{k}\right]\cdot\left(\dot{x}\hat{i}+\dot{y}\hat{j}+\dot{z}\hat{k}\right)=\left(x-x_{1}\right)\dot{x}+y\dot{y}+z\dot{z}.
+\end{eqnarray}<p>Así, combinando ambos resultados, se obtiene lo pedido:</p>
+$$
+-\frac{\vec{r}_{1} \cdot \dot{\vec{r}}}{r_{1}^3} = \frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{1}{r_{1}}\right).
+$$
+</blockquote>
+<p>b. De igual forma, procedamos operando el lado derecho de lo pedido:</p>
+<blockquote>\begin{eqnarray}
+-\frac{\partial}{\partial x}\left[-\frac{(1-\alpha)}{r_{1}}-\frac{\alpha}{r_{2}}-\frac{1}{2}(x^{2}+y^{2})\right]&amp;=&amp;-\frac{\partial}{\partial x}\left[-(1-\alpha)\left[\left(x-x_{1}\right)^{2}+y^{2}+z^{2}\right]^{-1/2}-\alpha\left[\left(x-x_{2}\right)^{2}+y^{2}+z^{2}\right]^{-1/2}-\frac{1}{2}(x^{2}+y^{2})\right]\\\mbox{aplicando regla de la cadena}\rightarrow&amp;=&amp;-\frac{1}{2}(1-\alpha)\frac{2\left(x-x_{1}\right)}{\left[\left(x-x_{1}\right)^{2}+y^{2}+z^{2}\right]^{3/2}}-\frac{1}{2}\alpha\frac{2\left(x-x_{2}\right)}{\left[\left(x-x_{2}\right)^{2}+y^{2}+z^{2}\right]^{3/2}}+x\\\mbox{simplificando}\rightarrow&amp;=&amp;-(1-\alpha)\frac{\left(x-x_{1}\right)}{r_{1}^{3}}-\alpha\frac{\left(x-x_{2}\right)}{r_{2}^{3}}+x.
+\end{eqnarray}<p>Sin pérdida de generalidad, se obtiene</p>
+\begin{eqnarray}
+-\frac{\partial}{\partial y}\left[-\frac{(1-\alpha)}{r_{1}}-\frac{\alpha}{r_{2}}-\frac{1}{2}(x^{2}+y^{2})\right]&amp;=&amp;-(1-\alpha)\frac{y}{r_{1}^{3}}-\alpha\frac{y}{r_{2}^{3}}+y\\-\frac{\partial}{\partial z}\left[-\frac{(1-\alpha)}{r_{1}}-\frac{\alpha}{r_{2}}-\frac{1}{2}(x^{2}+y^{2})\right]&amp;=&amp;-(1-\alpha)\frac{z}{r_{1}^{3}}-\alpha\frac{z}{r_{2}^{3}},
+\end{eqnarray}<p>de forma que</p>
+\begin{eqnarray}
+-\nabla\left[-\frac{(1-\alpha)}{r_{1}}-\frac{\alpha}{r_{2}}-\frac{1}{2}(x^{2}+y^{2})\right]&amp;=&amp;\left[-(1-\alpha)\frac{\left(x-x_{1}\right)}{r_{1}^{3}}-\alpha\frac{\left(x-x_{2}\right)}{r_{2}^{3}}+x\right]\hat{i}+\left[-(1-\alpha)\frac{y}{r_{1}^{3}}-\alpha\frac{y}{r_{2}^{3}}+y\right]\hat{j}+\left[-(1-\alpha)\frac{z}{r_{1}^{3}}-\alpha\frac{z}{r_{2}^{3}}\right]\hat{k}\\&amp;=&amp;-(1-\alpha)\frac{\vec{r}_{1}}{r_{1}^{3}}-\alpha\frac{\vec{r}_{2}}{r_{2}^{3}}+x\hat{i}+y\hat{j}
+\end{eqnarray}<p>Pero podemos ver que</p>
+\begin{eqnarray}
+-\hat{k}\times\left(\hat{k}\times\vec{r}\right)&amp;=&amp;-\hat{k}\times\left[\hat{k}\times\left(x\hat{i}+y\hat{j}+z\hat{k}\right)\right]\\&amp;=&amp;-\hat{k}\times\left(x\hat{j}-y\hat{i}\right)\\&amp;=&amp;x\hat{i}+y\hat{j},
+\end{eqnarray}<p>por lo que obtenemos lo pedido:</p>
+$$
+ -(1-\alpha)\frac{\vec{r}_{1}}{r^3_{1}} - \alpha\frac{\vec{r}_{2}}{r^3_{2}} - \hat{k}\times(\hat{k}\times \vec{r}) =- \nabla \left[-\frac{(1-\alpha)}{r_{1}}-\frac{\alpha}{r_{2}}-\frac{1}{2}(x^2 + y^2)\right].
+$$
+</blockquote>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13142,7 +13186,42 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>Multiplicando por la inversa en la transformación de coordenadas dada, podemos escribir $x$, $y$ y $z$ como</p>
+\begin{eqnarray}
+x&amp;=&amp;\xi\cos t+\eta\sin t\\y&amp;=&amp;\xi\sin t+\eta\cos t\\z&amp;=&amp;\zeta
+\end{eqnarray}<p>de forma que</p>
+\begin{eqnarray}
+\dot{x}&amp;=&amp;\dot{\xi}\cos t-\xi\sin t+\dot{\eta}\sin t+\eta\cos t=\left(\dot{\xi}+\eta\right)\cos t+\left(\dot{\eta}-\xi\right)\sin t\\\dot{y}&amp;=&amp;\dot{\xi}\sin t+\xi\cos t+\dot{\eta}\cos t-\eta\sin t=\left(\dot{\xi}-\eta\right)\sin t+\left(\dot{\eta}+\xi\right)\cos t\\\dot{z}&amp;=&amp;\dot{\zeta},
+\end{eqnarray}<p>en donde se toma $n=1$ para las coordenadas canónicas en las que</p>
+$$
+C_J = 2\frac{(1-\alpha)}{r_{1}} + 2\frac{\alpha}{r_{2}} + x^2 + y^2-v^2.
+$$<p>Nótese que</p>
+\begin{eqnarray}
+x^{2}+y^{2}&amp;=&amp;\left(\xi\cos t+\eta\sin t\right)^{2}+\left(-\xi\sin t+\eta\cos t\right)^{2}\\\mbox{elevando al cuadrado}\rightarrow&amp;=&amp;\xi^{2}\cos^{2}t+2\xi\eta\cos t\sin t+\eta^{2}\sin^{2}t+\xi^{2}\sin^{2}t-2\xi\eta\sin t\cos t+\eta^{2}\cos^{2}t\\\mbox{factorizando y cancelando}\rightarrow&amp;=&amp;\xi^{2}\left(\sin^{2}t+\cos^{2}t\right)+\eta^{2}\left(\sin^{2}t+\cos^{2}t\right)\\\mbox{simplificando}\rightarrow&amp;=&amp;\xi^{2}+\eta^{2}
+\end{eqnarray}<p>y que</p>
+\begin{eqnarray}
+v^{2}&amp;=&amp;\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\\\mbox{reemplazando}\rightarrow&amp;=&amp;\left[\left(\dot{\xi}+\eta\right)\cos t+\left(\dot{\eta}-\xi\right)\sin t\right]^{2}+\left[-\left(\dot{\xi}+\eta\right)\sin t+\left(\dot{\eta}-\xi\right)\cos t\right]^{2}+\dot{\zeta}^{2}\\\mbox{expandiendo}\rightarrow&amp;=&amp;\left(\dot{\xi}+\eta\right)^{2}\cos^{2}t+2\left(\dot{\xi}+\eta\right)\left(\dot{\eta}-\xi\right)\sin t\cos t+\left(\dot{\eta}-\xi\right)^{2}\sin^{2}t+\left(\dot{\xi}+\eta\right)^{2}\sin^{2}t-2\left(\dot{\xi}+\eta\right)\left(\dot{\eta}-\xi\right)\sin t\cos t+\left(\dot{\eta}-\xi\right)^{2}\cos^{2}t+\dot{\zeta}^{2}\\\mbox{factorizando}\rightarrow&amp;=&amp;\left(\dot{\xi}+\eta\right)^{2}\left(\sin^{2}t+\cos^{2}t\right)+\left(\dot{\eta}-\xi\right)^{2}\left(\sin^{2}t+\cos^{2}t\right)+\dot{\zeta}^{2}\\\mbox{simplificando}\rightarrow&amp;=&amp;\left(\dot{\xi}+\eta\right)^{2}+\left(\dot{\eta}-\xi\right)^{2}+\dot{\zeta}^{2}\\\mbox{expandiendo}\rightarrow&amp;=&amp;\dot{\xi}^{2}+2\eta\dot{\xi}+\eta^{2}+\dot{\eta}^{2}-2\xi\dot{\eta}+\xi^{2}+\dot{\zeta}^{2}\\\mbox{organizando}\rightarrow&amp;=&amp;\dot{\xi}^{2}+\dot{\eta}^{2}+\dot{\zeta}^{2}+\eta^{2}+\xi^{2}-2\left(\xi\dot{\eta}-\eta\dot{\xi}\right).
+\end{eqnarray}<p>Reemplazando en $C_J$, se sigue que</p>
+\begin{eqnarray}
+C_{J}&amp;=&amp;2\frac{(1-\alpha)}{r_{1}}+2\frac{\alpha}{r_{2}}+\xi^{2}+\eta^{2}-\left[\dot{\xi}^{2}+\dot{\eta}^{2}+\dot{\zeta}^{2}+\eta^{2}+\xi^{2}-2\left(\xi\dot{\eta}-\eta\dot{\xi}\right)\right]\\\mbox{sumando términos semejantes}\rightarrow&amp;=&amp;-\left(\dot{\xi}^{2}+\dot{\eta}^{2}+\dot{\zeta}^{2}\right)+2\frac{(1-\alpha)}{r_{1}}+2\frac{\alpha}{r_{2}}+2\left(\xi\dot{\eta}-\eta\dot{\xi}\right),
+\end{eqnarray}<p>que era a lo que se quería llegar.</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13152,7 +13231,27 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>La superficie límite de Hill, dentro del contexto del CRTBP, es la superficie dentro de la cual debe estar $m_3$ orbitando a $m_2$ para que no exista la posibilidad de que pase a orbitar eventualmente a $m_1$. Dada la figura presentada en el Problema 7 (junto con la discusión que allí se da), podemos decir que esta superficie corresponde a la curva de cero velocidad que encierra a $m_2$ cuando $C_J$ toma el valor tal que $m_3$ se quedaría en reposo en el punto colineal de Lagrange $L_1$. Además, podríamos aproximar dicha superficie a una esfera de radio $x_2-x_{L_1}$.</p>
+<p>En el caso del Sol, la Tierra y la Luna, sabemos que el punto colineal de Lagrange $L_1$ corresponde a $x_{L_1}=0.990029 U_L$, de forma que la constante de Jacobi para la cual $m_3$ se quedaría en reposo en el punto colineal de Lagrange $L_1$ es</p>
+$$\boxed{C_J=\frac{2\left(1-\alpha\right)}{x_{L_{1}}+\alpha}+\frac{2\alpha}{1-\alpha-x_{L_{1}}}+x_{L_{1}}^{2}=3.00089.}$$<p>y el radio de la esfera de Hill mencionada sería</p>
+$$\boxed{r_H=x_2-x_{L_1}=1-0.990029=0.00997122U_L=1.49169\times 10^9\mbox{ m}.}$$<p>Esto quiere decir que la Luna todavía está dentro del radio de Hill (a una distancia del 26%) y no pasará a orbitar al Sol en vez de la Tierra en un futuro cercano.</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13169,7 +13268,72 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>Recordemos que en las unidades canónicas de nuestro CRTBP, la constante de Jacobi está dada por</p>
+$$
+C=-\vec{v}^{2}+\frac{2\left(1-\alpha\right)}{r_{1}}+\frac{2\alpha}{r_{2}}+x^{2}+y^{2}.
+$$<p>Debido a que necesariamente $\vec{v}^{2}\geq0$, tiene que suceder también que</p>
+$$
+-C+\frac{2\left(1-\alpha\right)}{r_{1}}+\frac{2\alpha}{r_{2}}+x^{2}+y^{2}\geq0.
+$$<p>Por lo tanto, la ecuación de la curva límite que separa las regiones donde la partícula puede moverse está dada por el caso de igualdad. Ahora, si la partícula de prueba que está confinada a moverse en el plano $xy$, entonces su coordenada $z=0$ y, recordando que $x_{1}=-\alpha$ y que $x_{2}=1-\alpha$, tenemos lo siguiente:</p>
+\begin{eqnarray}
+r_{1}^{2}&amp;=&amp;\left(x-x_{1}\right)^{2}+y^{2}=\left(x+\alpha\right)^{2}+y^{2}=x^{2}+2\alpha x+\alpha^{2}+y^{2}\\
+r_{2}^{2}&amp;=&amp;\left(x-x_{2}\right)^{2}+y^{2}=\left(x-\left(1-\alpha\right)\right)^{2}+y^{2}=x^{2}-2\left(1-\alpha\right)x+\left(1-\alpha\right)^{2}+y^{2}.
+\end{eqnarray}<p>Al restar estas dos ecuaciones, tenemos
+$$
+r_{1}^{2}-r_{2}^{2}=2x+\alpha^{2}-\left(1-\alpha\right)^{2}\qquad\Longrightarrow\qquad2x=r_{1}^{2}-r_{2}^{2}-\alpha^{2}+\left(1-\alpha\right)^{2}.
+$$</p>
+<p>Al sumarlas y aplicar lo obtenido, se sigue
+$$r_{1}^{2}+r_{2}^{2}=2\left(x^{2}+y^{2}\right)+2\left(2\alpha-1\right)x+\alpha^{2}+\left(1-\alpha\right)^{2}=2\left(x^{2}+y^{2}\right)+\left(2\alpha-1\right)\left[r_{1}^{2}-r_{2}^{2}-\alpha^{2}+\left(1-\alpha\right)^{2}\right]+\alpha^{2}+\left(1-\alpha\right)^{2}.
+$$</p>
+<p>Al despejar $2\left(x^{2}+y^{2}\right)$ (con cuidado algebraico): 
+\begin{eqnarray}
+2\left(x^{2}+y^{2}\right)&amp;=&amp;r_{1}^{2}+r_{2}^{2}-\left(2\alpha-1\right)\left[r_{1}^{2}-r_{2}^{2}-\alpha^{2}+\left(1-\alpha\right)^{2}\right]-\alpha^{2}-\left(1-\alpha\right)^{2}\\&amp;=&amp;r_{1}^{2}+r_{2}^{2}-\left(2\alpha-1\right)r_{1}^{2}+\left(2\alpha-1\right)r_{2}^{2}+\left(2\alpha-1\right)\alpha^{2}-\left(2\alpha-1\right)\left(1-\alpha\right)^{2}-\alpha^{2}-\left(1-\alpha\right)^{2}\\&amp;=&amp;r_{1}^{2}+r_{2}^{2}-2\alpha r_{1}^{2}+r_{1}^{2}+2\alpha r_{2}^{2}-r_{2}^{2}+2\alpha^{3}-\alpha^{2}-2\alpha+4\alpha^{2}-2\alpha^{3}+1-2\alpha+\alpha^{2}-\alpha^{2}-1+2\alpha-\alpha^{2}\\&amp;=&amp;2r_{1}^{2}\left(1-\alpha\right)+2\alpha r_{2}^{2}-2\alpha\left(1-\alpha\right).
+\end{eqnarray}</p>
+<p>Simplificando, se obtiene finalmente
+$$x^{2}+y^{2}=r_{1}^{2}\left(1-\alpha\right)+\alpha r_{2}^{2}-\alpha\left(1-\alpha\right).
+$$</p>
+<p>Reemplazando este resultado en la ecuación de la curva límite, tenemos
+$$-C+\frac{2\left(1-\alpha\right)}{r_{1}}+\frac{2\alpha}{r_{2}}+r_{1}^{2}\left(1-\alpha\right)+\alpha r_{2}^{2}-\alpha\left(1-\alpha\right)=0.
+$$</p>
+<p>Reorganizando esta expresión, obtenemos lo pedido:
+$$\left(1-\alpha\right)\left(r_{1}^{2}+\frac{2}{r_{1}}\right)+\alpha\left(r_{2}^{2}+\frac{2}{r_{2}}\right)=C+\alpha\left(1-\alpha\right).
+$$</p>
+<p>Ahora, si derivamos parcialmente esta expresión con respecto a $r_{1}$, obtenemos 
+$$\left(1-\alpha\right)\left(2r_{1}-\frac{2}{r_{1}^{2}}\right)=\frac{\partial C}{\partial r_{1}}.$$</p>
+<p>Igualando esta expresión a cero, obtenemos los puntos críticos de $C$:
+$$\left(1-\alpha\right)\left(2r_{1}-\frac{2}{r_{1}^{2}}\right)=0\qquad\Longrightarrow\qquad r_{1}=1$$</p>
+<p>$\alpha$ no puede ser 1 porque, por definición, su valor está entre 0 y 0.5. Al derivar parcialmente con respecto a $r_{2}$ e igualando a cero, obtenemos, de igual manera, $r_{2}=1$. Al derivar una segunda vez con respecto, por ejemplo, a $r_{1}$, obtenemos</p>
+$$
+\left(1-\alpha\right)\left(2+\frac{4}{r_{1}^{3}}\right)=\frac{\partial^{2}C}{\partial r_{1}^{2}}.
+$$<p>Nótese que 
+$$
+\left.\frac{\partial^{2}C}{\partial r_{1}^{2}}\right|_{r_{1}=1}&gt;0.
+$$</p>
+<p>Haciendo lo mismo con $r_{2}$, se obtiene que 
+$$
+\left.\frac{\partial^{2}C}{\partial r_{2}^{2}}\right|_{r_{2}=1}&gt;0.
+$$</p>
+<p>por lo que podemos asegurar que estamos hallando un mínimo. Al reemplazar $r_{1}=r_{2}=1$ en nuestra curva límite, se sigue que</p>
+$$
+\left(1-\alpha\right)\left(1+2\right)+\alpha\left(1+2\right)=C_{\mbox{min}}+\alpha\left(1-\alpha\right)\qquad\Longrightarrow\qquad C_{\mbox{min}}=3-\alpha\left(1-\alpha\right),
+$$<p>que era lo que queríamos demostrar.</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13183,7 +13347,57 @@ $$<p>donde $q_1$ y $q_2$ son las distancias al perihelio de la orbita inicial y 
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong>. Recordemos que la solución del problema de los dos cuerpos es </li>
+</ol>
+<blockquote>$$
+r=\frac{h^{2}/\mu}{1+e\cos f}.
+$$<p>Por definición, para una parábola, $e=1$. Por lo tanto, para $r=q$, la distancia al periastro, se sigue que</p>
+$$
+q=\frac{h^{2}}{2\mu},
+$$<p>donde $\vec{h}=\vec{r}\times\vec{v}$. Como este vector es constante, calculemos su magnitud en un punto en particular: el periastro,</p>
+$$h=qv_{p},$$<p>donde $v_{p}$ es la velocidad del cometa en el periastro, perpendicular al vector posición en ese punto. Igualando las últimas dos relaciones, obtenemos</p>
+$$
+v_{p}=\sqrt{\frac{2\mu}{q}}.
+$$<p>Recordemos, además, que la energía específica para el problema de los dos cuerpos se escribe como</p>
+$$
+\epsilon=\frac{1}{2}v^{2}-\frac{\mu}{r}.
+$$<p>Dado que esta cantidad también es constante, podemos calcularla para cualquier punto de la órbita; otra vez, en el periastro,</p>
+$$
+\epsilon=\frac{1}{2}\frac{2\mu}{q}-\frac{\mu}{q}=0.
+$$<p>Por lo tanto, obtenemos una relación <em>vis viva</em> para órbitas parabólicas:</p>
+$$
+v^{2}=\frac{2\mu}{r}.
+$$<p>Ahora, volviendo a nuestro problema de tres cuerpos, teníamos que para un sistema coordenado $\left(\xi,\,\eta,\,\zeta\right)$ que no rota con la línea que une a $m_{1}$ y a $m_{2}$, la constante de Jacobi es</p>
+$$
+C\left(\xi,\eta,\zeta\right)=-\left(\dot{\xi}^{2}+\dot{\eta}^{2}+\dot{\zeta}^{2}\right)+\frac{2\left(1-\alpha\right)}{r_{1}}+\frac{2\alpha}{r_{2}}+2h\cos i.
+$$<p>Dado que $\dot{\xi}^{2}+\dot{\eta}^{2}+\dot{\zeta}^{2}=v^{2}$, que estamos considerando que $m_{3}$ orbita a $m_{1}$ y que en nuestras unidades canónicas $\mu=1$, entonces</p>
+$$
+C=-\frac{2}{r_{1}}+\frac{2\left(1-\alpha\right)}{r_{1}}+\frac{2\alpha}{r_{2}}+2h\cos i.
+$$<p>Como $C$ es constante, lo puedo calcular donde yo quiera y permanecerá constante. Por lo tanto, puedo calcularlo cuando el cometa esté muy lejos de $m_{1}$ y $m_{2}$, en donde $r_{1},\, r_{2}\gg1$, tal que</p>
+$$
+C=2h\cos i.
+$$<p>Así, para dos órbitas con distancias al periastro $q_{1}$ y $q_{2}$ e inclinaciones $i_{1}$ e $i_{2}$, obtenemos el criterio</p>
+$$
+2\sqrt{2q_{1}}\cos i_{1}=2\sqrt{2q_{2}}\cos i_{2}.
+$$<p>Despejando, obtenemos lo pedido:</p>
+$$
+\cos i_{2}=\sqrt{\frac{q_{1}}{q_{2}}}\cos i_{1}.
+$$
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13193,7 +13407,54 @@ $$<p>donde $q_1$ y $q_2$ son las distancias al perihelio de la orbita inicial y 
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>De la teoría alrededor de la constante de Jacobi, sabemos que en nuestro sistema de referencia no inercial, existen regiones donde la nave espacial puede estar y otras donde no. Estas regiones dependen de la constante de Jacobi como tal. Si $C$ es pequeña —por ejemplo, igual a $C_{\mbox{min}}$—, la nave espacial puede estar prácticamente en todo el espacio. Si $C$ es grande —digamos, por ejemplo, del orden de $10C_{\mbox{min}}$—, la nave está restringida a un lugar del espacio muy pequeño, muy cerca a $m_{1}$ o a $m_{2}$, dependiendo de sus condiciones iniciales. Pero existe un valor exacto de $C$ en donde la nave puede pasar de orbitar a $m_{1}$ a orbitar a $m_{2}$ por un solo punto, pero sin nunca irse muy lejos del sistema, si la posición inicial de la nave se encontraba dentro de esa región. Esta situación es representada en la figura de abajo.</p>
+<p>Este punto, como se muestra en la figura, es el primer punto colineal de Lagrange, $L_{1}$ (recordemos que los puntos colineales de Lagrange —además de ser puntos de equilibrio— son los puntos en donde las regiones de exclusión se abren y permiten el intercambio orbital o incluso, en el caso de $L_{2}$ y $L_{3}$, la deriva del cuerpo $m_{\text{3}}$). Las regiones donde la nave espacial <em>puede</em> estar son las que están dentro de la curva interior y fuera de la curva exterior. La región entre las curvas no es permitida, pues la nave tendría una rapidez compleja y esto no tiene sentido físico (por ahora... o bueno, por lo menos no en este problema).</p>
+<p>Ahora, recordemos que la constante de Jacobi es tal que</p>
+$$
+\vec{v}^{2}=-C_J+\frac{2\left(1-\alpha\right)}{r_{1}}+\frac{2\alpha}{r_{2}}+x^{2}+y^{2}.
+$$<p>Por lo tanto, volviendo al problema, para que la rapidez que deba tener la nave espacial para pasar a orbitar la Luna sea mínima, se deben cumplir varias condiciones:</p>
+<p>a. Dado que está negativa, la constante de Jacobi $C_J$ debe tener el máximo valor posible que permita un intercambio de órbitas. Esto es, debe tener el valor para que las regiones de exclusión sean las que se muestran en la figura anterior.</p>
+<p>b. Por lo tanto, vamos a calcular $C_J$ en un punto conocido: $L_{1}$. Para que la rapidez de la nave al dejar la órbita de la Tierra sea mínima, la rapidez en $L_{1}$ debe ser casi cero, apenas para alcanzar a intercambiar de órbita.</p>
+<p>c. Después de tener $C_J$, hay que calcular $v$ al salir de la Tierra. Para esto, $r_{1}$ es fija y está dada por las condiciones del problema. Pero para que $v$ sea mínima, hay que encontrar los sus puntos críticos respecto a $x$ y $y$.</p>
+<p>Ahora sí, dada la discusión, calculemos: tenemos $a=6571\mbox{ km}=0.017112U_{L}$ (el radio de la órbita inicial de la nave alrededor de la tierra. No se debe confundir con el semieje mayor de la Luna alrededor de la Tierra, que en nuestras unidades canónicas sería $a_{luna}=1U_{L}$), $e=0$ y ${\displaystyle \alpha=\frac{M_{luna}}{M_{luna}+M_{\oplus}}=0.01215}$. Computacionalmente hallamos la posición de $L_{1}$  y obtenemos $x_{L_{1}}=0.836924$. En este punto,</p>
+\begin{eqnarray}
+r_{1}&amp;=&amp;x_{L_{1}}-x_{1}=x_{L_{1}}+\alpha\\r_{2}&amp;=&amp;x_{2}-x_{L_{1}}=1-\alpha-x_{L_{1}}\\x^{2}+y^{2}&amp;=&amp;x_{L_{1}}^{2}
+\end{eqnarray}<p>y por lo tanto</p>
+$$
+C_J=\frac{2\left(1-\alpha\right)}{x_{L_{1}}+\alpha}+\frac{2\alpha}{1-\alpha-x_{L_{1}}}+x_{L_{1}}^{2}=3.18832.
+$$<p>Ahora, para calcular $v_{min}$, escribamos $\vec{v}^{2}$ en términos de la expresión $x^{2}+y^{2}=r_{1}^{2}\left(1-\alpha\right)+\alpha r_{2}^{2}-\alpha\left(1-\alpha\right)$ encontrada en el problema 4:</p>
+$$
+\vec{v}^{2}=-C_J+\frac{2\left(1-\alpha\right)}{r_{1}}+\frac{2\alpha}{r_{2}}+r_{1}^{2}\left(1-\alpha\right)+\alpha r_{2}^{2}-\alpha\left(1-\alpha\right).
+$$<p>Dado que $r_{1}=a$ es fijo, derivemos con respecto a $r_{2}$:</p>
+$$
+\frac{\mathrm{d}\vec{v}^{2}}{\mathrm{d}r_{2}}=-\frac{2\alpha}{r_{2}^{2}}+2\alpha r_{2}=0\qquad\Longrightarrow\qquad r_{2}=1.
+$$<p>Claramente,</p>
+$$
+\left.\frac{\mathrm{d}^{2}\vec{v}^{2}}{\mathrm{d}r_{2}^{2}}\right|_{r_{2}=1}&gt;0,
+$$<p>por lo que $r_2=1$ corresponde a un mínimo de $\vec{v}^{2}$ y tenemos entonces que para que la velocidad que le vamos a dar a la nave en su órbita inicial alrededor de la Tierra sea mínima, se debe cumplir que</p>
+\begin{eqnarray}
+r_{1}&amp;=&amp;a\\r_{2}&amp;=&amp;1\\x^{2}+y^{2}&amp;=&amp;=a^{2}-a^{2}\alpha+\alpha^{2},
+\end{eqnarray}<p>de manera que</p>
+$$
+\boxed{v_{min}=\sqrt{-C_{J}+\frac{2\left(1-\alpha\right)}{a}+2\alpha+a^{2}-a^{2}\alpha+\alpha^{2}}=10.5969\, U_{L}/U_{T}=10.8572 \mbox{ km/s}.}
+$$
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13203,7 +13464,22 @@ $$<p>donde $q_1$ y $q_2$ son las distancias al perihelio de la orbita inicial y 
 
 </div>
 </div>
-</div><div style="background:lightgray">
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong>. Pendiente.</li>
+</ol>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">

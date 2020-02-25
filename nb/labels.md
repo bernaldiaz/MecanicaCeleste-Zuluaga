@@ -23,17 +23,18 @@
 		* `#extranjerismos_pronunciacion`
 		* `#siglos_decadas`
 		* `#notacion`
-		* `#estructura_libro`
+		* `#elementos_no_textuales`
 		* `#cajas_texto`
 		* `#algoritmos`
 		* `#interactivas_animaciones`
 		* `#ejemplo_interactiva`
 		* `#ejemplo_animada`
 	- Labels for 'figure':
+		* `fig:teorema_danelin`
 		* `fig:kepler`
 	- Labels for 'code':
 		* `code:rutina_discriminante`
-		* `code:calcula_discriminante`
+		* `code:raiz_polinomio`
 		* `code:plot_sin`
 - Labels for '04.00.00.00.Fundamentos.ipynb':
 	- Labels for 'section':
@@ -240,6 +241,9 @@
 	- Labels for 'figure':
 		* `fig:prob:elipse`
 		* `fig:prob:latlon`
+- Labels for '05.00.00.00.Mecanica.Introduccion.ipynb':
+	- Labels for 'section':
+		* `#mecanica_introduccion`
 - Labels for '05.00.00.00.Mecanica.ipynb':
 	- Labels for 'section':
 		* `#mecanica`
@@ -1066,7 +1070,7 @@
 	- Labels for 'section':
 		* `#transformaciones_canonicas`
 	- Labels for 'figure':
-		* `fig:Figure_173`
+		* `fig:Figure_176`
 	- Labels for 'equation':
 		* `eq:dQ_K`
 		* `eq:dP_H`

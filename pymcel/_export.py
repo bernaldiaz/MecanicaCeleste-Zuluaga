@@ -14,20 +14,6 @@
 # ########################################
 
 def calcula_discriminante(a,b,c):
-    """Calcula el discriminante de una ecuación de segundo grado.
-    
-    Argumentos:
-    ==========
-    a,b,c (float): Coeficientes
-    
-    Retorna:
-    =======
-    d (float): Valor del discriminante
-    
-    """
-    a=1
-    b=-1
-    c=2
     disc=b**2-4*a*c
     return disc
 
@@ -230,6 +216,10 @@ def conica_de_elementos(p=10.0,e=0.8,i=0.0,Omega=0.0,omega=0.0,
 
 # ########################################
 #  .//Mecanica.ipynb
+# ########################################
+
+# ########################################
+#  .//Mecanica.Introduccion.ipynb
 # ########################################
 
 # ########################################

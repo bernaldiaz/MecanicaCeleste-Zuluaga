@@ -13108,10 +13108,62 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:prob:elipse'></a><img src="./figures/problems/elipse.png" alt="Una elipse con algunos puntos resaltados." width="50.0%"></p>
-<center><b>Figura 4.34</b>. Una elipse con algunos puntos resaltados.</center>
+<center><b>Figura 4.35</b>. Una elipse con algunos puntos resaltados.</center>
+</div>
+</div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>a) Dada la Figura 1, por simetría, se puede ver claramente que $\overline{A_1F_1}=\overline{A_2F_2}$, por lo que la suma de las distancias de $A_1$ a los focos sería $$\overline{A_1F_1}+\overline{A_1F_2}=\overline{A_2F_2}+\overline{A_1F_2}=2a.$$</p>
+<blockquote><p>Dado que, por definición, esa distancia es una costante para cualquier punto, entonces esa constante debe ser igual a $2a$.</p>
+</blockquote>
+<p>b) Si nos paramos, por ejemplo, en el punto $B_2$, ya sabemos que $\overline{F_1B_2}+\overline{B_2F_2}=2a$. Pero, por simetría, $\overline{F_1B_2}=\overline{B_2F_2}=a$. Se hace claro, entonces, que $$a^2=b^2+c^2.$$</p>
+<p>c) Por definición, considerando el punto generalizado de la elipse $P(x,y)$ medido desde $C(0,0)$, tenemos
+$$\sqrt{\left(x+c\right)^{2}+y^{2}}+\sqrt{\left(x-c\right)^{2}+y^{2}}=2a.$$</p>
+<blockquote><p>Elevando al cuadrado:
+$$\left(x+c\right)^{2}+y^{2}+\left(x-c\right)^{2}+y^{2}+2\sqrt{\left(x+c\right)^{2}+y^{2}}\sqrt{\left(x-c\right)^{2}+y^{2}}=4a^{2}.$$
+Expandiendo y organizando:
+$$\sqrt{\left(x+c\right)^{2}+y^{2}}\sqrt{\left(x-c\right)^{2}+y^{2}}=2a^{2}-x^{2}-c^{2}-y^{2}.$$
+Elevando de nuevo al cuadrado:
+$$\left(x^{2}+2cx+c^{2}+y^{2}\right)\left(x^{2}-2cx+c^{2}+y^{2}\right)=\left(2a^{2}-x^{2}-c^{2}-y^{2}\right)^{2}.$$
+Expandiendo y sumando términos semejantes, se llega a 
+$$4a^{2}x^{2}+4a^{2}y^{2}-4c^{2}x^{2}=4a^{4}-4a^{2}c^{2}.$$
+Factorizando, obtenemos
+$$\left(a^{2}-c^{2}\right)x^{2}+a^{2}y^{2}=a^{2}(a^{2}-c^{2}).$$
+Por el resultado del punto anterior, tenemos que $a^{2}-c^{2}=b^{2}$, por lo que tenemos
+$$b^{2}x^{2}+a^{2}y^{2}=a^{2}b^{2}.$$
+Dividiendo entre $a^{2}b^{2}$:
+$$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1,$$ 
+que era a lo que queríamos llegar.</p>
+</blockquote>
+<p>d) Dado que sabemos que $a$, $b$ y $e$ se pueden relacionar mediante $b=a\sqrt{1-e^2}$, podemos escribir el teorema de pitágoras como</p>
+<blockquote>$$a^{2}=a^{2}\left(1-e^{2}\right)+c^{2}.$$<p>Sumando términos semejantes, llegamos a que 
+$$e^{2}=\frac{c^{2}}{a^{2}}.$$
+Debido a que $a$, $b$ y $e$ se definien como reales positivos, obtenemos
+$$e=\frac{c}{a},$$
+que era lo que queríamos.</p>
+</blockquote>
+<p>e) El semilatus rectum hace parte de un triángulo rectángulo con $F_1$ y $F_2$ como los vértices de la base. Así, por la definición de todos los parámetros geométricos y de elipse como lugar geométrico, podemos escribir la relación</p>
+<blockquote>$$\left(2a-p\right)^{2}=\left(2c\right)^{2}+p^{2}.$$<p>Expandiendo, simplificando y despejando, obtenemos
+$$p=\frac{a^{2}-c^{2}}{a}.$$
+Pero como $a^{2}-c^{2}=b^{2}$, entonces obtenemos
+$$p=\frac{b^{2}}{a},$$
+que era lo que queríamos.</p>
+</blockquote>
+</blockquote>
+
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13121,7 +13173,26 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong>. Ya hemos demostrado que $p=b^2/a$, $b^2=a^2-c^2$ y $c=ea$. Reemplazando la tercera en la segunda y ésta en la primera, se sigue</li>
+</ol>
+<blockquote>$$9a=a^2-0.25a^2.$$<p>Dado que $a\neq 0,$ obtenemos $a=12$, $c=6$ y $b=\sqrt{108}$. Así, la ecuación ordinaria de la elipse sería</p>
+$$\frac{x'^{2}}{144}+\frac{y'^{2}}{108}=1,$$<p>que al multiplicar por 432 obtendríamos la ecuación general</p>
+$$\boxed{3x'^2+4y'^2-432=0.}$$
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13131,7 +13202,45 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong>.</li>
+</ol>
+<blockquote><p>a) $F$ corresponde a la distancia entre la directriz de la elipse y su foco. Es una distancia, pero no necesariamente es la \textit{distancia focal} (depende del sistema coordenado elegido). En el sistema coordenado "natural", coincide con la coordenada $x$ del foco como punto del plano.</p>
+<p>b) $e$ cooresponde a la excentricidad de la elipse, definida como la razón constante entre la distancia de cualquier punto de la elipse a su foco y la distancia de ese punto a la directriz. Indica qué tan achatada es la elipse. Entre más cercano sea $e$ a 1, más achatada es la elipse. Entre más cercano a 0, más "circular" es.</p>
+<p>c) $p$ corresponde al semilatus rectum de la elipse, la distancia entre su foco y un punto de la elipse sobre la perpendicular a su eje mayor que pasa por el foco.</p>
+<p>d) $C$ corresponde al centro geométrico de la elipse. Puede considerarse una coordenada o una distancia. En el sistema coordenado «natural» corresponde a la coordenada $x$ del centro de la elipse.</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>e) $a$ corresponde al semieje mayor de la elipse. Es la distancia entre el centro geométrico de la elipse y uno de los puntos más alejados de éste.</p>
+<p>f) $b$ corresponde al semieje menor de la elipse. Es la distancia entre el centro geométrico de la elipse y uno de los puntos más cercanos a éste.</p>
+<p>g) $r$ corresponde a la coordenada radial en coordenadas polares de un punto de la elipse medido desde el foco de la misma.</p>
+<p>h) $f$ corresponde a la coordenada angular en coordenadas polares (llamada anomalía verdadera) de un punto de la elipse medido desde el foco como polo y el eje mayor como eje polar.</p>
+<p>i) $E$ corresponde a la anomalía excéntrica y es la coordenada angular de un punto de una circunferencia de radio $a$ verticalmente superior al punto sobre la elipse con anomalía verdadera $f$.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13150,7 +13259,32 @@ $$q   = -\frac{G}{A}+\frac{D^{2}}{4A^{2}}+\frac{E^{2}}{4AC},$$$$t   = -\frac{G}{
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong>.</li>
+</ol>
+<blockquote><p>Tomando la ecuación y sacando factor «común» $A$ para los términos con $x$ y $B$ para los términos con $y$, se tiene</p>
+$$A\left(x^{2}+\frac{D}{A}x\right)+C\left(y^{2}+\frac{E}{C}y\right)=-G.$$<p>Sumando a ambos lados de la ecuación los términos $D^{2}/4A$ y $E^{2}/4C$ convenientemente, se sigue que</p>
+$$A\left(x^{2}+\frac{D}{A}x+\frac{D^{2}}{4A^{2}}\right)+C\left(y^{2}+\frac{E}{C}y+\frac{E^{2}}{4C^{2}}\right)=-G+\frac{D^{2}}{4A}+\frac{E^{2}}{4C}.$$<p>Factorizando los trinomios cuadrado perfecto y dividiendo la ecuación por todo el lado derecho, obtenemos</p>
+$$\frac{\left(x+\frac{D}{2A}\right)^{2}}{-\frac{G}{A}+\frac{D^{2}}{4A^{2}}+\frac{E^{2}}{4AC}}+\frac{\left(y+\frac{E}{2C}\right)^{2}}{-\frac{G}{C}+\frac{C^{2}}{4AC}+\frac{E^{2}}{4C^{2}}}=1.$$<p>Haciendo</p>
+$$x' = x+\frac{D}{2A},$$$$y' = y+\frac{E}{2C},$$<p>
+$$q    = -\frac{G}{A}+\frac{D^{2}}{4A^{2}}+\frac{E^{2}}{4AC},$$
+$$t    = -\frac{G}{C}+\frac{D^{2}}{4AC}+\frac{E^{2}}{4C^{2}},$$</p>
+<p>tenemos la ecuación de la cónica en su forma ordinaria pedida. Para que esta cónica sea una circunferencia, debe suceder que $q=t$ y que $q,t&gt;0$; para que sea una elipse, debe suceder que $q\neq t$ y que $q,t&gt;0$; y para que sea una hipérbola, debe suceder que $q&gt;0$ y $t&lt;0$ o viceversa. Nótese que $t=\frac{C}{A}q$, lo que significa que la ecuación pertenece a una circunferencia, también, cuando $A=C$; a una elipse cuando $A\neq C$ pero $A,C&gt;0$; y a una hipérbola cuando $A&gt;0$ y $C&lt;0$ o viceversa. Un ejemplo sencilla de cada una, en orden, sería</p>
+$$x'^{2}+y'^{2}=1,\qquad\frac{x'^{2}}{2}+y'^{2}=1,\qquad x'^{2}-y'^{2}=1.$$
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13164,7 +13298,30 @@ $$\tan 2\theta = \frac{B}{A-C},$$<p>los nuevos ejes estarán alineados con los e
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>Al aplicar la rotación:</p>
+\begin{eqnarray*}
+A\left(x'\cos\theta-y'\sin\theta\right)^{2}+B\left(x'\cos\theta-y'\sin\theta\right)\left(x'\sin\theta+y'\cos\theta\right)+C\left(x'\sin\theta+y'\cos\theta\right)^{2}\\
++D\left(x'\cos\theta-y'\sin\theta\right)+E\left(x'\sin\theta+y'\cos\theta\right)+G=0.
+\end{eqnarray*}<p>Para que los nuevos ejes estén alineados con los ejes de simetría, es necesario que los términos acoplados se anulen. Esto es, al expandir, que suceda que</p>
+$$-2Ax'y'\cos\theta\sin\theta+Bx'y'\cos^{2}\theta-Bx'y'\sin^{2}\theta+2Cx'y'\sin\theta\cos\theta=0.$$<p>Dado que $\cos^{2}\theta-\sin^{2}\theta=\cos 2\theta$ y $2\sin\theta\cos\theta=\sin 2\theta$, la condición se reduce a que</p>
+$$-\sin2\theta\left(A-C\right)+B\cos2\theta=0\qquad\Longrightarrow\qquad\tan2\theta=\frac{B}{A-C},$$<p>que era lo que queríamos demostrar.</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13180,7 +13337,28 @@ $$\tan 2\theta = \frac{B}{A-C},$$<p>los nuevos ejes estarán alineados con los e
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>a) Claramente, la distancia entre el foco y el perihelio debe ser $r_1=a-c.$ Dado que $r_1=1$ AU y que $a=20$ AU, entonces $c=19$ AU y, por lo tanto, $\boxed{e=c/a=19/20=0.95}$.</p>
+<p>b) Dado que $a^2=b^2+c^2$, entonces $\boxed{b=\sqrt{39}=6.2\text{ AU}}$.</p>
+<p>c) Dado que $p=b^2/a$, entonces $\boxed{p=39/20=1.9\text{ AU}}$.</p>
+<p>d) La ecuación de la órbita de este cometa en coordenadas polares sería de la forma
+$$\boxed{r=\frac{39/20\mbox{ AU}}{1+\frac{19}{20}\cos f}=\frac{1.9\mbox{ AU}}{1+0.95\cos f}}$$</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13190,7 +13368,26 @@ $$\tan 2\theta = \frac{B}{A-C},$$<p>los nuevos ejes estarán alineados con los e
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong> </li>
+</ol>
+<blockquote><p>En primer lugar, sabemos que la distancia entre el periselenio y el aposelenio debe ser 2 veces el semieje mayor de la órbita del satélite. Así</p>
+$$a=\frac{110+2\times 1728+314}{2} \mbox{ km}=1940\mbox{ km}.$$<p>Además, la distancia entre el centro de la luna (foco) y el periselenio es, como ya se había dicho, $a-c=1728\mbox{ km}+110\mbox{ km}$, por lo que $c=102\mbox{ km}$. Así, $e=c/a=0.053$, $b^2=a^2-c^2=3753196\mbox{ km}^\text{o}$ y $p=b^2/a=1935$ km. Y, por lo tanto, la ecuación de esta elipse en coordenadas polares sería</p>
+$$\boxed{r=\frac{1935\mbox{ km}}{1+0.053\cos f}.}$$
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13208,7 +13405,39 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>a) Si definimos la elipse como el lugar geométrico de los puntos tal que están a una distancia del eje $x$ en proporción $b/a$ de la distancia de los puntos de una circunferencia de radio $a$ que se muestra en la Figura \ref{anomalia-excentrica}, entonces</p>
+$$\frac{\overline{PD}}{\overline{QD}} = \frac{b}{a}$$<p>Si usamos el teorema de Pitágoras para relacionar $r$ con los distintos segmentos de la figura obtenemos
+$$
+r^2 = (\overline{DF})^2 + (\overline{PD})^2 = (\overline{CF}-\overline{CD})^2 + \left(\frac{b}{a}\overline{QD}\right)^2
+$$</p>
+<p>Por la geometría de la elipse sabemos sin embargo que $\overline{CD}=a\cos E$, $\overline{QD}=a\sin E$ y que la distancia focal $\overline{CF}=ea$. Así,</p>
+\begin{eqnarray*}
+r^{2}&amp;=&amp;(ea-a\cos E)^{2}+\left(\frac{b}{a}a\sin E\right)^{2}\\\mbox{expandiendo }\rightarrow&amp;=&amp;e^{2}a^{2}-2ea^{2}\cos E+a^{2}\cos^{2}E+b^{2}\sin^{2}E\\\sin^{2}E=1-\cos^{2}E\rightarrow&amp;=&amp;e^{2}a^{2}-2ea^{2}\cos E+a^{2}\cos^{2}E+b^{2}-b^{2}\cos^{2}E\\\mbox{agrupando }\rightarrow&amp;=&amp;\left(e^{2}a^{2}+b^{2}\right)-2ea^{2}\cos E+\left(a^{2}-b^{2}\right)\cos^{2}E\\c=e/a\mbox{ y }a^{2}=b^{2}+c^{2}\rightarrow&amp;=&amp;a^{2}-2ea^{2}\cos E+e^{2}a^{2}\cos^{2}E\\\mbox{factorizando }\rightarrow&amp;=&amp;a^{2}\left(1-e\cos E\right)^{2}\\r&amp;=&amp;a\left(1-e\cos E\right).
+\end{eqnarray*}<p>b) Primero, nótese que para cualquier ángulo $\theta$ se satisface la identidad</p>
+$$\tan\left(\frac{\theta}{2}\right)=\frac{\sin(\theta/2)}{\cos(\theta/2)}=\frac{\sqrt{\frac{1-\cos\theta}{2}}}{\sqrt{\frac{1+\cos\theta}{2}}}=\sqrt{\frac{1-\cos\theta}{1+\cos\theta}\times1}=\sqrt{\frac{1-\cos\theta}{1+\cos\theta}\times\frac{1+\cos\theta}{1+\cos\theta}}=\sqrt{\frac{1-\cos^{2}\theta}{\left(1+\cos\theta\right)^{2}}}=\sqrt{\frac{\sin^{2}\theta}{\left(1+\cos\theta\right)^{2}}}=\frac{\sin\theta}{1+\cos\theta},$$<p>por lo que, entonces,</p>
+$$\tan\frac{f}{2}=\frac{\sin f}{1+\cos f}.$$<p>Se puede ver que $\sin{f}=\overline{PD}/r$ y que $\cos{f}=(a\cos{E}-ae)/r$, por lo que</p>
+$$\tan\frac{f}{2}=\frac{\overline{PD}}{r+a\cos E-ae}.$$<p>Debido a que tenemos que $\overline{PD}=b\sin E$, $r=a\left(1-e\cos E\right)$ y que $b=a\sqrt{1-e^{2}}$, entonces, factorizando y racionalizando, se obtiene</p>
+$$\tan\frac{f}{2}=\sqrt{\frac{1+e}{1-e}}\frac{\sin E}{1+\cos E}.$$<p>Pero como 
+$$\frac{\sin E}{1+\cos E}=\tan\frac{E}{2},$$
+entonces
+$$\tan\frac{f}{2}=\sqrt{\frac{1+e}{1-e}}\tan\frac{E}{2}.$$</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13218,7 +13447,27 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>Agrupemos las $x$ y las $y$:</p>
+$$\left(x^{2}+2x\right)+2\left(y^{2}+\frac{y}{2}\right)=6.$$<p>Completemos cuadrados:</p>
+$$\left(x^{2}+2x+1\right)+2\left(y^{2}+\frac{y}{2}+\frac{1}{16}\right)=6+1+\frac{1}{8}.$$<p>Factoricemos y dividamos ambos lados entre 57/8:</p>
+$$\boxed{\frac{\left(x+1\right)^{2}}{57/8}+\frac{\left(y+\frac{1}{4}\right)^{2}}{57/16}=1.}$$<p>Tenemos, entonces, que el centro de la elipse es el punto $\boxed{C(-1,-1/4)}$, los semiejes mayor y menores son $\boxed{a=\sqrt{57/8}=2.7}$ y $\boxed{b=\sqrt{57/16}=1.9}$, la distancia focal es $\boxed{c=\sqrt[]{a^2-b^2}=b}$ y el semilatus rectum es $\boxed{p=b^2/a=1.3}$. Grafiquemos:</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13228,7 +13477,242 @@ $$
 
 </div>
 </div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>Es claro que, en el plano de la órbita del satélite, se satisface $z'''=0$ y que
+$$r=\frac{a\left(1-e^{2}\right)}{1+e\cos f}\qquad\Longrightarrow\qquad x'''=r\cos f\quad\mbox{y}\quad y'''=r\sin f.$$</p>
+</blockquote>
+
 </div>
+</div>
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">GRADOS</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">8016.</span>
+<span class="n">e</span> <span class="o">=</span> <span class="mf">0.06</span>
+<span class="n">f</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">GRADOS</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">e</span><span class="o">*</span><span class="n">e</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">e</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
+<span class="n">xppp</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">yppp</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">zppp</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">rppp</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">xppp</span><span class="p">],</span> <span class="p">[</span><span class="n">yppp</span><span class="p">],</span> <span class="p">[</span><span class="n">zppp</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El vector posición en el plano orbital es, en km,</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">rppp</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>El vector posición en el plano orbital es, en km,
+ [[7104.87486548]
+ [2585.96296922]
+ [   0.        ]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>Recordemos que <code>SPICE</code> tiene una rutina predefinida para calcular una matriz de rotación a partir de tres ángulos de Euler: <code>eul2m</code>. Usándo la matriz para pasar del sistema no primado al primado quedaría:</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">spiceypy</span> <span class="k">as</span> <span class="nn">spy</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">50</span><span class="o">*</span><span class="n">GRADOS</span>
+<span class="n">Omega</span> <span class="o">=</span> <span class="mi">0</span><span class="o">*</span><span class="n">GRADOS</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">30</span><span class="o">*</span><span class="n">GRADOS</span>
+
+<span class="n">R3d</span><span class="o">=</span><span class="n">spy</span><span class="o">.</span><span class="n">eul2m</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">Omega</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">R3d</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0.8660254 ,  0.3213938 ,  0.38302222],
+       [-0.5       ,  0.5566704 ,  0.66341395],
+       [ 0.        , -0.76604444,  0.64278761]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pero queremos pasar del sistema primado al no primado, entonces sacamos la inversa (o traspuesta, que es lo mismo para matrices de rotación):</p>
+
+</div>
+</div>
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">R3D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">R3d</span><span class="p">)</span> 
+<span class="n">R3D</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[ 0.8660254 , -0.5       ,  0.        ],
+       [ 0.3213938 ,  0.5566704 , -0.76604444],
+       [ 0.38302222,  0.66341395,  0.64278761]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Así, el vector posición está dado por</p>
+
+</div>
+</div>
+</div>
+    </div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">R3D</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">rppp</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[4860.02063961],
+       [3722.99180441],
+       [4436.88885811]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13247,10 +13731,29 @@ distancia a lo largo del círculo máximo entre los dos puntos es $R\theta$.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='fig:prob:latlon'></a><img src="./figures/problems/earth.png" alt="Definición de elas coordenadas de latitud y longitud sobre la Tierra" width="50.0%"></p>
-<center><b>Figura 4.35</b>. Definición de elas coordenadas de latitud y longitud sobre la Tierra</center>
+<center><b>Figura 4.36</b>. Definición de elas coordenadas de latitud y longitud sobre la Tierra</center>
+</div>
+</div>
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>El vector posición $\vec{r}_i$ sobre la superficie de la Tierra tendrá coordenadas cartesianas $x_i=R\cos\lambda_i\cos\phi_i$, $y_i=R\cos\lambda_i\sin\phi_i$ y $z_i=R\sin\lambda_i$. Así, el producto punto entre $\vec{r}_1$ y $\vec{r}_2$ se puede calcular como $R^2\cos\theta$ y, a la vez, como la suma de los productos de las componentes $x_1x_2+y_1y_2+z_1z_2$, de tal forma que</p>
+$$R^2\cos\theta=R^2(\cos\lambda_1\cos\phi_1\cos\lambda_2\cos\phi_2+\cos\lambda_1\sin\phi_1\cos\lambda_2\sin\phi_2+\sin\lambda_1\sin\lambda_2).$$<p>Sacando factor común $\cos\lambda_1\cos\lambda_2$ en los primeros dos términos y teniendo en cuenta la identidad $\cos\phi_1\cos\phi_2+\sin\phi_1\sin\phi_2=\cos(\phi_1-\phi_2)$, obtenemos la expresión para $\theta$ pedida:</p>
+$$\boxed{\theta=\arccos(\cos\lambda_1\cos\lambda_2\cos(\phi_1-\phi_2)+\sin\lambda_1\sin\lambda_2)}$$
+</blockquote>
+
 </div>
 </div>
 </div>
+    </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13270,7 +13773,41 @@ $$
 
 </div>
 </div>
-</div><div style="background:lightgray">
+</div><style>
+      blockquote:{background:lightgray;}
+    </style>
+    <div style="background:lightgray">
+    	 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li><strong>Solución</strong></li>
+</ol>
+<blockquote><p>En primer lugar, se puede ver claramente de la figura dada que el vector unitario $\hat{r}$ se puede escribir como una suma de $\cos\theta$ en $\hat{i}$ y de $\sin\theta$ en $\hat{j}$, al igual que el vector unitario $\hat{\theta}$ se puede escribir como una suma de $-\sin\theta$ en $\hat{i}$ y de $\cos\theta$ en $\hat{j}$.</p>
+<p>a. Así,</p>
+<blockquote>$$\frac{\mathrm{d}\hat{r}}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}(\cos\theta \hat{i}+\sin\theta\hat{j})$$<p>Pero como $\mathrm{d}(\sin\theta)/\mathrm{d}t=\dot{\theta}\cos\theta$, $\mathrm{d}(\cos\theta)/\mathrm{d}t=-\dot{\theta}\sin\theta$ y los vecotres unitarios $\hat{i}$ y $\hat{j}$ no cambian en el tiempo, entonces
+$$\frac{\mathrm{d}\hat{r}}{\mathrm{d}t}=-\dot{\theta}\sin\theta \hat{i}+\dot{\theta}\cos\theta\hat{j}=\dot{\theta}\hat{\theta}$$</p>
+<p>De igual forma,</p>
+$$\frac{\mathrm{d}\hat{\theta}}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}(-\sin\theta \hat{i}+\cos\theta\hat{j})=-\dot{\theta}\cos\theta \hat{i}-\dot{\theta}\sin\theta\hat{j}=-\dot{\theta}\hat{r}$$
+</blockquote>
+<p>b. Dado que $\vec{r}=r\hat{r}$, entonces</p>
+<blockquote>$$\dot{\vec{r}}=\dot{r}\hat{r}+r\frac{\mathrm{d}\hat{r}}{\mathrm{d}t}=\dot{r}\hat{r}+r\dot{\theta}\hat{\theta}$$<p>Y por lo tanto</p>
+$$\ddot{\vec{r}}=\ddot{r}\hat{r}+\dot{r}\dot{\theta}\hat{\theta}+\dot{r}\dot{\theta}\hat{\theta}+r\ddot{\theta}\hat{\theta}-r\dot{\theta}^2\hat{r}$$<p>Agrupando,</p>
+$$\ddot{\vec{r}}=(\ddot{r}-r\dot{\theta}^2)\hat{r}+(2\dot{r}\dot{\theta}+r\ddot{\theta})\hat{\theta}$$
+</blockquote>
+<p>c. Volviendo a derivar:</p>
+<blockquote>$$\dddot{\vec{r}}=\dddot{r}\hat{r}+\ddot{r}\dot{\theta}\hat{\theta}+2\ddot{r}\dot{\theta}\hat{\theta}+2\dot{r}\ddot{\theta}\hat{\theta}-2\dot{r}\dot{\theta}^2\hat{r}+\dot{r}\ddot{\theta}\hat{\theta}+r\dddot{\theta}\hat{\theta}-r\ddot{\theta}\dot{\theta}\hat{r}-\dot{r}\dot{\theta}^2\hat{r}-2r\dot{\theta}\ddot{\theta}\hat{r}-r\dot{\theta}^3\hat{\theta}$$<p>Agrupando,
+$$\dddot{\vec{r}}=(\dddot{r}-3\dot{r}\dot{\theta}^2-3r\dot{\theta}\ddot{\theta})\hat{r}+(3\ddot{r}\dot{\theta}+3\dot{r}\ddot{\theta}+r\dddot{\theta}-r\dot{\theta}^3)\hat{\theta}$$
+En el caso de una partícula moviéndose en una circunferencia de radio $R$ ($r=R$, $\dot{r}=\ddot{r}=\dddot{r}=0$) con rapidez angular $\omega$ ($\dot{\theta}=\omega$, $\ddot{\theta}=\dddot{\theta}=0$), el tirón sería
+$$\dddot{\vec{r}}=-R\omega^3\hat{\theta}$$</p>
+</blockquote>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div><div style="background:lightgray">
     	 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
