@@ -4,6 +4,12 @@ test:
 	@echo "Testing installation..."	
 	@jupyter nbconvert --to notebook --execute nb/$(TESTS)
 
+cleanall:
+	@echo "Cleaning all..."
+	@-rm mybook.conf
+	@-cp nb/mybook.conf .
+	@-rm -rf html nb pdf *.pdf figures pymcel 
+
 clean:
 	@echo "Cleaning crap..."
 	@-find . -name "*~" -exec rm -rf {} \;
