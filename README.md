@@ -2,12 +2,12 @@
 
 ## Teoría, algoritmos y problemas
 
-### El autor, Título, Institución
+### Jorge I. Zuluaga, Profesor titular de Astronomía y Física, Instituto de Física, Universidad de Antioquia
 
 Para obtener una copia de este libro clone el repositorio:
 
    ```
-      git clone https://github.com/seap-udea/MecanicaCelesteAnalitica_Libro.git
+      git clone https://github.com/seap-udea/MecanicaCeleste-Zuluaga.git
    ```
 
 El libro viene en tres versiones:
@@ -26,10 +26,10 @@ Para utilizar los notebooks de `Ipython` (`Jupyter`):
    ```
 
 2. **Instalación**: Si falta algún paquete o si no tiene consola
-   (Windows) abra Jupyter y diríjase a la libreta de instalación
+   (Windows) abra `Jupyter` y diríjase a la libreta de instalación
    `Instalacion.ipynb` y siga las instrucciones.
 
-   Puede ejecutar `Jupyter` en Linux o en Windows desde la línea de
+   Puede ejecutar `Jupyter` en Linux o en MacOS desde la línea de
    comandos con la siguiente instrucción:
 
    ```
