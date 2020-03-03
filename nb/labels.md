@@ -120,6 +120,44 @@
 		* `eq:dIdepsilon`
 		* `eq:ecuacion_integral_variaciones`
 		* `eq:ecuacion_euler_lagrange`
+- Labels for '04.01.05.00.Fundamentos.Calculo.Series.ipynb':
+	- Labels for 'section':
+		* `#series_infinitas`
+		* `#series_potencias`
+		* `#otras_series`
+		* `#series_stumpff`
+		* `#series_fourier`
+	- Labels for 'box':
+		* `box:def:serie.convergente`
+		* `box:def:funcion.analitica`
+		* `box:teo:dirichlet`
+	- Labels for 'code':
+		* `code:exp_negativo`
+		* `code:exp_positivo`
+		* `code:exp_taylor`
+		* `code:coeficientes_fourier`
+	- Labels for 'equation':
+		* `eq:serie_potencias_limite`
+		* `eq:exp_taylor`
+		* `eq:serie_taylor`
+		* `eq:sin_taylor`
+		* `eq:cos_taylor`
+		* `eq:sinh_taylor`
+		* `eq:cosh_taylor`
+		* `eq:exp_taylor_general`
+		* `eq:serie_geometrica`
+		* `eq:serie_binomio`
+		* `eq:stumpff_recurrencia`
+		* `eq:stumpff_derivadas_recurrencia`
+		* `eq:c0_trigo`
+		* `eq:c1_trigo`
+		* `eq:stumpff_iteracion`
+		* `eq:stumpff_iteracion_error`
+		* `eq:An_serie_funciones`
+		* `eq:serie_fourier`
+		* `eq:A0_fourier`
+		* `eq:An_fourier`
+		* `eq:Bn_fourier`
 - Labels for '04.02.01.00.Fundamentos.Conicas.Geometria.ipynb':
 	- Labels for 'section':
 		* `#conicas`

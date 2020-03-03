@@ -13188,7 +13188,7 @@ U(1.0,2.0,0.0) con k = 6.67e-11 y n = -2 = 1.334e-11
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">U</span><span class="p">(</span><span class="o">*</span><span class="n">variables</span><span class="p">,</span><span class="o">**</span><span class="n">opciones</span><span class="p">):</span>
     <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="o">=*</span><span class="n">variables</span>
     <span class="n">r</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-    <span class="k">return</span> <span class="n">opciones</span><span class="p">[</span><span class="s2">&quot;k&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="n">n</span>
+    <span class="k">return</span> <span class="n">opciones</span><span class="p">[</span><span class="s2">&quot;k&quot;</span><span class="p">]</span><span class="o">*</span><span class="n">r</span><span class="o">**</span><span class="n">opciones</span><span class="p">[</span><span class="s2">&quot;n&quot;</span><span class="p">]</span>
 </pre></div>
 <blockquote><p>que se puede invocar usando:</p>
 </blockquote>

@@ -43,6 +43,31 @@ def calcula_discriminante(a,b,c):
 # ########################################
 
 # ########################################
+#  .//Fundamentos.Calculo.Series.ipynb
+# ########################################
+
+def coeficientes_fourier(funcion,T,k,args=()):
+    #Funciones externas
+    from scipy.integrate import quad
+    from numpy import sin,cos
+
+    #Parametro omega
+    w=2*pi/T
+    
+    #Determina los coeficientes en t:
+    f=lambda t:funcion(t,*args)
+    As=[2*quad(f,0,T,args=args)[0]/T]
+    Bs=[0]
+    for n in range(1,k+1):
+        f_cos_n=lambda t:funcion(t,*args)*cos(n*w*t)
+        As+=[2*quad(f_cos_n,0,T)[0]/T]
+        f_sin_n=lambda t:funcion(t,*args)*sin(n*w*t)
+        Bs+=[2*quad(f_sin_n,0,T)[0]/T]
+    
+    return As,Bs
+
+
+# ########################################
 #  .//Fundamentos.Conicas.Geometria.ipynb
 # ########################################
 
