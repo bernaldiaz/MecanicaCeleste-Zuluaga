@@ -280,3 +280,169 @@
 	- Labels for 'figure':
 		* `fig:prob:elipse`
 		* `fig:prob:latlon`
+- Labels for '05.00.00.00.Mecanica.Introduccion.ipynb':
+	- Labels for 'section':
+		* `#mecanica_introduccion`
+- Labels for '05.00.00.00.Mecanica.ipynb':
+	- Labels for 'section':
+		* `#mecanica`
+- Labels for '05.01.01.00.Mecanica.Cinematica.Cantidades.ipynb':
+	- Labels for 'section':
+		* `#cinematica`
+		* `#cantidades_cinematicas`
+		* `#sistemas_referencia`
+	- Labels for 'box':
+		* `box:pos:transformaciones.galileo`
+	- Labels for 'figure':
+		* `fig:transformaciones_galileo`
+	- Labels for 'equation':
+		* `eq:a_cilindricas`
+		* `eq:a_esfericas`
+		* `eq:ley_adicion_velocidades`
+- Labels for '05.01.02.00.Mecanica.Cinematica.SolucionEdM.ipynb':
+	- Labels for 'section':
+		* `#ecuacion_movimiento`
+		* `#integracion_edm`
+		* `#integracion_cuadraturas`
+	- Labels for 'equation':
+		* `eq:edm`
+		* `eq:edm_primer_orden`
+		* `eq:edm_escalar`
+		* `eq:edm_primer_orden_escalar`
+		* `eq:edm_estado`
+		* `eq:edm_ejemplo1`
+		* `eq:edm_ejemplo1_cuadratura`
+		* `eq:Ix_ejemplo1`
+		* `eq:Ix_ejemplo2`
+		* `eq:constantes_ejemplo1`
+		* `eq:solucion_ejemplo1`
+- Labels for '05.01.03.00.Mecanica.Cinematica.SolucionNumerica.ipynb':
+	- Labels for 'section':
+		* `#integracion_numerica_edm`
+	- Labels for 'code':
+		* `code:edm_ejemplo1`
+		* `code:ejemplo1_grafico_solucion`
+		* `code:compara_numerica_analitica`
+		* `code:solucion_numerica_ejemplo2`
+	- Labels for 'equation':
+		* `eq:edm_ecuaciones_reducidas`
+		* `eq:variables_auxiliares_edm`
+		* `eq:edm_reducidas_particula`
+- Labels for '05.02.00.00.Mecanica.Dinamica.Cantidades.ipynb':
+	- Labels for 'section':
+		* `#dinamica`
+		* `#cantidades_dinamicas`
+		* `#particulas_fuerzas`
+		* `#sistemas_referencia_inerciales`
+	- Labels for 'box':
+		* `box:def:sistemas.inerciales`
+		* `box:teo:sistemas.inerciales`
+- Labels for '05.02.01.00.Mecanica.Dinamica.Postulados.ipynb':
+	- Labels for 'section':
+		* `#postulado_fuerzas`
+		* `#fuerzas_conservativas`
+		* `#energia_mecanica`
+		* `#ley_inercia`
+		* `#postulado_accion_reaccion`
+		* `#postulado_gravitacion`
+		* `#fuerza_luna`
+		* `#campo_gravitacional`
+		* `#energia_potencial_gravitacional`
+		* `#masa_equivalencia`
+	- Labels for 'box':
+		* `box:pos:fuerzas`
+		* `box:teo:trabajo.energia`
+		* `box:teo:conservacion.energia`
+		* `box:teo:inercia`
+		* `box:pos:accion.reaccion`
+		* `box:pos:gravitacion.universal`
+		* `box:def:masas`
+		* `box:pri:equivalencia`
+	- Labels for 'figure':
+		* `fig:principia`
+		* `fig:accion_reaccion`
+		* `fig:fuerza_gravitacional`
+		* `fig:hooke`
+		* `fig:stevin`
+	- Labels for 'equation':
+		* `eq:edm_fuerzas_aplicadas`
+		* `eq:edm_fuerzas_resultantes`
+		* `eq:circulacion_nula`
+		* `eq:funcion_energia_potencial`
+		* `eq:deltaU_deltaK`
+		* `eq:fuerza_gravitacional`
+		* `eq:fuerza_M_m`
+		* `eq:campo_gravitacional`
+		* `eq:fuerza_campo_gravitacional`
+		* `eq:energia_potencial_gravitacional`
+		* `eq:energia_fuerza_campo_gravitacional`
+		* `eq:potencial_campo_gravitacional`
+		* `eq:razon_masa_gravitacional_masa_inercial`
+- Labels for '05.02.02.00.Mecanica.Dinamica.SistemaParticulas.ipynb':
+	- Labels for 'section':
+		* `#sistemas_particulas`
+		* `#fuerzas_centro_masa`
+		* `#centro_masa`
+		* `#teoremas_conservacion`
+		* `#dinamica_centro_masa`
+	- Labels for 'box':
+		* `box:teo:conservacion.p.sistemas`
+		* `box:teo:conservacion.L.sistemas`
+	- Labels for 'figure':
+		* `fig:centro_masa`
+		* `fig:astronomia_nova`
+	- Labels for 'code':
+		* `code:random_particles`
+		* `code:centro_masa`
+		* `code:grafico_sistema_ejemplo`
+		* `code:L_sistema_ejemplo`
+		* `code:K_sistema_ejemplo`
+	- Labels for 'equation':
+		* `eq:edm_sistema_particulas`
+		* `eq:centro_masa`
+		* `eq:edm_sistema`
+		* `eq:distancia_centro_masa`
+		* `eq:torca_sistema`
+		* `eq:dLdt_sistema_torca`
+		* `eq:torque_sistema`
+		* `eq:estado_CM`
+		* `eq:L_CM_interno`
+		* `eq:K_CM_interno`
+- Labels for '05.03.00.00.Mecanica.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#mecanica_problemas`
+	- Labels for 'figure':
+		* `fig:prob:lanzamiento_proyectil`
+- Labels for '05.03.00.00.Mecanica.SistemasNoInerciales.ipynb':
+	- Labels for 'section':
+		* `#sistemas_no_inerciales`
+		* `#transformacion_sistemas_referencia`
+		* `#sistemas_rotantes`
+		* `#adicion_velocidades_rotantes`
+		* `#aceleraciones_ficticias_rotantes`
+	- Labels for 'figure':
+		* `fig:transformaciones_noinercial`
+		* `fig:iss_microgravedad`
+		* `fig:rotacion_ejes`
+		* `fig:rotaciones_no_conmutativas`
+		* `fig:aceleraciones_ficticias`
+		* `fig:coriolis`
+	- Labels for 'equation':
+		* `eq:transformaciones_galileo`
+		* `eq:ley_adicion_aceleraciones`
+		* `eq:transformaciones_acelerado`
+		* `eq:v_no_inercial`
+		* `eq:p_no_inercial`
+		* `eq:a_no_inercial`
+		* `eq:F_no_inercial`
+		* `eq:F_aplicada_no_inercial`
+		* `eq:A_noinercial`
+		* `eq:derivada_vector_rotacion_explicita`
+		* `eq:derivada_vector_rotacion`
+		* `eq:omega_times_A`
+		* `eq:adicion_velocidades_rotante`
+- Labels for '05.03.01.00.Mecanica.SistemasNoInerciales.Numerico.ipynb':
+	- Labels for 'section':
+		* `#ejemplo_numerico_rotante`
+	- Labels for 'code':
+		* `code:plot_rotating_frame`
