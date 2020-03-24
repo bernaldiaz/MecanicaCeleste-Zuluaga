@@ -446,3 +446,119 @@
 		* `#ejemplo_numerico_rotante`
 	- Labels for 'code':
 		* `code:plot_rotating_frame`
+- Labels for '06.00.00.00.ProblemaNCuerpos.ipynb':
+	- Labels for 'section':
+		* `#problema_ncuerpos`
+- Labels for '06.01.00.00.ProblemaNCuerpos.Formulacion.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_formulacion`
+		* `#ncuerpos_motivacion`
+		* `#ncuerpos_enunciado`
+	- Labels for 'box':
+		* `box:def:problema.n.cuerpos`
+	- Labels for 'figure':
+		* `fig:ncuerpos_formulacion`
+		* `fig:henri_poincare`
+	- Labels for 'equation':
+		* `eq:ncuerpos_formulacion_ecuaciones`
+- Labels for '06.02.00.00.ProblemaNCuerpos.SolucionAnalitica.ipynb':
+	- Labels for 'section':
+		* `#solucion_analitica`
+- Labels for '06.02.01.00.ProblemaNCuerpos.SolucionAnalitica.ConstantesMovimiento.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_teoremas_conservacion`
+		* `#ncuerpos_momento`
+		* `#ncuerpos_centro_masa`
+		* `#ncuerpos_momento_angular`
+	- Labels for 'box':
+		* `box:def:plano.invariable`
+	- Labels for 'figure':
+		* `fig:plano_invariable`
+	- Labels for 'code':
+		* `code:masas_estado_planetas`
+	- Labels for 'equation':
+		* `eq:ncuerpos_suma_edm`
+		* `eq:ncuerpos_momento`
+		* `eq:ncuerpos_centro_masa`
+		* `eq:ncuerpos_momento_angular`
+- Labels for '06.02.02.00.ProblemaNCuerpos.SolucionAnalitica.Energia.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_potencial`
+		* `#ncuerpos_energia`
+		* `#energia_tierra_luna`
+	- Labels for 'code':
+		* `code:estado_tierra_luna`
+		* `code:energia_tierra_luna`
+	- Labels for 'equation':
+		* `eq:ncuerpos_edm_potencial_individual`
+		* `eq:potencial_tres_cuerpos`
+		* `eq:ncuerpos_edm_potencial`
+		* `eq:U_restringido`
+		* `eq:U_no_restringido`
+		* `eq:ncuerpos_energia`
+- Labels for '06.02.03.00.ProblemaNCuerpos.SolucionAnalitica.Sintesis.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_teorema_bruns`
+	- Labels for 'box':
+		* `box:teo:bruns`
+	- Labels for 'equation':
+		* `eq:ncuerpos_constantes_movimiento`
+- Labels for '06.03.00.00.ProblemaNCuerpos.SolucionNumerica.ConstantesMovimiento.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_numerico_constantes_virial`
+		* `#ncuerpos_algoritmo_general`
+	- Labels for 'code':
+		* `code:ncuerpos_constantes_condiciones_iniciales`
+		* `code:ncuerpos_ejemplo2`
+		* `code:ncuerpos_solucion`
+- Labels for '06.03.00.00.ProblemaNCuerpos.SolucionNumerica.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_solucion_numerica`
+		* `#unidades_canonicas`
+		* `#ncuerpos_edmr`
+		* `#ncuerpos_algoritmo_solucion`
+		* `#ncuerpos_numerico_interactivas`
+		* `#ncuerpos_numerico_interactivos`
+		* `#ncuerpos_numerico_animacion`
+	- Labels for 'figure':
+		* `fig:ncuerpos_numerico_ejemplo`
+	- Labels for 'code':
+		* `code:edm_ncuerpos`
+		* `code:solucion_a_rs_vs`
+		* `code:sistema_a_Y`
+		* `code:solucion_a_estado`
+		* `code:ncuerpos_ejemplo1`
+		* `code:plot_ncuerpos_3d`
+		* `code:ncuerpos_animacion`
+	- Labels for 'equation':
+		* `eq:definicion_unidades_canonicas`
+		* `eq:ncuerpos_numerico_ecuaciones`
+		* `eq:numerico_variables_auxiliares`
+		* `eq:definicion_rij`
+		* `eq:ncuerpos_edmr`
+- Labels for '06.03.00.00.ProblemaNCuerpos.TeoremaVirial.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_virial`
+		* `#ncuerpos_momento_inercia`
+		* `#virial`
+		* `#identidad_lagrange_jacobi`
+		* `#teorema_virial`
+		* `#masa_cumulos_galaxias`
+	- Labels for 'box':
+		* `box:teo:virial`
+	- Labels for 'figure':
+		* `fig:coma_cluster`
+	- Labels for 'code':
+		* `code:virial_sistema_solar`
+		* `code:masa_coma_cluster`
+	- Labels for 'equation':
+		* `eq:momento_inercia`
+		* `eq:G`
+		* `eq:I_G`
+		* `eq:G_acotada`
+		* `eq:dotG`
+		* `eq:identidad_lagrange_jacobi`
+		* `eq:teorema_virial_UK`
+		* `eq:teorema_virial_EK`
+		* `eq:teorema_virial_canonico`
+		* `eq:virial_v_dispersion`
