@@ -16,6 +16,10 @@ clean:
 	@-find . -name ".Icon*" -delete
 	@-find . -name '__pycache__' -type d | xargs rm -fr
 
+cleanpublic:
+	@echo "Cleaning all public files..."
+	@-rm -rf [a-zA-Z]* 
+
 update:
 	@echo "Adding files..."
 	@-git add -Af
