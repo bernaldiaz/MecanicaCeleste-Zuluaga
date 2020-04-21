@@ -140,8 +140,6 @@
 		* `eq:serie_potencias_limite`
 		* `eq:exp_taylor`
 		* `eq:serie_taylor`
-		* `eq:sin_taylor`
-		* `eq:cos_taylor`
 		* `eq:sinh_taylor`
 		* `eq:cosh_taylor`
 		* `eq:exp_taylor_general`
@@ -223,7 +221,6 @@
 		* `#conicas_anomalias`
 	- Labels for 'figure':
 		* `fig:conica_foco`
-		* `fig:anomalia_excentrica`
 	- Labels for 'code':
 		* `code:conica_dibujo`
 		* `code:puntos_conica`
@@ -562,3 +559,220 @@
 		* `eq:teorema_virial_EK`
 		* `eq:teorema_virial_canonico`
 		* `eq:virial_v_dispersion`
+- Labels for '07.00.00.00.Problema2Cuerpos.ipynb':
+	- Labels for 'section':
+		* `#problema_doscuerpos`
+- Labels for '07.01.00.00.Problema2Cuerpos.Motivacion.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_motivación`
+	- Labels for 'figure':
+		* `fig:sistemas_jerarquicos`
+	- Labels for 'code':
+		* `code:ncuerpos_jerarquico1`
+		* `code:ncuerpos_jerarquico1_CM`
+- Labels for '07.02.00.00.Problema2Cuerpos.ProblemaRelativo.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_reducido`
+		* `#doscuerpos_constantes`
+		* `#doscuerpos_h`
+		* `#doscuerpos_epsilon`
+		* `#doscuerpos_e`
+		* `#doscuerpos_ecuacion`
+		* `#doscuerpos_velocidad`
+		* `#hodografo_doscuerpos`
+		* `#teorema_armónico`
+		* `#teoremas_orbital`
+	- Labels for 'box':
+		* `box:teo:areas`
+		* `box:teo:movimiento.orbital`
+		* `box:teo:hodografo`
+		* `box:teo:armonico`
+	- Labels for 'figure':
+		* `fig:problema_dos_cuerpos`
+		* `fig:laplace`
+		* `fig:doscuerpos_trayectorias`
+		* `fig:hooke_newton`
+		* `fig:cometa_1680`
+	- Labels for 'equation':
+		* `eq:edm_doscuerpos`
+		* `eq:r1_r2_r`
+		* `eq:v1_v2_v`
+		* `eq:edm_doscuerpos_relativo`
+		* `eq:h`
+		* `eq:r`
+		* `eq:dotr`
+		* `eq:h_escalar`
+		* `eq:velocidad_areal`
+		* `eq:dotq`
+		* `eq:epsilon`
+		* `eq:epsilon_cartesianas`
+		* `eq:epsilon_cilindricas`
+		* `eq:edmxh`
+		* `eq:cuadratura_e`
+		* `eq:e`
+		* `eq:e_h_epsilon`
+		* `eq:doscuerpos_trayectoria_m1`
+		* `eq:doscuerpos_trayectoria_m2`
+		* `eq:e_mu_2a`
+		* `eq:vis_viva`
+		* `eq:fi_conica`
+		* `eq:tetav_conica`
+		* `eq:v_hodografo`
+		* `eq:teorema_armonico`
+		* `eq:ley_armonica`
+- Labels for '07.03.00.00.Problema2Cuerpos.OrbitaEspacio.ipynb':
+	- Labels for 'section':
+		* `#orbita_espacio`
+		* `#determinacion_orbita`
+		* `#prediccion_estado`
+		* `#orbita_osculatriz`
+		* `#ejemplo_numerico_orbita_espacio`
+	- Labels for 'figure':
+		* `fig:determinacion_orbita`
+		* `fig:osculatriz`
+	- Labels for 'equation':
+		* `eq:det_hvec`
+		* `eq:det_evec`
+		* `eq:det_nvec`
+		* `eq:det_p`
+		* `eq:det_e`
+		* `eq:det_i`
+		* `eq:det_W`
+		* `eq:det_w`
+		* `eq:W_cuadrante`
+		* `eq:w_cuadrante`
+		* `eq:det_f`
+		* `eq:f_cuadrante`
+		* `eq:elementos_dotx`
+		* `eq:elementos_doty`
+		* `eq:elementos_dotz`
+- Labels for '07.04.01.00.Problema2Cuerpos.SolucionTiempo.EcuacionKepler.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_tiempo`
+		* `#ecuacion_halley`
+		* `#ecuacion_kepler`
+		* `#funcion_kepler`
+		* `#interpretacion_M`
+	- Labels for 'figure':
+		* `fig:anomalia_excentrica`
+		* `fig:halley`
+	- Labels for 'code':
+		* `code:funcion_kepler`
+		* `code:plot_funcion_kepler`
+	- Labels for 'equation':
+		* `eq:area_sector_tiempo`
+		* `eq:ecuacion_barker`
+		* `eq:Mp`
+		* `eq:f_Mp`
+		* `eq:ecuacion_kepler`
+		* `eq:ecuacion_kepler_hiperbola`
+		* `eq:kepler_generalizada`
+		* `eq:kepler_generalizada_derivada2`
+		* `eq:f_G`
+- Labels for '07.04.02.00.Problema2Cuerpos.SolucionTiempo.AproximacionKepler.ipynb':
+	- Labels for 'section':
+		* `#solucion_kepler_numerica`
+		* `#kepler_metodo_kepler`
+		* `#kepler_metodo_puntofijo`
+		* `#kepler_metodo_newton`
+		* `#kepler_laguerre`
+		* `#kepler_horquillado`
+		* `#kepler_otros_metodos`
+		* `#solucion_kepler_aproximacions`
+		* `#solucion_kepler_series`
+		* `#kepler_precision_eficiencia`
+	- Labels for 'code':
+		* `code:kepler_kepler`
+		* `code:kepler_newton`
+		* `code:precision_seminalitica`
+		* `code:E_vs_M`
+		* `code:kepler_aproximacion`
+		* `code:kepler_tiempos`
+	- Labels for 'equation':
+		* `eq:sin_taylor`
+		* `eq:cos_taylor`
+		* `eq:kepler_generalizada_derivada1`
+		* `eq:kepler_kepler`
+		* `eq:kepler_puntofijo`
+		* `eq:E_iteracion`
+		* `eq:E_e1`
+		* `eq:E2`
+		* `eq:E_e2`
+		* `eq:E_e3`
+		* `eq:serie_gM`
+		* `eq:An`
+		* `eq:Jn_integral`
+		* `eq:Jn_serie`
+		* `eq:kepler_bessel`
+- Labels for '07.04.02.00.Problema2Cuerpos.SolucionTiempo.Sintesis.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_sintesis`
+		* `#ejemplo_numerico_doscuerpos_sintesis`
+	- Labels for 'code':
+		* `code:propaga_estado`
+		* `code:ejemplo_propaga_estado`
+		* `code:error_teoria`
+- Labels for '07.04.03.00.Problema2Cuerpos.SolucionTiempo.VariablesUniversales.ipynb':
+	- Labels for 'section':
+		* `#variables_universales`
+		* `#funciones_fg`
+	- Labels for 'code':
+		* `code:funcion_universal_kepler`
+		* `code:funcion_universal_kepler_s`
+		* `code:propaga_f_g`
+		* `code:ejemplo_propaga_fg`
+	- Labels for 'equation':
+		* `eq:parabola_universal`
+		* `eq:kepler_universal`
+		* `eq:kepler_universal_stumpff`
+		* `eq:r_fg`
+		* `eq:v_fg`
+		* `eq:f_s`
+		* `eq:g_s`
+		* `eq:dotf_s`
+		* `eq:dotg_s`
+		* `eq:kepler_universal_s`
+- Labels for '07.05.00.00.Problema2Cuerpos.AproximacionJerarquico.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_aproximacion`
+		* `#doscuerpos_sistema_solar`
+		* `#doscuerpos_evolucion_elementos`
+		* `#elementos_luna`
+	- Labels for 'figure':
+		* `fig:tycho_instrumentos`
+	- Labels for 'code':
+		* `code:prediccion_ss`
+		* `code:error_posicion_marte`
+		* `code:variacion_elementos`
+- Labels for '07.06.00.00.Problema2Cuerpos.Perturbaciones.ipynb':
+	- Labels for 'section':
+		* `#teoria_perturbaciones`
+		* `#perturbacion_a`
+		* `#perturbacion_e`
+		* `#perturbacion_orientacion`
+		* `#perturbaciones_ejemplo`
+	- Labels for 'figure':
+		* `fig:fuerza_perturbadora`
+	- Labels for 'code':
+		* `code:ejemplo_sistema_perturbado`
+		* `code:ejemplo_sistemaA_perturbado`
+		* `code:ejemplo_perturbacion_evolucionelementos`
+	- Labels for 'equation':
+		* `eq:doscuerpos_trayectoria`
+		* `eq:dot_epsilon_preliminar`
+		* `eq:dot_epsilon`
+		* `eq:dot_a`
+		* `eq:dot_e_preliminar`
+		* `eq:dot_e`
+		* `eq:dot_i`
+		* `eq:dot_Omega`
+		* `eq:dot_omega`
+		* `eq:dot_f`
+- Labels for '07.07.00.00.Problema2Cuerpos.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_problemas`
+	- Labels for 'figure':
+		* `fig:prob:orbita_satelite`
+- Labels for '07.07.00.00.Problema2Cuerpos.SPICE.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_SPICE`
