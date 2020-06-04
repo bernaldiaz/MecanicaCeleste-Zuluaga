@@ -902,3 +902,166 @@
 		* `eq:T_vp_v`
 		* `eq:T_CJ_inercial`
 		* `eq:T_uc`
+		* `eq:T_jupiter_uc`
+- Labels for '09.00.00.00.FormalismoLagrangiano.Motivacion.ipynb':
+	- Labels for 'section':
+		* `#lagrangiano_motivacion`
+		* `#formalismo_lagrangiano_introduccion`
+		* `#trabajos_virtuales`
+		* `#principio_dalambert_lagrange`
+	- Labels for 'figure':
+		* `fig:principio_trabajos_virtuales`
+		* `fig:pendulo_simple_dAlambert`
+	- Labels for 'equation':
+		* `eq:teorema_dalambert_lagrange`
+		* `eq:dalambert_pendulo_simple`
+		* `eq:xy_pendulo_simple`
+		* `eq:edm_pendulo_simple`
+- Labels for '09.00.00.00.FormalismoLagrangiano.ipynb':
+	- Labels for 'section':
+		* `#formalismo_lagrangiano`
+- Labels for '09.01.00.00.FormalismoLagrangiano.VariablesRestricciones.ipynb':
+	- Labels for 'section':
+		* `#restricciones_variables_generalizadas`
+		* `#fuerzas_restriccion`
+		* `#variables_generalizadas`
+		* `#reglas_transformacion_propiedades`
+	- Labels for 'figure':
+		* `fig:restriccion_no_holonomica`
+		* `fig:lagrangiano_pendulo_conico`
+	- Labels for 'equation':
+		* `eq:pendulo_restriccion_cuerda`
+		* `eq:restriccion_holonomica`
+		* `eq:principio_dalambert_aplicadas`
+		* `eq:generalizadas_a_coordenadas`
+		* `eq:coordenadas_a_generalizadas`
+		* `eq:delta_ri_delta_qj`
+		* `eq:vi_qj`
+		* `eq:intercambio_derivadas`
+		* `eq:cancelacion_puntos`
+- Labels for '09.02.00.00.FormalismoLagrangiano.EcuacionesLagrange.ipynb':
+	- Labels for 'section':
+		* `#ecuaciones_lagrange`
+		* `#pendulo_elastico`
+	- Labels for 'figure':
+		* `fig:pendulo_elastico`
+	- Labels for 'equation':
+		* `eq:dalambert_termino_inercial`
+		* `eq:T`
+		* `eq:dalambert_termino_fuerza`
+		* `eq:Q`
+		* `eq:ecuaciones_lagrange`
+		* `eq:pendulo_elastico_transformacion`
+		* `eq:pendulo_elastico_ec_q1`
+		* `eq:pendulo_elastico_ec_q2`
+- Labels for '09.03.00.00.FormalismoLagrangiano.FuncionLagrangiana.ipynb':
+	- Labels for 'section':
+		* `#funcion_lagrangiana`
+		* `#potencial_generalizado`
+		* `#lagrangiano_pendulo_elastico`
+	- Labels for 'equation':
+		* `eq:ecuaciones_euler_lagrange`
+- Labels for '09.04.00.00.FormalismoLagrangiano.PrincipioHamilton.ipynb':
+	- Labels for 'section':
+		* `#principio_hamilton`
+		* `#hamilton_pendulo_simple`
+	- Labels for 'code':
+		* `code:accion_general`
+		* `code:S_PS_epsilon`
+		* `code:trayectoria_minima_accion`
+	- Labels for 'equation':
+		* `eq:funcional_calculo_variacional`
+		* `eq:PS_funcion_referencia`
+- Labels for '09.05.00.00.FormalismoLagrangiano.Simetrias.ipynb':
+	- Labels for 'section':
+		* `#simetrias_conservacion`
+		* `#simetrias_momento_angular`
+		* `#simetrias_momento_lineal`
+		* `#variables_ciclicas`
+		* `#funcion_jacobi`
+	- Labels for 'figure':
+		* `fig:emmy_noether`
+	- Labels for 'equation':
+		* `eq:transformacion_inversion`
+		* `eq:transformacion_general`
+		* `eq:momento_conservado`
+		* `eq:transformacion_ciclica`
+		* `eq:funcion_jacobi`
+		* `eq:h_conservativo`
+		* `eq:energia_cinetica_variables_generalizadas`
+- Labels for '09.06.00.00.FormalismoLagrangiano.MecanicaCeleste.Problema2Cuerpos.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_general`
+		* `#potencial_efectivo`
+	- Labels for 'figure':
+		* `fig:regiones_exclusion_potencial_efectivo`
+	- Labels for 'code':
+		* `code:V_doscuerpos`
+		* `code:potencial_efectivo`
+	- Labels for 'equation':
+		* `eq:fcentral_regiones_exclusion`
+- Labels for '09.06.00.00.FormalismoLagrangiano.MecanicaCeleste.ProblemaNCuerpos.ipynb':
+	- Labels for 'section':
+		* `#ncuerpos_lagrangiano`
+		* `#ncuerpos_lagrangiano_simetrias`
+		* `#ncuerpos_jerarquico_lagrangiano`
+	- Labels for 'equation':
+		* `eq:lagrangiano_ncuerpos`
+		* `eq:lagrangiano_doscuerpos_general`
+		* `eq:lagrangiano_doscuerpos_relativo`
+		* `eq:lagrangiano_doscuerpos`
+		* `eq:lagrangiano2B_general`
+		* `eq:lagrangiano_doscuerpos_reducido`
+		* `eq:doscuerpos_edm_angular`
+- Labels for '09.06.00.00.FormalismoLagrangiano.MecanicaCeleste.ipynb':
+	- Labels for 'section':
+		* `#celeste_lagrangiano`
+- Labels for '09.06.00.00.FormalismoLagrangiano.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#lagrangiano_problemas`
+	- Labels for 'figure':
+		* `fig:prob:tres_masas_aro`
+		* `fig:prob:dona_resorte`
+		* `fig:prob:cilindros_contacto`
+		* `fig:prob:masas_resorte`
+		* `fig:prob:pendulo_doble`
+- Labels for '09.06.00.01.FormalismoLagrangiano.MecanicaCeleste.Problema2Cuerpos.EcuacionRadial.ipynb':
+	- Labels for 'section':
+		* `#edm_variable_radial`
+		* `#doscuerpos_general_ecuacionforma`
+	- Labels for 'code':
+		* `code:r_teta_general`
+		* `code:coordenado_general`
+		* `code:V_general`
+	- Labels for 'equation':
+		* `eq:edm_variable_angular`
+		* `eq:edm_variable_radial`
+		* `eq:forma_orbital`
+		* `eq:forma_orbital_kepler`
+		* `eq:general_ecuacion_radial`
+		* `eq:kepler_diferencial`
+- Labels for '09.06.00.02.FormalismoLagrangiano.MecanicaCeleste.Problema2Cuerpos.PrecesionPerihelio.ipynb':
+	- Labels for 'section':
+		* `#doscuerpos_narbitrario`
+	- Labels for 'figure':
+		* `fig:albert_einstein`
+	- Labels for 'code':
+		* `code:conica_precesion`
+	- Labels for 'equation':
+		* `eq:f_modificada`
+		* `eq:forma_orbital_precesion`
+		* `eq:conica_precesion`
+		* `eq:avance_perihelio`
+- Labels for '10.00.00.00.ApendiceAlgoritmos.ipynb':
+	- Labels for 'section':
+		* `#algoritmos_utiles`
+	- Labels for 'code':
+		* `code:estado_a_elementos`
+		* `code:elementos_a_estado`
+		* `code:metodo_newton`
+		* `code:metodo_laguerre`
+		* `code:kepler_fourier`
+		* `code:kepler_bessel`
+		* `code:serie_stumpff`
+	- Labels for 'equation':
+		* `eq:kepler_fourier`

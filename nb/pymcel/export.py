@@ -1088,58 +1088,6 @@ def Veff(r,Vf,**parametros):
 # ########################################
 
 # ########################################
-#  .//FormalismoHamiltoniano.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.Motivacion.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.EcuacionesCanonicas.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.EspacioFase.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.Simetrias.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.TransformacionesCanonicas.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.TransformacionesCanonicas.FuncionGeneratriz.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.HamiltonJacobi.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.MecanicaCeleste.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.MecanicaCeleste.Problema2Cuerpos.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.MecanicaCeleste.HamiltonJacobi.ipynb
-# ########################################
-
-# ########################################
-#  .//FormalismoHamiltoniano.ProblemasSeleccionados.ipynb
-# ########################################
-
-# ########################################
-#  ./build/probs/FormalismoHamiltoniano.Problemas.ipynb
-# ########################################
-
-# ########################################
 #  .//ApendiceAlgoritmos.ipynb
 # ########################################
 
