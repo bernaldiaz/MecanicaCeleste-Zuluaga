@@ -928,7 +928,6 @@
 		* `#reglas_transformacion_propiedades`
 	- Labels for 'figure':
 		* `fig:restriccion_no_holonomica`
-		* `fig:lagrangiano_pendulo_conico`
 	- Labels for 'equation':
 		* `eq:pendulo_restriccion_cuerda`
 		* `eq:restriccion_holonomica`
@@ -1052,7 +1051,127 @@
 		* `eq:forma_orbital_precesion`
 		* `eq:conica_precesion`
 		* `eq:avance_perihelio`
-- Labels for '10.00.00.00.ApendiceAlgoritmos.ipynb':
+- Labels for '10.00.00.00.FormalismoHamiltoniano.Motivacion.ipynb':
+	- Labels for 'section':
+		* `#hamiltoniano_motivacion`
+		* `#hamiltoniano_motivacion_edm`
+		* `#hamiltoniano_motivacion_degenracion`
+	- Labels for 'figure':
+		* `fig:hamiltoniano_sistema_simple`
+		* `fig:espacio_configuracion_fase`
+	- Labels for 'equation':
+		* `eq:eom_mas`
+		* `eq:edm_mas_linearizado`
+- Labels for '10.00.00.00.FormalismoHamiltoniano.ipynb':
+	- Labels for 'section':
+		* `#formalismo_hamiltoniano`
+- Labels for '10.01.00.00.FormalismoHamiltoniano.EcuacionesCanonicas.ipynb':
+	- Labels for 'section':
+		* `#ecuaciones_hamilton`
+		* `#ecuaciones_canonicas`
+		* `#principio_hamilton_modificado`
+	- Labels for 'figure':
+		* `fig:william_hamilton`
+	- Labels for 'equation':
+		* `eq:dotp_Lqp`
+		* `eq:H_L`
+		* `eq:dH_definicion`
+		* `eq:dH_L`
+		* `eq:dq_H`
+		* `eq:dp_H`
+		* `eq:principio_hamilton_modificado`
+		* `eq:integrando_hamilton_modificado`
+		* `eq:funcionf_hamilton_modificado`
+- Labels for '10.02.00.00.FormalismoHamiltoniano.EspacioFase.ipynb':
+	- Labels for 'section':
+		* `#espacio_fase`
+		* `#pendulo_fase`
+	- Labels for 'figure':
+		* `fig:espacio_fase_interpretacion`
+	- Labels for 'code':
+		* `code:contornos_espacio_fase`
+	- Labels for 'equation':
+		* `eq:lagrangiano_pendulo_simple`
+- Labels for '10.02.00.00.FormalismoHamiltoniano.Simetrias.ipynb':
+	- Labels for 'section':
+		* `#hamiltoniano_simetrias`
+		* `#hamiltoniano_variablesciclicas`
+		* `#hamiltoniano_pendulo_conico`
+		* `#conservacion_hamiltoniano`
+		* `#corchetes_poisson`
+	- Labels for 'figure':
+		* `fig:lagrangiano_pendulo_conico`
+	- Labels for 'equation':
+		* `eq:edm_pendulo_conico`
+- Labels for '10.03.00.00.FormalismoHamiltoniano.TransformacionesCanonicas.ipynb':
+	- Labels for 'section':
+		* `#transformaciones_canonicas`
+	- Labels for 'figure':
+		* `fig:Figure_177`
+	- Labels for 'equation':
+		* `eq:dQ_K`
+		* `eq:dP_H`
+		* `eq:P_transformacion`
+		* `eq:Q_transformacion_restringidas`
+		* `eq:P_transformacion_restringidas`
+		* `eq:dotQ_K`
+		* `eq:dotQ_simplectica`
+		* `eq:dotK_simplectica`
+		* `eq:dQdq_simplectica`
+		* `eq:dQdp_simplectica`
+		* `eq:dPdq_simplectica`
+		* `eq:dPdp_simplectica`
+		* `eq:dXdx`
+		* `eq:dpdP`
+		* `eq:MAS_hamiltoniano_transformado`
+- Labels for '10.03.01.00.FormalismoHamiltoniano.TransformacionesCanonicas.FuncionGeneratriz.ipynb':
+	- Labels for 'section':
+		* `#funcion_generatriz`
+		* `#transformaciones_canonicas_basicas`
+	- Labels for 'equation':
+		* `eq:Q_transformacion`
+		* `eq:L_transformacion`
+		* `eq:P_transformacion_F1`
+		* `eq:p_transformacion_F1`
+		* `eq:transformacion_canonica_F1_trivial`
+		* `eq:hamilton_modificado_original`
+		* `eq:hamilton_modificado_transformacion`
+		* `eq:condicion_transformaciones_canonicas`
+		* `eq:K_transformacion_F1`
+		* `eq:K_H_qP`
+		* `eq:K_H_dFdt`
+- Labels for '10.04.00.00.FormalismoHamiltoniano.HamiltonJacobi.ipynb':
+	- Labels for 'section':
+		* `#hamilton_jacobi`
+		* `#hamilton_jacobi_mas_1d`
+		* `#hamilton_jacobi_caida`
+	- Labels for 'equation':
+		* `eq:HJ_general`
+		* `eq:HamiltonJacobi`
+- Labels for '10.04.00.00.FormalismoHamiltoniano.MecanicaCeleste.HamiltonJacobi.ipynb':
+	- Labels for 'section':
+		* `#hamilton_jacobi_celeste`
+		* `#fase_elementos_orbitales`
+		* `#variables_delaunay`
+	- Labels for 'equation':
+		* `eq:Hamilton_2B_Laplace`
+		* `eq:solucion_r_t_2B`
+		* `eq:solucion_teta_r_2B`
+		* `eq:cambio_variable_rE`
+- Labels for '10.04.00.00.FormalismoHamiltoniano.MecanicaCeleste.Problema2Cuerpos.ipynb':
+	- Labels for 'section':
+		* `#hamiltoniano_doscuerpos`
+		* `#conservacion_e`
+	- Labels for 'equation':
+		* `eq:dAdt_cilindricas`
+		* `eq:Ar_H`
+- Labels for '10.04.00.00.FormalismoHamiltoniano.MecanicaCeleste.ipynb':
+	- Labels for 'section':
+		* `#celeste_hamiltoniano`
+- Labels for '10.04.00.00.FormalismoHamiltoniano.ProblemasSeleccionados.ipynb':
+	- Labels for 'section':
+		* `#hamiltoniano_problemas`
+- Labels for '11.00.00.00.ApendiceAlgoritmos.ipynb':
 	- Labels for 'section':
 		* `#algoritmos_utiles`
 	- Labels for 'code':
